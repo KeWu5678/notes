@@ -6,8 +6,13 @@
 
 
 # Distribution Transformation
-## target encoding
-One word: it calculate the a posteriori mean of the categaory mean in a given target class. 
+## target encoding 
+For the categorical variable, there is no numerical value that indicates cardinality in a natural sense. We therefore assign it a value that indicates how strong it is correlated to the target. 
+One word: For a category in a feature, it calculate the a posteriori mean of the given target within that category.
+**drawbacks**: 
+The feature sees the target, which induces the target leakage. 
+**remedy**:
+k-fold cross-encoding: taking the encoding statistics from other folds. 
 
 ## label encoding
 Example: LightGBM
