@@ -1,0 +1,1014 @@
+IID random variables on some probability. We normalize the expected value zero variance.
+So, we take a v-scale random. The random box has to be go up or down with equal probability,
+but we can just as well take our X-N variables. So, we call that SN by T.
+And what we do, we say at any point in time, the particle on this walk goes up by 1 over N times something or down.
+And we sum them up basically from 1 to N times T.
+Now, N times T is not necessarily a natural number, so we get the Gauss bracket.
+So, this is the Gauss bracket here, the smallest, the largest integer less or equal than N times T.
+So, here we have a random walk. Re-scale. And this random walk has independent variables.
+So, we are just summing up IID random variables. And we do this.
+So, we want to process only unit time. So, we can use hand-relimit field.
+Because after all, what are we doing? We are summing up IID variables and we rescale by square root of N.
+So, the increment of my random walk. So, partial sums converge in the sense of finite dimensional distributions to the increment of probability matches.
+So, the increment is just these sums that we have to start like something. Good. Converges to something normal. Fine. That's what Brownian motion has as a property. Good? Now, that's discrete. So, this random walk.
+This random walk starts at zero. Then, it stays constant at a time of 1 over N. It jumps somewhere. Let's say here. Then, it stays constant. Up to 2 over N. Then, it jumps somewhere here. It stays constant. And so on.
+What we want. What we want is a continuous process.
+That is a little bit of color. So, we do linear interpolation. We do this.
+Linear interpolation. Linear interpolation. Linear interpolation. We call this S1.
+S1. S1. S1. S1. S1. N is equal to S1. T. S1. T plus. And now linear interpolation. T times N minus.
+The Gauss bracket.
+The Gauss bracket. Divide by square N. This is the next increment here.
+N T plus. So, this S1. S1. S1. S1. S1. S1. T plus. And now linear interpolation. T times N minus.
+The Gauss bracket.
+The Gauss bracket. Divide by square N. This is the next increment here. N T plus 1. So, this S1.
+S1. S1. This is S1. S1. N. So, this S1. S1. This is S1. So, that is the continuous function.
+So this SN star, this is SN star.
+So that is the continuous function.
+This is continuous function.
+So in other words, what this SN object does, it maps from omega f, where my I, I, D, where
+the variables live, into the set of continuous function.
+We know this is a nice space, so it has a border and sigma.
+So in particular, this probability measure here, that we are starting with, induces a probability
+measure here, via this method.
+So we start with a sequence of probability variables.
+So we start with a sequence of probability variables.
+This induces the P, via this mapping, and measure the n, which is just the law of my continuous
+time random work, on the set of continuous functions.
+So what we know, this PN, because this is the organization.
+Okay.
+I just claim it, and then you tell me why it's correct.
+The PN, this law, converges in the sense of finite dimensional distributions to the law of Brownian motion.
+Now, I don't have to know, I don't have to know, I'm converging to the law of Brownian motion.
+All I have to know here is my, I take my independent increments, the sum, and I apply the central limit theory.
+And this converges to something normal.
+I don't need to know at this point that Brownian motion is characterized by independent normally distributed increments.
+I just know I have this convergence.
+And this converges to something normal.
+something normal. I don't
+need to know at this point that brown
+emotion is characterized by
+independent, normally
+distributed increments. I just
+know I have this converter, find I measure
+distributions. But why is it true?
+Because
+here
+when we applied
+the central limit theorem, we applied it
+to the random book.
+Here
+I claim it's also true
+for the linear interpolation.
+The theorem even has a name.
+So there's a little subtlety here.
+V-convergence
+is not an additive
+operation. So
+if we know that the
+sequence of random elements y
+converges weakly
+to x
+and y
+converges in distribution to y
+then this does in general
+not imply
+the sum
+converges
+in general
+we are claiming
+something like this
+because the
+S n star
+here
+is something like
+the S n plus
+something else.
+so there's an exception
+here
+and the exception
+is Slutsky's theory.
+It is true
+if
+one of the limit
+is a deterministic constant
+then it's true.
+So in general
+the sum of two weekly
+conversions
+sequence of random
+variables
+is not necessarily
+weekly conversion.
+If the limit
+one of the limits
+is deterministic
+then that's okay.
+That's Slutsky's theory.
+It's
+Slutsk
+I think it's like this.
+I'm very very confident
+I did it in my probability
+course
+but I'm equally confident
+that I created it as well.
+And that's the situation
+we're having here.
+This part goes to zero.
+here we have
+that's our x
+that's our yn
+yn goes to zero.
+So
+Slutsky tells us
+if this converges
+weekly
+then this converges
+weekly as well.
+So
+okay
+so
+fine
+we now have
+the laws
+of
+continuous
+high random
+walks
+here
+and the question
+is
+when does
+this sequence
+from
+and that's equivalent
+to
+when that
+is a tie
+because
+we already have
+five-dimensional
+distributions
+back on which
+so
+when is
+this sequence
+tied as
+a sequence of
+probability measures
+on a set of
+continuous
+equations
+so
+I hope
+that motivates
+it was your
+question
+on Thursday
+yes
+I hope that motivates
+why we need to
+grow this
+yes
+it was also
+it was also
+explained to me
+afterwards
+why it would be
+helpful
+in form of a
+random walk
+so
+what would be
+helpful
+you explained
+to me
+why
+it was
+necessary
+that it's
+defined
+on the
+random numbers
+and not
+on 0
+1
+it doesn't
+matter
+but now
+it's
+you're
+ready
+now
+now
+it is
+you had
+the
+let's
+read
+the
+answer
+okay
+so
+we are
+talking
+star-hustry
+probes
+we go
+on
+the
+distribution
+of
+certain
+star-hustry
+probes
+to converge
+and this
+limit
+measure
+is
+the
+co-devener
+measure
+so
+again
+this is
+the point
+that
+note
+so
+if
+this
+is
+tight
+then
+we have
+p
+convergence
+to p
+p
+is
+the
+measure
+and this
+basically is
+called
+the
+meter
+measure
+because
+because
+under
+this
+measure
+by
+construction
+the
+canonical
+process
+omega
+is a
+continuous
+function
+under
+and
+and
+we
+are
+just
+mapping
+it to
+basically
+I should
+say
+t
+so
+probably
+what they are
+it's a bit
+sloppy
+but
+the
+coordinate
+process
+so the
+canonical
+process
+it is
+continuous
+under
+p
+it has
+a conversion
+of defined
+dimension
+distributions
+by
+constructions
+independent
+normally
+distributed
+increments
+and
+p
+lives
+on the
+space
+of
+continuous
+functions
+so
+it is
+automatically
+the process
+automatically
+continues
+so
+this
+is
+round
+the
+motion
+so
+instead
+of
+constructing
+a
+snorhustic
+process
+as we
+did
+probability
+two
+with this
+graus
+process
+we are
+constructing
+a
+measure
+we are
+constructing
+a measure
+on the
+right
+space
+such
+that
+the
+evaluation
+becomes
+round
+the
+motion
+so
+okay
+when is
+the
+sequence
+tight
+so
+tightness
+has
+something
+to do
+with
+compactness
+compactness
+of
+functions
+has
+something
+to do
+with
+aceler
+ascor
+there
+are
+various
+versions
+of
+aceler
+ascor
+the
+standard
+version
+is
+uniformly
+bounded
+uniformly
+equicontinuous
+and that's
+not good
+enough
+and that's
+not good
+enough
+and this
+is this
+so
+we have
+two
+metric
+spaces
+kd
+and s
+rho
+and the
+version
+that we
+needed
+we are
+going to
+look at
+compactness
+not in
+the
+function
+space
+but
+in
+the
+range
+of
+the
+functions
+so
+what we
+need
+is the
+so-called
+modulus of
+continuity
+that tells
+us
+how
+continuous
+are
+functions
+how
+do we
+spell
+modulus
+and it is
+usually called
+verbal use
+so we
+take a
+function
+x
+and h
+and that's
+the maximum
+increment
+of my
+function
+x
+between
+any
+two
+points
+in
+time
+which
+are
+at
+most
+h
+apart
+from
+each
+other
+so
+I have
+matrices
+so
+my
+x
+backs
+from
+k
+into
+s
+so
+I
+evaluate
+the
+values
+of
+x
+켓
+x
+didn't
+store
+somewhere
+x
+is
+wrapping
+floor
+k
+do that
+And now the Böse of the Azela Böse is supposed to be.
+The Azela has to be the Böse of the Böse.
+Namely, a subset of continuous functions is compact if the range of all these functions is compact.
+That's usually very easy to check.
+And then we have to look at the terms.
+So the functions cannot be too discontinuous.
+And continuity is measured by the modulus of continuity.
+So it goes like this.
+A set A of continuous functions from K to S.
+I need the compact set of K, so let's start with this.
+So let K be compact.
+And I think this has to be complete.
+That's complete.
+We have a dense subset of K.
+So think of K as unit interval and B of the rational numbers.
+Then the set A, continuous functions from K to S, is relatively compact, meaning the closure is compact.
+If and only if.
+And the convenient thing is to reduce essentially everything to the range of the functions.
+Let me here.
+So the set XT of X A.
+So these are the values.
+Any of this function X can take a time T.
+So that's the subset of S.
+And I want that to be relatively compact.
+So that's usually a subset of R.
+So that's easy.
+Relatively compact for any T, I can do this point-wise, in my dense subset.
+So I check the values my functions can take at any rational point of time, number one.
+And number two, my functions cannot be too discontinuous.
+So I'm looking at essentially the maximum degree of discontinuity in some sense.
+And now I want uniformly equal continuous.
+And the uniformly equal continuous translates into this.
+Limit H to zero is equal to zero.
+So I have to check continuity properties and compactness of range.
+So in that case, so that's equivalent, these two points.
+And here I'm only testing for a damn subset.
+But if this holds, I can take the union of all these.
+So in this case, I can do this, P and K, X, T, X, Z, A.
+So this is point-wise compactness.
+And this, I'm just unifying.
+Take everything, yeah?
+So this is the ladder of A.
+So again, think of S as being R.
+Then that says my functions are uniformly bounded.
+And in R, this is the usual, uniformly bounded, uniformly equal continuous condition.
+So we are not proving at Sela Ascoli, but we are using R.
+So we want to use this at Sela Ascoli to identify a tightness criteria for probability measures on continuous functions.
+So this model of continuity thing suggests that we basically have to have functions which cannot jump too heavily in the sensor.
+So we need to control jumps.
+So here we go.
+So here we go.
+It goes like this.
+So we have all the spaces as well.
+One compact, one complete.
+And then I have a random sequence of functions.
+Sequence of random variables.
+So these are my interpolated random works.
+Then they converge in this illusion, which means their laws converge weakly.
+So if we do it, this is reconvergence.
+Reconvergence means tightness plus convergence of finite dimensional distributions.
+So the conversion of finite dimensional distributions is not negligible.
+This identifies the difference.
+And now we need something that basically gives me the tightness.
+And the tightness is linked to compact sets of continuous functions.
+And compact sets of continuous functions probably have something to do with this.
+So the condition that gives us the tightness is this one.
+So we are looking at expected continuities.
+This one.
+How continuous is my function on average?
+And this one here.
+So to make everything nice and integral, we bound it by one.
+Tightness has supremum of all elements in it.
+So we are putting a screw over n in one.
+And we want something continuous in the limit.
+So we set edge to zero.
+We want that to be zero.
+So hold this condition.
+So I don't have to write it all the time.
+Call it star.
+So star tells me each function I'm having on average is pretty continuous over small time and doubles.
+And if I set the time and double to zero, then it says they don't jump.
+That that's .
+So that's.
+That's modernity.
+So it is removed.
+OK.
+So.
+Um,
+I've got a stays reprove.
+Okay.
+Well.
+We know reconvergence is equivalent to tightness plus finite dimension distribution.
+We know reconvergence of the distributions of xn is equivalent to tightness plus finite dimension distribution.
+So the finite dimension distribution, that's part of our assumptions.
+So what we want to prove, we prove that if we have tightness, then we have this.
+This is the accomplishment.
+And the converse implication holds if we put convertence of finite dimension distributions on top.
+So then it says, the right hand side of my equivalent says, this is equivalent to tightness.
+Tightness by Prohorov is equivalent to relative compactness, and relative compactness plus this one is equivalent to reconvergence.
+Good. So let's first prove this. Tightness implies star.
+So instead of one, we assume xn is tight.
+So we know that it is just a compact set B.
+arbitrarily belong to B. That also is the tightness.
+all my X ends practically belong to P.
+So that's the titan's condition.
+Now we apply Ascoli-Altzela.
+Ascoli-Altzela tells me compact set means
+this here goes to Zip.
+So,
+we apply Ascoli-Altzela.
+And choose
+A small enough.
+Such that the modulus of continuity
+W H X
+is less than Epsilon
+for all X.
+Compact this.
+So,
+this means
+I go back here.
+Whenever
+I'm not in
+this is bigger than Epsilon
+I'm not in B
+so that probability is small.
+So,
+this means
+the soup
+probability of having
+a function X end
+modulus of continuity
+is bigger than this.
+Is
+small.
+So,
+now
+we go back here
+into the star condition.
+So,
+the star condition
+says
+an expected value
+is supposed to be
+small.
+Now,
+we cut here
+and it's important
+because this only turns
+us something
+about
+what
+what is the probability
+of something
+being non-zero
+basically.
+But it doesn't tell us
+what is the probability
+of something
+that's really big.
+But the really big
+has been taken care
+of by this one.
+If this were not
+the one
+I could not conclude.
+So,
+this increment
+with one
+is very important
+because
+this value
+here
+outside
+the set
+of measure
+epsilon
+could be really
+large.
+So,
+we need to put
+the truncation
+with two.
+This is the water
+at the point.
+So,
+this means
+star holds
+and it's very
+because of the
+truncation
+here
+this
+in
+with one
+as
+the probability
+of an event
+could be small
+but the event itself
+would be very large.
+So,
+this is the easy part.
+Tightness
+controls
+the modulus
+of continuity.
+So,
+now we do
+the other way.
+so now
+we assume
+we have
+star
+and we have
+finite
+dimensional
+instruments.
+So,
+we need to
+construct
+a compact
+set B
+where
+we have
+part of this
+and our
+hacemos
+we have
+here
+So, here, what this is, is a uniform L1 convergence.
+Expect the value of some random variables converged to zero. And L1 convergence implies convergence of probability.
+We need to get to a point where we can talk about probabilities of my function taking value somewhere.
+Because this is this condition of the last one.
+I look at ranges. So, I need to get from here to here. And this is this step now.
+So, L1 convergence implies convergence of probability.
+So, what do we have? I can choose a sequence of numbers H such that, through N, the ages I'm choosing correspond to this limit, such that the probability W
+is equal to XN. And now, I keep changing this H. H K greater than, let's say, 2 to the power of minus K.
+This is this limit. So, this is this one in here. This is this one. This K.
+This is less than 2 to the power of minus K plus 1 times Epsilon. This is this limit.
+Later, I want to consider finer dimension distribution. So, I'm going to have some probabilities of this variety here.
+So, I'm going to have some probabilities here. So, I'm going to have some probabilities here.
+So, I'm going to have some probabilities here. So, I'm going to have some probabilities here. So, TN
+So, TN
+So, TN
+TN
+TN
+TN
+TN
+of one-dimensional distributions. I'm looking at the convergence in distributions at these points in times.
+So by convergence of finite, and in fact in this case one-dimensional distributions,
+we know probability measures from Polish spaces are tight. So I know 2n probability xn.
+Now I'm checking what happens at time tk, and for this time tk I find the compact set ck,
+such that with more probability I'm not indecent. So less or equal for compact sets c1, ck in r.
+And this is for more k. We check k by k. Well, that already looks a bit like Artela Ascoli.
+Artela Ascoli tells me, okay, these things have to be compact, and I have this. Now what do we do?
+We take all the functions, or the functions that satisfy this, for all types. So b is the set of all continuous functions,
+is the set of all continuous functions such that for any point tk we are in ck, and wxhk is less than this.
+Like this. Point-wise compactness of ranges along a dense subset. Convergence of the modulus of continuity to zero. Uniformly. In x. No x. Uniformly.
+So, Artela Ascoli tells me this is compact.
+Okay, I'm just mixing up here so we go to school.
+I say K as above, but I do it for 0, 1 and R.
+I always use 0, 1 here, but I really actually meant this K.
+Sorry for that.
+So, this is compact and for all those, now I have to sum these probabilities.
+Okay, which results?
+So, again, the theorem says check the finite dimension distribution, which for our continuous
+time V scale random walk we have done, and here it says check the continuity.
+So, for the continuous time V scale random walks, this is what we have to do.
+Once we check this, we know our continuous time V scale random walks.
+Okay, questions about that?
+Yes.
+In the definition of V, this second part with the models of continuity, it should be, yeah,
+it is the complement of this set, right?
+The one in the bottom?
+Yes.
+Yes.
+Yeah, probably it should be...
+So, again, this checks this for a particular K. So, here we have particular point, here we
+have particular K. And now we need to do the limit for H to 0. And the limit for H to 0 is
+hidden in this one. But then it probably should be smaller than 2 to the minus K, and not the...
+K, okay, plus this one here.
+Yeah.
+Yeah, okay.
+And epsilon.
+It is...
+Yeah, I could have put any number here.
+Yeah.
+Okay, but you are right.
+You are right, you are right, you are right.
+And we don't need the epsilon.
+I'm happy to...
+But the epsilon also, right?
+But the epsilon, it belongs to the probability, right, not to...
+So, this is this one.
+Yeah.
+So, this stays.
+This stays.
+So, why did you want to remove the K?
+Because here we bound the value of...
+Ah, no, no, I see. Okay, sorry, sorry, sorry.
+You also want me to remove this one.
+Yeah.
+Yeah.
+Okay, thanks.
+Thanks.
+So, this...
+Right, yeah.
+And this one...
+The circle...
+Goes into this one.
+And the leg...
+One, two, three...
+Oh yeah.
+Wants to finish.
+Don't score.
+Okay, so then.
+Let's finish.
+Don't score.
+Okay...
+So then...
+Let's finish.
+Don't score.
+Well done.
+Let's finish Don't Score.
+So, section two, three, three.
+That has been discussed in probability two, but from a completely different perspective.
+Probability two was, okay, we know we have a Brownian motion, and then Brownian motion is something like the normal distribution for functions.
+And we're just summing up certain things, and out comes Brownian motion.
+Here, we don't need the existence of Brownian motion.
+We have sequence of probability measures, which has certain properties, as in Brownian motion.
+And now, we prove the sequence converges.
+And then, under this measure, the harmonic process is Brownian motion.
+So, this is another way, now, of constructing Brownian motion.
+The result of Don't Score is, of course, still the same, but we look at this from a different perspective.
+Okay, so back to our continuous time v-scaling random book.
+So, the question we have to answer, when is this time?
+And the previous result says, tied as a sequence of continuous functions.
+When is this continuous function?
+And the previous result says, look at continuity properties.
+And the modulus of continuity is assume the maximal variation of a function over intervals of a certain length.
+So, we need to look at something like running maxima here.
+So, this has something to do with maxima units.
+And to estimate those, we use the following result.
+By Mottobiani.
+The continuity of these sums, again, over certain increments, over time increments, have something to do with learning maxima.
+What is the maximum increment of these sums?
+The situation that we have is the following.
+We have a sequence, xi, in either unit.
+The expected value 0, variance 1.
+These are the xi's from our continuous terminal random book.
+We are summing them up.
+We will not be scaling here.
+This may be pedagogically not so wise, but this is how I put it in the lecture notes.
+So, the 1 over square root n-term that we have in S and into S and star we don't have here.
+It appears elsewhere.
+So, we sum everything up and we consider the running maxima of this.
+So, T star n is the max absolute value of the time.
+This is the max absolute value of the time.
+This is what we want to confine to a compact set for the time.
+So, we need to confine running maxima.
+So, we want to estimate the probability of the running maxima to be big.
+In terms of what?
+What do we have?
+We have the t n.
+So, we want to found the probability of this being large in terms of this being large.
+So, the probability of the running maximum being greater or equal to r.
+And now, as I said, I should have put the 1 over square root n here.
+Which I didn't, but I couldn't feel.
+So, here's the bit in the spirit of loops and equals.
+The running maximum of a nice martingale can be estimated by the value of the martingale at the time of the time.
+But we need a bit finer estimate here.
+So, less or equal than the probability of the absolute value of t n greater or equal to r square root n divided by 1 minus r square.
+It will become clear in a minute when we need to start.
+It's very important.
+So, this one here brings Kreml into the other side.
+Central limit theory.
+So, this is approximately the probability of the absolute value of the 0,1 random variable.
+And the probability of the standard normal random variable being greater or equal than something can be estimated in terms of the exponent of that something, minus the exponent.
+In particular, this is this red stuff here.
+Again, the red stuff is basically bound by exponential minus r square.
+So, if you put any polynomial of r in front of our probabilities and send this r to infinity, then that still goes to 0.
+So, in particular, limit r to infinity, r square, limit superior.
+The limit superior, again, we apply central limit theorem here.
+The probability of the probability of this one here is n bigger than, I guess, 2r square root n.
+So, I don't know if I have a mistake, minus the exponent.
+Infinity makes no sense.
+So this term is completely relevant for us. What is important is that this tail decreases
+sufficiently first in R, so that we can put the polarity over there.
+And this becomes important later, because later we are considering fluctuation
+into a random walk on time intervals of small size. And the size will basically, in the application
+later, will be something like 1 over R. So if we are looking at the interval 0, 1, we
+get R intervals. So we have to sum R of such probabilities, and we can do this until everything
+goes to 0. So this R becomes really important. Later, we consider certain probabilities over
+time intervals. And we're essentially having R intervals. So R times something like this.
+What's wrong? What's wrong with this? I'm not even sure.
+I'm not even sure. Can you open the house yet? I don't know. It came in the moment
+Oh, that was a mistake. Oh, that was a mistake. Oh, that was a mistake. Oh, I thought
+I had to go over here.
+Okay.
+Okay.
+So we consider level sets. The first time we exceed the level 2R is equal to K. We consider
+such events. AK is the set when running maximum up to time K minus 1. So we consider level sets.
+K minus 1 is less than 2R, so the 2R has not yet been crossed. And at time K, it has open
+up to the level 2R. So we compute this probability, or basically without the square root n, the
+relevant, and bounded by this from below. The probability of T n being bigger than R, so we take a partition of
+K minus 2R in the set A. So that is equal to sum K equal to 1 to 10, P T n equal to 0. And AK plus the event where
+this has not yet happened.
+We want to bound from below, we want to get the maximum in there. The running maximum, the distribution
+running maximum is hidden here. This is why we are introducing them. They carry information
+about the T star. So we want to do greater equal, blah, blah, blah, and then we would like to take
+unions of those. And that tells me something about what happened to the running maximum.
+We bound from below, so this one is irrelevant, greater equal, this one, greater R and AK. So next what we would like to do, we would like to bring in some
+independence. We are looking at the joint probability of two events there. It would be convenient if we had independent events.
+To do this, we would like to write it like this, greater or equal D. So my AK stands. And so what can I say? I can say I am above 2R at K and I am above 2R at K.
+So here is above 2R, here is above 2R. Meaning between time K and time N I am only allowed to move by R. But that would be fine. I am 2R here and I still want R here. So TN minus TK is less than V.
+So that's one way to satisfy this inequality. Don't move too much between N and AK.
+And the reason we do this. The reason we do this, those are independent. This only looks at what happens up to time K. And here I am summing my other liberating values. So these events are independent.
+So I can keep bounding my other liberating values. So I can keep bounding this. So that's a proper probability. So rather equal, I take the minimum of these probabilities. Min P TN minus TK less than R.
+And then having the sum of these probabilities. And then having the sum of the probabilities of those. And that translates into U.
+And what does this mean? This means, at some point, my running maximum exceeds 2R.
+So this is, I want to bound this probability by the running maximum. Here's where the running maximum comes in. That is the probability of my running maximum.
+is greater equal to 2A. And here I can use championship. So now I'll use championship.
+championship. So now I'll use championship.
+So championship is usually stated not with a lesser or equal, but with a greater or equal.
+championship. This is also simplified. So we apply championship to the running
+belt. This is also simplified. So we apply championship to the running belt. This is also simplified.
+So we apply championship to the running belt being less than something. So the probability of, let's say, TK being less or equal than C is greater or equal to 1 minus K
+K. K is the summing up normalized. So K is equal. The variance is K square. And here's the C. K over C square.
+So the whole thing above there is greater or equal. Now we choose C to be what R square root of N.
+Y square root of N. Y square root of N because we take K equal to 1 to N. And the minimum is attained to N. So this is greater or equal than K.
+So this is greater or equal than K times this one.
+And now we choose C to be what R square root of N.
+So this is greater or equal to N. So this is greater or equal than K times this one.
+So this is greater or equal to N. So this is greater or equal to N. So this is greater or equal than K times this one.
+Where's my 1 over r square?
+I'm missing the term.
+Ah, okay, where's my, okay, where's my mistake?
+This is a product. This one and this one. This is the one I'm interested in. This one, I'm applying cherry jifter. I get this number. I choose c is rn, r square root n, so this becomes an rn, and where's my infimo being attained if I subtract as most as possible if I choose k equal to n.
+So this number for this c becomes this number.
+So, the infotain, min, and tank, and can't be true. Here's my 1 over r square.
+Chebyshev gives me a number, a lower power for this probability.
+So, that's this.
+So, first thing.
+Chebyshev.
+Second thing.
+Central limit.
+Central limit.
+See you link to this.
+Tate estimate of moment.
+So, you already said there is assembly material element embedded in autism.
+So, if I'm having a zero-volt rate variable, then easy to show the probability of the absolute value being greater or equal than something is less or equal.
+This term is not relevant.
+This is x minus r square over 2.
+So, p of tn, this is what we want.
+This is by the central limit theorem converging to the probability of z being greater or equal.
+It looks good and I'll prove the probability of zero plus zero plus four plus two exercises.
+So, that's how the meter will be read and done because you don't know if you want to first перев in P2 IPs all the time may be make it clear.
+Calendar in the Recheck class cept.
+So.
+Thank you.
+Now we put everything together, Donzka says, and we don't need Brownian morph, I'm just
+using this here, so I don't have to write too much about any laws. Then the law of the
+Brownian morph converges weakly to the law of Brownian motion. So finite dimensional distributions we have, we need to improve tightness.
+And hence we need to prove this limit h equal to zero, expected value,
+more rules of continuity thing. So we need to look at continuity properties for our process.
+We apply Ottaviani. So Ottaviani tells me, look at something like this.
+As n of t greater or equal. Now Ottaviani said it had an n here and some time interval.
+So here we have compact time interval, R, and we choose here the square root of h.
+So we have slightly different scaling here. But that should not be so problematic.
+So we take the limit superior for n. And I take R square in front.
+here. And send that to infinity.
+My R is this one. Epsilon divided by square root of h.
+This is not the object we are looking at. We are looking at the S star object.
+We need continuity properties of the S star. So limit h to zero.
+Epsilon is irrelevant. R square turns into inverse of h.
+Limit. Limit. Limit superior n. Sub t. Sub t. Sub t is new. But we are looking at increments now over time intervals of a certain length.
+Where this time interval starts.
+Where this time interval starts for us is irrelevant. We are summing IRD random variables.
+So we are looking at the probability.
+Probability. Sub over an interval of length h. Increment of S star n. T plus h minus S star n of t.
+That's the model of continuity. That's the model of continuity.
+A continuous function. Uniform increment over an interval of length h.
+Right on the epsilon. We look here.
+Isu.
+Now, these are intervals over small time period. So now we divide the interval over small time period.
+So now we divide the interval into sub intervals of length h.
+Atila Ascoli has modulus of continuity. But modulus of continuity for function defined on 0, 1. And here we are only checking what happens over small time periods.
+If we want a whole time intervals. If we want a whole modulus of continuity, fine. We do this on 0h, h2h, and so on and so forth.
+If we do this, we need to sum, but this still goes to 0. So, we are summing. We need this guy here.
+We have 1 over h. We have 1 over h intervals that we need to sum.
+So, with all these preparations, this proof of Donska is relatively easy.
+In probability 2 we used embedding theories and everything.
+So, I think, yeah.
+Here is easier.
+You want to start early with your tutorial, right?
+Yeah.
+How much time do you guys need?
+I don't know.
+Maybe we need some help.
+Okay, then.
+Maybe we stop here.
+We continue at 11.
+And if you don't need all your time between the part of the browning...
+...the browning...

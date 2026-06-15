@@ -1,0 +1,966 @@
+There's one important difference.
+So this was, you take partitions,
+and, and, x, x, x, x, x, x, x, x, x, x, x.
+Now this is almost a Riemann's guiltism, but really only almost.
+Because if it were a Riemann's guiltism, we could take any point here.
+But we wrote this as a telescope sum, evaluating the functions at the left endpoint.
+So this left endpoint evaluation is kind of hardwired into the definition.
+If it were, again, a Riemann's guiltism in the classical sense,
+we could evaluate these functions at any point between Ti and Ti plus 1.
+But we have to do the evaluation at the left endpoint.
+And this is related to these motivating examples that we had.
+Maybe I should put the i here.
+So we had, at the beginning of the section,
+Okay, take a brown example pass.
+Now we can do this.
+Or, we can do this.
+So here, this was the right endpoint.
+And for this approximation, we choose the left endpoint.
+And we saw that the result is very different.
+So, in the right situation, we computed expectations.
+And the expectation was zero.
+And in the situation, the right situation, the expectation was T.
+So, this corresponds to the Kito endpoint.
+As defined here, with the left endpoint.
+And the right endpoint is the so-called Stratonovitjti.
+The E2 integral is, for good reasons, much more popular.
+So, for instance, when we applied this to the equation,
+the X is a brown example graph.
+Now, think of X as the stock price.
+Then this basically means, at time Ti,
+buy a certain number of shares,
+hold them until the end of the trading period.
+Catching the revenues, redo.
+If you would choose any other sample point than the left endpoint,
+you would be looking into the future.
+If I choose this one, here, the red one,
+I would base my investment decision today based on tomorrow's stock price.
+Which doesn't seem to be very reasonable.
+So, this is why the E2 integral is more popular.
+So, again, it's important to take this evaluation.
+So, our typical application
+was X to be controlled in sample class.
+And then we showed
+that quadratic variation
+for how the motion exists pathwise.
+So, for any omega,
+we know what a quadratic variation
+or for almost any omega,
+we know what a quadratic variation is.
+So, we can plug that in for X.
+And then,
+we have a notion of a Db integral.
+And this correction term here,
+in the vulnerability case,
+is just a standard Dt integral.
+Good.
+So far, so good.
+So, good.
+And another, it's an exercise in the part that we skipped,
+namely, I think 2.2, but it's not difficult.
+Vt square minus the bracket is a martiquet.
+So, Brownian motion is a martiquet.
+Brownian motion is a martiquet.
+Brownian motion is a martiquet.
+Brownian motion is a martiquet.
+It has increasing expected values.
+And what this bracket process does,
+it compensates for the increasing absolute values
+and basically holds those constants.
+constant.
+So, this is why this bracket here is sometimes also
+on the side of it.
+And the outlook is essentially the following.
+So, for Brownian motion,
+you first defined this in two sets.
+That required absolutely no assumptions on the partitions.
+It was all based on distribution properties of Brownian motion.
+All we needed was stationary normally distributed increments.
+And then we showed
+that we can upgrade to almost surely.
+And we have this property.
+That I just gave you.
+Bt minus the bracket is a martiquet.
+And so, what we are going to show later,
+for a general continuous marting game,
+we can, in a sense, still do this under some assumptions.
+We cannot do this.
+This is not fine.
+But we still have this.
+So, we are going to show that, for a general marting game,
+we can still define this compensator.
+And, call this marting game M.
+And we show.
+So, there is something like a bracket process
+that makes this a marting game.
+And, this bracket process,
+this is like a Lehmann sum.
+Quote, unquote.
+So, but the limit is in probability.
+So, this bracket still has,
+or let's say, look,
+Lehmann sum quadratic variation.
+So, Lehmann sum quadratic variation.
+We don't call it Lehmann sum.
+That's confusing.
+We still sum up square increments.
+And that still converges.
+But no longer almost truly,
+as in the Browning case,
+but in probability.
+And, there's a prediction assumption in L2.
+So, this idea of quadratic variation is not there.
+Except the pass-wise definition doesn't fly anymore.
+And, because the pass-wise definition
+of quadratic variation for general marting game
+doesn't fly, this argument is not flying.
+But, this argument was a pass-by-pass argument.
+So, we want to define stochastic integrals.
+When we put something under the Browning sample pass here,
+we need a different integration thinking.
+So, before we start this,
+we quickly talk about
+quadratic variation.
+So, we know when we can define a process like this.
+yt equal to 0 to t, g of x, x, x, x.
+So, we know when this exists.
+We look at Eto's formula.
+So, what do we need?
+g is this one.
+Right?
+So, we need g to be a gradient.
+So, we need g to be a derivative of something.
+Here's a derivative.
+And, because we need a second derivative,
+we need g to be 0.
+Okay.
+So, under these assumptions,
+this process won't exist.
+Our question,
+does this have a good vertical variation?
+And chances are attached.
+x.
+So, we start
+with the following easy proposition.
+Which is again,
+essentially an application of Taylor.
+So, one dimensional situation.
+X.
+Continuous.
+Of continuous.
+Tivertic variation.
+Take some.
+C1 function F.
+So, we look at F.
+F.
+x.
+take some c1 function f. So, we look at f complex. And we want to compute the quadratic
+variation of this process. What is this? This is equal to the integral 0 to t, f prime
+xs squared e squared. Now, the intuition is very clear. We want to compute square increments,
+sum of square increments of f. f is smooth, so we can again apply Taylor. If we apply
+Taylor, we have increments, we have some derivative, multiplied by increments of x. Now that we
+have to square, so that gives the derivative square sum of squared increments. Squared
+increments converge to this. And then, there are remainder terms which need to vanish.
+So, to prove, we apply a completely deterministic argument. So, as a smooth, so f of xdi plus 1
+m of xdi is what? It's the value of the derivative at the left end point, sorry, left end point.
+So, here's the remainder term, times increment plus the remainder term. Now, again, which form, we assume f is in c1, so our remainder term can only use the first derivative. So, again, we use our most form. Next, I'm
+going to use point xdi minus xdi minus xdi minus xdi. So, this guy, we need to take the square of these increments and sum up.
+sum over
+d squared is what? Now, foremost, of course, we have this one. This one squared.
+So, what happens to this one? Well, we know it. This was a little bit more proposition earlier. This converges precisely to this n.
+So, this goes to what we want.
+And what is the remainder term?
+So, what is the remainder term?
+So, what is this rest for? Well, what do we have? We have this one squared, which is convenient because it is delta i x squared times this one, and then two times this times this.
+In either case, we can have delta i x squared. So, this is less or equal.
+This. And then, this term here is multiplied by the square of this. The cross term is multiplied by this one. But this is uniformly small. Continuous. Continuous. If my meshes goes to zero, this goes to zero.
+So, that's over. So, this here, in absolute values is small. And this term, I'll get both here, and we take the cross term. So, there is the C entry.
+The C entry. This one is finite. So, this one is finite. So, this one matches. So, we stay the smooth transformation of our X process.
+The quadratic variation is integral. It's an integral with respect to the quadratic variation of X. And the integral is F prime squared.
+So, what we wanted. So, what we wanted is this one. What's the quadratic variation of this one? So, let's see.
+What we wanted. So, X as a model. Continuous, continuous quadratic permeation. One dimension. We take a C2, a C1 function, the electron gene, which is engraved. So, anti-generative
+of C2.
+Of C2.
+And the integral process of C2.
+Then, the integral process is a quadratic variation. What is the quadratic variation? It is integral
+D squared.
+The integral process. It is integral D squared. It is integral D squared. It is integral D squared.
+It is integral D squared. It is integral D squared. It is integral D squared.
+Why is this the case?
+Essentially, an application of Ito's formula,
+along with the fact that if we are adding something of bounded variation
+to something of quadratic variation,
+the quadratic variation of the sum is not affected by the bounded variation part.
+So Ito tells me this.
+Now, in my notation over there, this is little g, this f is capital g.
+So Ito tells me
+capital g of xv minus capital g of x0
+is my stochastic integral, my yd integral, capital g prime, which is my little g, dx.
+plus one half correctional.
+0 to t, second derivative of capital g, third derivative of little g, xs, d, xs.
+For the record, that's my capital g, that's my little g.
+Ito tells me it's clear and absolutely not that you mean it is a difference in notation if you are confused.
+So, okay, what do we know?
+Let me guess the constant.
+This one is along with variation. Why is this along with variation?
+Why is this not always a variation?
+So what would we have to do? We would have to compute
+increments. Now the increment
+if we're integrating over small time numbers, we can just
+take the soup of G prime and then
+this is an increasing process. So
+I think before this capital
+V
+of
+this integral
+is less or equal
+the subnormal
+G prime
+X is continuous, G prime is continuous
+so that's finite
+finite time intervals
+times
+this is an increasing process
+it's a quadratic variation
+part
+X T
+so
+that's
+the
+boundary variation part.
+So on the left hand side
+we have something
+plus a constant
+that doesn't change
+the quadratic variation
+so
+if we take quadratic variation
+on the left
+it just comes from G of X
+and this too
+doesn't contribute to quadratic variation
+so
+our variation means
+this is the
+quadratic variation
+so the quadratic variation
+of G
+is precisely the
+quadratic variation
+of Y
+but now this above proposition
+tells me
+like computers
+the quadratic variation
+of
+the quadratic variation
+of
+G of X
+is equal to
+derivative of
+capital G square
+that's little g
+square
+Xs
+the
+bracket
+which
+so
+equal integrals
+have quadratic variation
+and the quadratic variation
+are integrals with respect to the quadratic variation
+of
+the integrator
+so
+our working
+in the 100
+now
+is geometric
+crony motion
+so geometric crony motion
+was this one
+and we knew
+this has
+an implicit
+solution
+which is
+usually computed
+using E2
+well
+we can now
+compute the quadratic variation
+quadratic variation
+so called as a stock price process
+the quadratic variation of the stock price process
+process
+is an E2
+integral
+plus
+a DT
+integral
+the DT
+integral
+of course we can
+ignore
+so DST
+is
+S T sigma
+DBT
+this formula
+tells me
+square
+the
+integral
+integrate
+with respect to
+S
+so that is
+sigma
+0
+to T
+S
+in
+d
+square
+square
+square
+in
+particular
+if
+let's say S is the price process
+then
+S T is observable
+and quadratic variation is observable too
+we take our time series
+sample at sufficiently high frequency
+and we know the sum of the square increments is approximately the quadratic variation
+so
+at least theoretically
+the quadratic variation is also observable too
+so
+at least theoretically
+the quadratic variation
+is also an observable quantity
+so
+let's say
+sigma square
+is equal to
+the quadratic variation
+divided by
+the integral square of the price
+integral of the square price process
+so
+in that sense
+the quadratic variation
+is also an observable quantity
+so
+at least theoretically
+the quadratic variation
+is also an observable quantity
+so
+let's say
+sigma square
+is equal to
+the quadratic variation
+is
+sigma square
+observable
+the volatility of the price process
+is
+in principle
+an observable quantity
+of course
+my mu completely crops are in the picture here
+my quadratic variation
+then tell you anything for mu
+mu is a finite variation
+that's
+that's
+that's not part of the story
+yeah
+so
+this is only true for second
+so
+this is not true for mu
+we had a little
+discussion in the international monday
+about difficulties
+estimating these mondays
+and i'd like to talk a little bit about this now maybe ten minutes
+because
+i think it's a nice application to see
+so
+let's see
+so
+let us assume
+both mu and sigma
+are unknown
+unknown
+for some reason
+we believe in geometric Brownian motion models
+for asset prices
+but we don't know the parameters
+so we want to estimate
+so
+can we estimate
+and the story about
+the volatility being
+the
+the quotient of two observable quantities
+suggest
+that
+yes
+sigma square
+we can easily estimate
+with mu is more tricky
+that's why
+actually
+okay
+we sample
+prices
+at that center times t0
+t1
+t2
+up to t
+we have a
+finite
+sample period
+and let's assume for simplicity
+we sample every second
+so
+we have a fixed
+sample
+now
+with the error we can play
+we can sample every hour
+we can sample every minute
+we can sample every second
+if we want
+we can sample every another second
+whether this reason is a different question
+but in principle we can do it
+we have enough data
+okay
+now we take logs
+we look at the log for this one
+so
+ri
+is a logarithm
+sd i plus one
+over
+sd i
+we have explicit solution formula for geometric problem
+solution is
+initial price times an exponential term
+if i'm
+if i'm sampling my data series
+that plays the role of s0
+okay
+so this is equal to
+from my
+solution formula
+mu minus one half sigma square
+times
+length of the time interval
+length of the time interval
+is that
+delta
+plus
+and then comes the brownian part
+and the brownian motion part
+we can write
+we want
+sigma
+square root delta
+times
+zi
+zi
+stands for the brownian increments
+so
+zi
+i
+i
+d
+n
+zero
+one
+it's n zero one because
+i put the square root data here
+so
+now
+remember
+there are different ways
+of defining
+estimating
+estimators
+one is nearly square
+estimator
+what is this
+this is basically
+other density
+my density depends on parameters
+observer realization
+and i'm asking myself
+which
+which
+is the parameter
+which makes this
+valorization
+most likely
+among all possible parameters
+all this is an exercise
+on the details
+in the lecture
+also
+that
+three
+so
+for geometric
+general
+geometric
+streak
+so
+for
+the drift
+for mu
+it is equal to
+one half
+here
+so
+what would i do
+i would just average
+my observations
+to estimate my mean
+but
+the mean comes here in camouflage, which they won't have sigma squared.
+So in the sigma squared, I also don't know.
+So I plug in an estimator plus 1 over delta r bar.
+Well, r bar is just the mean return.
+And then the sample here is, so it's the mean log.
+And my estimator for sigma, the maximum likelihood of the estimator is, I estimate the linear covariance.
+And since I don't know the mean, I'm plugging in the sample average.
+So maximum likelihood of the estimator.
+If you want a consistent estimator because mu is unknown, the mean, you would have to choose an n minus 1 here.
+Let me record this for the basic stochastic class.
+Okay.
+So, now what is this?
+That's the key.
+So, what is not very difficult to show is that the sigma hat converges to sigma.
+Okay.
+So if the sigma hat converges to sigma, then if this goes to something like mu minus 1 half sigma squared,
+the sigma hat is 1 over delta r bar is 1.
+My return always has this term.
+Mu minus 1 half sigma squared.
+The delta is cancelled.
+Plus, so I'm using n times delta is the length of my sampling period.
+This is where this assumption comes in.
+So, then it's 1 over delta, this is this one, 1 over n, sum of Brownian increments, delta i, b.
+So, square delta zi corresponds to the Brownian increment over my small time worlds.
+So, what is important is that this is the true parameter.
+This is not the estimator.
+The estimated volatility.
+This is the true, yet unknown volatility.
+And that's the trouble.
+So, plus, but I guess there's a sigma missing here.
+Sigma.
+Now, here I'm just summing my Brownian increments.
+Btn minus bt0.
+I'm just summing them.
+And delta times n is the length of the sampling period.
+Divided by tn minus t0.
+So, now I'm having two options.
+I can either say, well, let me sample every second and just sample it as long as I wish.
+So, option number one.
+We hold a sampling period first.
+We hold a sampling period first.
+And send n to infinity.
+Of course, this is not working in practice.
+My sampling period is one minute.
+I cannot send n to infinity.
+I've only found many data points.
+But immediately, it can be better.
+So, what happens in that case?
+In this case, this term vanishes.
+Btn minus bt0 is equal to zero of almost three.
+Low of large numbers.
+I'm summing ever more Brownian increments.
+I'm summing ever more IID random variables.
+I'm dividing by n.
+Low of large numbers.
+This goes to its expected value.
+The expected increment of Brownian motion is zero.
+So, in this case, this vanishes.
+So, this is gone, which is fine.
+And, exercise, the estimator for the volatility converges to the true value.
+So, there we see this central average of returns here converges to mu minus one half sigma square.
+Mu head is equal to one half sigma square plus this one.
+So, this one gives me mu minus one half sigma square.
+This goes to sigma square.
+So, my mu head goes to mu.
+But, for this I need this contribution.
+My estimator.
+So, that's good news.
+If I have enough data points, my estimator for the unknown volatility and the unknown drift converges to the true value.
+The problem is, this is what works in practice.
+So, option number two.
+We hold the observation period fixed.
+So, this is the same solution.
+Only here.
+Okay.
+But, now we increase the sample frequency.
+Okay.
+So, one can again show, to estimate the volatility from, this is the same thing.
+So, this is the same solution.
+Only here.
+Okay.
+But, now we increase the sample frequency.
+Okay.
+So, one can again show, to estimate the volatility from quadratic variation, I only need a millisecond
+of data.
+We've seen this.
+Sigma square is quadratic variation of F divided by integrated price process.
+So, the fact that my maximum likelihood estimate for the volatility still converges to true value, not true price.
+But, now the trouble is this guy sticks.
+You know?
+If I hold my trading theory fixed, then this one does not manage.
+It stays.
+So, my mu path converges to, because the sigma still cancels.
+It comes with the sigma, and this one cancels.
+So, that's good.
+To mu, as before.
+But, now I cannot clear this problem.
+Mu plus an unavoidable moisture.
+And this makes the estimation of the drift so difficult.
+So, I can give you a year of data, and you can sample as frequently as you wish.
+There's always a noise probe in your estimate.
+In your estimate.
+And one.
+Hands.
+Sigma.
+This is the easy part.
+This one.
+This one.
+This one.
+This one.
+This one.
+This one.
+This one.
+So.
+All this is embedded in an exercise.
+For the long weekend.
+Okay.
+So.
+Questions about chromatic variation of stochastic intervals.
+Could you explain again, like, why do we take the estimator of sigma as one one?
+So.
+All this is embedded in an exercise.
+For the long weekend.
+Okay.
+So.
+Questions about chromatic variation of stochastic intervals.
+Could you explain again, like, why do we take the estimator of sigma as one one?
+Sigma as one over n and not one over n minus one?
+We don't know the true mean, right?
+Because of this one.
+But, well, I mean, we want this to hold, right?
+And for it to be a consistent estimator, it should be one over n minus one.
+Yeah, but the, we take a limit, we take limits.
+So, you are right, if you take the expected value of this one, it would not be sigma.
+It would not be sigma.
+It would be sigma only if you divide by n minus one.
+Yeah.
+But we take limits here.
+Oh, in limit it doesn't matter.
+In limit it doesn't matter.
+In limit it doesn't matter.
+Because the term converges to one.
+Yeah.
+Maybe we can also clarify the terms.
+I think that consistent means that it's unbiased in the limit n goes to infinity.
+And so, like for small n, this estimate is not unbiased, but for large n it is.
+And so, it's consistent.
+Oh, it's consistent but not unbiased.
+Yes, exactly.
+Yeah, but there is this problem that if the mean is unknown, have one less degree of freedom.
+Okay.
+Okay.
+Other questions?
+Good.
+So, here, take home message is this, this browning instrument.
+It stays.
+Okay.
+By large numbers, if I sample it takes frequency forever, fine, it's gone.
+Better.
+Else is not.
+Okay.
+So then, is my outlook still on the table, here, on the board?
+No.
+Okay.
+So the outlook was, we would like to do what we did for rounded motion, namely compute quadratic
+variation, and eventually take integrals from all general processes.
+And this is what we do.
+Or at least what we start doing.
+Okay.
+So, quadratic variation of continuous loop.
+What is a local martingale?
+A local martingale is a stochastic process that, if we stop it properly, is a martingale.
+It is usually very easy to show that something is a local martingale.
+It is required, often, substantial work to show that something is a true martingale.
+And it's not difficult, not easy to find an example of a local martingale not a true martingale.
+I show you one in section four.
+So, we recall again, for Brownian motion, we defined,
+the quadratic variation in the volume of two sets, and a claim from this morning, the quadratic
+variation compensates for the increase in expected values of the spare process.
+Okay.
+So, we would like to generalize.
+First definition.
+First definition.
+First definition.
+First definition.
+First definition.
+First definition.
+A stochastic process then.
+Number one.
+Second definition.
+A stochastic process then.
+Living somewhere.
+This is called local martingale.
+This is called a local martingale, if there is a so-called localizing sequence.
+Of stopping times, tau n. What does that mean? It means, first of all, my stopping times increase to plus infinity almost truly.
+Second, if I'm stopping my stochastic process using any of the stopping times, it's a martingale.
+The stop process, m or n. This is a martingale.
+So, loosely speaking, a local martingale is a martingale up to some explosion time.
+You have to, by stopping the process, you kind of have to prevent the process from exploding.
+Of course, any martingale is a local.
+They'll just send tau n to be plus infinity.
+So, just stopping times are allowed to take the very presentivity.
+So, question is, when is an open martingale and a true martingale?
+We will ask this question in the next six or seven weeks very often.
+So, one condition, what do you want?
+In principle, so we have martingale property for this one.
+So, in principle, we know that tau n goes to infinity.
+So, if I'm just taking the limit as n goes to infinity of this guy, it goes to n. No problem.
+But for the martingale property, this with an s appears inside expected values.
+So, I need a condition that allows me to move the limit into the expected value.
+So, I need some condition that allows me to try dominating convergence.
+And one such condition is this one.
+So, we have a local martingale.
+Then, we introduce the runnings of Rimo.
+The circle up to Rimo.
+So, if the runnings of Rimo at any point of time is integral,
+then M is a martingale.
+Then, M is a martingale.
+It is not enough.
+Sometimes people think that it's true.
+In red, soup, this is not enough.
+We need to robust the running maximum.
+So, the proof is easy.
+It's dominated convergence.
+So, we have a local martingale, so we can take a local lighting sequence.
+Local lighting sequences don't have to be unique.
+Of course.
+If you have one, you can just take a new stopping time, sigma, and which is the integral.
+So, we have a local martingale, so we can take a local lighting sequence.
+Local lighting sequences don't have to be unique.
+If you have one, you can just take a new stopping time, sigma, and which is the interim of tau and then N, for instance.
+So, then we know, if we stop things, the stop process is a martingale.
+So, M T, M T, inf to N, given F S, is M S, inf to N.
+Now, what's inside here, this is less or equal to running supremum.
+So, because of that, I can use dominated conversions.
+So, this one goes, this is not a problem.
+This goes to N S, because T goes to infinity.
+I need to move the limit into the expectation.
+With the habit of this inequality, I can do this by dominating .
+Limit.
+Limit.
+Limit.
+Limit.
+Now this is a very strong condition
+Can we generalize or can we find something simpler
+And local martingale means I prevent something from exploding, in a sense.
+So it is, in a sense, related to uniform interoperability.
+So a family of random variables is uniformly integrable, and one by one is not enough, as we all know, we need one plus epsilon.
+And then there's an equivalent condition that says, if you don't take deterministic times, or you take stopping times, then it works.
+If you only test, as long as we call the deterministic times, you cannot determine whether it's uniformly integrable.
+But if you randomize the times where you test, then there's a condition for uniform interoperability in terms of stopping times.
+And there's something similar for global martingale.
+There's this famous condition, something of class D. Don't ask me what the D stands for.
+This theory was developed by some French probabilists, and they followed their own conventions.
+What does class D need?
+We take sets of stopping times.
+Calligraphic T.
+This is the set of old, tall, moist, minus one.
+So there's a filtration sound.
+And there is T, calligraphic T with a superscript T.
+And now we state, uniform interoperability condition for stochastic processes.
+It guarantees they are martingales, if they are martingales.
+So the stochastic process, my notation, x, is of class D.
+I'm sure D has some meaning, I don't know.
+Respectively, of class D, L.
+So the L is of the stochastic process.
+If the set of old x-core will store any finite stopping times.
+Respectively, and only localizer.
+x-core, x-core, and t-t.
+If these sets are uniformly integrated.
+x-core, x-core, and t-t.
+Looking, x-core, x-core, and t-t.
+If these sets are nailed, then pass over to class D.
+Once moreς Vereins does.
+So.
+våthsばeta.
+If I'm having a uniformly integrable marticle, we know stopped marticles are marticles, and
+uniform integrability is inherited by stopping. Then, of course, it is of class T. Then, the stop process is uniform integrability, and x is class T.
+Now, let's say x is the local marticle.
+So, we have a localizing sequence. So, once we stop with some to n, we are basically helping ourselves from this set of stopping turns.
+We know if something is uniformly integrable, that's good. Again, we can move limits into expectations.
+So, if it's a local marticle of class Dm, then we have the localizing sequence.
+So, this is x, s, inf, tau. And this is the local marticle.
+So, if these were all plus infinity, it would be a true marticle. So, in this case, we can exclude.
+So, this is the finite stopping time. So, it says, of class Dl, all this is uniformly.
+So, this family.
+So, this family is uniformly integrability.
+That's what class Dl says.
+So, you can take any stopping time. It has to hold forward.
+Same here.
+Uniformly integrability.
+Good.
+So, it can take limits.
+So, x, s, s, is equal to Vm.
+It says, the noble martingale of class Dl is a true marticle.
+What about your own words?
+So far, no assumptions on continuity. Just integrability. Now we bring additional continuity. Continuous. Local marking.
+It's a marking there. Continuous in that case, of course. If and only F, it is not class D.
+If it is of class DL, it is a marking. So this one, we already have two. And we don't know if it's not class DL.
+It is a marking. So this one, we already have two. And we don't need continuity for this.
+What do we need continuity for? So now we want to prove that a continuous
+martingale is not class DL. So we need uniform integrability. So we want to link, basically,
+something, a process, to its terminal value. Because then we know it's uniformly integrability.
+And which equation does that? Dupes.
+So.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+If.
+It's a continuous matter.
+If M and more, no rotation, okay, it is a continuous marking.
+The loop tells us that M-tor option center is equal to E and T given M-tor for M-tor that is so equal to T.
+Class DL says, we measure the process at bounded stopping times.
+We want something uniform integral.
+Here we have the easiest form of uniform .
+Just conditional expectations.
+So, hence, this one is equal to E.
+So, we need this.
+Honestly, not now, but many times later.
+So, the theory that we want to prove is this one.
+So, in the spirit of what we did from Brownian motion except for the pass-wise definition.
+So, we have a local, a continuous local margin here.
+We need a little bit more.
+We want quadratic increments.
+So, we better have square durability.
+Otherwise, that makes no sense.
+So, we consider a continuous square integral.
+So, the soup of the second moment is finite.
+Local margin here.
+For instance, brownie movement, but something else.
+We normalize.
+Starting in zero.
+Then, there exists an almost surely unique process.
+So, arctic process.
+And T, called the bracket of N, or compensator.
+With the point properties.
+It starts in zero.
+And it's non-decreasing.
+Second, Browning motion square minus bracket to Martin K. Same here, empty square minus
+compensator is a continuous local mark, as in the case of Browning motion.
+And then, but in some sense only then.
+So we have to prove the existence of this compensator first, leaving a character with it.
+So this links the compensator to a vertical variation.
+For any sequence of partitions of some finite interval, the quadratic variation causes up to time t of my load
+marking way along the sequence of partitions.
+Again, I remember, recall, for Browning motion, we first showed L2 convergence.
+And L2 convergence didn't require any additional assumption of the partitions.
+That came in for the almost two convergence via Borenkateri.
+I'd love to ask that question in any time.
+Okay.
+So this converges to the bracket process.
+For Browning motion, it was an L2.
+If we impose slightly longer conditions on the partitions, we also have L2.
+In general, we don't, right?
+We have UCP.
+And UCP stands for Uniformly Compact Sets in the Compact Sets.
+So this maximum difference between the quadratic variation process and the bracket process
+on compact time interval is converges to zero in probability.
+The regular process of Browning motion has all these properties.
+There are a few more.
+There are a few more.
+There are a few more.
+A few more comments.
+The proof is postponed next week.
+Let's say we have a true Martin.
+Square T.
+In that case, the second voting point says MT square minus the bracket is a Martin.
+So in particular, the second moment is equal to the expected value of the bracket.
+And this allows us to make statements about, for instance, uniform integrability of our square integral
+of Martin here in terms of the compensator.
+So we know for L2-bounded Martin here are uniformly integrability.
+So if, for instance, we can show something like this, then we have uniform integrability.
+Okay.
+There's a little remark now that's actually a little bit of skipping.
+Okay.
+The bracket process is almost truly unique.
+So in particular, if M is a continuous square integral.
+And actually, let me introduce some notation with this.
+Calligraphic M log 2.
+M for Martin here, 2 for square integral, log for local Martin here.
+And then everything starts at 0.
+So let's put it at 0.
+Let's put it at 0.
+That's the notation we're using data.
+Continuous local Martin here.
+Continuous square integral local Martin here starting at 0.
+And then we have the stopping time, then the stop process belongs to the set as well.
+For marting gas, you already know this.
+Stop marting gas or marting gas, option assembly.
+For local marting gas, this is up for your new result.
+And we can, in particular, also compute the bracket.
+So my option is sampling.
+We know M g squared minus r is a continuous local marting gas.
+Okay.
+It's a local marting gas.
+I make the argument for a marting gas because just put the localizing sequence here, then it's a marting gas.
+So that's a local marting gas, and then introduce the new storing time.
+So that's a local marting gas.
+The prime option is sampling to the process where we have to localizing sequence.
+So optional sampling tells me this one is a local marting gas as well.
+And the bracket process is almost truly unique.
+So the bracket, the stopped process, this is the stopped process.
+And here is my compensator.
+And there's almost surely only one.
+The bracket, the stopped process is the stopped bracket of the process.
+So the local marting gas property is inherited by stopping, but that's not, in a sense, not the key statement.
+The key statement is this one.
+What does the bracket process behave?
+Bracket or the stopped process is the stopped bracket.
+So now, I was incredibly slow today.
+I still have three more pages, but time is out.
+Good.
+That is so good.
+And then, yeah.
+Okay, let's drop here.
+Thank you.

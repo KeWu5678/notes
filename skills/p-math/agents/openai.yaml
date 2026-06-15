@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preferred Math"
+  short_description: "Format math explanations for terminal readability."
+  default_prompt: "Use $p-math to explain this with Unicode math in aligned code blocks."

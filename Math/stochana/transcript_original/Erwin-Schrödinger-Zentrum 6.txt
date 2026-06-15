@@ -1,0 +1,1713 @@
+so my understanding is section one has been finished so we continue with the probably
+most important continuous time marking here which is brownie motion
+and i refocused section two a little bit that's the reason why only section two one and two two is all right
+so two one brownie motion is a gauss process
+that has essentially been covered in both dirty clears and my stochastic two course so i just recall
+the essence of it section two two this binary deconstruction i also just give you the essence
+because what i really want to do i want to focus on section two three pro theory and the construction
+of brownie motion in terms of a certain weekly conversion sequence of probability measures
+that too touches in some sense on something we have done in discrete time theory
+when we discussed donsker's invariance donsker's invariance principle says you give me a family
+of rescaled random walks they converge in distribution to brownie motion but that proof
+in probability two that required the existence of brownie motion
+if you take a broader view you can actually use donsker to also prove the existence of brownie motion
+and there's a much deeper structure behind that on which we are we focus today and on Thursday so just
+just to be called what is the brownie motion is the stochastic process
+we will be called b or w we call the wiener process defined somewhere
+this is why this is usually also called the standard brownie motion you can start it anywhere you want
+then it has stationary normally distributed increments so for all so let's start at zero
+we have finitely many points in time the increments bt one minus bt zero okay t dot is zero so that is zero here
+so the increments are normally distributed with a certain covariance matrix
+so we only have diagonal entries in this matrix meaning our increments are independent and
+the standard deviation so the volatility of the variance equals the length of the tidal totem
+and then you may or may not add b has
+so if you drop the continuity sentence for pre-brownie motion you have to use the distributional properties
+and combo go off chance of to say it as a continuous modification
+okay construction number one again we already with you this to save some time brownie motion
+as a gauss process
+so in my discrete time probability course we didn't use the word gauss process but
+we used
+normal distributions consistent quantity of measures with normal distribution that's what behind us
+so we just recall
+from probability two
+combo go off extension theory what does it say it says give me a nice metric space
+polish base complete
+separable metric space we're going to use polish space a lot today and on thursday
+so give me
+a consistent family of finite dimensions so i have some index li usually a time interval
+i take
+finitely many points and i have a probability measure
+with respect to these finitely many points so let this be a consistent
+family
+of finite dimensional distributions
+on finite product spaces
+s to the power of j and we have polish so we have metric if we have metric spaces we have portal sigma fields
+this we call cartographic s to the power of j so we can take the
+uh product to the power of j then
+we find a unique probability measure p
+on the big space
+on this one
+one
+which has this family as finite dimension distributions
+so we say okay now
+and then we use to construct
+So we said, okay, now
+we can specify the finite
+dimension distribution of the process in a consistent way
+we construct this measure, and then what we do
+we take the process, we just at any time little t
+basically projects the value of the process
+at time t minus
+So that was Cornel-Colders' extension viewing
+and then what is relatively easy to show
+is if you have a process with finite dimension distributions
+are Gauss
+then everything is defined by one function
+namely the covariance function
+What is the distinctive feature of covariance function?
+So what is gamma?
+Goes from i times i to r
+or positive same definite
+and symmetric
+then
+there exists
+a Gauss process
+so a stochastic process
+whose finite dimensional distributions
+are normal
+so we can do it
+with x
+such that this is the covariance function
+and for Brody motion
+this was the infinite
+this was the infinite
+so now what was the problem?
+we have a stochastic process basically
+where do we define it?
+we take projection mapping
+for our stochastic process
+so we have some process here
+depending on t mapping to r
+and so on
+so
+the space
+on which we are working
+in this case
+is the space of measurable
+rear-building functions
+and the problem is continuity
+and what is the real problem?
+and there is a dilemma
+there is a dilemma
+there is a difference
+in this case
+if we just work
+with the finite dimensional distributions
+if we just work
+with the finite dimensional distributions
+we a priori know nothing
+about continuity
+we are constructing
+a stochastic process
+on this omega
+and that says nothing
+about continuity
+okay
+so
+the problem is
+continuity
+and what is the real problem?
+and what is the real problem?
+and there is a dilemma
+there
+the proof is not very long
+so you can just
+check it out
+if you like it
+you know
+you could say
+why can I not just
+take my probability measure
+which corresponds
+to these finite dimensional distributions
+via Kolmogorov
+well
+the problem is
+we can equip this
+with the modern sigma field
+the usual thing
+that we are
+we used to do
+if we do
+sigma fields
+or product spaces
+we take products
+of sigma fields
+now that
+that's okay
+to a certain extent
+but it's no longer
+okay here
+so
+the polar sigma field
+on this set
+is not
+the polar field
+of r
+to the
+law of zero infinity
+it's much bigger
+so
+this is why
+it's not working
+and
+in fact
+this is the space
+that we like
+this is the space
+that we like
+we would like to have a measure
+which
+is concentrated
+on the set of continuous functions
+we want our brownie motion
+to have continuous sample parts
+so
+one is inclined to think
+just take a measure
+which is concentrated on this
+but the problem is
+this
+is not a measure of a set
+the proof is
+the proof is
+the direction of the intuition
+is very simple
+all the sigma fields
+are smaller sigma fields
+such that
+finite dimensional projections
+are measurable
+all the sigma fields
+are generated by
+so
+if a polar field
+only looks at what happens
+at finitely many points in time
+how can it capture continuity
+no way
+no
+it can evaluate
+the function of a
+many points in time
+but
+that does not mean anything
+about
+continuity properties
+so
+that's the intuitive reason
+what goes wrong here
+so
+just saying
+restrict the measure
+to the set
+and renormalize
+is
+okay
+and
+then
+we know what comes
+and our rescue
+our rescue is
+called
+Bogorov-Chentsov
+that says
+if I have a
+spochastic process
+which has some nice
+hurler continuity property
+on the level of expected values
+then that has
+a hurler continuous modification
+and this hurler continuous
+hurler continuous property
+on the level of expected values
+for Brownian motion
+follows immediately
+from the global distribution
+are you writing your
+yes
+I have one question
+so
+when you say you
+equip r to power of zero
+to infinity
+with the Borel sigma algebra
+as opposed to the product
+sigma algebra
+what do you mean by the
+Borel sigma algebra
+for that space
+well we have a metric space
+if we have a metric space
+if we have a metric space
+we have a notion of open sets
+if we have open sets
+we have the Borel filter
+so what's the metric
+on that space
+this one
+you can just
+restrict
+and sum it up
+but
+we have an
+uncountable product
+actually I'll introduce it
+later
+it's
+we can ask the same question
+for this one
+yes that's true
+there's a couple metrics
+I can think of
+which are not all equivalent
+yeah I mean it's a tricky space
+yeah
+it's a tricky space
+but it's still
+you can define a metric there
+and then you can
+you can go
+border of this
+and you can do
+this
+and this is a bunch bigger
+now
+this
+this equality
+if it's just fine
+then it's fine
+or countable
+it's okay
+you have this
+you have the identity
+then everything grows
+but not for the uncountable
+to the uncountable
+so this
+so this
+it's
+just
+it's in the notes
+with the details
+spread out
+let's just want to spread it
+so
+so
+just record it
+it
+it says
+if
+we have
+something
+like this
+possible constant
+then we have
+a
+other
+continuous
+multiplication
+then we have
+a
+other
+continuous
+multiplication
+external
+meaning
+the probability
+now
+pass-wise
+sufficiently
+small
+time increment
+the time increment
+may depend on the path
+yeah
+there's an omega
+in h
+so
+the exterior
+t
+minus
+the exterior
+s
+divided by
+t minus
+s
+to the power of
+gamma
+less or equal
+delta
+is equal to
+one for some
+delta
+and all
+gamma
+less than
+alpha
+over beta
+or beta over alpha
+alpha
+but there is a gamma
+for which you can do this
+and that gives me
+a
+continuous
+modification
+so
+that's the construction
+for probability
+to
+cross-process
+finite-dimensional
+distribution
+comma
+Golov's extension
+theorem
+gives the process
+which is not
+necessarily
+continuous
+comma
+Golov's extension
+gives the
+continuous
+modification
+no matter
+no matter
+which
+this
+grid time
+took
+that was
+covered
+the second construction
+I think
+I didn't do it
+is the
+leader
+leaving
+construction
+so Brownian
+sample path
+are specified
+by
+normal distribution
+normal distribution
+of second moments
+so you can view
+a Brownian sample path
+as an element
+in L2
+L2 has an
+orthonormal basis
+so the idea
+is
+to write a Brownian
+sample path
+as
+a random
+composition
+of
+basis
+functions
+in L2
+and the reason
+I'm saying
+what it is
+is
+the spaces
+on which
+you construct
+Brownian motion
+are very different
+so
+for the Gauss
+it closes
+it goes
+this way
+so
+what is
+immediately
+reconstruction
+we need
+the probability
+space
+that supports
+family
+of
+independent
+standard
+normal
+random
+variables
+so
+take your
+complete
+normal
+basis
+of L2
+see
+as complete
+of the
+normal
+system
+basis
+of L2
+let's say
+you are interested
+in Brownian motion
+on
+zero
+t
+so
+call this
+in the direction
+of the
+standard basis
+and then
+the approach is
+this
+you take
+the process
+x t
+and what
+we do
+we take our
+random
+variables
+and multiply
+them
+by the
+integral
+of our
+normal basis
+up to time
+t
+so
+that would be
+the inner
+product
+indicator
+zero
+d
+phi
+phi
+n
+x
+sum
+z
+n
+basis
+function
+integrated
+up to
+time
+t
+okay
+so
+so
+now
+this
+v
+construction
+is not really
+a stand-alone
+construction
+because
+so
+the intuition
+tells us
+x is
+constant
+and of course
+it's an infinite sum
+it's by no means
+guaranteed
+that this
+the sum
+makes sense
+we have to prove
+that
+who can I turn
+that off
+we have to
+it has an order
+it doesn't have an order
+sorry what does it mean
+c-o-n-s
+complete orthonormous
+concrete
+so
+yeah
+so
+we would
+expect
+this sum
+to make sense
+which is actually the hard part
+and then it would be
+a sum of
+basically
+normal random variables
+and we would expect
+that we can interchange
+the expectation
+and the sum
+all those here
+have
+zero mean
+so we would think
+that this is true
+then we would also think that
+what is this
+so
+so
+we would have a double sum
+n-m
+z-m
+z-m
+z-m
+so now our z
+are i i e
+the only thing that
+basically survives
+is the one with the z square
+is the expectation in front
+and
+this one here
+if m is equal to m
+those two are
+all normal
+so they integrate
+to something nice
+and then here we go
+to the infimum
+of t and s
+so we would expect that to be
+s
+the infimum
+is t
+so
+intuitively
+that's the property
+from construction number one
+yeah
+we have a gauss process
+with the right
+co-parent structure
+so all this has to be made precise
+that the sum exists
+and
+integration
+and
+limits
+can be
+changed
+what
+what is
+is the direction
+and
+it's really
+not
+what i
+would want to focus on
+on this
+and
+i would like to focus on this
+this one
+and
+i would like to
+this one
+and
+i would like to
+understand this one
+and
+i would like to
+understand this one
+and
+i would like to
+when sequences of probability measures have converted subsignatures
+so if we are in real analysis
+we have a bounded sequence
+we know it has a bounded sequence
+we know it has a bounded sequence
+so if we are in real analysis
+we have a bounded sequence
+we know it has a converted subsignatures
+we would like to have something similar on probability measures
+okay
+and
+that's the
+the focus of section 2
+and the part of the lecture
+that's still under construction
+so
+we convergence
+of probability measures
+and
+that's the
+the
+the
+the focus of section 2
+is the part of the lecture
+that's still under construction
+so
+reconvergence
+of
+probability measures
+of
+probability measures
+and
+power of
+strength
+so
+again
+from
+probability 2
+it said
+the
+variance principle
+if
+we have a Brownian motion
+of
+Brownian motion
+so
+the existence of Brownian motion
+has already been shown
+that's what we assume
+then
+we scale
+random walks
+so
+we were summing up
+IID
+variables
+let's say they take the value of
+0
+and 1
+and
+at each point
+in time
+we move up
+one step
+or we move down
+one step
+then we rescaled it
+we made the up and down
+movements smaller
+we scaled by a factor
+1 over n
+and
+at the same time
+we increased
+the number of events
+we scaled
+time
+by a factor
+no
+we did
+the up down movements
+is factor 1 over n
+and
+time
+for scale
+by a factor
+n
+and then
+that converged
+to Brownian motion
+back then
+this was essentially
+presented to you
+as a method
+to construct
+a Brownian path
+just take a random walk
+and look at it
+on the right scale
+now
+our question
+here
+is can we actually
+prove the same thing
+without knowing
+that we already have
+Brownian motion
+so can we just
+look at
+the distributions
+of a family
+of v-scaled
+random walks
+and can we somewhat
+prove
+that they converge
+to a probability measure
+on the right space
+such that
+the canonical process
+under this limit
+is Brownian motion
+so
+the question is
+can we use this
+as a means of construction
+this convergence
+that's our question
+so the question
+is the following
+we are given
+a family
+or sequence
+of probability measures
+and the benefit is
+we are now working
+right away
+on
+the space
+of continuous functions
+again
+think of this
+as v-scaled
+random walks
+we had a random walk
+and we interpolated
+them linearly
+so these were
+continuous functions
+so
+we have probability
+measures
+on
+this space
+in parentheses
+together with
+this
+on
+sigma
+that converge
+weekly
+to some probability
+matter
+here in the same space
+such that
+the canonical process
+xd
+omega
+omega
+is now a set of functions
+so
+each trajectory
+little
+omega
+is just
+mapped
+on its value
+at time t
+canonical process
+and we want that
+to be
+to be
+around the motion
+under p
+that's our question
+so the immediate
+difference
+to the gauss process
+situation
+is this
+omega
+our omega is
+from the onset
+from the onset
+and lie
+space
+the space of
+continuous
+functions
+so what are the
+questions
+those
+of course
+we can define v-scaled
+random walks
+no issue
+so those we have
+question number one
+let's be modest
+we don't really want
+them to converge
+but actually
+something like
+accumulation points
+would be fine
+so we have a function
+and if we have
+started converging
+what do we do
+we see whether
+there are accumulation points
+and if there are
+accumulation points
+we'd like to prove
+that they are all the same
+so
+the question is
+does this have
+accumulation points
+if we have to
+double them
+in real analysis
+Bolzano-Weierstrass
+tells us
+something has to be
+bounded
+but that doesn't make
+sense if we have
+probability results
+bound
+so we need something
+else
+for this
+and then
+are all
+accumulation points
+if we have
+now the same question
+for stochastic processes
+is this easy one
+because two processes
+coincide if they have
+the same distribution
+and distributions
+are uniquely determined
+are uniquely determined
+by finite dimensional
+distributions
+so
+this question is about
+check finite dimensional
+distributions
+that's usually the easy part
+so if we have an accumulation point
+then what would be the limit
+good
+this is the difficult part
+what is
+what is
+a canonical
+substitute
+for boundedness
+what
+what
+could use in real analysis
+and the canonical analog
+is
+that
+is
+but
+maybe
+first
+so we equip
+this space here
+with a metric
+so usually if we have finite time intervals
+we just take
+the super
+okay we don't have finite time intervals
+and the way to cope with that
+is
+tc
+make a conversion
+we truncate
+at one
+so
+we call it truncation to the space zero td
+so we equip
+the c space
+with uniform convergence
+and then
+we know
+maybe even from real analysis 101
+this is a nice space
+yeah
+any continuous function
+or compact set
+can be approximated by a polynomial
+and
+polynomial with rational coefficients
+so in particular
+that space
+c
+equipped with this d metric
+is separated
+a separate rubber
+this base c
+is
+a separate rubber
+is
+a separate rubber
+already known as
+complete
+metric
+space
+and it's quite a published space
+and it's quite a published space
+so that's the good news
+okay it's a very nice topological structure
+the bad news is
+it is at the same time
+the prototype example
+of a topological space
+which is not locally compacted
+so this metric
+does not allow you
+to approximate the complexes
+and say that as good
+compactness in this space
+it's quite restrictive
+why is this important
+it's very important for us because
+uh
+is functional analysis still
+a prerequisite for anything here
+probably not
+okay
+who has taken
+who has not taken
+not
+identify yourself
+okay
+uh
+ba ba ba ba ba
+reads representation theory
+rings a bell
+it says
+give me an operator
+a linear operator
+non-negative
+like a measure
+an integral
+plug in
+take a measure
+integrate
+a non-negative function
+with respect to the measure
+out comes something
+non-negative
+it's linear
+so give me a linear
+non-negative
+continuous operator
+which is mobilized
+you plug into one function
+out comes one
+then that operator
+says reads
+is basically a probability measure
+and then comes a big if
+if your underlying space is nice enough
+and your underlying space has to be locally compact
+because the set of test functions
+is the set of functions continuous function with compact support
+therefore
+later we have a lot of these operators
+but we cannot apply reads
+because our space here
+is not locally compact
+and we'll see
+that this is where
+we have to work a little bit more
+but where this
+support chamber
+comes in
+one other thing that we need
+we have analysis
+we have analysis
+one
+everybody knows
+if you ask
+people
+what does
+compactness
+mean
+they say oh
+rounded and closed
+no
+that's not true
+yeah
+that's true
+but it's not true
+in general
+what's the general
+equivalent
+that's the definition
+that's the definition
+but it was not finished with my question
+so
+that's the general definition of compactness
+yeah
+Heide-Bourette is not the definition
+it's the result
+but there's something
+very closely related to Heide-Bourette
+in general spaces
+totally bounded in a complete space and closed
+totally bounded and closed
+and you need for this a complete space
+there
+so
+and we did that
+in an analysis
+I remember this matter
+but
+so
+in a complete
+and that's important
+I don't remember which direction it is
+one is
+one doesn't need it
+the other needs it
+in a complete metric space
+we call it x
+we have a Polish space here
+we have a Polish space here
+a set K
+is compact
+or relatively compact
+if you want to draw closeness
+if and only if
+it is closed
+and totally bounded
+and totally bounded
+and totally bounded means
+you can cover it by finitely many boards
+give me a finite number of points
+draw some epsilon neighborhood around it
+sum them all up
+and then cover x
+so that is
+an equivalent characterization of compactness in nice metric spaces
+our space of continuous function is a nice metric space
+so
+we will make use of this
+today
+and
+on Thursday
+repeatedly
+incredible
+means
+all this
+stuff
+from the analysis
+okay
+so
+here we go
+we have a nice space
+here we go
+we have a nice space
+here's a specific space
+we can define it to borders
+the graph it
+here's a specific space
+we can define it to borders
+the graph it
+there will be a little exercise
+in the
+in the lecture note
+that says
+okay
+the border sigma field
+we know what it is
+it's generated by open sets
+the border sigma field
+at the same time
+in the space
+it's the smallest sigma field
+continuous function measurable
+and it is also
+the border generated by the cylinder
+so in this case
+what caused trouble previously
+namely that the border sigma field of r to the power infinity is too large
+now is fine
+continuous functions are measurable
+with respect to the sigma field generated by cylinder events
+hence only looking at finitely many points in time
+talking about exercises
+so we had some brave people that were here to present something on Thursday
+you were one of them I think
+and your companion
+anybody interested in taking over the next week's shift?
+I'll ask again at the end of this
+I'll ask again at the end of this
+is it just presenting any of the star marked exercises?
+yes
+okay
+or like one that hasn't been presented?
+one or two of them
+there is a temporary schedule on the moodle page
+okay
+someone rightly pointed out that I mixed up Monday and Thursday so I had a list I think for Mondays
+but of course on Thursday
+so you volunteer?
+I haven't really looked at it
+if you have absolutely no idea I have sample solutions
+okay
+just drop me a mail and I send you the unpolished cell for solutions
+okay you need support you need more of a
+yeah okay
+maybe you can send me an email that we coordinate which ones you
+yeah okay
+yeah okay good thank you
+good
+um
+okay so what we want
+what we want is we want to construct the Wiener measure
+and the Wiener measure is this
+we want to construct the probability matter
+on the set of continuous options
+such that the canonical process
+for the projection I think
+is the Brownian motion
+then this piece called the Wiener measure
+Robert Wiener was the first to rigorously construct Brownian motion
+and
+so this is our Wiener from now on
+this one here
+okay
+that's the sample space we can work with
+omega
+b c
+p
+is called to be a space
+omega
+b c
+p
+is called to be a space
+omega
+b c
+p
+p
+p
+p
+p
+p
+p
+p
+p
+p
+p
+p
+p
+p
+p
+and again
+for the Gauss
+for the construction via Gauss
+omega is different
+so
+here we broke directly on c and bypass
+Komogorov chainsaw
+continuous multiplication
+good
+so the way we do it
+again is this
+take the laws of these scale random books
+and make sure they complete
+and the key theory is due to power
+and the key theory is due to Prohorov
+so Prohorov theory is basically the Volsano-Weierstrass version of probability measures
+and time is
+of probability measures
+so Prohorov's theory if you restrict it to probability measures on r the real line is essentially trivial
+you
+I go as far as you say you can do it in probability one because it's all about distribution functions
+it is surprisingly complicated in general settings
+so
+we take the middle of the road
+we prove it first for r
+so we get a feeling of what this is all about
+and then we prove it for polar spaces
+where we have lots of structure
+and that's our prime
+object of interest here
+so that's a polar space
+ok
+so that's what we do
+so
+let us recall
+deconverted probability measure when integrals of bounded continuous functions converge
+subtlety at this point is
+you have to use all bounded continuous functions
+not
+bounded continuous functions with compact support
+you can use compact support if you know that your limit is already a probability measure
+then compact support is enough
+but in general it's not
+and that's where the problem lies
+this is where this becomes a problem
+so
+so
+we have a sequence of probability measures
+they converge
+weekly
+to a probability measure
+mu
+it's an underlying state space
+if, and now we use
+for this notation
+mu n of f
+which is the integral
+of f with respect to mu n
+converges to f d mu
+which we call mu n of f
+for all bounded
+continuous
+but f m
+from now we're always on symmetric space
+we now introduce
+the notion of compactness
+for
+probability measures
+probability measures
+and again a side remark
+you write it
+you define compactness
+in terms of order and compass
+there's a second notion of compactness
+every sequence is a convergent sub sequence
+there's a sequential compactness
+now if you're only working with R
+then they're always the same
+you wonder why do you distinguish
+so in metric space you don't have to distinguish
+but at this stage we do not know
+that the set of probability measures
+is in metric space
+we didn't introduce any matrices
+so we have to be very careful
+about what kind of compactness
+we're actually talking about
+but we want convergent sub-sequences
+so we want sequential compactness
+and then you'll take the sequence
+ok
+summmistsion
+and always have in mind the set of continuous functions
+so our spaces are not that trivial
+so function spaces
+I'm starting with the family P of probability measures
+E, this is called relatively
+A is the second notion we define
+weakly, relatively, sequentially compact
+any sequence in P has a weakly converted subsequence
+because the limit doesn't have to be in P, therefore relative compound
+if any sequence has a weakly converted subsequence
+now that sounds familiar
+we have the portugate
+and we have what?
+we call it sub-sequences
+so what's the analogon of what Sano-Vaiascha see?
+we prove later
+it's so-called tightness
+so this family is called
+so this is weakly, relatively, sequentially compact
+and it is called tight
+if essentially
+all my probability measures live on a compact set
+up to sub-eps
+if
+if
+like the epsilon
+there exists a compact set
+k
+such that
+all my probability measures
+put
+at most
+mat
+epsilon
+for all
+outside my compact set
+so heuristically
+they live on a compact set
+heuristically
+when I have a tight family
+and when I want to verify reconvergence
+I can use test function with compact support
+that's the idea
+that's the idea
+okay
+a family
+of random variables
+what it is
+is called tight
+the district
+not even though
+it is
+called tight
+but this is the assumption
+so
+it is
+like
+the
+the
+the
+the
+the
+the
+the
+the
+the
+the
+the
+the
+And Kroarov's theory says,
+You don't need polish, but this is what you do before.
+Then sequential compactness or weak sequential compactness is equivalent to tightness.
+The family of probability methods P is weakly, relatively, sequentially compact.
+So, we go back to what we want.
+So, we go back to what we want.
+So, we go back to what we want.
+So, we go back to what we want.
+We take the laws of our random walks, that these laws of the random walks have, if it go to the limit,
+normal distributions fall from central limit theory.
+So, that's the easy part.
+So, Kroarov tells us, they are, they have weak accumulation points if they are tight.
+So, what we have to prove is that essentially, our random walks stay, after the scaling, in a compact set.
+Up to some more.
+That's not relevant.
+So, in that case, you have our combination points.
+And then we can apply central limit theory to say, all your combination points have the same kind of distribution.
+Hence, the thing must converge.
+So, that is what we want to do.
+So, one direction is easy.
+Maybe convergent implies tightness.
+That if things converge, then the support of my measures won't explode.
+Makes sense.
+The other direction is much harder.
+So, here's the easy part.
+So, again, we are on Polish spaces.
+In particular, we are on complete metric spaces.
+In particular, compactness is equivalent to closeness plus total boundless.
+Keep that in mind.
+Very important.
+Okay.
+So, the easy part is this.
+Weak sequential compactness implies tightness.
+So, we take a weakly sequentially compact sequence.
+We take a sequence of probability measures that have a sub-sequence.
+We need to construct a compact set on which they practically evolve.
+So, we are on a Polish space.
+So, we know it's separate.
+It has a dense subset.
+A comfortable dense subset.
+To call it X.
+Again, we assume E is Polish.
+Now, we take some balls.
+So, we take balls of this diameter one over little n.
+And we take capital N of this.
+So, this is the union of the first capital N balls around these numbers with radius one over n.
+I think the notation should be clear.
+Okay.
+So, any point of E eventually is in one of those.
+So, for any little n, if I set capital N to infinity, this converges.
+So, here's a little claim that we prove in a minute.
+And we'll see that if this claim is true, everything follows.
+And the claim is this.
+So, we take the probability of the complement of those.
+So, what we want in a sense, take sufficiently many of these balls, take the closure, that's
+the center, that's what we want.
+So, we look at the complement.
+We'll take the sou over all p.
+Curly p is our set of probability measures.
+We take the infimum over the number of balls, that's capital N, and the supremum over the little n.
+And we call this number delta.
+And our claim is that zero.
+So, we'll be very friends with that.
+So, if this is true, then I claim you already have one.
+Then, okay, sou over n.
+For any n, less n.
+Inf over capital N.
+There exists.
+Capital N, depending on if it is capital N prime.
+Such that sou over p, sou translates into for any.
+Inf there exists.
+Inf there exists.
+So, for any pp, for all pp, the probability of A and the complement is sufficiently small.
+Let's say epsilon divided by 2 to the power of A.
+This follows from this one.
+So, we take the intersection of all n.
+Why are we introducing this set here?
+Because we know of only one index.
+There's only the capital N index, no?
+So, we can take this one.
+So, each of those, here, by construction, is a union of finitely many boards.
+So, if we take the intersection, it's totally bounded.
+Yeah?
+I can cover my A set by A1 n prime 1, and that's covered by a finite number of open boards.
+So, this is totally bounded.
+So, this is totally bounded.
+Hence, relatively compact.
+It also is compact because E is complete.
+So, the fact that our state space is polished already enters here.
+We need the dense, the counterweight and the subset to define the boards, and we need the
+completeness to have relative compactness is equivalent to total boundaries.
+There's noatter-down panel, but-
+So, this is totally awesome.
+What is this?
+So, can you ask some questions so I get a drinking break?
+Yes, question. Good.
+Not a formal question. How would one come up with this data?
+How you come up with it? That's the magic of math. You take a shower and suddenly lightning hits you.
+This happens all the time. I don't know. I like intuition a lot.
+But sometimes it just hits you.
+Must have been a good shower.
+I like riding my bike here. I have many good ideas on the way back.
+So, it's so relaxing to just cycle back and then ping. That's how bad it works.
+Okay. So, okay. So, we say that we compact, so conjecture is if we close, that's the set we're looking for.
+Okay. So, then we have to prove that, so this guy here is compact. I take the complement and I want this to be at most epsilon regardless of P. Okay.
+So, that's less or equal then P because I take the complement. If I take A complement.
+And this, I just sum up the probabilities of these complements.
+Okay. So, here, previously there were two indices, little n and capital N. And now, I have only one.
+So, I sum it and that's epsilon over two n. So, that's epsilon for all P.
+Okay. So, now, we need to verify this delta business. So far, we never used v-convergence.
+So, your delta must have something to do with v-convergence.
+And v-convergence, for Montau theory, tells us something of probabilities of open sets and closed sets.
+So, this is where the v-convergence comes. So far, the v-sequential compactness has not been used.
+So, now, we verify the clock.
+So, let's go back to the definition of the delta. Okay.
+So, soup in soup. There exists n such that now we are turning these things around.
+Previously, if we had for all little n, there's a capital N, but that was because of the inequality that we wanted.
+Now, we turn the inequality around, we turn the there existed for all around.
+For all n, there exists p n such that p n a complement little n capital N is greater or equal delta over two.
+So, now, I have a sequence of probability versions.
+So, by assumption, there is a weekly conversion subsequence.
+So, by assumption, there exists a weekly convergent subsequent p n k.
+So, like p n k converges weekly to some probability measure p.
+Now, we use Portmonteau.
+Portmonteau characterizes v-convergence in terms of indicator versions.
+We convert it about continuous functions.
+Strong conversions about indicator.
+But if we have v-convergence, we can still work with indicator if we have the right inequalities.
+So, by portmonteau, we take a complement.
+So, that's a closed set.
+This is my limit applied to the closed set.
+That is greater or equal for closed set is limit inferior.
+The secret.
+That's k here.
+P n k.
+A complement n.
+A complement n.
+And n.
+Now, we can turn.
+Okay.
+Now, I have, again, too many indices.
+k here and n here.
+I want the same ends.
+But I can do this.
+My n k is increasing.
+I can do this.
+I can do this.
+The k is u.
+And why do I want the k there?
+Because here, my for all that exists, has the same index here and here.
+And this we have now achieved.
+We have the same index here and here.
+So, we know this.
+So, but we know more.
+What do we know about this?
+Didn't we define a and n to converge against e or something like that?
+So, wouldn't the complement?
+No.
+That was the same.
+Yeah.
+No, we did not.
+No.
+No.
+No.
+Here.
+We have lots of indices.
+And we don't have an index here.
+The little n, that's just the diameter.
+The one to play with, obviously, is the capital N.
+And this a n, capital N, if we increase n, it goes to the whole set.
+So, if we take the complement, that goes to the empty set.
+So, this one converges to the empty set for n to infinity.
+My A sets exhaust e.
+So, the complements go to the empty set.
+So, the whole thing here, the p, goes to zero for n to infinity.
+So, I can make the right hand side of my inequality as small as I want.
+And the lower bound is delta over two.
+So, from this one, we see that delta must be zero.
+That was all taken.
+So, if we have a combination point, my sequence must be practically overcompensed.
+That's the easy part.
+So, if you have questions about the easy part.
+From where do we know part Montau, here?
+Sorry?
+From where do we know part Montau, which we use?
+I do.
+Thank you.
+That's very helpful.
+It's in, you took it with me?
+Yes.
+Scepter 4.
+One of the very last theories that we covered.
+It was used when we did Domskopf.
+You can use an order earlier.
+We basically did it at the very, very last moment.
+Don't ask about the page, but it was equivalent characterization of new conversions.
+You should still have the lecture on this.
+And we're not there on the Google page of this course.
+Okay.
+So, now, let's take it easy before we delve a bit deeper into the subtleties of format.
+If it E, what's the thing about reconvergence or probability measures of E?
+What's the one big difference that you are working on E?
+The one thing that you only have in the R?
+Your distribution functions.
+You don't have it in general spaces.
+You have it in R.
+And part of the problem is that if you are in R, reconvergence of probability measures is equivalent to point-wise convergence of distribution functions.
+You don't have to check the point of continuity of the limit.
+You don't have to check the point of discontinuity of the limit.
+But if you have a family of probability measures, one R, this is called as point-of-distribution functions.
+Reconvergence is equivalent to point-wise convergence of distribution functions.
+And point-wise convergence of functions will analysis one.
+So, we use this.
+The whole thing is essentially a coronary of this composition.
+It's called heavy selection theory.
+Now, every convergence is equivalent in R to convergence of distribution functions.
+And why is it not trivial?
+Is it not trivial because distribution functions are good, increasing, right, continuous, uniformly bounded.
+But the set of distribution functions may not be compact.
+But Sela Ascoli tells us it will also need equi-continuity.
+And this we may not have.
+So, there is no obvious way, a priori, to say we can extract a convergent subsequence from a family of distribution functions.
+But Healy's theory goes its first step in that direction.
+Let's have to follow.
+Take a set B of functions, F, from R to R, right continuous, so that's one of distribution functions, increasing, again property of distribution function, and bounded.
+Distribution functions are bounded.
+But distribution functions are more than that.
+Distribution functions have limits.
+If we set X to negative infinity, it's zero.
+If we set X to plus infinity, it's one.
+That's missing here.
+That's missing here.
+That's not a set of distribution functions.
+The limit behavior of F is on specific.
+And this is exactly where the tightness comes up.
+If our family probability measure is tight, then that essentially provides information about the limiting behavior of these functions.
+And then we can talk about distribution functions.
+Yeah?
+This is not a set of distribution functions.
+That's exactly where the length of the tightness comes up.
+So my F's here are only bounded, not necessarily uniformly bounded.
+Let's say we have a uniformly bounded sequence, F, uniformly bounded.
+Then we have a point-wise conversion subsequence.
+Then there exists the function F in V, and the subsequence, F of K, such that F of K of X converges to F of X.
+For all, in the spirit of V converges, for all continuity points of L.
+This is essentially a diagonal output.
+So what are our ingredients?
+We have right continuous functions.
+So we used that many times before.
+It's enough to know these functions on a dense subset.
+So it's enough to define everything on Q.
+So let's take a representation of the set Q.
+So then Fn Q1.
+My Fn is uniformly bounded.
+So that's a bounded sequence that converges along the subsequent.
+So let's call it N1.
+K.
+Take the second rationale along the subsequent.
+Q2.
+Reverges along another subsequent.
+N2 and so on and so forth.
+So we can take the diagonal sequence.
+Then, along the diagonal sequence, we converge for any rational form.
+To some function F tilde Q for any little Q in Q.
+How do we define F tilde for general X?
+We want the right continuous function.
+So we approximate the right.
+So for general X.
+Let's take a look.
+The approximation from the right.
+Q in Q, of course.
+So then, this is right continuous.
+We need to verify that my limit is again in this function.
+And this is this function space here.
+So then F is right continuous by a construction approximation from the right.
+And it's again increasing.
+And since my F sequence is uniformly bounded.
+It is also bounded.
+It is also bounded.
+So my limit belongs to V.
+So this one has been checked.
+Checked.
+Now we need to check this.
+The conversions.
+So the conversion is to be checked for the continuity points of the limit.
+So if F tilde is continuous index.
+Okay.
+So what do we do?
+We sandwich X.
+Take Q1, Q2, relational numbers, and sandwich X for Q1.
+That's what we do.
+That's what we do.
+That's what we do.
+That's what we do.
+Okay.
+Okay.
+F tilde is continuous.
+So we can also assume F tilde of Q1 is greater or equal to F of X minus epsilon.
+That's what we do.
+So let's take a little bit.
+And then F tilde of Q2 is greater or equal to F tilde of X plus epsilon.
+So that's what we do.
+So let's take a little bit.
+We don't know if the limit exists.
+So we take the limit to the limit.
+Limit superior of F and K of X.
+Convergence, we have a long directional numbers.
+So F and K of X.
+X is less or equal to Q2.
+F is increasing.
+So I can do this.
+And here I can take a limit.
+So we still want to prove that this converges.
+So we better take the beam super in.
+Here we know the limit exists.
+Because that's how we define F2.
+Because this limit, we know, is F tilde of Q2, which is bounded from 12, by F tilde of X plus epsilon.
+So likewise, the same argument is the limit.
+Liminf F and K greater or equal to the same argument.
+And then we arrive here.
+La, la, la, la, greater or equal to the limit.
+So liminf and lim sub are in an epsilon map out of F tilde.
+So this means the limit exists.
+Checked.
+So if we have a set of functions which have all the properties of distribution function except the limit, we can extract a concursor sub sequence.
+It's not a set of distribution functions.
+So we have to make sure this limit, F tilde, has the right limits at plus and minus infinity.
+We proved this on Thursday.
+That's where the tightness plays in the board.
+Okay.
+Questions?
+Comments?
+Comments?
+Complaints?
+Good.
+If not, thanks for coming.

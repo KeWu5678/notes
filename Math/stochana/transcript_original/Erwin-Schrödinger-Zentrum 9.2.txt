@@ -1,0 +1,971 @@
+We want to construct a bracket or compensator.
+And what was this?
+So this was a process that starts at zero.
+The process is non-decreasing.
+And this process compensates for the sub-Martingale property of the square.
+So m squared t minus bracket is a continuous local Martingale defense.
+And we want to identify this bracket process as something like a quadratic variation, like for Brownian motion.
+But we prove that this quadratic variation converges in a weaker sense to this process.
+So we assume throughout, sub-M is continuous square integral.
+By this we mean the expected value of m t squared is finite for all t.
+We do not assume L to boundedness.
+We do not assume uniform integrability.
+We just assume that the second moment exists.
+So that's our standing assumption.
+So suppose we have the bracket.
+We constructed the laser.
+But let's assume from now we know it.
+Then we can construct the so-called covariation process.
+So we take two continuous square integral local Martingale, called m and n.
+When we talked about functions of quadratic variation.
+We introduced this covariation.
+We said, well, we sum up the product of increments and hope it converges.
+And then there was something like polarization identity.
+But in this case, we just define it.
+The covariation is one-quarter n plus n bracket minus n minus n.
+So two local Martingales square integral continuous, square integral continuous, etc.
+Translates or carries over to sum and differences.
+So this exists, you know.
+So this exists.
+So this definition makes sense.
+So then, a bit of algebra.
+This covariation process tells us something about Martingale properties of the product of Martingales.
+Usually we take the product of Martingales, we do Martingale identity.
+And that's the bracket process.
+Again, this one manages.
+So what is relatively easy to see if we take the product, m times n, and we subtract the covariation.
+Then it is equal to m plus n squared.
+So that makes sense.
+So that makes sense.
+And we have a square integral.
+Minus the covariation of the sum.
+We're going to divide by 4.
+Minus the square of n minus n minus n over 4.
+So, continuous local Martingale square minus its bracket, that's a continuous local Martingale.
+Same here.
+So this is a continuous local Martingale.
+This is a continuous local Martingale.
+So this is a continuous local Martingale.
+Now, in real analysis, we know the notion of a scalar product.
+And we have a notion of orthogonality.
+Orthogonality of two vectors means the scalar product is zero.
+In probability, we have different notions of orthogonality.
+Orthogonality and strong orthogonality.
+So we call our continuous local Martingale, m and n, or Thogonality, if the inner product,
+in other words, the covariation, is zero.
+Okay.
+Product minus covariation is a continuous local Martingale.
+If the covariation vanishes, the product is a continuous local Martingale.
+And we have conditionally independent or unconditionally uncoordinated increments.
+So, I say up to stopping.
+I don't want to write all the stopping types.
+Okay.
+It's an automatic answer.
+Stop everywhere.
+Let's just drop this.
+So, the conditional expectation of the increment is what?
+Well, there's n, t, n, t.
+There is m, s, n, s.
+And then we have the cross terms.
+But we have Martingale property.
+So, the cross terms become n, s, n, s.
+So, by Martingale property, we have the n, t squared minus n, t, n, t, n, t minus n, s, n, s.
+So, since we have orthogonality, this is equal to the Martingale property.
+So, always true.
+That's the Martingale property.
+But if this is orthogonal, this is it.
+Why is it not plus m, s, n, s, since we are multiplying minus m, s times minus m, s.
+Yes.
+So, m, t, n, t.
+Yes.
+So, m, s, n, t.
+Yes.
+So, m, s, n, t.
+Yes.
+So, m, s, n, t.
+Yes.
+So, m, s, n, t.
+A condition.
+That's m, s, n, s with a minus.
+There is another m, s, n, s from here with a plus.
+And there is m, s, n, s here with another minus.
+Ah, yes.
+All right.
+Yes.
+So, one comes with a plus.
+This one here.
+That one comes with a plus.
+And the other ones come with a minus.
+Yes.
+I feel like for the Martinger property we normally assume that s is smaller than t to use this.
+We are just assuming that.
+Yes.
+Okay.
+So, in other words, if my continuous local marting gates are orthogonal in this sense, then the product is a local marting gate and we have a conditionally
+unconditionally uncorrelated increments.
+Now, orthogonality is sufficient for the product to be a marting gate.
+On the other hand, if you already know the product is an open marting gate, then we close the product and product minus the product.
+If you already know the product is an open marting gate, then we close the product and product minus the record.
+It's an open marting gate.
+It's an open marting gate.
+Continuous open marting gate.
+So, we subtract the two.
+If we subtract the two, the record process must be a continuous open marting gate.
+So, that's the point with my bracket process.
+So, we said the bracket is non decreasing.
+So, this is the difference of two non decreasing processes.
+So, that's a bounded variation.
+This one is of bounded variation.
+This one is of bounded variation.
+So, this is the difference of two non decreasing processes.
+So, that's a bounded variation.
+This one is of bounded variation.
+The definition difference of two non decreasing processes.
+So, that's a bounded variation.
+This one is of bounded variation.
+The definition difference of two non decreasing processes.
+So, if the product is a local marting gate, then the bracket is a local marting gate.
+is of bounded variation, a definition difference
+of two non-decreasing processes.
+So if the product is a local martingale,
+then the bracket is a local martingale of bounded variation.
+And bounded variation martingales are not very interesting,
+because they're trivial.
+That's what the next result is.
+So if we have a martingale, we need
+a certain degree of fluctuations,
+else our martingale is constant.
+That's what the next demo says.
+So this demo says that mb, continuous local martingale,
+square mb, so we have a bracket, of bounded variation half.
+Continuous local martingale, square integrivial.
+And now, with respect to a filtration,
+that satisfies the usual conditions.
+We don't need the usual conditions
+to construct a bracket process, but we
+need the usual conditions to have a quantity of optional times
+and stopping times.
+This is where usual condition matters.
+So a filtration satisfies the usual conditions.
+So let's roll with this.
+Let's assume our martingale starts in circle.
+So if m is our bounded variation, then n does remove at all.
+So if we go back to this one here, we said, if my product is a local martingale, the co-variation
+process is a local martingale, the co-variation process is a local martingale of bounded variation,
+hence, I mean, part of this starts in zero, hence it finishes.
+So this one is zero.
+So local martingale property, the product, is equivalent to orthogonality in the sensor.
+So that's the takeover of this.
+So in particular, the product of two square integral
+integral of an automatic is if and only if the cross-variation term vanishes.
+So we proved this lemma in three steps.
+We first assume we have actually, OK, what exactly do we mean by bounded variation?
+I found the variation, we mean the variation process is almost truly finite.
+So what we mean by this is the variation process.
+Maybe it would be better to call it a finite variation or a bounded variation.
+Because in the first step, we assume that we actually have a bound here.
+And then we show that we can reduce everything else to that situation.
+And that's the good thing about local martingales.
+We can essentially always make them well behaved.
+We just stop the martingale, or the local martingale,
+whenever something becomes too big.
+Either the process itself or, for instance, its variation process.
+So we have continuity of n, so it is enough to actually prove this.
+It is enough to prove this for rational times and for just a fixed time.
+So in the first step, we assume in addition that the variation process of my martingale path
+is actually bounded by some c for all or almost all omega.
+That's the key step already.
+So we take a partition.
+So what we would like to show is that the expected value of n t squared zero.
+This is what we would like to deduce from the variation.
+Why is the hope m t squared we can write as the sum of square increments.
+Sum of square increments we can decompose as sum of absolute increments times maximal difference.
+Our martingale is continuous, maximal difference goes to zero.
+So what we would like to show is that this one is zero.
+This is what we would like to show.
+Now our martingale starts in zero.
+So we can write this as the sum of square increments.
+Or in the first step, sum of increments squared.
+So by the martingale property, the expected value of sum of increments squared is sum of square increments,
+the cross-term measures.
+So this is martingale property.
+And in principle, again, we always have to localize.
+But we have probably just localize the incidence here.
+So martingale property tells us this is equal to the sum of the expected value of square increments.
+Okay?
+So this is less or equal to the maximum increment, the expected value of the maximum increment, times the variation.
+So this is less or equal than c times the expected value sum of i, that i m.
+So by continuity, we are on a compact time interval.
+So by continuity, this goes to zero.
+So inside the expectation, things vanish.
+So we must make sure that we have something that will be given convergence.
+Where do we get dominated convergence from?
+Dominated convergence, we get from dupe.
+So dupe's maximum inequality applies to continuous martingale and continuous sub-martingale.
+So we apply this to empty square.
+But here continuity is important.
+So we want an L-something bound, an L-true bound.
+Then we have uniformity probability.
+Then we are done.
+Expected value.
+And now we just take any increment here for any t.
+So 2 over our partitions are indexed by n, all times t i from our partition, t by n, t by n, and also equity.
+So basically the absolute maximum that we can have inside the expectation over there.
+There's how it ends.
+So here we are evaluating martingale at finitely many points and times, all points prior to time t.
+And we have an increment.
+So this is less or equal to 2 times expected value through u less than t mu square.
+Or maybe it is three or four times mixed terms, but there's some constant.
+Now dupe's maximum inequality tells us this expected value is another constant times the second moment at the terminal.
+So dupe terms are just as less or equal to the terminal.
+n p squared.
+And this is finite.
+Square integral.
+Local particles.
+So we have a uniform L-tubor.
+And L-tubor.
+So therefore, we can apply combinator coupons.
+And see if this one matches.
+So that's the case where the variation is in the case.
+The variation is uniformly parallel.
+I need it here.
+For this uniformity.
+So.
+So now.
+We assume.
+.
+We assume.
+.
+.
+So what do we do?
+We stop things.
+Okay?
+So.
+We stop the process when the variation closes.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Then, what is this set? T is less of input. That means the variation at time B is
+less of input. The variation process just sums up, along some partition, increments up to time T. So, this is in T.
+And so, this is tau n less than T complement. So, this says tau n is the option of time.
+Now, we assume we have usual rotations.
+Now, this is stopping time. So, option assembly tells me stop marting, yes, I'm marting it.
+So, when I stop my m according to pro n, I'm precisely in the situation I was in before.
+My variation process is bound.
+I'm not done.
+So.
+So.
+So.
+So.
+So.
+So.
+So.
+So.
+So.
+So.
+So.
+I don't see.
+So.
+So.
+So.
+So.
+So.
+So.
+So.
+So.
+So.
+So.
+So.
+So, so, so.
+And up to an assembly, and toe is a martingale, a local martingale, to end, martingale, a local martingale,
+and so m to n in t is 0, so now we take it.
+We take the limit, toe and go into infinity.
+Again, I reiterate, it doesn't have to be a limit in the strict set.
+Tor 47 can already be plus infinity.
+This is not excluded.
+And we don't have expected values or anything here.
+So here we can now just use all the strong conversions.
+If they were an expected value, we would have got a value of infinity.
+We don't have to do this.
+So the limit is 0.
+Now, question.
+We assumed square integrability.
+Do we need square integrability?
+Do we really need it?
+And the answer is no.
+Otherwise I wouldn't ask.
+But why not?
+I just have a question.
+Where did the square go there?
+Should we find the right supremum of the square?
+What we need is square point in that step?
+So how did we go from the last important thing?
+So let's assume we don't really.
+Let's say this is not true.
+OK?
+How do you correct it?
+You correct it in the most trivial way.
+And then it's here.
+Then, we want to use that step in the next step, which is square.
+Here.
+And how do we get rid of square integrability?
+We just stop again.
+So.
+Just instant three.
+We stop again.
+We just send sigma n to be the first time t where, let's say, the second moment is
+too large or simply like this.
+Let's take this one.
+Just a pass by stroke.
+Yeah, that's the stopping time.
+So now, if we stop according to sigma n, we can go to step two.
+So now, if we stop according to sigma n, we can go to step two.
+We stop when either the variation process becomes too big or the process itself becomes too big.
+That's again a localizing sequence.
+And we are done.
+We use this argument again with a different stopping time.
+So stop either when the process becomes large or when its variation becomes large.
+And that's a recurring theme.
+We use this argument repeatedly.
+We use this argument repeatedly to make a local martingale to have nice properties.
+a local martingale to have nice properties.
+So we stop with m or the variation process becomes large.
+So we stop with m or the variation process becomes large.
+So step one.
+So step one.
+And then we use straight liquidity.
+But we can undo this by another.
+So this was a little 45 minute detour.
+about autogonality.
+So this was a little 45 minute detour about autogonality.
+So this was a little 45 minute detour about autogonality.
+So the product of two continuous local martingale.
+So this was a little 45 minute detour about autogonality.
+So the product of two continuous local martingale.
+is a local martingale.
+is a local martingale if and only if it's autogonality.
+Yes sir.
+Could you explain this?
+Yes sir.
+So this was a little 45 minute detour about autogonality.
+So this was a little 45 minute detour about autogonality.
+So the product of two continuous local martingale.
+is a local martingale if and only if it's autogonality.
+Yes sir.
+Could you explain why are the squares bounded by not squared?
+Why are the squares bounded by not squared?
+This one?
+Yeah.
+Well the argument we used before.
+Here we have square increments.
+So we have increment times increment.
+We have the maximum increment times the sum of the other increments.
+The sum of the other increments are bounded by c.
+So we have something like this.
+So we write this.
+Like this.
+Now we take this one out as the sum.
+And then there's only some of this left.
+But that's the variation.
+So that's the term that we bound by assumption.
+Thank you.
+And why are we then dominating the squares of the soup?
+Or the square of the soup in the next step?
+Where's the next step?
+This one?
+Yeah.
+Because there we now have a square in the soup.
+Right?
+So are you here or here?
+Yeah, the left one.
+This one?
+Yes.
+Wait.
+This square is something squared plus something else squared plus cross terms.
+Yeah.
+The cross terms are also bounded by sum of squares.
+Yeah.
+So this is basically m evaluated somewhere along any of our partitions squared.
+Yeah.
+Okay.
+So this is the continuous part.
+Yeah.
+So we square just somewhere.
+Here we square it at whatever points we have in our partitions.
+So this explains.
+So this C is probably 4.
+This explains this one.
+And from here it's true.
+Yeah.
+No, but we want, we show this to apply dominated convergence.
+Yeah.
+For the subcranium that is not squared.
+Right.
+So now, so if you buy this one, then this one is L2 bounded.
+Okay.
+That's precisely what that means.
+Okay.
+Okay.
+And that's fine.
+Sorry.
+Yeah.
+That's fine.
+Okay.
+Yeah.
+Okay.
+Yeah.
+Yeah.
+Okay.
+Okay.
+Okay.
+Okay.
+Then let's start improving our board.
+Okay.
+Okay, then let's start proving our main theory, existence of the back
+And again, the nice thing about all these loop-and-marting is we can always stop, so we can always, in some sense, assume this outlaws of generality things are bounded
+So, the key step of this, the proof of this theory, is this for bounded, continuous local square integral of martin.
+So, our assumption is, for now, my local martin gets bounded by candy.
+So, what's the idea? The punchline is this. We take partitions of zero T.
+And now, what we have in mind is the bracket process is the quadratic variation process.
+So, let's see how far we get if we just lose.
+Okay, so, we define the quadratic variation process.
+I, S or A for T.
+Be careful with my indices here.
+And now, T may or may not be part of the partition.
+N T minus M T N.
+And I call this KN of T.
+Where this KN of T is the last index less or equal than T.
+KN of T is the last index less or equal than T.
+Previously, we sometimes said that T be part of the partition.
+And it saves us this time.
+Okay, so, we have a quadratic variation process.
+Let's take N D square and subtract the quadratic variation process.
+So, what we want to show, which is not very difficult to see, it's magic.
+But what we want to show is that this sequence of stochastic processes, this is Cauchy sequence.
+This is Cauchy in, where, and to, and this is the last step process.
+And my M is continuous.
+And my A is continuous as well.
+The T appears here, so that's continuous.
+And the T appears here.
+So, as long as this index doesn't change, this is continuous.
+And when does this index change?
+This index changes exactly when this term is equal to zero.
+When the T becomes part of the partition.
+So, that's the sequence of random continuous functions for all T.
+Well, if this is Cauchy, it converges.
+Hence, Nm converges in this space to something.
+We have random variables taking variables in a set of continuous functions.
+So, that's continuous.
+And now we have two options.
+We either work hard to show us a martingale, or we wait a little bit to develop more theory and get it later for free.
+So, later, we also prove this is a martingale.
+And then, we take the limit.
+We know this An process, the quadratic variation process, must converge in this space to what?
+The difference of mT squared and m.
+So, then we set mT, the bracket, to be m squared minus mT.
+And then, we also know that the quadratic variation process, An, converges in L2, with L2, to the bracket.
+That's the punchline of our group.
+The key is this.
+Once we are here, this is clear.
+And the theorem said, we have a continuous low grammatical, and this quadratic variation process converges to the bracket process.
+It was UCP, Uniformly on Compact Time, Interval, and Probability.
+Here, we have more.
+We have convergence in L2.
+In the spirit of step one, the quadratic variation of Browning motion.
+But that's because our martingale is bounded.
+So, for bounded martingales, we get L2 conversions of the quadratic variation process to the bracket.
+Once we have to localize, we have to mix quadratic by L2 conversions with the almost true conversion of the stopping times.
+And we put those two things together, we only get convergence in L2.
+So, we need some a priori estimates.
+So, this is, again, the punchline.
+And we need some a priori estimates.
+Okay.
+So, we need a priori.
+Okay.
+So, we need a priori.
+So, we want to prove properties of the quadratic variation process.
+And we eventually want to converge in a tune.
+So, we better make sure they have some kind of interrupt.
+Again.
+So we are scaling.
+So.
+So.
+duor.
+Okay.
+We have two
+backs in New York.
+Got one.
+Okay.
+Let us.
+How are you talking about?
+Thank you.
+For any partition,
+zero T,
+the second moment of the quadratic variation
+up to time T is bounded by K.
+So, the expected
+value of the quadratic
+variation of M
+along my partition.
+Now I take the second moment of this.
+It's another square.
+Okay.
+This is bounded by
+six times, and obviously this counting
+is constant.
+But the six is not important,
+K to the power of four is important.
+Okay.
+Where's the power of four coming from?
+So, with again
+having product of square increments.
+This is where the power of four comes from.
+So, let's write this out.
+Let's write this out.
+The second moment
+of this
+is, well,
+where the sums of the squares
+B square
+on this,
+we get four
+moles.
+plus cross stripes,
+plus two times
+E
+sum
+over the K's
+and then
+to M
+delta K
+M
+square
+delta J
+M
+square
+So, it's important
+to write it in this way
+because here we start counting
+at
+K plus one.
+So, this allows us to condition.
+So, if we condition
+in here on FK
+then we can take that one out.
+So,
+let's start with this one.
+four.
+We do the same trick again.
+We write it as square times square.
+The one square term
+because
+both of the M's
+participating in the square
+are bounded by
+K
+by
+by K
+like this.
+So,
+delta I M square
+times delta I M square.
+Delta I M square
+is less or equal
+4 times K square.
+Each M is less or equal
+K
+but we need to square.
+This is going to focus.
+So,
+and then
+this one.
+This one.
+But that's not the telescope sum.
+everything that stays is the first one and the last one.
+Last one.
+Last one is N somewhere.
+First one is M zero.
+M zero is zero.
+So,
+this is the telescope sum.
+So,
+this is the telescope sum.
+So,
+this is equal to
+N T square minus
+M zero.
+And N zero is
+N T square.
+So,
+4 K square.
+Another K square from here.
+So,
+this is also here.
+4 K
+to the power of 4.
+second.
+So,
+in here,
+we want to conclude.
+F G K.
+But here,
+we start at K plus 1.
+K plus 1.
+So,
+we have
+So,
+once we condition,
+we have a term like this.
+this one we can take up.
+This one we can take up.
+So,
+this term
+is
+of
+that form.
+that form.
+So,
+same argument essentially is here.
+The only difference is,
+what stays here is not M zero,
+but something like
+N J K.
+but that 2 squared is bounded by K.
+So,
+that is
+plus
+equal
+to
+2 squared.
+2 squared.
+Good.
+So,
+we put that in here.
+So,
+2 times
+expected value of this double sum.
+Double sum.
+So,
+less or equal.
+So,
+less or equal.
+2.
+So,
+less or equal.
+2.
+2.
+1.
+2.
+1.
+2.
+2.
+2.
+2.
+2.
+2.
+3.
+2.
+1.
+2.
+2.
+1.
+2.
+2.
+2.
+1.
+1.
+2.
+1.
+2.
+1.
+2.
+1.
+2.
+1.
+2.
+2.
+1.
+1.
+2.
+1.
+1.
+2.
+1.
+1.
+2.
+1.
+1.
+1.
+1.
+¿1.
+1.
+1.
+1.
+1.
+1.
+1.
+and maybe another two from there, six K to the bottom of four.
+So, not so sure about the six here, maybe it's a ten.
+That's a project.
+I was wondering in the first point, in the equations on the right side, if the sum goes from i equals 1 to m instead of K.
+That's true.
+I mean, it doesn't really change anything.
+The m here didn't write it anyway.
+Well, it's probably m minus. Is it m minus m?
+Yes.
+So, I'm not sure about the console in front of the K to the power of four.
+Good. We need one more a priori estimate, and this is something about not square increments, but the fourth moment of increments.
+So, m bounded continuous marking here.
+we have a total 3 with 4.
+Solo.
+So, up to 40.
+the fourth inch
+it's all fine, you are bounded
+so then
+you get back to the belly of this go
+so let's see if I can squeeze this thing
+so fourth moment is something like second moment squares
+so
+for the second moment
+we just proved everything is bounded
+so for the fourth moment we know again the pass-wise square increment
+times the sum of the square increments
+so we consider
+pass-wise increment
+we call this
+this is the maximum increment
+mt minus s
+with s minus r
+of
+less or equal to f sides
+of
+oh yeah
+so my m is continuous
+so this goes to zero
+so this goes to zero
+and I can take
+if I want
+any power to meet the second power that
+this still goes to zero
+so
+we know
+the fourth moment
+or the sum of the fourth moment
+less or equal
+m square
+times
+times
+times
+this one
+so we know
+by the previous
+by the previous number
+this
+is bounded
+in error
+that's what the previous number showed
+the expected value of that one was
+of the order
+k to the power of 4
+this goes to zero
+so now we can apply a little more
+so now we can apply a little more
+in error
+in error 2
+not in error 1
+in error 2
+second moment
+square increment
+because if I apply a little more
+I need this in error 2
+so now we apply a little more
+and we can
+see
+so
+now we use this
+Questions about your approval, sir?
+Okay, so let's construct it. The outline is here. Now, remember one thing from the general
+discussion of quadratic variation functions. When we defined bounded variation, we said
+the supremum over all partitions was satisfied. When we talked about quadratic variation,
+we said that only has to exist along a sequence of partitions. We were free to choose this.
+For Brownian motion, there were practically no restrictions. But in general, there are
+less restrictions. So what we assume is that we have a sequence of ever finer partitions.
+So we assume this. So when we make the partition finer, really make it finer. We're adding more
+points to the partition. And this means this is important for this one. Because Cauchy means
+we need to look at something like this. And we want those two end forces to be defined
+with respect to a common filtration, not filtration, a common partition. And this is what we need
+this one. So this is needed later for the Cauchy. Okay, so N and M are already on the board.
+So A, N is the quadratic variation process. N is N squared. Well, I understand. A, N, N, N, and B as above.
+So what is N? We use the following equalities.
+T minus N squared. Okay, so we do the math. This is to
+F is this two Ns, Nt plus Ns, that's why it is important.
+So, this one will play the role of Nt squared. This one, once we sum it, we sum square increments. Summing square increments is precisely what this A is doing.
+So, that one plays the role of An. So, these things here, once we sum them, play the role of N.
+So, my N is the sum of such terms. And this is not difficult to see to be a margin.
+So, we have, if we use these inequalities here, we can represent N as follows.
+So, two times, along to KT, N, T, N, Y minus one, plus the last one.
+And this looks a bit like a discrete integral.
+So, increment of a function times something.
+You can just verify yourself.
+MN is continuous.
+This we already had.
+But because it has this particular structure, it's also a martingale.
+And then there's a mistake in your lecture notes.
+It said there's something like a product of martingale increments.
+That's not true.
+It's because of the structure.
+Because of this discrete stochastic integral structure.
+So, little homework.
+This is a continuous martingale.
+Now we use the fact that we take ever finer partitions.
+So, NN minus NN is a continuous martingale.
+So, what we wanted to show, we want to show this quotient property in this space.
+Good.
+Continuous.
+C is equipped with the soup norm.
+We have a continuous martingale.
+We have two maximal inequalities.
+So, we can estimate the soup of the second moment.
+We have to have the soup because the soup norm happens here.
+So, what I do?
+Definitely.
+And that's very interesting.
+This is equal.
+And so this is good, because now we have a point visor property.
+So what we want to show, for our Koji property,
+is that we have this point visor property.
+Then we have this.
+Then we have this.
+Then this is Koji.
+Then this is Koji.
+That means there's a limit on any good work.
+So we use this property so far only to argue that this makes sense.
+Things are defined in the normal common sequence of partitions.
+So now we use this in more detail.
+As follows.
+So in between.
+So in between.
+Two points.
+Of the broader partition.
+We have a couple of extra sample points for the final partition.
+So we have a situation like this.
+TN somewhere.
+And J and I, that's what I call it.
+So we have one.
+And J and I, that's what I call it.
+All I am saying.
+All I am saying.
+So we have a situation like this.
+TN somewhere.
+And J and I, that's what I call it.
+And J and I, that's what I call it.
+One.
+All I am saying.
+In between two sample points of the cores are proficient.
+There are additional sample points of the final partition.
+So now we get rid of this K figure.
+So let me see it doesn't work.
+And the eta m is the partition of the incrementer dA.
+So if you go back here, here's my A. This one I just
+defined to be 0.
+So if I have m, I have m's here, m's here, m's here.
+If I have m, I can put an n here.
+And this increment I can write as an increment
+along the final partition.
+The advantage is, once we take this difference here,
+the increments are the same for both an amp and an amp.
+So the coser partition, m and t, two times sum over over i, m, t, m, 5 minus 1.
+Two times sum over over i, m, t, m, 5 minus 1.
+And now the increment, we use the m increments.
+What is the m that comes from O?
+That's OK.
+So that would be 1 to m.
+That would be a true image.
+And this square root for a q.
+I also write it as numbers, but now I continue ending.
+So the second double sum says, look at each block in between two increments of the I partition.
+Separately.
+This.
+So what is important is that here and here.
+We have no more when I begin to this one.
+This is because of this one.
+This is the leftmost point.
+This is the leftmost point.
+The delta takes two of those.
+And the one in between takes two of those.
+Okay?
+So if I have not overlapping intervals, we can again condition.
+We have not overlapping your property.
+We have not going to condition.
+Particular property.
+Expected value of square difference.
+Cross terms vanish.
+Particular property.
+Expected value of square difference.
+Cross terms vanish.
+This is the term that came out of Duke.
+This is the one that we need to show vanish.
+Okay.
+Okay.
+Two more minutes, but I need a lot of space.
+So.
+Less or anything.
+Okay.
+Okay.
+So.
+I hope it's a fall, which we have.
+Again.
+The cross terms vanish.
+So we have this double sum.
+Square.
+Square.
+Square.
+Okay?
+Okay.
+For those, we are going to take the Suprebum.
+So, four times.
+And now this double sum just sums all the increments in J.
+Square, square, square root.
+These increments become small.
+Everything is bounded by bounded convergence.
+And that's sum of squares, squares.
+That's a statement about the force moment.
+The sum of force moment increments.
+So, this one is bounded.
+So, therefore, there exists this.
+So, n is continuous by construction.
+But is it also martingale?
+Is the martingale property preserved?
+The answer is yes, but we do this later.
+Later, this is quite a very short argument.
+So, you can see that this is this martingale property is truly much greater general.
+So, again, not the prettiest proof in the world.
+The key assumption is this infinite coefficients.
+Define the quadratic variation process.
+Subtract m square.
+Subtract m square.
+Take m square minus the quadratic variation process.
+That's a martingale shortcut.
+We finished the proof on Monday.
+Most of the work has been done.
+Most of the work has been done.
+And now, ten minute break.
+And then, today is my trip with the exercises.
+Okay.
+Thanks, and see you in ten minutes for the exercises.

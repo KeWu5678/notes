@@ -1,0 +1,756 @@
+And then we start talking about stochastic integrations.
+So we've heard about to construct Bracken processes.
+So we started with m squared integral
+Global Marking here, starting at zero.
+And then we prove, firstly, if m is bounded,
+then there exists this Bracken process, m,
+which has the key property that if we subtract it from mt squared,
+that's a local martingale, a continuous local martingale.
+And we prove that the quadratic sum of square increments converges to this end process in L2.
+So specifically what we prove, we introduce some kind of discrete stochastic integral,
+which essentially look like this.
+So that looks like a discrete integral.
+Increment times the value of my function sum.
+And we proved this converges in L2 as a continuous function to some process A.
+We proved it's a Cauchy sequence, so there's a limit.
+And then we saw that this Bracken, mt,
+whereas m squared minus m squared minus m.
+So in general, the theorem said we have convergent in UCP,
+uniform in probability on compact sets, but if it's bounded, we have more.
+And it also proved one thing, namely if m is a martingale or a local martingale of bounded variation,
+then it's a concept.
+And with this result, we can very easily prove the uniqueness of the Bracken process.
+So existence for m and martingale of here.
+So how does uniqueness work?
+Well, it's easy.
+So assume we have two.
+So we have two processes, A and A prime, starting in zero.
+So the starting point is what normalizes it.
+We can start this.
+We can start this Bracken process anywhere we want, but then it would not be unique.
+The normalization, the starting value is what makes it unique.
+So on decreasing such that mt squared minus A and mt squared minus A prime are continuous local martingales.
+Both A and A prime are not decreasing.
+both a and a prime are non-increasing
+so it's a difference of two non-increasing process
+so it's a bounded variation
+I'm assuming a zero is equal to a prime zero
+so now we invoke this result
+local martingale bounded variation is almost truly constant
+so that means
+we are unique
+so uniqueness
+we get almost a free once we know that local martingales are trivial if they are bounded variation
+we prove the theory for unbounded martingales
+ok so we have a local martingale we have a localizing sequence
+if we want we stop our martingale if it becomes too large so that's another localizing sequence and after stopping the process is bounded
+so
+we have a localizing sequence
+so
+we have a localizing sequence
+the stop process
+the stop process is a martingale
+and stopping
+and stopping
+when it becomes bigger than anything is necessary
+without loss of generality
+you can assume
+you can assume it's bounded
+after stopping we have a bounded martingale
+so that's good
+we have a local martingale
+and if the element is bounded
+we know
+the bracket process exists
+and we also know the bracket process is obtained
+by summing up square increments
+so whenever we take a larger stopping time
+and restrict
+the two bracket processes
+on the integral coming from the smaller stopping time
+that must coincide
+so by construction
+to n is increasing
+and n
+on the interval
+up to to m
+and
+the smaller time interval
+they
+coincide
+so this is consistent
+so
+the definition
+is consistent
+this is
+consistent
+this is
+moreover
+we can take limits
+so my tau end
+increases
+my bracket process
+there's a limit of summing square increments
+so it increases
+M p
+m
+m
+t
+m m m t
+m m m t
+m m m m t
+This increases as tau n increases.
+I choose a larger tau, I'm summing, potentially,
+more square increments.
+OK, so we have an increasing sequence,
+so we know the limit exists.
+Corner bracket empty.
+This almost true limit exists.
+Moreover, I can stop again.
+I look at this bracket process until time tau n.
+So, prior to time tau n, this bracket process coincides with the bracket of the n-n process.
+Another one than two.
+So, this is equal to the bracket of the n-n on this interval.
+And we have more.
+So, what do we want to show in the first place?
+We want to show that it will stop n according to tau n, then it's a multicurve.
+That will show that n minus the bracket, that will show what we want.
+So, m squared tau n stopped at t minus the bracket of the stopped process at time t.
+We showed at some point that the bracket of the stopped process is the stopped bracket of the process.
+So, I do not quite remember which limit was, but this is the stopped bracket of m.
+So, now we have the stopped times outside here and here, so that is equal to m squared minus the bracket at tau n in t.
+And what is this?
+And what is this?
+This is just the value of the stopped process at time t.
+So, this is equal to n-n t minus square.
+Then n square minus its bracket is a martingale.
+So, then this one must be a martingale too.
+So, we see this process after stopping is a martingale.
+So, it's a martingale.
+So, it's a martingale.
+So, it's a martingale.
+So, we conclude.
+We conclude.
+n square minus y square.
+The record is a continuous normal.
+But, by construction, the bracket starts in zero.
+And, also by construction, it's an increasing process.
+So, most of the statements of the theorem are proven.
+We can find a process that compensates m square, which starts in zero and it's not decreasing.
+So, it still needs to be shown that the bracket process is the limiting probability of the quadratic
+bar reactions.
+So, still to show, and using it uniformly on compact sets, compact time sets in probability.
+Okay.
+What do we know?
+We know that for the stop processes, we have this convergence in there too.
+So, we know that for the stop processes, we have this convergence in there too.
+So, we know that for the stop process, stop it at some time n, and take a sequence of partitions.
+So, that converges to the bracket.
+So, that converges to the bracket of the stop process.
+In N2 omega.
+In N2 omega.
+Continuous function on CT40.
+So, we have this sequence of partitions.
+So, that converges to the bracket of the stop process.
+In N2 omega.
+Continuous function on CT40.
+So, there is a super long here.
+And the ones that are converges to the bracket of the stop process.
+In N2 omega.
+Continuous function on CT40.
+So there's a subnorm in here. So the uniformity, this u here, is just a subnorm, so adds in plus dp.
+What else do you mean? We know that the process M and the stop process coincide up to the stopping time.
+And we know the same is true, therefore.
+One, zero, twelve.
+One, zero, twelve.
+Now comes the stopping times. The stopping time increases 2 plus infinity property of localizing sequence.
+And this is where we lose L2 convergence. So the L2 convergence, we only have for the bounded martingale.
+Because now, we basically know that the probability that tau n is less or equal to t is small.
+So, we have this.
+So if I pick any t, we want to uniformly on compact time levels. I want deterministic times.
+That's the solution concept. Right now, I'm having random times here.
+So I need to replace this one by t with the help of this.
+So I think there's the probability that my quadratic variation process coincides with the quadratic variation
+of the stop process on zero t for all m.
+This happens, because of this one, exactly when my t is less or equal to tau.
+This tells me, for a large enough n, happens with probability at least one minus six.
+So that is greater or equal to one minus six.
+So again, the goal is to replace this one by deterministic times.
+That's what the solution concept applies.
+So that uses this one.
+And the similar equation we have for our n forces.
+So that is one thing we have.
+And also perhaps we don't've mentioned before.
+Okay.
+So once we have a break now, I am going to click the wall to the right side side side side side side side side side side side side.
+So, I think that once you have an internal foundation, once you have an internalところ and you start off.
+Now, once you're at it like, just go ahead.
+Now you'll try right now.
+Once you do so and see the balance sheet on zero.
+Un hiring like it, thatены we need to?
+So I think that oneemporary is going to do so the same starting point there.
+Okay, now we just pull everything together.
+So what we want is this one minus
+this one is, or this is the same.
+So we approximate first this by this, then this by this, then this by this, and then
+take the difference of this and that.
+The missing three lines are in the rectangles.
+So the key why we are losing L2 converters, which is what we have for probably fortunately,
+is because we need to use this.
+So why is the bracket useful?
+Well, what we are going to show in the next section is, it gives us the criteria when
+we can define .
+So this bracket defines the measure.
+We call it P m on zero T or zero infinity, we don't know where we are, it's zero T times
+and then we how.
+Well, we can take a joint imaginable process F, has two variables, omega at a time, and what
+we do is we first integrate with respect to the bracket.
+The bracket is an increasing function.
+So that is the standard integral.
+And then we integrate omega.
+So for Brownian motion, we know the bracket is just T. In particular, there is no formula only
+that way.
+For Brownian motion, it looks like this.
+Actually, I need this.
+For Brownian motion, so that's an integral that we can just define for every moment.
+So we integrate with omega, assuming that is whatever bounded, let's say.
+And then this P integrates omega away.
+And what we show in the next section, if F is measurable, meaning jointly measurable in
+the omega at a time and the delta.
+And this is going to be square.
+This is finite.
+Here there's nothing mysterious.
+The inner integral is with respect to a nice function.
+The inner integral is with respect to a nice function.
+And the outer integral is with respect to omega.
+Nothing mysterious.
+Then, the inner integral is with respect to a nice function.
+And the outer integral is with respect to omega.
+Nothing mysterious.
+Then, the inner integral is with respect to a nice function.
+And the outer integral is with respect to omega.
+Nothing mysterious.
+The inner integral is with respect to omega.
+Nothing mysterious.
+Then, the inner integral is with respect to omega.
+The inner integral is with respect to omega.
+Nothing mysterious.
+The inner integral is with respect to omega.
+Nothing mysterious.
+Then, we can define the stochastic integral of F with respect to a continuous loss.
+This is what we need to break it for.
+The bracket gives us with respect to omega.
+The other integral is with respect to omega.
+The other integral is with respect to omega.
+The other integral is with respect to omega.
+Nothing mysterious.
+Then, we can define the stochastic integral of F with respect to a continuous loss.
+This is what we need to break it for.
+The bracket gives a measure, and if something is sufficiently integrable with respect to this
+measure, plus some measurability properties, then we have a definition of the stochastic integral.
+So, we'll start with Brownian motion.
+Things are quite transparent in that case, and then we see what changes if you broke the
+more generally integrable.
+So, previously, we assumed that the dependence for Brownian motion, the dependence of omega, is
+the smoothed Brownian path.
+So, this was an F, S, B, S.
+Then, we could do it.
+If F is smooth, we could do it pathwise.
+If F is not smooth, we cannot do it pathwise.
+Look.
+Let's start doing some stochastic integration.
+Chapter 4.
+Chapter 4.
+We fix a probabilistic axis.
+A probabilistic axis.
+And we assume our filtration satisfies the integral conclusions.
+So, we can do it pathwise.
+We will also fix the continual problem here.
+We can do this.
+We can do it.
+So, here we can do it.
+And we can do it.
+We can do it.
+So, we can do this.
+Since that's the last part, we can do it.
+So, we can do it, and we can do it.
+We can do it.
+We can do it.
+and right continuity.
+We also fix continuous vocal martingale, square n.
+Continuous, square n.
+Our goal is to define the individual process.
+What suitable means, we need to figure out.
+And we do this, and then in the second step,
+we don't do this via Riemann sums or anything.
+We first define the Storhorsting integral
+by purely functional analytic methods,
+and then once we have it,
+we show that it can also be interpreted
+as a limited probability of Riemann sums,
+but only then.
+We are not starting with a Riemann sum.
+If we have it, we have this object,
+and then this interpretation of Riemann sums.
+So we start with the benchmark case of wrongly motion.
+So our M is a B now.
+After we do integration work,
+we start with a class of simple functions where we know what we want to do,
+and we integrate it, and then ask ourselves which function can be approximate with the simple functions.
+And does this mean anything for the sequence of integrals?
+We do the same thing here.
+First definition.
+So we introduce elementary functions.
+If it is a step function.
+So phi d of omega is some e j of omega
+on some
+t j, t j plus one.
+Notice, we assume the thing is left continuous.
+In chapter one, I think it was an exercise.
+It said the left continuous functions generate a predictable sigma field.
+We later want to apply this integration theory to predictable processes.
+So, where, now it's important, e j is f t j measurable, uniformly bound.
+So, something like this we know from
+3-0 analysis 2, I suppose.
+How do we integrate functions?
+With respect to a metro?
+Good.
+Simple functions.
+The set of things, simple functions, we denote by L0.
+We can always define all sorts of the difference.
+We can do it here as well.
+We can always define all sorts of the difference.
+We can do it here as well.
+We can do it here as well.
+For simple functions, we can always define all sorts of the difference.
+We can do it here as well.
+For simple functions, we define the stochastic integral with respect to Brownian motion for this I, I for the integral.
+So, we have step functions, so we sum over all sample points until t.
+Ej of omega times Brownian increment, Btj plus 1 minus Btj.
+We call this stochastic integral of the simple function phi with respect to Brownian motion.
+So, in general, the past life definition makes no sense.
+And the key insight that Edo had is a very simple length.
+So, the idea is, suppose we know which functions or processes we can approximate by functions like this.
+So, then what we want to understand is, if I approximate something by these phi functions, does my integral converge?
+If it does converge, I can define the stochastic integral of the object that I approximated by simple functions with respect to Brownian motion.
+And the key insight for this is the so-called Edo.
+So, two objects have the same norm. That's what the name suggests.
+And it says, for any simple function, I can look at some kind of L2 norm of the stochastic integral.
+So, I compute the stochastic integral with respect to Brownian motion.
+That's a random number.
+I take the second moment.
+And that is equal to, what else can I do?
+I'm just integrating, for fixed omega over time, the square of my simple process.
+So, that's a random variable.
+So, that's a random variable in omega.
+And I can take its expected value.
+And that's the same.
+So, the second moment of the stochastic integral, second moment with respect to P, equals the second moment of phi, the process phi, with respect to which measure, P times lambda.
+Lambda restricted to 0t.
+And here.
+And this one.
+And this one.
+This.
+This is the second moment of the integral with respect to P.
+And this one.
+And here.
+And here.
+And this is where the entire integration theory is critical.
+This, very simply called it.
+So, the proof is almost trivial.
+If we want to compute this one, what is it?
+This integral is the sum of this.
+So, I'm taking this square.
+What am I getting?
+I'm summing products of these terms.
+Okay?
+So, we need to compute.
+Let's first introduce our usual connotation for bound in increments.
+So, if we look here.
+We're going to take this sum squared.
+So, we need to compute things like this.
+E by Ej delta AB delta J.
+Okay.
+Two things can happen.
+I is different.
+Well, let's first do the case when they're equal.
+It's a bit transparent.
+Okay.
+So, in that case, we need to compute this.
+So, you can guess what we do.
+I mean, first of all, just look here.
+We need to get ds into the picture.
+Where is the ds coming from?
+Obviously, from the second moment of this.
+Why is this expression giving me a time increment?
+Well, we recall this one is an Ftj.
+So, the condition.
+Use the tau property.
+This is equal to E Ej square.
+Conditional expectation of the square infinite.
+Definition of Brownian motion.
+Definition of Brownian motion.
+Increments are conditionally independent, normally distributed.
+So, this one is just Tj plus 1 minus Tj.
+So, these terms here are Ej square, Ej plus 1 minus Tj.
+And these are already exactly the terms that appear here.
+So, my phi is a simple function.
+So, this is, in fact, Ej square times time increment.
+So, what we have to show is that I and J are different.
+The cross term do not contribute.
+We use the same trick.
+We use the same trick.
+We use the same trick.
+We use the same trick.
+So, what changes if my indices are different?
+I have Ej, Ei, and here I have delta i, b, delta j, b.
+Now, what I can take out?
+And now I have a conditional increment, not a conditional square increment.
+And conditional increments, expected value of conditional increments are zero.
+This is what I did not work.
+So, if i is different from J, and now, in which mode I want, I take J bigger than i.
+So, by condition on Ftj, I can take the Ei out, the Ej, and I can take this increment out as well.
+And that's the difference.
+Here, this is square.
+Here, this low square.
+So, this one.
+This one.
+So, the cross turns.
+Okay.
+Equal isometry gives us a link between norm of the integral and norm of the integral.
+With respect to different measures.
+Next thing.
+Stochastic integrals are marginals.
+So, I think we introduced this space before.
+So, M C02 is the space of continuous square integral.
+So, the next proposition says, if I take the stochastic integral of a simple process, I'm getting one.
+So, for any simple process, the stochastic integral is continuous square integral.
+So, starting in zero follows from construction.
+Adaptedness, again by construction.
+Something Ft.
+Something Ft measurable times an increment.
+And the fact that it is in L2, we already proved here.
+So, starting in zero.
+We already proved here.
+So, starting in zero.
+We're going to construction.
+Adaptedness.
+We're going to construction.
+Adaptedness.
+We're going to construction.
+We're going to continue to construction.
+Okay, so, we rarely fight them out again.
+We have to compute the conditional expected value of the integral given Ft.
+Well, my integral is nothing but a sum.
+So, I can just lift my integral.
+Let's do it.
+Let's adjust this up.
+I know it's adaptive.
+I know it's adaptive by construction.
+And what is this?
+This is, again, something Ej times Brownian increment.
+And I'm doing the same thing right here.
+Let's just condition and see the conditional Ftj drops out.
+So, that is I2.
+So, my sporadic integral defines a mapping on the set of simple processes into the set of continuous square integral particles.
+So, all together, we have mapping I0 to M0c2.
+Question?
+First, which processes can be a function?
+So, that is, in the case of Brownian motion, relatively easy to answer.
+In the case of a general continuous local marking here, it is not so obvious.
+This is why we start with Brownian motion.
+Question two.
+Let's say we have some simple processes that approximates F in some sense.
+And does this apply convergence of the integrator in parentheses in some sense?
+And this is where our isometry comes in.
+Because it tells us, if I have convergence here, the level of the integrants, I have it here, or the level of the integrants.
+So, this is where we use this.
+So, which processes do we expect to be approximated?
+Which processes can be approximated by simple processes?
+So, we call the set caligraphic L2.
+Now, we have already seen, when we define the basic E to it.
+Using basic E to formula.
+The basic E to formula, we define stochastic integrals by Riemann sums.
+And we approximated functions at the left end point of the time interval, which was very important for the construction.
+So, that already suggests that we want some kind of adaptiveness.
+So, we want functions F depending on time and omega.
+We want them measurable, so meaning jointly measurable, and adapted.
+So, we fix the probability space with a filtration at the very beginning.
+And, we go back to this one.
+We probably want some bound of F in this norm.
+So, we want...
+known F and we call this L2T.
+Then back times P.
+And what is this?
+This is the expected value.
+Integral 0 to T.
+F squared as omega dS.
+That becomes an omega integral to be finite for all T.
+So, that's our L2T.
+The norm in terms of the back measure, which is the bracket of Brownian motion,
+which later becomes the bracket of a general continuous low-primaticate.
+Difference between Brownian motion and low-primaticates in the Brownian case,
+there is no omega in the dt measure.
+So, let me introduce the saving for Fg into 2 Dfg as this.
+So, L2T.
+We are working with L2T.
+So, this is not a norm.
+It becomes a norm if we work with spaces of equivalence classes.
+The fact of the matter is, by changing stochastic process of analysis,
+you can destroy all kind of adaptiveness or predictability or whatever.
+So, strictly speaking, we focus on this more later.
+You always have to work with equivalence classes.
+We ignore this for the moment.
+So, the next result says, everything in the set can be approximated by the simple functions.
+Any questions so far?
+Any questions?
+Any questions?
+Any questions?
+Any questions?
+Any questions?
+Any questions?
+The metric we defined just now, you said, that one is the metric by, by the
+the limits of the set.
+We can change the process on analysis and that's the thing, you need to work strictly
+speaking with equivalence classes and then in the equivalence class you need to find
+something with the right measurability.
+For now in section I think it's 4.2 we pay a bit more attention to this but for now we
+swept it under the carpet.
+Let's get further questions.
+So the first thing I'll show is a set of simple functions adept.
+In fact, we show something slightly stronger.
+We show that the set is actually dense in a set of predictable, in a set of progressively
+measurable processes, you'll see from the proof.
+So, okay, all right, we take L and L. So what do we want?
+We want to approximate it kind of uniformly on a given time interval zero t. If t is large
+enough then, by definition of the metric, everything after t doesn't really matter anymore.
+So what we want, we want to find a sequence of simple functions such that...
+This is all for t large enough. This d thing is essentially only considered
+independent. So we do this in four steps. So what is the problem? The problem is the measurability
+properties. Remember there was a little exercise that says if you are given a predictable
+stochastic process, you take a time integral. And that is a predictable stochastic process.
+Now that's precisely the situation we're having here. We're taking time integrals of stochastic
+processes. And to get measurability or adaptedness for such kind of processes is tricky. So unless
+you assume enough regularity on the phi, or the f in that matter, you cannot get adaptedness
+of the integral. It's not too obvious. So that's what we will be struggling with. So we first assume
+f is bounded and then passwise continuous projectives. So in this case it's clear. We do what we do in
+analysis. We just fix f at some left input. So f is bounded. So this converges passwise to
+f and by boundedness also in L2. So by boundedness phi L to f almost truly L2
+L2 by the big L2. Lambda time speed on compact time. So that is easy. So that is easy.
+Now we are dropping. Now we are dropping continuity. Now we are dropping continuity. So now as you have
+to have the still bounded. But only progressively measured. So progressively measured the
+what's the benefit when we are taking time integrals of the function. We are smoothing it. So we want to smooth this f function up. We do not assume continuity anymore.
+So we want to approximate it by something that is continuous. There are different ways of doing this but they are usually
+always involve integration. I either integrate and then take derivatives again or I take some kind of
+convolutions or some kind of convolutions or some kind of convolutions or some kind of
+time integrals of these functions. Time integrals of these functions. Time integrals of these functions are progressively
+measurable. What's the benefit when we are taking time integrals of the function? We are smoothing it. So we want to smooth this f function up. We do not assume continuity
+We do not assume continuity anymore. So we want to approximate it by something that is continuous. There are different ways of doing this but they usually always involve integration. I either integrate and then take derivatives again or take some kind of convolutions or whatever. But when I do the integration I need to make sure I am not losing the measurability I need to. So I think it was exercise straight.
+What I do is KT is equal to 0 to T.
+What I do is KT is equal to zero to T.
+And of course, autobound it.
+So, now I do something that looks like fundamental theorem of calculus.
+I define fm, t of omega, as m times t minus 1 over n-focussive part, up to t, and s of omega.
+So I'm smoothing my little f now by integration.
+So, this is bounded in continuous.
+By integration, I smooth f.
+And it's also progressive, because it decays.
+So, I can use step 1.
+Step 1 set, bounded continuous.
+I can approximate.
+Step 1 tells me I find for each m, for each m I find a sequence.
+So, m is fixed, m is the index of simple functions such that they approximate.
+So, now what I want to do, if we can show, everything is bounded, that fm converges almost truly to f.
+If it converges almost truly by bounded as it does, so it's L2, and each fm I can approximate in L2-percent functions.
+normalWですね.
+...
+…
+..
+...
+So we need to show FM converges to F almost surely.
+Now FM is something like an antiderivative of F.
+Good.
+So we collect all those T sub-ometer for which this is not the case.
+Actually, I'm deviating from the directional to the complement.
+So this is a measurable set.
+The sequence of measurable functions, the set where they converge, is the measurable set.
+Now I apply for BD.
+For BD tells me I want to compute the measure of the set.
+I can compute the measure of the sections and then integrate over those measures.
+So we look at sections.
+If there's no omega, then we would know by the fundamental theory that we have the conversions.
+So we look at the sections.
+A, omega, and these are the T's for which I have convergence if I fix omega.
+For BD tells me that's the measurable set.
+Also, the fundamental theorem of calculus.
+What do I do?
+What am I doing?
+I'm doing integration.
+I want to undo the integration.
+Okay.
+Fundamental theorem of calculus tells me Fm G of omega converges.
+Okay.
+This is 14.
+Okay.
+Okay.
+This is 14.
+Okay.
+Okay.
+What am I doing?
+I'm doing integration.
+I want to undo the integration.
+Okay.
+Fundamental theorem of calculus tells me Fm G of omega converges to...
+Okay.
+Okay.
+This is 14 in the omega, and then fundamental theorem tells me this is true almost everywhere.
+Okay.
+Okay.
+So, lambda of omega is equal to 1.
+And then Fubini tells me this is equal to 1 as well.
+Okay.
+Okay.
+Okay.
+So, we have to almost show convergence.
+So, we have it for bounded and progressively measured.
+Okay.
+Well, it's not difficult to get rid of.
+We just truncate.
+The progressive measurability needs to be related next.
+Thank you.
+Thank you.
+So what's the difference?
+Previously, we integrated.
+And the new progressive measurability carries over to the energy.
+Now we don't know it.
+So we do not know it's progressive measurability.
+So we do not know it's progressive measurability, but here we do not know it's adapted.
+So we want to approximate something adapted by these integrator processes.
+So what matters really is adaptedness, not so much progressive measurability.
+But to get adaptedness and not progressively measurable is also a bit tricky.
+So what do we do?
+We have a proposition that we never proved.
+Proposition 119 that showed that under very mild condition, processes have progressively measurable
+modifications, f as a progressively measurable modification.
+So what we proved was under additional continuity assumption in the center process.
+That's true.
+This one we never proved, but here we need it.
+So call this progressively measurable modification G.
+So we do what we did here.
+We integrate.
+G T, 0 to T, G S omega D.
+So let's progressively measure.
+So in particular, it's adapted.
+So what we want to show, this is a modification of F.
+This is a modification of F.
+This is a modification of F.
+This is a modification of F.
+B of F T is G, so that's one for all T.
+Then, this is where we need the usual conditions now.
+So we have a modification, something differs up to as the headset.
+Now we need the usual conditions.
+We know F T is adapted.
+My little F is still bounded.
+So my capital F process is continuous.
+So F is bounded.
+So it's chapter one, continuity plus adaptedness means progressive.
+Now it's progressively measurable using the arguments from step three.
+So we have to show this.
+We have to show the modification of the little F gives the modification of the capital F.
+So.
+So, what is this, this follows again from green.
+Okay, expected value, integral 0 to d, f s minus g s d s.
+For me, it tells me, interchange the integrals.
+Now I know f and g are modifications, so this is equal to 0.
+Therefore, this thing inside must be 0.
+And now the difference, the absolute value of the difference of the integrals is bounded
+by this one.
+So, we know f s minus g s d s is almost true.
+One is f, one is g.
+One is g s, d s is almost true.
+One is f, one is g.
+f unbounded truncate.
+So, question, what did we really prove?
+The result said everything in L2 can be approximated by single clauses.
+What was in L2?
+The result was a 2-verse sum norm condition plus measurability plus a definition.
+Obviously, we proved something slightly different.
+Everything that we used for approximation was progressive.
+So, what we actually proved is that for approximation, we used progressive processes.
+not just measurability, not just measurability.
+So, we actually proved something slightly stronger.
+What is L2?
+What is L2?
+What is L2?
+What is L2?
+That this being a subset of all progressive processes in L2?
+What is L2?
+We actually showed.
+What is L2?
+What is L2?
+We actually showed.
+L0 stands in L2.
+It's also dense in L2, no doubt.
+We started with some f from L2.
+But all the objects, all the elements we constructed for approximation, for progress.
+Atom, and we work with M, this becomes much more important.
+For the Brownian motion, it just turned out to be this case.
+But when we work with general, local martingades, the bracket process itself is random.
+And then we get different conditions, different integrability conditions that need to be satisfied for adapted or progressive or predictable processes.
+So, what we proved on Thursday, we show this function I that we defined on the center of all simple processes, extends uniquely to some function.
+to some function J, on N2.
+And that allows us to define the stochastic integral of any measurable adapted process satisfying a certain integrability condition with respect to the Brownian motion.
+So, that's something to be looked forward to, to Thursday.
+Any further questions or comments? Yes please.
+Why did we drop the assumption of progressive measurability in three?
+Where did we drop this?
+In three? Yeah. Progressive measurability. Yeah.
+Because, that's not part of the statement.
+The statement is, anything from N2, and N2 is adapted. Adapted measurable. That's not progressive measurability.
+It just turned out that, you know, this too, can be approximated by something progressive measurability.
+But it was not part of the assumption. So, this here is joint measurability plus adaptability.
+It is just our smoothing procedure with integration that, you know, preserves progressive measurability.
+And, since you are, you mentioned equivalence classes previously.
+Where might that play a role in what is?
+And, already, in a sense, see it. Because, we introduced this G. We changed the processes.
+It's not saying that we, we work with equivalence classes.
+But, that, that change of processes already suggests that, at some point, we may have to switch from one process to another, in order to have the right measurability properties.
+Yes?
+So, L star is, is L star just a subset of L2, Ben?
+Say again?
+L star is just a subset of L2?
+Yes.
+Progressive measurability.
+Progressive measurability is more than adaptedness and measurability.
+But, then, it's, isn't it obvious that the subset of L2 is, or that L0 is also, no, it's not, okay, no, nevermind, yeah.
+Yeah, no, because we, yeah, we, the, the thing is that L0 is also contained in L star, that's the interesting part, I guess.
+The, the, that's the thing. So, that you can really, your limit is, again, progressively measurable.
+Yeah.
+So, it is, the wording is not, not perfect, I agree. But, then, again, that the point is, we're working for the approximation entirely with progressively measurable processes.
+Okay.
+So, we could, we could have used L star here.
+And, it is still correct. Yeah.
+And, again, it, it, it.
+It's burning.
+It is the point.
+Okay.
+It's so главal here that drowned.
+And, that kind of outbreak every minute of the week in the beginning.
+And, again, it's coming up from the ground here.
+Okay.
+Like I see.
+Bye.
+Oh, bye.
+And, again, it's going to be all time support, to
+be able to do this again.
+So, we can bring that easy, so we can take that easy for you.
+Like we're doing that.
+And, we do need to忙 for you.
+And, okay.
+Let's go.
+And, I just want you to hope.
+That will be the youngest patient to have the strength in place.
+We need to go.
+So, take it.
+Let's put it, guys.
+Yeah, we do.

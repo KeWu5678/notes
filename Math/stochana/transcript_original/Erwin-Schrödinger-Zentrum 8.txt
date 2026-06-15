@@ -1,0 +1,753 @@
+So these were the two main results that we used.
+Then we showed that we let it open.
+Open from the outside.
+Then we showed that we convergent
+this equation.
+And we introduced this DBL metric
+where we compared integrates
+the set of bounded Dipschitz continuous functions.
+And B, everything, the next one is called B and 1
+because the Dipschitz with constant 1.
+So what was the idea here?
+The idea here was if we take
+the set of bounded Dipschitz continuous functions
+and restrict it
+to a compact set
+then by Ascoli-Arcelor that's compact
+and the set of
+continuous function of a compact set
+is
+separate and complete.
+So compactness
+is equivalent
+to
+totally bounded.
+And totally bounded
+meant
+that the soup
+could essentially be reduced
+to a max.
+So for any epsilon,
+we need to find that number of functions
+and up to epsilon
+we can then approximate any of these functions
+so
+that essentially
+became a max
+and then we could use point-wise
+convergence
+for all these functions
+these finally many functions.
+So that's what gave us
+this result.
+And then we showed
+sequences
+what probability
+on compact sets have
+equal convergence
+sequences.
+And how did that go?
+that go
+we find
+a sub-sequence
+such that for any functions
+from a bounded set
+f are from a dense set
+we converge.
+n, k, f
+converges
+to some real number
+from a counter-dead set
+from a counter-dead set
+from a counter-dead set
+and then we applied
+reads
+and since it's now in the latest version
+for action notes
+not yet in yours but in mine
+just in case you haven't seen it
+So he says, so this defined the bounded linear of the net, L VL to R, just this limit.
+And for any function, we take the limit around the subsequence and it converges.
+So that defines an operator, and this operator, we want to represent in terms of probability measure.
+And Reed says the following, the standard Reed says that XB, so at least we need locally compact and housed.
+So housed-off means any two distinct points can be separated by open sets.
+So any matrix base is housed-off.
+And we have an operator, L, on the set of continuous functions.
+Now, if we are working with locally compact, then the set of functions here is the set of continuous functions with compact support.
+And of course, in general, that, as a set of test functions, is not large enough to guarantee reconversion.
+This is what requires the extra argument that comes later.
+So this is positive, positive function in, positive result out, linear and bounded in operator norms.
+So we plug in functions with pseudonym, so if we want it, then it's bounded.
+Then there exists a unique, and nobody at this point tells us that L gives us a probability measure.
+So L doesn't necessarily have total mass of 1.
+So if we plug in the function constant 1, then the result does not have to be 1.
+So there exists a unique Borel measure, mu, such that my operator can be represented, either this or this, as an integral.
+And the 1 norm, so constant function 1, this is equal to e of x.
+So if L of 1 is 1, then we use a probability measure.
+But this requires some form of compactness, which we don't have, because our prime example is the set of continuous functions.
+And the set of continuous functions is not a locally compact space.
+Okay, so far so good.
+Now, what we want to prove in the next step is the complicated part of O.
+And it says, if we have a whole space, we have a sequence of probability measures, which is tight.
+And then there exists a weakly convergent subsequent.
+So, what's the thing?
+No longer a compact set.
+What substitutes for compactness for missing compactness is tightness.
+So, in principle, we have a common support of 2 epsilon, which is compact.
+So, whenever we restrict, we are essentially in a situation that we were before.
+But then we have to undo the restriction.
+And by undoing the restriction, we have to have a slightly different version of reads.
+And undoing the restriction uses this to propose this modification of reads.
+And this modification says, all I need for reads is that I can give up compactness if this operator here can be approximated by entire sequence.
+So, this operator here comes in the form of probability measure.
+And if there is a tight sequence of probability measure, so I assume that approximates this operator.
+Then reads the logs.
+And that's precisely what we need to prove in this form.
+So, here's the result.
+Let x be a common space.
+Mu n, a sequence of, now I'm trying to say probability measures.
+But later, you know, we do all these restrictions to compact sets.
+These are not probability measures anymore.
+Total mass is less than 1.
+But they don't have to be probability measures.
+They just have to be nice.
+Or halimutures.
+Think of this as probability measures with total mass different from 1.
+So, we assume the sequence is tight.
+The definition of tightness has nothing to do with probability measures.
+And second, there exists a bounded linear operator, T c b of x to r, which can be approximated.
+Such that there is a sequence, T n of f, which is coming from our measures mu n.
+This converges to T of f for all f from the set.
+And because we want probability measures to actually be normalized.
+Then there exists a unique probability measure that represents T.
+Then there is a unique probability measure mu, such that T of f is at volume.
+So later, these guys here become restrictions or probability measures to compact sets.
+And then we show the approximated operator.
+This one here.
+And this operator is nothing but a probability measure.
+So, all the details of the proof are in the nodes.
+I give you a bit of an outline.
+So, what is the idea?
+We need to construct mu.
+How do you construct a measure?
+Another is three.
+You define a set function on a set of nice sets.
+Compact sets, for instance.
+Then you say, okay, if I know no compact sets, I can extend it, let's say, to open sets,
+or to any measurement set.
+And if I can do this, there's a theory that says, in this way, you have an inner measure and an outer measure,
+only right here, then extend it to a larger set of sets.
+Then that extends uniquely to a radon-boreal probability, depending on the setting,
+measure on the ball as a graph here.
+And we proceed in a similar spirit.
+So, the first step is to construct a candidate measure.
+So, how do we construct a candidate measure?
+We start with compact sets.
+We set mu of k as the soup over all.
+So, what we are having is the limiting operator.
+So, we use the limit operator to define a set function on a set of compact sets.
+So, t of f, such that f is only continuous, restricted to a compact set as 1, and is generally between 0 and 1.
+Okay, this makes sense.
+We have a nice topological space.
+We have something that I do with that.
+So, you can basically define the indicator functions on any kind of nice set, and then outside the sets let it go to 0.
+So, later, we use what?
+We use that any bounded continuous function.
+Measurability.
+Measurability means we approximate something by indicator functions.
+So, bounded continuous functions, we can approximate by linear combinations, or functions of this.
+We use the alpha I.
+We have alpha I.
+We use alpha I.
+We use alpha I.
+We use alpha I.
+We use alpha I.
+We use alpha I.
+And k I.
+And k I convergence.
+We use to alpha I.
+And k I.
+Convergence.
+So, if we can approximate any continuous function by linear combinations, you can approximate
+linear combinations of indicator functions on compact sets. What we would like to have is, for this candidate here, we have convergence indicator functions for compact sets.
+If we have this, then now with this idea, any boundary continuous function is approximated by indicators on compact sets. We have the reconvergence to new of f.
+So when we have this, any function here which participates in the supremum is greater or equal than the indicator function.
+So mu n of f is less or equal mu n of f by assumption that converges to t of f.
+mu k for compact sets is the sub-overall such decay at here.
+So we have one uniform.
+So from this, we know limit superior mu n of f is u of f.
+So we need leave inf is greater equal.
+Okay, so, second inequality.
+So we take a function f here, which comes very close to the supremum.
+So we take the function f, we take the function f out continuous between 0 and 1, restricted to the compact set equal to 1, so 1 from here, which is close to the supremum.
+So we take a function f, such that t of f is greater or equal to u of f minus f side of f.
+In earlier version of the notes, there was a 50 inequality, so I hope I uploaded the correct one.
+So we take a function f, mu n of k, so f restricted to k is equal to 1, but the support of f may be bigger.
+So this one is greater or equal, here I'm integrating over the whole domain, and now I pretend f is equal to 1 outside.
+So I subtract minus mu n of x, so I subtract minus mu n of x, and I take away the suite.
+So this basically uses the fact that outside the support, the function is less or equal than 1.
+But my integral basically is 1 for where it is equal to 1.
+Now, by tightness, I can basically get it from this way.
+So for everything that comes, this way.
+So I take the leave in, is greater or equal to leave in from this one.
+mu n of f is the limit.
+T n of f, T n of f goes to T of f, but now my f is special.
+Here it is, greater or equal to mu of f minus f.
+So then again, my epsilon is arbitrary, so.
+Okay, it's an epsilon u of k.
+Sorry.
+Okay, so.
+So we have a well-defined set function on compact sets.
+And on compact sets, I have point-wise conversions.
+So now standard, we may have forgotten, but now there's three.
+So that is...
+We can extend the set functions to a set function on all open sets, and eventually on all void sets.
+And then Cara Theodori tells you you can extend it to a unique measure on the ball's block.
+Extend mu to a unique ability measure.
+I think I put the argument in a footnote.
+So what is mu?
+We need to identify mu.
+We need to show mu is T.
+So, by tightness, it is enough to verify or to identify mu on continuous function.
+So, let's go back to the function.
+Everything outside of the function, so practically, I saw.
+So, that's, also these details are in the notes, but I guess you're going to need to leave this immediately.
+Okay.
+And now we use this one here.
+So, to identify T. The previous point set is enough to identify it on a set of continuous functions.
+Now, we do the identification on that set.
+So, to take any function is called the support.
+We call the support K.
+Then we know TN of G is G dm.
+This is just the definition of TN.
+And now, we want to use this.
+We want to use this.
+So, if this is an indicator function on a compact set, we know it.
+Now, we approximate G by indicator functions.
+So, for compact sets, we know everything converges to new.
+So, in a nutshell, that's the idea.
+So, the first converges we made for size.
+This one, if you remember analysis 3, you remember it.
+Restrictions to compact support should be clear from tightness.
+And, I must admit, here I have to think a little bit.
+That you can approximate functions on compact sets by indicator with compact sets.
+Normally, if you come from meta-theory, it's always open sets.
+So, that's the extended or the generalized reads.
+Here.
+And now, we use the generalized reads to finish the proof-off.
+Any questions before I start erasing things?
+Any questions before I start erasing things?
+Any questions before I start erasing things?
+Any questions?
+Any questions?
+Ok?
+Any questions?
+No!
+Any questions what you have?
+Any questions of your comments?
+Ok?
+Any questions?
+Any questions?
+Any questions?
+Any questions?
+And what we need, we need to construct these guys and need to show that they converge.
+And if they converge to something which is nice, then hidden in there is the probability of TSI.
+So, we have titles.
+This is what we assume.
+So, we find compact sets, Km, such that mu n, K, and complement the small.
+And by small I now mean this, so that is what we can sum it up.
+Forward.
+Without lots of general relativity, we assume,
+the sequence of compact sets is increasing.
+So, now we restrict.
+We restrict mu n, 2k.
+These are no longer probability dimensions.
+But that's not important.
+Because all the arguments that we used previously didn't really need this.
+So, as before, what we can do, we can extract a subsequence such that the subsequence, when restricted to compact sets, converges for all compact sets.
+Exactly the same argument as before.
+Exactly the same argument as before.
+Exactly the same argument as before.
+So, we find a diagonal argument.
+We find a subsequence such that when we restrict two compact sets, this converges.
+This converges in this metric.
+Previously we used functions.
+And so, we find a subsequence that works for all test functions.
+So, now we find a subsequence that works for all test sets.
+Same argument as before.
+This converges.
+So, it means this sequence here, for any n, we send k to infinity, converges.
+So, we know there exists a, call it sub-probability measure.
+So, we have runterges.
+I can use an sequence.
+Here, right?
+and m.
+k...
+And so, the Garden's and the
+goes to zero. So this is a measure concentrated on this set. If I change my
+m to m plus one, I get a new measure concentrated on a larger set. The
+assumption here, increasing this one here, means these measures are consistent. So if
+I take the m plus one measure and restrict it to this set, I'm getting this.
+So, by the start, the sequence mu m is consistent, meaning mu n.
+So now we apply our generalized weights.
+So what does generalized weights say? It says I need this operator t. So I have these
+measures. These measures define, basically these measures define this operator. I need
+to make sure that this sequence of operators converges point-wise to something. And we
+use the same trick again. Previously, when we applied weights, we said we evaluate our
+measures at test functions. And for each test function, we had a bounded sequence in r.
+You know, r is complete. So we had a limit. And then we find our operator. And we do something
+very, very similar here. So we define
+L m of f. Like this. We need to show point-wise convergings.
+L m of f. Like this. And then we are going to apply this proposition. So.
+And then we are going to do something. And then we are going to apply this proposition.
+And then we are going to do something. And then we are going to apply this proposition. So.
+And then we are going to do something. And then we are going to apply this proposition.
+And then we are going to apply this proposition. So. This is a homebar co-est part. And then we are going to apply this proposition.
+So. This is looking.
+machine. You need the consistency for this and the fact that we have a sequence that goes to zero here
+and the fact that f is bounded by one. So we have a Cauchy sequence and these guys converge
+in R. As before, this gives an operation. So this one converges in R for any test function
+bounded Lipschitz continuous. This defines an operator.
+L bounded Lipschitz continuous. If you have compact sets, continuous approximated by Lipschitz. We have tied sequences, so we can
+basically again restrict ourselves in compact sets.
+The generalized lead set.
+The mu.
+The mu.
+The mu.
+The mu.
+The mu.
+The mu.
+It's just like youension.
+Theusu.
+The mu.
+The mu.
+The mu.
+The mu.
+The mu.
+The mu.
+Yeah, normally you need to check that this is called rogers.
+Genitalized lead says operators coming from a tight family of not necessarily probability
+measures. I have point-wise convergence of these operators on this set of continuous functions.
+Then I can represent the liquid operator as an integral.
+In our proof, these operators come from restrictions of the tight sequence to increasing sequence of compact sets.
+This is the usual trick to restrict everything to something that you know converges at R.
+That defines an operator representing the operator.
+These are the key steps.
+Okay, so we know
+Hold up
+Hold up this crew.
+We have two questions.
+Question number one, when do we actually have a conclusion?
+So we have points out of y-actions with no existence of converging subsequences, but what we would like to have is converging
+So question number one, when do we have conversions?
+Obviously, if all subsequences converge to the same limit.
+Question two, the case that interests us
+The case of probability measures
+The case of probability measures on the set of continuous functions.
+So Provo says, fine.
+We can apply the result to this.
+And we have a weakly convergent subsequence if it's tight.
+So what does five measure mean?
+I mean, yeah, we know something has to live on a compact set, but we'd like to understand a bit better what that means on the level of functions.
+Considering probability measures, don't we want them to go from the real numbers to the interval 0,1, not the other way around?
+Where are you?
+You?
+Yeah, question two.
+That's all the functions going from the interval 0,1 to the real numbers.
+Yeah.
+And probability measures go from the real numbers to the interval 0,1.
+No, probability measures on the set.
+Okay.
+Take a, remember, Don's probability 2.
+He said, if we have brown in motion, then the rescale variable more converges to brown in motion.
+So we were summing up IRD random variables and interpolated linearly.
+So that gave us a piecewise linear continuous function.
+And then we scaled the whole thing and we looked at the distribution of these functions.
+That these are supposed to converge in law through brown in motion.
+No, no.
+We are interested in probability measures on this set.
+What I want, I want the canonical model for brown in motion.
+The canonical model for brown in motion is, take as your sample set a set of all continuous functions.
+Because we know brown in motion is continuous.
+When we construct it as a Gauss process, we construct it on a set of measurable functions.
+Then we need to do an additional argument saying we have this continuous modification.
+Now we want to construct the probability measure on this base so that the canonical process,
+we just evaluate the function at time t, under this measured probability motion.
+So this e that we were always talking about, this Polish space e, for us is this one.
+And we take random functions.
+This we scaled random ball kind of like this.
+Up, down, up, up, up, down, down, up, up, something like this.
+Something like this. And if you are magically scaling out, you look at this from far, far away.
+And from far, far away, this looks like this. And I want this to be brought in motion.
+This is supposed to have the same brought in motion.
+Okay, so what does tightness or probability matters on the set of continuous functions actually mean?
+And Q3, again for E.
+As I said, when do we have unique accumulation points?
+If we have a criterion for tightness, we know that the sequence of probability measures has a weak accumulation point.
+But if we want it to converge, what does it mean to converge in this continuous?
+So these are the three questions that we are answering today.
+And any question about the theoretical set of right knowledge?
+So far, you, for the most part, worked with probability measures on R, but not, or maybe on abstract sets, but,
+sometimes it's the hardest to work on a particular set that requires an abstract setting.
+See, in our case, in our case.
+See, in our case.
+Okay, so let's first address Q1, 2, very soon.
+So, what does it mean to converge weekly?
+It means every sub-sequence contains a weekly conversion sub-sequence that compares to the
+same.
+So, for this we don't want to converge, we're just a metric.
+We have a sequence of probability measures on E. Then we have a reconvergence of P if and only if
+every sub-sequence contains a sub-sequence, it compares to the second.
+So, let us assume reconvergence is not the same.
+Then the sub-sequence converts it to the same number.
+Simple proof.
+Okay.
+If I reconvergence is clear, then everything converts to the same number.
+So, let us assume reconvergence is not true.
+Here we have a sub-sequence and a test function for which things go wrong.
+So, then there is a sub-sequence for the test function, Cbp and an epsilon such that Fdpn minus Fdkp is
+bigger than epsilon for K.
+So, then clearly this sub-sequence cannot have a really composite sub-sequence.
+Because there is at least one function for which we just go wrong.
+And if we go from right to left, it says every sub-sequence points to this one has a really composite sub-sequence.
+And this cannot be.
+So, and Fdpn has no really composite sub-sequence.
+Uniqueness of the combination points and every sub-sequence converges to the same function.
+So, we have a tight-sequence.
+So, we have a tight sequence.
+So we know we have sub-sequences that converge, then any sub-sequences
+converges to p, if that is true, the whole thing must.
+One or two, we have tightness here.
+The whole whole tells me I'm having a weakly converted sub-sequence
+that contains a sub-sequence that converges to p.
+And this lemma says if any sub-sequence contains a sub-sequence
+that converges to p, then that's equal to 2.
+So the proof is 4.
+I have convergent sub-sequences, and the convergent sub-sequence
+again contains a weakly converted sub-sequence, equivalent to the convergent.
+So there's 4.
+So there's 4.
+That's 2.
+60.
+This is not, it's clear, but in practice this is not very useful.
+Because it says, good, I have convergent sub-sequences,
+if all converges to the same thing, then I have convergent.
+But how can I tell they're all converging to the same thing?
+And when we're having probability measures on the set of continuous functions,
+then you can actually guess the very easy sub-sequence condition.
+The proof is intuitive, that's a sufficient condition.
+That's right.
+Haha.
+That's right.
+Haha.
+That's right.
+Haha.
+Probability measures.
+
+a function set, meaning we are looking at distributions of stochastic processes.
+When are two stochastic processes the same in distribution?
+When they have the same finite distribution, this is how we construct stochastic processes.
+So if we have distributions of stochastic processes and we know they are tight,
+and we know, yeah, we have the correlation points, but stochastic processes, the distribution of
+stochastic processes are uniquely determined by the finite dimensional distributions.
+So all we have to do in the setting is to identify finite dimensional distributions.
+And finite dimensional is just something relatively easy.
+So the hard work has been done with Paul.
+So reconvergence
+to rate two
+on the set of probability measures on the set
+of continuous functions.
+I'm giving you a family of distributions of stochastic processes with continuous sample paths,
+and I want to understand what is the limiting distribution of these processes.
+in other words, later we take this v-scale random box, we look at the distribution,
+we argue they are tight, we identify the finite dimensional distributions of any potential limit,
+the limit, we say, okay, the limit must be longer motion.
+Okay, so we know
+this is a polished space, but not normally compact.
+So we assume we have
+the sequence
+let me just write c for c0 or another.
+We have a family of distributions of domestic processes.
+We know
+for whatever reason
+we have
+v-convergence.
+So that convergence of the whole distribution of the stochastic process.
+Then we also have convergence of finite-dimensional distributions.
+So we're just asking ourselves
+what is the distribution of my stochastic process at finitely many points in time?
+Let's write this like this.
+pn fqt, finite-dimensional distributions.
+Why is this the case?
+Finite-dimensional distribution means evaluate
+a function, a random function at finitely many points in time.
+That's something we have read in our case.
+Look at the distribution.
+Okay?
+So we take a projection mapping that just evaluates our process.
+So we just take
+any finite set of points
+to the power of cardinality of j.
+And any function x
+is mapped to
+the image of x
+and these finite-dimensional distributions.
+Side republic.
+It is extremely important for
+most of the things we do here
+that we are working with continuous functions.
+Because then we also have uniform.
+If our functions have jumps
+then some of the arguments
+that we make,
+we can still make them.
+But we would need to understand
+how we measure jumps.
+Though we know how,
+what we mean by the proximity of two
+continuous functions.
+But what does it mean for two functions
+with jumps to be close to each other?
+There are matrices for this as well.
+We are interested in this.
+Because we are interested in this,
+this is a continuous measure.
+We have the soup norm on c.
+So that's continuous.
+So we want to show this
+conversions of finite-dimensional distributions.
+So we take the test function
+g.
+We test 25 time points.
+g takes 25
+arguments.
+To add
+the power of it
+continuous.
+We integrate
+g with respect to the distribution
+of our stochastic flow set
+is finite-dimensional
+once in time.
+That would be p
+composition with the inverse
+dy.
+These are the finite-dimensional distributions.
+The law of my process
+at the times of j.
+This is my test function.
+Integration
+with respect to this measure.
+I move this one into my g.
+g of pi j y
+p
+n d y.
+My projection mapping is continuous.
+My g function is continuous.
+So this is
+bounded
+continuous function.
+I assume I have v-convergence.
+v-convergence applied to this bounded continuous function
+means
+this converges
+to integrative g
+composition with p j
+d p of j.
+and now
+I go basically here from left to right.
+I write this as
+g y
+d
+d
+d
+d
+phi n plus
+phi n phi dot j.
+So this means
+the finite-dimensional distributions
+in distance
+do indeed
+converge more.
+So v-conversion is much more
+than
+finite-dimensional distributions.
+But it turns out
+that if we have tightness
+and
+we have convergence of finite-dimensional
+dimension distributions
+then we have three conversions.
+Only conversions of finite-dimensional distributions.
+This
+tells us nothing
+about this.
+I'm giving you a counterexample later.
+But combined with tightness
+convergence of finite-dimensional distribution
+gives you the
+weakness of our combination points.
+We can't disassemble.
+There's a counterexample here.
+We can't do it.
+We can't do it.
+I'm giving you a counterexample here.
+We can't do it.
+We can't do it.
+We can't do it.
+So
+I'm giving you alot a little bit.
+All right?
+I'm giving you a counterexample here.
+I'm giving you a counterexample here.
+You will have an authentical
+including those four chosen ones.
+And you will have an obvious
+that we have an curexample here.
+Welcome.
+I'm getting this yo-poiled
+so momentarily
+So, we have probability measures P and P.
+Now, if I have conversions in the sense of finite dimensional distributions, and the end is absolutely key, we cannot do without, and P and P is not.
+Then, we have B converges. So, B converges always gives finite dimensional distributions converge.
+But we need the tightness to basically upgrade the finite dimensional distribution convergence to B converges.
+So, again, what is the nature of it? I have tightness, so I have weakly convergent subsequences. So, my subsequence converges to some measure.
+Probability measures on this space are then uniquely determined by marginal distributions, by the finite dimensional distributions.
+But the finite dimensional distributions are the same for all weak accumulation points. So, any weak accumulation point must be equal.
+So, when I follow up, we have weakly convergent subsequences.
+We show all sub-sequences converged to this end.
+So, here's my B-P convergent subsequence.
+So, here's my B-P convergent subsequence.
+So, here's my B-P convergent subsequence.
+So, here's my B-P convergent subsequence.
+So, here's my B-P convergent subsequence.
+It converges to some Q.
+So, here's my B-P convergent subsequence.
+So, here's my B-P convergent subsequence.
+So, I converge it to some Q.
+What we have to show, Q is P.
+We know of a dimensional distributions.
+So, here's my B-P convergent subsequence.
+So, here's my B-P convergent subsequence.
+So, here's my B-P convergent subsequence.
+So, here's my B-P convergent subsequence.
+So, here's my B-P convergent subsequence.
+So, we know, by assumption, we add a circle, just for the way of this.
+Moreover, along the subsequence, the same thing converges to Q.
+So, obviously, these are the same.
+So, P and Q have the same finite dimensions.
+So, then we'll see.
+So, then we'll see.
+So, they must be the same.
+So, tightness, existence of convergent subsequences, convergence of the finite dimensional distributions,
+all accumulation points on the same.
+So, convergence in finite dimensional distributions is not enough.
+The finite dimensional distributions uniquely determine the P. If I only have finite dimensional distributions, I don't know.
+And here's a very simple example.
+That shows that.
+We take some continuous function, which is essentially non-zero, only in the vicinity of the origin.
+And now, whenever our finite dimensional distribution test board happens outside this origin.
+This is this neighborhood of the origin.
+Nothing happens.
+So, what I mean is this.
+So, what I mean is this.
+Take this function.
+Zn.
+Zn.
+Zn of t.
+Zn.
+It comes in a constant distribution distribution distribution.
+This is the one.
+So, what I mean is this.
+That's what happens outside this origin.
+This is neighborhood of the origin.
+Nothing happens.
+So, what I mean is this.
+Take this function.
+Zn.
+Zn of t.
+Zn. Zn of t. It goes up from 0 to 1 on the interval 0, 1 over t. And 1 over n. Then
+goes down. So outside, for all arguments greater than 2 over n, my function is 0. So this is
+a function on the unit circle. Zn infinity is equal to 1. All my functions get from the
+unit circle. But 0.5 to go to 0. Here you can only see what that is called.
+On the unit circle, but 0.5 to 0. So there is something not matching up in the limit, obviously.
+My probability measures are probability measures on a set of continuous functions. So I take
+Dirac measure on Zn. Pn. Pn chooses a random function. But in this case, it picks the function Zn
+with probability 1. And P picks the limit function with probability 1. The 0 function.
+So now we test finite dimensional distributions. I take any family, any finite family of time
+points. But no matter which family I take, if I choose n large enough, these time points are
+always outside this interval. And then there's nothing to test. Outside that interval, this function
+is 0 and the 0 function is 0 as well. So I claim the finite dimensional distributions
+of the 0 function. And the t1 on my n is so large that the t1 is bigger than 2 by. So in other words,
+we'll be the z n of T5 is 0. So for all my test points, my test times, the z n agrees with the limit punch.
+So if I'm projecting, I have to project on a finite number of time points.
+And then, this is zero.
+So the law of the pre-limit and the limit is clear to the same.
+Both terms, everything is clear.
+But we do not have B-concliberts.
+Why do we not have B-concliberts?
+What have we not used yet?
+We have, this we have used for the finite image distribution.
+This we have, this property.
+We are having functions on the unit circle.
+So, let's call this unit circle B.
+So, this is clearly a closed cell.
+Portmonteau theorem tells us something how measures of closed sets behave if the underlying sequence converges weak.
+So, by Portmonteau, if I have weak convergence, then I cannot expect the probabilities of open or closed sets to converge.
+But I have inequalities.
+Namely, I have limit superior PN of a closed set is greater or equal than the limit of the closed set.
+For open set, it turns around.
+For open set, there's limit inferior less or equal.
+For closed set, there's limit superior greater or equal.
+So, what is PN of B?
+PN puts probability 1 on the ZN function.
+ZN lies on the unit circle.
+So, this is equal to B.
+But this one, the 0, it puts probability 1 on the 0 function.
+So, if I had B convergent, I would have...
+Sorry, the other way around.
+This is probably 0 by 1, but that construction is 0.
+So, no weak convergence.
+So, we have an answer to one of our questions.
+In this setting, where we are working with continuous functions, when do we have to go?
+We need time is that we need to check the fundamental dimension distributions.
+So, the big question now is, to be addressed on Thursday, what does tightness?
+What is the relatively transparent criterion that allows us to enter when the sequence of probability
+measures of the set is tight?
+So, this is something for you to look forward to.
+So, questions?
+If not, thanks for coming.
+See you all next.
+Hello, Professor Ross.
+Hello.
+I have a small question regarding the proof today.
+This definition here.
+Should it be supreme or infamal?
+It says soup.
+If you take soup, then every k, it is, you can take the function that is a constant one, then every mu has a, well, this, every mu, every k has a measure one.
+This definition then doesn't make sense.
+That makes sense.
+So, you're saying it's always one.
+Yeah.
+No, no, no, we don't know that t of f is, do we know t of f is one?
+Do we know t of f is one?
+We're assuming.
+Also, it doesn't say anything about this being normalized, but I guess I want this normalized,
+I guess I want the probability measure.
+Could be that this should be, and then this, this I changed in the lecture.
+Yeah.
+This one.
+And then I think this one is okay again.
+Yeah.
+Well, if you take this definition, that should be infamal.
+Yeah.
+Then it should be infamal.
+Yeah.
+But I, when I prepared this, I took the soup and then, then I stumbled here and changed
+that inequality.
+I think you're right about the infamal.
+Can I get back to this on Thursday?
+Yeah, yeah, sure.
+Thank you.
+Thank you.
+Thank you.

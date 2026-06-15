@@ -1,0 +1,976 @@
+So the AP version, chapter 1, and the last one here is, it's a pre-moment, it's P moments.
+So that's one statement.
+Okay, so when we're writing this down, the test is that every symbol passes part of the interpretive of the type T.
+So the library, and this one is negative, and it's not too good.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+So without right continued, you can never do anything.
+Okay.
+Okay.
+Okay.
+Okay.
+So it's a very regular process.
+So without right continued, you can never do anything.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+So you will always have right continuous processes.
+Okay.
+Okay.
+So.
+So.
+So I will start with the stopping theory.
+Because somehow, the order knows.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+So you will always have right continuous processes.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+So.
+So I will start with the stopping theory.
+Because somehow, the order in the script is.
+Because they don't use the same thing.
+So let's start here.
+Um.
+So we have a uniform.
+Indicator light machine is mounted.
+And here.
+So we have a uniform with Indicator light machine is mounted.
+So if I wasn't just retiring at all, we're off to the stopping time for our stopping times.
+Okay, so now we have to decide between this time, so we have to take my power to the stopping time.
+But I have actually a little bit more.
+So you can latch the filtration slightly, and it's not true.
+Okay, so this is now the more difference.
+So just retiring, so here you can latch the filtration in here.
+So it's slightly larger than I see.
+Okay.
+So in particular, the stopping time is an angle.
+Again, it's a similar state, which means that Martin Gates will be placed like an equalization.
+Okay.
+Okay.
+So, we use this.
+And the idea is to approximate the continuous process by a discrete process.
+So we define some discrete time sets.
+So we get convergence and time tau.
+And the right continuous process is to approximate from above.
+So we get convergence and time tau.
+And the right further and then we turn into the T co.
+Dr.
+Okay.
+Okay, and Sigma M will find the same.
+So we detect a dyadic approximation.
+Okay, so if you do this, then go to U.
+There is a number.
+And then you look at the n.
+And then this is tau n.
+So tau n is defined in terms of tau, right?
+And tau n is smaller than n.
+And tau itself is smaller than s and k.
+And then the definition of that approximation.
+This is the stopping time.
+So this one isn't okay.
+And this is mu.
+This is smaller than u.
+So the more thing is there.
+Okay.
+So this shows that it's stopping time
+and the discrete differentiation to tau n.
+And then to the lower side.
+Right here we use this and stopping time.
+So.
+Okay, what else?
+Can I also display some water here?
+Yeah.
+So we can suspend time here.
+You can also discretize the mark again.
+Yeah.
+Would it be possible to slightly slow down?
+Because right now,
+you're not going to bite the speed of the professor.
+So, I'm sure it's one of the stages,
+probably, I'm not, but.
+Yeah, okay.
+So, we have proof that this discretized stopping time
+is again stopping time,
+is the smaller filtration,
+the discrete filtration.
+At the same time, you can also do this for M.
+Yeah, so we can also discretize M.
+Now, we have the M u,
+M u is the mark again.
+This is trivial, because we know
+M t is a method to F t for all t,
+so it's especially true to take part.
+Right, and the marking and proper tools
+for all usual tools, especially for all U and S n.
+And this is a...
+Exactly.
+Okay.
+So, we can apply the disc with optional stopping
+to your ring, right?
+The discrete optional stopping.
+What we get is...
+sub-guarding here, right?
+This is supposed to bedad, right?
+You can apply the concrete direction
+and put some marking here.
+So this is sub-guarding here
+and by discrete-option,
+then you found it somewhere like here.
+here. But n is a marking here, so this is a color.
+Okay, so now we want to have the integrability for not for n, but for time, not for u and xn, but for all u.
+So what we do is we approximate.
+Come back.
+Now we'll write here as a dietic number.
+Okay, you can do this. You can approximate any real number by a dietic sequence.
+Okay, on what we actually want to do with the integrability. This number here.
+You can write continuity.
+This is the limit.
+This is the limit.
+Okay, so you really need the right continuity of the mat again to transfer the statement.
+This is the statement.
+Now you can apply the two.
+There you go.
+Okay, now we can apply this one here because if we are in the dietics, we just have this statement.
+Okay, and now we know that this mat again is from the integrability.
+This here is from the integrability.
+This here is from the integrability.
+This here is from the integrability.
+And then we'll take the time.
+Especially as part of that.
+Okay, so we know this is the integrability.
+Okay, so now we want to check.
+Okay, okay.
+So now we want to check.
+The statement here.
+The integrability.
+The integrability.
+Okay, so again, we first do it for the discretized stopping times.
+Yeah?
+So, by discretized stopping.
+You can apply it if you get.
+The integrability.
+Okay.
+I want to check.
+Okay.
+I want to check.
+The integrability.
+I want to check.
+The integration of the integration of the integration of the integration.
+So, whenever I take the set and sigma n.
+I take a set and sigma m, but I can't.
+Okay, so this is what we know.
+And what you see here is, if this is true for all a,
+sigma m, and this is true for all a and sigma plus.
+Now, because this is all square.
+Okay, so
+now, by right continuity,
+this converges here, right? By right continuity, you see
+that if a is at sigma plus,
+I can pass to the limit here inside, right?
+And this will converge, and here also.
+The problem is,
+my limit is outside and not inside.
+So I need an argument
+why I can do this.
+Okay, so
+what we have to show
+is that this
+family here
+is going to come into this, right?
+right?
+And this one also.
+It goes the same line.
+Okay.
+Good. So that's what we want to do.
+So now, we will choose uniform
+and equality.
+Anybody?
+If you want.
+We use the
+criterion .
+Okay.
+So this recorders
+remove the criterion
+.
+and
+following
+right
+and saying
+like family
+and he
+is going to be
+.
+And there is
+G
+that one.
+Let's go.
+That's
+that was the criterion.
+This is what we would like to apply.
+And we apply it in both directions.
+So we know M is really
+informative.
+So we know that
+there exists such a function
+G.
+And then we show
+we can use the same G for this family.
+Okay.
+Okay.
+So.
+And M is going to come
+if such a function exists.
+Okay.
+So.
+And M is going to come
+if such a function exists.
+and M is going to come
+to ask a function.
+It's so
+you can send us
+that is
+time.
+continuum.
+not something
+if we need
+know
+.
+that is
+so
+I think
+five
+and one
+youtube
+.
+a
+i
+your
+your
+ear
+you
+Okay, so now we want to apply this function G to this here, to this martingale, so
+
+Some can find it on this, but we can also take
+a different shape.
+So let's do this.
+Now tau n.
+If tau n is bounded, then of course we have a little shape
+because then we can go back to the larger bounded number.
+So which means if I'm on this set,
+if this is bounded as from n, okay?
+Then I can just replace tau n by the input of tau n and n.
+That is the same reluctance.
+Okay.
+Now I can apply the discrete optional stopping.
+By discrete optional stopping, I know m is a martingale,
+so the absolute value is a sub-martingale.
+And if you apply a convex function to a sub-martingale,
+it's again a sub-martingale.
+Okay, so you know that this one here is a sub-martingale.
+So, you know-
+We'll take this, you know what helps us answer,
+it's here.
+Well, then here are some habits still.
+So.
+That's my language.
+That's ourși obvi ois
+a sub-martingale.
+So,
+Cloud view,
+So there's a model here, so we have a sub-model here, and then we know the Corbett's function
+applied to the sub-model here.
+So we have a sub-model here, and there everything is discrete, so we can assume n is
+as special as a handy number.
+Okay, so we can apply the discrete option of stopping.
+So we can apply discrete option of stopping.
+And we know that we have g.
+Okay, so now we can plug in this here, and apply the power property.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+And now we can put it inside, and then of course the expectations collapse by the tower properties
+that .
+.
+.
+Okay.
+Okay.
+Okay.
+Okay, and you know that this one is finite because we are here, okay?
+So if I have an indicator, it will get smaller because I'm tall too, so here I know this is finite, or uniform in it.
+Okay, so with that, then the gases, we can now estimate this here.
+That's what we are interested in because we want to show that this family is uniformly integrable.
+And now if tau is finite, tau n, then of course you're always in the situation for some large enough n, right?
+But it might also be infinity, so this option is also valid.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+You can see the two cases we have.
+This one, we just controlled.
+Okay, these are the two cases we have. This one we just controlled. Okay, so here, this is bi uniformly in n, so if you pass to the limit nothing happens.
+Okay, and here one of these is also bounded, because the discrete mattinger is uniformly integral, there is this infinity bounded.
+So the whole thing here.
+Okay, so what is this good for? It shows that this family is uniform in infinity.
+And of course the same is uniform in this family, and you just replace tau by tau and infinity.
+Okay.
+Great.
+So, I don't know if this dog is independent of ending,
+Okay, so this shows that the family is eating from here.
+Now, similarly, this is what we call.
+Okay, so this shows that the family is eating from here.
+Now, similarly, this is what we call.
+Now, similarly, this is what we call the other one.
+Okay, so now we can go back to this equation up here.
+Yeah, so now if I take 1a and fc part plus, then it doesn't depend on m, okay?
+Then I can pass to the limits here, yeah?
+And I can exchange the equation limit because of the uniform integral b.
+In this case.
+That's another one.
+So.
+Now, let's select, at least, uh, 100�.
+Actually, I want to take 1.
+I want to take a guess problem.
+Okay, and here we can change.
+Okay, yes, so this proves the options of theorem, especially it shows that if you have a martingale,
+it's always a martingale also with respect to the larger filtration F2+.
+Now, this is the problem.
+F2 right for two years.
+F2 martingale.
+This is also an F2 plus martingale.
+Okay, you just apply the stopping theorem, right?
+With sigma equal to S and power equal to T.
+Okay, right, because you have here you have S sigma plus and then S plus.
+And uniform interoperability is not needed because you can just set the martingale constant from some time on.
+Yeah?
+Then it's automatically uniformly interoperable.
+Yeah?
+So you just stop it at some final time, apply this, you can stop it at T.
+And you can do this for effort.
+Yes.
+Okay.
+Okay.
+So now we want to prove the martingale conversion theory.
+You can prove it twice.
+So first we will try to use a discrete conversion theorem and then use this idea and about approximation transfer the statement to continuous time.
+And it works very well if you have a key boundedness because of that case you have the data model for the criteria and uniform interoperability.
+If you don't have it, it only works in continuous processes to prove it.
+And therefore we will prove it again.
+Okay.
+Yeah?
+And then actually in the same way you do a discrete time, you do up-crossing, proof and up-crossing inequality.
+Yeah?
+So that's why we do it twice and sometimes the second will be sufficient but the first proof is twice.
+Okay.
+Okay.
+Okay.
+We see that twice in the script and there's a price in the script and there's a price in the script.
+So I want to stay as close as possible here.
+All right.
+All right.
+So the first version of the Martingale Colleges.
+Number one.
+right now.
+Okay.
+So no.
+Nice question.
+So do you want to unserem?
+Okay.
+Okay, so if we use that for one, then we can use that for one.
+Okay, that's the same as in discrete time, right?
+If it's in discrete time after you get one in a P, pay the edge of the one, then you always have almost two bridges.
+So the problem is always that P is one.
+So you know from discrete time that P is one, you have almost sure conclusions but not L1.
+Right? Same is true here.
+Okay, but now for the moment we need an discrete time.
+Another one.
+Not an L1.
+So the same step is true in this right continuous but then we cannot use this truth.
+Okay.
+So you just look at the discrete martingale, yeah?
+So by the discrete time martingale convergence theory.
+We know that if, now I just look at M only at natural numbers.
+And then I have the discrete time martingale.
+So I know that this one here continues.
+And we also know that this conversion holds an N.
+Okay?
+And now all we have to do is to control the fluctuations between two natural numbers.
+Yeah?
+So we know for all N it's behaving nice and then it should also behave nice between N and N plus 1.
+So for this we apply our maximal inequality because the maximal inequality was a very strong statement
+and it said something about the supreme of all T.
+Okay.
+Okay.
+So.
+Okay.
+So.
+Okay.
+Okay.
+Okay.
+So.
+Okay.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So now we compare M T to M's initial number.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So what we're going to measure is continuous, right?
+So we can.
+Okay.
+Okay.
+Okay.
+So here I restrict myself V is primal.
+Okay.
+So let's look at this.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+The strict by supremum, this is a smaller supremum
+which approximates this one, the range from below.
+So the events, of course, also approximates each other
+so we can apply the continuity of the measure.
+Okay, and now this process here.
+So if you take a martingale, you take the martingale difference,
+then you look at all the subsequent layers of the martingale.
+Just basically the martingale started at time n.
+Okay, this is a martingale, so we can apply
+group's inequality, group's maximum inequality.
+Yeah, and we know this is founded by the expectation of the fine value.
+For all the items, this is founded by the expectation of the fine value.
+.
+Okay.
+Yeah, so here t is larger than one .
+Okay, so we have this statement, and we have a
+And now, you see this is true for all lambda,
+and I will send lambda to infinity,
+but if you send lambda to infinity,
+here should be lambda to infinity.
+All right, by the time, right?
+Okay, and now, if you have truly form integrability
+in the sense that you have NP bound in this, yeah?
+Then you know that this here, if you send n to infinity,
+this will not explode.
+Yeah?
+It's by NP bound in this.
+So by NP bound in this, the numerator here
+is bound and the denominator, you can send you to me.
+So this is more of an epsilon by NP bound in this,
+more lambda hatch.
+That's right here.
+Okay, so this shows, then, this gets arbitrary small,
+and so we have
+20 and we'll just check, and infinity on the journey.
+Why?
+Okay.
+So we actually have this ramp, and we can limit it,
+but now we're trying an inequality as to be able to get this one,
+this one is under control, and the other one
+from which is less discrete.
+so we just let it compute the output structure.
+So this is accounts.
+Here we just effect by an inequality. This one we just controlled, it goes to zero.
+And this one here also goes to zero by the discrete centimeter difference here.
+This is what I said at the beginning, if you want to prove the continuous time statement, you can use the discrete time statement to control the fluctuation.
+Okay, so now this shows all my shoe conversions, so we need the speed conversions.
+Thank you.
+Okay, you have to keep on with this. You have to keep on with this. You have to keep on with this.
+You have to keep on with this. You have to keep on with this. So you know it's unique from the integrable.
+So then you know you have to have one of it. But we want a p.
+All right, this is what we have to do.
+We have an additional argument here. So first we want to show that it's actually in a p.
+So we have to check this. So we want to keep on with this.
+Okay. So we have to check this.
+So we have to check this.
+So we want to keep on with this.
+Now we want to show that this one here goes to the other.
+Okay, and if there was not p, but there was p minus epsilon, it would be easy, right?
+Because then by uniform integrability, you know that this family is again uniformly integrable.
+Okay, so having this for p minus epsilon, this is straight forward.
+But we want it for p, not for p minus epsilon.
+Okay, so having this for p minus epsilon, this is straight forward.
+What about we want it for p, not for p minus epsilon.
+So we want the stronger statement here.
+And then you cannot argue this way.
+So the trick is to recompose omega,
+and you either look at this difference being small.
+Yeah, this difference being small happens with this high probability.
+And if this is small, you can apply the horizontal convergence done.
+Or you look at the set where this difference is large.
+Yeah, but if this difference is large, the event is very small probability.
+Okay, so that's the idea.
+Okay, so that's the idea.
+So here, the difference is small.
+You can always do this trick, right?
+So here, we can apply the bank-dominated convergence here,
+because we know all these random variables are bounded by k.
+Right?
+All these random variables here are bounded by k.
+So this here is zero by the bank-dominated convergence here.
+So, we are left with the second part here.
+And here we just do a good quality thing,
+so we just try and make any quality.
+Okay, so if the difference is larger than k, then...
+Well, at least one of them has to be larger than k.
+Okay?
+So this would be an alpha bond, and in these model,
+and I just do the actual thing.
+Okay.
+Okay.
+Okay.
+Okay, we're ready?
+Okay, so now we know there's a P-mo in here.
+Okay, and now you can again apply any LP bound in this, right?
+You know, this here is a P-bounded.
+So this is a P-bounded, so if I send K to infinity,
+you know, this here will both go to the empty center,
+and because of a P-bounded this,
+you can apply a dominated convergence here.
+Okay, so this will go to zero,
+but I've got a dominated convergence here because of a P-bounded.
+It's the same argument as a discrete equation.
+Okay, so this proves a course of what I've got to zero, right?
+So now we have to date with this case here.
+We have to use the P-slatum-1 to continue to come into the community.
+So now we have to do the same part.
+Okay.
+Okay.
+Okay?
+Okay.
+Yes.
+Yes.
+Yes.
+Okay, so here we need a different idea.
+Okay, so we'll stop them out again and hit them there.
+This is the stopping time.
+And now from the optional stopping theorem that we just proved.
+Yeah, so the optional stopping.
+That's why I wanted to prove it first actually.
+Okay, so we know that the stop process and power n is again a martingale.
+Okay, so that we can apply the first part to this one, right?
+Because if it's bounded, it's an mp or fbp.
+Okay, so we know that the first part, right?
+We know that mp converges to infinity almost surely.
+Okay, so if tau n is infinity.
+Otherwise, you have to always input tau n and tau n is infinity.
+So what we have to show is that eventually tau n is infinity.
+Okay?
+So that the union of tau n being infinity is only that.
+Okay.
+Yeah.
+Yeah.
+Yeah, so maybe you recall this dichotomy of discrete time martingale.
+It was saying either the convergence or it fluctuates between plus minus infinity, right?
+This is very similar, so it cannot fluctuate between plus minus infinity because we assume it's the most nice domain.
+And therefore, it has to converge.
+Okay.
+So let's show this.
+How far would this include therodes?
+Okay, thank you first.
+How long about this God for this?
+What's going on?
+There we go.
+Now we skip.
+I'm ehrlich-looking the bit of Fimoro room.
+I think the statement is wrong.
+Okay, let's move on.
+So, let's move on.
+Let's do it again.
+Okay, so we assume this is finite.
+This is finite by a function.
+And then again, if not, we can act on an inequality.
+I think it's like this.
+Okay.
+So, now we can apply monitor convergence.
+So, let's move on.
+So, let's move on.
+So, let's move on.
+So, let's move on.
+So, let's move on.
+You can do this.
+Okay.
+You have the continuity and now you have the .
+Okay.
+So, the probability of the tau n is finite means
+what?
+n is not large and then supremum is also large.
+Okay.
+So, we can add this.
+This one.
+So, we can add this.
+So, we can add this.
+And here you have .
+And .
+Minus one.
+It's really larger.
+Okay, so we have this bound.
+So what we see is .
+Okay, so where did we use the continuity?
+I said it's only true for continuous, otherwise it's wrong.
+Hmm, so where did we start?
+Up there.
+So why do we not use the right continuous martingale?
+So right continuous martingale can have jumps.
+Okay, and then if you look at the stopping time, you can jump above level n at time tau n.
+So if you do this for a right continuous martingale, this stop martingale is not bounded.
+Yeah, if it's continuous, you know you'll first have to hit level n if you want to go above.
+But if it's right continuous, it can jump.
+It can jump from n minus one to n plus 100 or whatever.
+Okay, so you don't have this boundedness anymore.
+If you don't have the boundedness or if you cannot apply the previous particle.
+Okay, so this here is very important, yeah.
+That's where you need the continuity.
+Okay, so I'm teaching since 9 o'clock is 10 this morning.
+Anyway, um...
+And so if you recall the statement of the martingale convergence theory in the discrete time, you have this assumption here.
+Yes?
+Okay, that was the assumption in the discrete time.
+So the same is actually true in continuous time.
+So now you wonder, where is it hidden in the statement?
+Well, it's hidden because this is actually equivalent to this one.
+Okay?
+How do you see this?
+Why is this equivalent?
+Because n plus the positive part is the same as twice the positive... twice... n.
+Okay?
+So here this is n plus... minus... n minus... n.
+So if you plug this in, one n plus cancels out.
+You have here n plus plus n minus.
+And this is exactly the absolute value.
+Okay?
+Which means this one here is anyway bounded, right?
+Because the martingale is constant, the expectation of this one.
+And so therefore, if this here is...
+Fulfills this criteria.
+If you have this here, the unit from boundless and I1.
+You also have unit from boundless and I1 on the right hand side and the other way around.
+Okay?
+So it's precisely the same condition we have.
+The only restriction we have here at the moment is the continuity.
+Okay?
+So, this retiming how we prove the result.
+So you have to do it from scratch.
+And you use the up-crossing unit quality.
+So the idea was, if you only apply too many up-crossing, one person has to package.
+Yeah?
+Or any interval.
+So, compared to the equivalent engine, I'm going to find it when you're up for a second
+of any model.
+Okay.
+Good.
+Yeah, so unfortunately we have to go back to this idea, if you're in the right continuous case.
+So now, for the second version, we again prove an up-crossing model, okay?
+We're going to generalize in the Martina conversions.
+For P equals 1 to write .
+Okay.
+So we need...
+Continuous time up-crossing model.
+And now, if you want to derive the continuous time up-crossing model, you can again use the discrete time up-crossing model.
+Okay.
+And up-crossing.
+Uh-huh.
+Okay.
+Maybe, if you want to record this time up-crossing.
+Okay, maybe we want to record this kind of crossing.
+Let's record this first.
+When I take a continuous time, I'm not knowing what they're formulating.
+Okay, now I can't see any finer in the end set.
+Okay, there's some finer in the end set.
+Okay, there's some finer in the end set.
+Okay.
+So, this is the number of up-crossings.
+This is the number of up-crossings.
+Obsidian-tower-alphabetum.
+Okay, so this is how I put this free time off again.
+Okay.
+So, here you are.
+So, here you see where you need this assumption I was just talking about.
+This here, right?
+This being intricate.
+Okay, it just pops up here.
+And, yes, so if you want this to be finite.
+Okay.
+Okay.
+So, up-crossing system.
+Up-crossing just means
+you take any interval alpha-meta.
+And, I look at this process.
+And, I just look off.
+Does it go from alpha to beta?
+So, this here is the first up-crossing.
+This here is the second up-crossing.
+Okay.
+Okay.
+Okay.
+And, I just can't talk.
+Does this happen?
+This is the number of up-crossings.
+I'm going to have to stop.
+Okay.
+So, actually, I don't know why.
+But, this is also a statement for super-marting gas.
+So, you'll never need it.
+Okay.
+So, if M is the super-marting gas minus M is the sub-marting gas.
+I mean, you just apply this inequality to one percent.
+So, let me add this.
+And, yeah, what do we have?
+Minus M.
+Sub-marting gas.
+And if we apply a Cormier's function,
+it begins in sub-martingale.
+So if we apply minus n plus,
+again in sub-martingale,
+then minus n plus is the same as n plus.
+Okay, so if I have a super-martingale,
+I get precisely the same,
+but now I get instead of n plus,
+I get it, and minus.
+In this case.
+Okay, so this is the discrete statement,
+which we know from last class and last semester.
+Now we want to prove the continuous statement.
+So, this is the discrete statement,
+which we know from last class and last semester.
+Now we want to prove the continuous statement.
+And then we want to prove the continuous statement.
+So, for continuous process,
+and then you can use different definitions.
+Let me also define them as a father's basis.
+So we can add about these emotional statements for
+five terms.
+Decide them
+per say of the word model.
+Or any sub-centra and unique line.
+Define them.
+Define them.
+Define them.
+Define them.
+Define them.
+Okay, because anyway, it's consistent as a script.
+So this one is, of course,
+is supremum on the origin of f,
+they're f primates.
+Okay?
+So, basically what you want is you want this part of the right hand side to be uniform and f.
+Yeah?
+Because so far, this equality goes to some fixed index x,
+and here you take the supremum over all these indexes,
+so if the right hand side, the bound is uniform,
+you're done.
+Okay?
+Okay.
+Okay, so the statements are following.
+This is continuous time of crossing.
+So you get it, and you get it,
+and you get it.
+Super marching again.
+And I need it.
+So.
+Time sets it.
+And an interval,
+and then.
+So.
+I now take this here,
+but I restrict myself to a countable subset.
+Okay?
+So I take here a relational number.
+A few up crossings.
+Okay?
+I'm going to replace that.
+And then.
+Now, so if I compare this to the discrete statement up there.
+It's the same, right?
+Okay.
+So now, you again have to set q.
+Okay?
+So now, if you want to get rid of this,
+which is what we eventually want to do,
+you have to approximate, right?
+You have to approximate every,
+every irrational number again,
+whether it's a sequence or something rational.
+Okay?
+Okay?
+You can only do this with your right continuous.
+Huh?
+So this is what you're going to get.
+Here is an if, and this right continuous.
+Now you can forget about the q.
+for implementing the dimension.
+Okay?
+Again.
+So, in f or i type statements.
+And we've givenurity the Ig at that效 system,
+so if it doesn't change it to the dimensions,
+and theniji ,
+and I'm actually 마지막 saying there is the 9-1-3-3-1-4-1-1-2-3-2-1-3-2-1-G.
+So, and for sub-mortivators.
+Right into the sub-mortivators.
+We'll get the discrete statement, which is done there.
+If you get precisely the same, you can just replace the f-model.
+. . .
+. . .
+. .
+. .
+. .
+Well.
+Okay.
+And, I mean, you can already see why it works.
+Because here, the bound was always the last value of our finite discretization.
+Right?
+It was always a tn.
+And now, if you work on a finite interval, 0t.
+You know?
+You can take here the sub-mortivator to infinity.
+Well.
+You might get a problem.
+Okay.
+Okay.
+So.
+Let's see.
+Okay, so let's prove this generalized up-closing inequality.
+So what we do is we approximate iq, so we have to prove this, right?
+Going from here to here is just approximation.
+We have to prove the first one.
+Okay, so m is super-magnet and write iq on q as approximation of its kind with mn with i.
+Okay, so you just always add points.
+Okay, then because this whole thing is monotony-increasing, we have, of course, if you look at the up-crossings only at these discrete time points.
+So this will always be less than looking at the up-crossings and all this, but because it's monotone, you know, this will be the same.
+Okay, so now to this one here, we can apply our discrete time up-crossing.
+So my discrete time up-crossing.
+So my discrete time up-crossing.
+Yeah.
+So now I need the last element in this.
+Okay, so f-n.
+Okay, so then we plug it in there, so then we have .
+Okay, so then we plug it in there, so then we have .
+Okay, but now this whole f-n is a subset of zero t.
+So therefore, I can bound it by t.
+Yeah, because it's a sub-manticle, a sub-manticle has increased expectations, so if I increase my endings from s-n to t,
+I can't see, yeah, this is just a sub-manticle.
+How about t-t?
+Yeah, it's a sub-manticle.
+Okay, so where does sub-manticle work work?
+Okay, so where does sub-manticle work work?
+And now I can just plug this by taking on the .
+Okay, so where does sub-manticle work work?
+Okay.
+Okay.
+So I can just plug this by taking on the .
+Okay, and now by multiple convergence, yeah, this is the last step.
+So by multiple convergence, this here converges to,
+now because this here is an increasing sequence,
+so this converges to the up-crossings of the interval of q.
+Okay.
+Okay.
+Okay.
+Okay.
+So this is for the step-band, and then what is next is just the approximation by the diatic numbers.
+Okay.
+Okay.
+So this is for the step-band, and then what is next is just the approximation by the diatic numbers.
+So if you have the right continuous mark in the end, you're going to reach here.
+Okay.
+Okay.
+Okay.
+Okay.
+So this is for the step-band, and then what is next is just the approximation by the diatic numbers.
+So if you have the right continuous mark in the end, you're going to reach here.
+Okay.
+Okay.
+Okay.
+So I think I have to stop again today.
+So when we do this next time, we do have the general computational theory,
+the right continuous mark again.
+Now we will talk a little bit about regularization, because you see there's outright continuity within the end.
+Okay.
+So see you all on Thursday.
+right now?
+Okay.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.

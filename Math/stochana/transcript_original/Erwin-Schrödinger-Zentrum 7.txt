@@ -1,0 +1,594 @@
+If everything is compact, because basically my test functions, a function is compact as well.
+So, locally compact. Our key space here is this one, it's not locally compact.
+So we have to work a little bit. We prove it first in some sense for compact sets
+and then use the tightness to extend beyond compactness.
+If we were just focusing on locally compact metric spaces, that would be easy.
+But the space of continuous function is not covered. This is why we need to work a little bit more.
+So, we start with the following.
+And I'm sure I proved that for the case E equals to R in my probability course.
+Probability measures.
+Measured. Single. A measure.
+All this A's is tight.
+So, P of E is the set of probability that you need, then U is tight.
+So, up to epsilon is the point of U.
+And to prove this, you already need everything.
+So, E is folded, E is separate.
+So, we have a dense subset.
+A counterpart dense subset.
+We can take little epsilon boards around each of these points, sum them up.
+That converges to the whole space.
+So, we sum up sufficiently many.
+We have something compact.
+That gives us what we have.
+But the compactness, again, needs the equivalent characterization of compactness in complete metric spaces.
+This is where the other property of Polish comes in.
+So, this is separate.
+So, let's say this is my dense subset.
+All right.
+So, we put little balls around this and sum them up.
+U M is the union of one over N.
+For N is balls wrong by the enzymes.
+So, that increases to E.
+My probability measure, mu, is continuous from below.
+So, mu of U M might increase to 4.
+So, we take a sufficiently large M, take the closure of U, U M.
+So, K is the closure of U M.
+So, then K is what?
+K is closed.
+And K is totally bounded.
+And K is closed.
+I have a complete space.
+Total boundedness and closeness is equivalent to compactness.
+Here we use A.
+This is closed.
+Right.
+And by this one here, mu of A for a large enough.
+is larger.
+Okay.
+So, yes.
+But even this trivial result already needs Polish.
+So, the next result, I'm just giving you, the details of those that will never prove
+this, but the set of continuous functions on compact sets admits a dense subset. So, the set
+of continuous functions on the compact set is dense, in the set of continuous functions
+of compact sets. I was wondering when I prepared this, where would one do this? In probability?
+No. Maybe in analysis three? I don't know. For sure, in functional analysis, approximation of
+so-called spaces and the like. But, I mean, anyway. The thing is, if you have an isomological
+structure, you can always, you can approximate everything by open or compact sets. This is
+what you probably use for this. Okay, so this is one thing that we need, and I said that
+if k is a compact interval, that's one. Approximate everything by polynomials. For general compact sets,
+it's a bit more complicated, but the combined proof, I think, is at most one-page.
+So, I don't know. Has this ever been proven anywhere? No. Okay. Yeah. Check the nodes. Again, if k is a compact interval,
+for the inputs. So, the first thing that we are now checking is that if we want reconvergence, the set of test functions is the set of continuous functions.
+It's enough to restrict to Lipschitz continuous functions.
+And because we can use Lipschitz continuous functions later, we want to prove the generalization of this. We want to prove this base
+of probability matrix of probability matrix of
+and we define a matrix that only uses continuous functions. Because they are
+conversion-determining. We don't have to look at the full set of continuous functions. So, we have a
+corner space. We have a sequence of probability measures. So, if let me write or use this
+further dislocation for integers. This converges for all Lipschitz continuous functions, bound and Lipschitz continuous functions.
+Then, we already have weak conversions. And why is that useful? Because when it is continuous functions, we have
+Acela Ascoli. Acela Ascoli gives us a criteria for compactness in function spaces. We need
+ap continuity. We can respect to Lipschitz continuous functions, we have ap continuity.
+Now, we have this probability measure here. The previous result says it's tight. So, mu is tight.
+We are not assuming tightness of the sequence. We are not allowed to use this. We basically have to deduce it from the conversions.
+But, we know any finite number of probability measures is tight. That's what we have just shown. So, this one for sure is tight.
+Okay. So, mu is tight. We have our compact set cable. So, for reconversion, what we really have to use as test functions are bounded continuous functions. Not just
+So, we have to say the bound is tight. So, now we restrict our function F to a compact set.
+So, we take a truncation function. So, we take a truncation function. A smooth truncation function. And the standard of smooth truncation function is this one.
+Maximum of zero and one minus the distance of a point to my set K.
+So, this is distance of X to the compact set K on which up to the exit of my u-lips. So, this function, this is which is not very difficult to show.
+So, with constant one. So, later, we also use something similar. We put another constant M game front. Then, this becomes M.
+So, now we multiply our test function F by this truncation function. Then, this function has compact support.
+Compact support. Compact support. Okay.
+Because phi. It's also continuous. Continuous, continuous. Continuous function with compact support.
+Continuous function with compact support can be uniformly approximated by Lipschitz continuous functions.
+So, forward and discontinuous. So, up to some additional triangular inequality argument, we can without loss of generality assume G is Lipschitz continuous.
+So, in the following, we're integrating G. So, approximated and then, there's some additional lexical terms.
+And what else we have. Integral F minus G is less or equal. They disagree outside the set K.
+But they're both bounded. But they're both bounded. F is bounded by M. So, G is bounded by M as well. And outside.
+So, K. They may be different. So, when we integrate, sooner or later, what comes up is this one. So, when we integrate, we have this one.
+Okay? We know this. By the tightness. This is small. But when we integrate, here, we also have those.
+So, if we knew, if we knew a priori, our sequence of probability measures were tight, then we could also put less than that. But we don't know this. Yet.
+So, let's write that out. What do we have?
+What do we have? So, up there, we know for Lipschitz continuous function, we have the converges. And we would compare Lipschitz continuous with the general F.
+Okay. I want to use this notation. I want to use this notation. Mu of F minus mu of G.
+Less or equal 2N mu of K. Okay, fine. So, this is a project. And then we have mu N of F minus mu N of G.
+of g is equal to mu n k. So we need to bound this. We need to show this becomes uniformly
+small. We need to bound mu n of k. We are not allowed to use pi in this. So how do we do this?
+And we know something is true for elliptical continuous functions. Now, of course, that's
+an indicator function there. But as indicator function, we can again approximate elliptical
+continuous functions. And we do this like this. So psi n x is
+the minimum of 1 and m d x k. So this is again...
+So this is again Lipschitz. So integral of this function d mu n converges and it's bounded by
+one and converges from below to the indicator function. So I have Lipschitz continuity mu n of
+psi n. For n to infinity, this goes to mu of psi n. And this converges from below to this
+one. So for n large enough, this is less or equal mu of k complement plus epsilon. And what I'm
+having now is essentially some kind of uniformity in n. So this one here has nothing to do with n. So for n large enough, I always have
+this bound here. So for n large enough, I always have this bound here. So...
+making first n large enough, I'm making first n large enough, I always have this bound here. So...
+making first n large enough, I'm making first n large enough, I'm making first n large enough.
+n large enough, and then n large enough, and then n large enough. And then n large enough.
+n large enough. What we see is the degree superior mu n plus
+n large enough. And then n large enough. What we see is the degree superior mu n plus
+K complement, mu n plus o equal to Epsilon.
+So, M is large enough, this one is close to this one, bounded by this, and so the limit
+is superior of this one, has the same one. So, going back to this inequality, here, we see
+that this is smaller as well. This one we already had. So, if hidden,
+hidden in this convergence, is the titans. But we need to go through the approximation
+argument, arguing that a set of Lipschitz functions is rich in our approximations.
+So, to check reconvergence, Lipschitz continuity is enough. And this allows us to extend this
+one to Polish basis. And we are using Lipschitz continuous functions as our set of test functions.
+So, what we want to show now, the set of all probability manuals of E is neutral. We notice already, if we're
+going to work with the real numbers.
+That can reside there, tells us, if I want to check reconvergence, Lipschitz is enough.
+So, we introduce the set of all bounded Lipschitz continuous functions with this constant one.
+So, that's the set of L, E to R, bounded by one, and the Lipschitz constant, all itself, bounded.
+So, then, the next theory says,
+again, D is Polish,
+again, D is Polish,
+a sequence of probability measures converges weakly. If and only F,
+it converges in a certain metric, DBL. And what is DBL?
+So, if we know to check reconvergence, check integrals of Lipschitz functions.
+So, in a sense, we are inclined to say, if for any Lipschitz continuous function we have convergence of the integrals.
+That's not quite enough. We need this conversion to be uniform.
+So, this DL metric is the supremum over all bounded Lipschitz continuous functions with constant one of 27,
+So, this DL metric requires the weak topology on the set of probabilities.
+And what's good about this space here, uniformly bounded, uniformly in the contiguous.
+So, that's a compact set.
+And that's what we need to do.
+Okay.
+Okay.
+So, one implication we already have.
+We know that this one implies this one.
+That was the previous proposition.
+So, we know already
+that Lipschitz continuous functions are convergent deeper.
+Okay.
+Okay.
+So, take the contiguous.
+So, let us assume we have reconvergence.
+Now, one indication, we want to prove, yeah, so keep that in mind.
+Sequentially, sequential compactness is equivalent to tightness.
+And what we've seen and what it's always true is reconvergence implies tightness.
+That is the easy implication of pro off.
+So, by the easy implication of pro off, we know this is tight.
+So, this sequence is tight.
+Okay.
+Okay.
+So, mu and k.
+I'm going to tell you to move on this epsilon.
+mu k.
+I'm going to tell you to move on this epsilon.
+Why is this important?
+Because it essentially allows us to restrict all the functions that we are working with,
+the test functions, to functions with compact support.
+We are not really, we are bounded test functions.
+So, we are not really interested for conversion, what happens outside k.
+So, if we can restrict to function with compact support, we can restrict to Lipschitz continuous functions.
+And that's what it does.
+It only looks at Lipschitz continuous functions.
+So, for a bounded Lipschitz continuous functions, we have integral mu m of f minus mu of f.
+So, this is, if we integrate over k, plus some remainder to our n, then our n, my function n is bounded by 1.
+So, this set has measured at least 1 minus epsilon.
+So, this is less of equal to epsilon.
+So, we will be speaking, restrict to compact sets.
+For compact sets, we know the space of continuous functions is complete and separate.
+It's a focus space.
+So, we again have a characterization of compactness in terms of closeness plus total boundedness.
+So, by what I just erased, I think it was 10, small question mark.
+The set of continuous functions restricted, or with compact support, let's say, is complete.
+Hence, hence, the set B-A restricted to k is complete.
+By acela ascoli, the set is also compact.
+So, whenever I restrict to compact sets, the set is compact.
+This metric here has a soup.
+So, without the soup, point-wise convergence is fine.
+What we need is uniform.
+How do we get from point-wise to uniform?
+We somewhat want to argue that, in fact, we don't need the whole set here, but the finite number is fine.
+Where do we get the finite number from?
+We have a compact set.
+We have a compact set.
+We restrict to compact case.
+Then this is compact by acela ascoli.
+The space is complete, so it's totally bounded.
+Totally bounded means I can approximately make any function in terms of a dense subset.
+Here, because of completeness, but total bounded means any compact set is approximated by a union of finite units.
+And I only have finitely many test functions here.
+And the soup reduces to a max.
+So, this is compact, hence, totally bounded.
+So, now, I only need finitely many functions.
+And one, two, what's my index?
+Fm.
+Such that, on my compact set.
+So, now, I only need finitely many functions.
+And one, two, what's my index?
+Fm.
+And then, such that, on my compact set.
+or any
+Lipschitz continuous motion.
+I find one here
+so that this lies
+in a uniform epsilon ball
+when restricted to combat sets.
+Down here, we compare integrates.
+We introduce the compact sets
+and there's a remainder term that we carry through.
+Considering the terminal there,
+why is it a plus between the integrals and not a minus,
+since you're writing a minus up there?
+Maybe it's right, I don't know.
+The plus here, yes, but there's a minus.
+Okay, thanks.
+So, we now essentially continue this.
+We want to approximate the integrals.
+First, compact sets.
+Now, second, we put in the i.
+And that means, if we take the soup over all f here,
+it reduces to the max over all i.
+So, this one is less or equal f i d mu n over k
+plus i to epsilon or something.
+So, now we take the supremo.
+So, this matrix here,
+one is to take the supremo over all boundaries
+which is continuous functions.
+So, let's do this.
+So, supremo over all f in VL,
+U n minus mu f is less or equal to F M v L
+integrate over compact sets.
+1 epsilon or 2 epsilon or 1.
+And now comes the key.
+For every function,
+I can choose my approximating function
+up to epsilon from a finite set.
+So, this is the key in equality now.
+So, this is less or equal,
+and now max
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+f i d mu n.
+Okay, now I undo.
+I undoing the k thing here.
+Six epsilon.
+Okay.
+But inside, all those vanishes.
+For every fixed function, it vanishes.
+Now, I fully find that you made it here, so that vanishes as well.
+Here's my metric.
+Mu and mu. D mu and mu to zero.
+And the trick, in all exams, I like asking for key ideas of proofs, not the epsilons and the errors.
+Sometimes.
+But the trick is that the tightness allows to be used to compact functions.
+This means this set is totally bounded, which means this loop here is reduced to the maximum.
+That's the function of the proof.
+Okay.
+Any questions so far?
+I'm a little confused what weak convergence, in a sense, means.
+Say again?
+What weak convergence means.
+I know it's usually the dual pinion functionals and then part-wise, all of them.
+What is the dual space here?
+Yeah, I'm confused.
+Answer.
+Do reverse engineering.
+If you know what weak convergence means in a general setting, and we use the word
+reconvergence, and we have a set of test objects, then now do reverse engineering.
+And that shows the dual space here.
+Then you have a dual pairing.
+You have the set of probability measures, and you have a set of continuous functions.
+So obviously, I mean, we are not, we didn't prove this, but we use the same jargon.
+Obviously, the set of continuous functions is the right dual of the set of probability measures.
+And you have to be really careful with this dual spaces.
+Bound of continuous function, or continuous function with complex support, or all.
+But if you want to use it through the lens of dual pairings, probability measures are bound
+and continuous functions.
+Okay.
+And it's again, we are getting to this, if you've seen it reads, yeah?
+You give me a linear operator with certain properties, I can represent it in terms of an integral
+with respect to a probability measure.
+That's really the dual pairing jargon there.
+But that requires topological properties, which we don't have.
+Shouldn't then the big conversions, in this sense, be actually big star conversions?
+Maybe.
+I always mix this up.
+We can mix that, and double star, and, okay.
+Because the space of matters is the dual space of the bound of continuous functions, but
+on the other way around.
+So then maybe it's big star, what?
+You have a, so the measure is the linear operator?
+Yeah, then it's big star.
+Okay, then it's big star.
+Okay.
+Okay.
+I never gave a function of a narrative score.
+I don't give it to you.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Good.
+Then, in the spirit of the discussion that we just had, let's first prove
+Prohorov if everything is compact.
+And the reason compactness helps is we have leads.
+We can represent the only linear operators by probability measures.
+This is one essential, basically, point why we need compactness.
+And here, so then, any sequence of probability measures of K, emits a weakly convergent subsequent.
+And reconvergence means we have convergence in this V-L matrix.
+So, the trick is very similar.
+Previously, the soup in the matrix was reduced to a maximum.
+That required separability of spaces.
+And by something I've already erased, we know the space of continuous functions of some compact
+set is separable.
+So, hence, we also.
+So, again, we have a countable dense set.
+We want to prove this has a weakly convergent subsequence.
+If we plug in bounded functions here, we have a sequence in R. Bounded sequence in R.
+So, for any function that we are plugging in here, we have a convergent subsequence of the integrals.
+We apply a diagonal argument and say, we have a convergent subsequence here such as the integrals for all these functions.
+So, the sequence in R. So, the sequence, mu n, fj, this is bounded in R, and it's a negative 1, 1, so it has a weakly convergent substance.
+Diagonal argument.
+Diagonal argument, we extract a sequence such that this works for all fj.
+So, we have a subsequence.
+So, we have a subsequence, mu n, k, fj converges.
+Let's say, converges to some lj in R for all j.
+So, what comes next?
+Next, we show that this subsequence here is a Cauchy sequence with respect to this one.
+Then, we can again plug in test functions, and we know for any test function we have a Cauchy sequence.
+Once we plug in the test function, it's a sequence in R.
+So, for any test function, it must converge.
+So, we now show this subsequence is Cauchy with respect to the dB element.
+Then, when we plug in test function, everything converges.
+We have a limit.
+The limit is an operator.
+It takes a test function and spits out in R the limit of this Cauchy sequence.
+And this operator reads, this is where it comes in, is nothing but a probability division.
+This is how we identify the limit.
+So, this one, again we had that, is compact, complete, separable, so again it's totally bound.
+So, again, we don't need to hold that subset to approximate anything, finitely many functions are bound.
+So, for any epsilon, it exists instead.
+So, we can set fx1 of, say, capital and j functions such that f minus fj.
+So, we're already on a compact set.
+So, previously we had to restrict to compact sets.
+Now, we are already on compact sets.
+This one here or something.
+Or something.
+Or f is here.
+Okay.
+Now, we want to prove Cauchy.
+So, for, say, k and large mu and k f minus mu and m of f less or equal, totally bounded,
+we have this Cauchy sequence property.
+And, of course.
+This thing.
+This thing.
+Does some noise here.
+We have this Cauchy sequence property.
+And, of course, this set here is a subset of this.
+So, this one for fxj.
+If I do this, then this would still be malicious.
+And, if I put a soup in front here, then the soup and the function approximated by one of those,
+again, the soup translates to this max.
+So, we take the soup and the function approximated by one of those, again, the soup translates to this max.
+So, we take the soup.
+So, we take the soup.
+So, we take the soup.
+so, we take the soup ahead and B.
+x mu and K,たx mu and n.
+plus mu and m is equal to max
+plus L.
+So d mu and k mu and m.
+So this is what we wanted to prove as an intermediate step.
+We wanted to prove this is coaching.
+So now, knowing the subsequent,
+if I'm plugging in test function, I'm converging.
+So what's the limit?
+Is it somebody's first date today?
+No time, but yes.
+Oh.
+Well.
+Okay.
+So the next step is we identify the limit of this sequence.
+So we know.
+That's what we have shown.
+For every f in the f, and hence for any bound continuous functions,
+there exists L of f limit u and k of f.
+Okay.
+This is a bounded linear operator.
+Operate on home means take the value on all arguments on the unit serve.
+Okay.
+This is obviously bounded by more.
+Bound it.
+So all integrates.
+Obviously linear operator.
+It's a non-negative function.
+If I'm plugging in a non-negative function,
+the result is non-negative.
+Okay.
+So, and it's non-negative.
+What is the one function?
+As I said, one of the reasons we use compactness here,
+we use properties of functions based on compact sets.
+Yes.
+But the key reason is this one.
+Because now we are having a bounded linear normalized operator
+on a set of functions with compact support.
+And now Rietz tells me I can represent this as a probability.
+So, and I'm saying here the standard,
+because later we need to extend it.
+When we don't have compactness, or at least local compactness,
+Rietz is not working.
+The standard needs representation in mu.
+If you have not taken a function, just take it for granted.
+You cannot prove anything here.
+Says, there exists the probability measure, mu,
+in P of k such that my linear operator
+is nothing but probability measure.
+Okay.
+And now we're basically done.
+So now we know
+for all bounded dimensions continuous functions, I have this representation here, or this convergence, convergence of u.
+So that gives us D
+So again, what are the key steps?
+The key steps are, we need nice properties again
+of the function space here.
+We have a then subset, we have total boundedness.
+So again, the set of test functions
+is essentially finite.
+We plug in the test functions,
+then we have Cauchy sequences in R.
+In R everything converges.
+We have an operator.
+What is this operator?
+Reed says it's a probability measure.
+That's the short summary.
+Here we go.
+Questions?
+Yes?
+This first statement over there,
+it says that for every fixed head,
+we have this bounded linear operation.
+This would happen.
+Yeah.
+Yes.
+But then we conclude that there is one operator
+for all of that.
+Yes.
+The operator is justified point-wise.
+This is, this is the point-wise definition of the operator.
+So for any F, I call this limit here, L of F.
+So there's an operator, L that takes an input in F.
+Yeah.
+Then we get rid of it.
+Yeah.
+So this, this defines an operator on this one.
+More questions?
+Mm-hmm.
+Because it's in the yellow variable,
+that there's one operator, so such as for all that.
+This holds.
+So are we talking about different operators for each F,
+or are we talking about one operator, such as for all that?
+I think I understand the question,
+but if I understand the question correctly,
+I don't understand the question.
+So you would agree that for any F, this is uniquely determined
+on this side?
+Yes.
+And it just gives a different name to this?
+I think, if I understand your question,
+you are saying this could give me two different operators.
+Is this your question?
+No.
+No, no.
+That may be misunderstood.
+Richard, do you have another question?
+Because my questions follow up to yours.
+So, that's it.
+Okay.
+We have this
+Kochi property in DL.
+So plug in any function,
+find this converges.
+Gives me a number.
+I call the number L-O-F.
+I do this for every L.
+Would you agree that this defines a U-L?
+I'm not quite sure,
+because you've written it like this, that's.
+The L-O-F exists, not the L-O-F exists.
+Yes.
+I think they are worried about
+how it says L-O-F exists,
+and one might interpret it as
+where it exists in L,
+but I think it's fine.
+I don't see any.
+There's a recipe.
+There's a recipe.
+The recipe tells me,
+give me an F.
+I give you an F, and you give me a number.
+There's a recipe.
+Okay.
+And that recipe, we call it L.
+Okay, that's all.
+And then it turns out our recipe
+has all these nice properties.
+And from there,
+it becomes a probability.
+But it's...
+Well, it really has to be careful.
+Check it on the Wikipedia.
+It says, you know,
+at least you need to local in compact space.
+Because this representation, in general,
+this representation is true for any function
+F with compact support.
+A priori, we only have compact support
+that's for all continuous functions.
+But if you're working in the general setting,
+this representation is not rich enough.
+We have more functions
+than just functions with compact support.
+So, hopefully, one last question.
+Are we talking about different L
+for all the Ls?
+Like, for each F, there exists an L?
+Or are we talking about one L
+so that we have the recipe?
+Yes, because that's how it's written.
+We have to start with all F,
+and then there exists this LF.
+But then it's just a number.
+Yeah.
+Exactly.
+So I was confused because you said
+that it's a bound, then you are the negative.
+Yeah.
+This is for any, this is enough here.
+Yes.
+Right now,
+it,
+I just defined my operator,
+L of VL,
+R by L of F,
+distance limit.
+Yes.
+Now it makes sense.
+Okay.
+All right.
+So, then,
+we'll stop here.
+We are not yet done.
+We need to
+get rid of
+K.
+So we need
+a stronger version of weights.
+We'll do this on Monday,
+then finish the proof.
+Okay.
+What?
+Yeah.
+Let's make this for
+no part of this post.
+Okay.
+Okay.
+Yeah.
+Yeah.
+Oh,
+yeah.
+El
+No part values.

@@ -1,0 +1,1436 @@
+Okay, Moodle page is available. Passcodes have been sent with everybody registered via Agnes.
+I think you also have registered lecture notes, at least for Chapter 1, available, with some exercises integrated into the notes, and some of these exercises are markers and asterisks.
+Those are the exercises which I hope someone would volunteer in advance to discuss, not next week, but the week after next.
+There are usually four, maybe five of these exercises, and then we can do it with one tutorial.
+Some of them are relatively straightforward. The ones marked with an asterisk are also not always super complicated, but a bit more advanced.
+If you just consume tutorials, the learning experience is limited.
+I think you learn much more if someone of you at least tries to present something and then we solve it together.
+It gives you a much better understanding of the exercises than basically just taking for granted what somebody else writes on board.
+Anyone? You are courageous enough to do it. Great.
+I haven't registered yet. Could you tell us the mobile key right now?
+Are you registered through Agnes? No, I'm not registered.
+You are home board? Have you? Yes. Home board. What's your field? No, nothing.
+Yes. So you forgot to register through Agnes? Yes. Okay. Can you still or did they shut it down?
+I'm not sure. I think...
+Because I can't do it manually. I have no idea how to do it. So Agnes completely escapes me. I can give you a phone.
+But registering on Agnes. Yeah. I'm sure there's a way to do it manually. Yes.
+But I never figured out. You have the same problem?
+Could you maybe tell the code I'm from 2. I cannot register on Agnes.
+Don't you have to do the form with the signature? No, I'm BMS.
+Are you BMS? Okay.
+Right.
+Okay.
+Okay.
+What I don't want to do is I don't want to make my lecture notes available on my whole webpage.
+Because then it's basically accessible to everyone.
+Not just the students in this course.
+Can you just ask some of your classmates to email you the PDF file?
+The lecture notes.
+Because that's basically all you need from the lecture.
+And the exercises?
+They're in the notes. Integrated in the lecture notes.
+So if you find them in the lecture notes, where the exercises are needed.
+Okay.
+And then as a rule of thumb, four to five of these exercises per directory.
+It would be great if somebody would be volunteered to.
+So we know in advance that there are one or two that initiate a discussion.
+About...
+Yeah, great.
+Good.
+You want to pair up to somebody?
+Do you want?
+Okay.
+So then two weeks then.
+So pick two.
+I think there are two or three which are very directly straightforward.
+They are not marked with the asterisks.
+Just pick the first two that are enabled.
+Alright.
+And if you have absolutely no clue, you know, drop me a mail and I'll give you some minutes.
+Okay, good.
+Thank you.
+Okay.
+So then, just a general reminder.
+Next week, as I'm not here, so the clear substitutes and she asked to start at one-thirty.
+Next Monday.
+I hope I'll be back the week after.
+Provided with another model strike.
+In which case I may strike in Singapore.
+But...
+Let's see.
+Okay.
+So...
+We introduced a lot of notation and concepts last Monday.
+So...
+We are always...
+given...
+a visual compatibility space.
+At this point we make no assumptions about the filtration.
+And we said, okay, we have stochastic processes.
+X and Y are in the same visual.
+If they are pathwise...
+Y...
+Y was our index and our time interval.
+If they are pathwise almost truly the same.
+They are modifications.
+If...
+At any point in time...
+They are almost truly equal.
+So the difference is where you put the...
+For all team.
+Now clearly...
+If they are indistinguishable...
+There are modifications.
+The other way around...
+If all...
+Trajectories...
+Are either left or right continuous.
+In this case...
+We said, okay...
+It is enough...
+To know...
+The value of the stochastic process...
+On the rational numbers.
+And then we can take limits.
+In that case...
+Modification...
+Diplastic process...
+On the rational numbers.
+And then we can take limits.
+In that case...
+Modification...
+Diplized indistinguishable.
+And then we have also equality law...
+Which I am not recording here.
+Then we introduced...
+Measurability issues.
+Measurability concepts.
+We said...
+That process is progressively measurable...
+If restrictions...
+To sub-intervals...
+Sub-time intervals...
+Are measurable as two-parameter functions.
+So...
+If...
+I take the map...
+Time...
+Omega maps to...
+Half...
+But...
+I restrict it...
+So...
+I restrict it to my time...
+I restrict it to the information...
+The way it went at that time...
+So that's...
+If this is measurable...
+For all t...
+If this is measurable...
+For all t...
+As a two-parameter function.
+We introduce...
+Adaptiveness...
+This we know already from...
+Discretoid probability theory...
+We fix time...
+And just look at...
+The outcome of the probes at time t...
+This is...
+Now my notation for this is...
+I'll write something like this...
+And that means...
+The random measure is measurable...
+With respect to...
+Okay...
+And...
+We saw that...
+Adapted...
+Adapted...
+Progressively measurable...
+Easy...
+Adapted...
+Adapted...
+Is...
+Adapted...
+Is...
+So...
+Adaptedness...
+Is...
+A matter of...
+The theory...
+And...
+Measureable...
+Just take...
+Either the last time...
+Technical...
+We are proving...
+A simplified version of it...
+It said...
+If a process is adapted...
+And measurable...
+Then...
+We have...
+Progressively measurable...
+Modification...
+So...
+Progressive measurable...
+Is something that...
+We need...
+When we talk about...
+Integrated...
+So...
+We take a...
+Process...
+We integrate it...
+And...
+We want the integral...
+Process...
+To be measurable...
+Again...
+As a function...
+Then...
+We need something like...
+Progressive...
+Measureability...
+So...
+We prove this...
+In...
+The most...
+General setting...
+But...
+Under some...
+Additional...
+Pass...
+Properties...
+Of...
+Trajectory...
+So...
+Whenever...
+We have...
+Some form of...
+Continuity...
+Whenever...
+We can...
+Basically...
+Restrict...
+Ourselves...
+To rational...
+Numbers...
+We have...
+Some form of...
+Continuity...
+Whenever...
+We can...
+Basically...
+Restrict...
+Ourselves...
+To rational...
+Numbers...
+We are in...
+A very...
+Convenient...
+Situation...
+So...
+Let's...
+Say...
+X...
+Is adapted...
+And...
+All...
+Path...
+Are...
+In...
+Either...
+Right...
+Or...
+Continuous...
+Then...
+X...
+Is...
+Programming...
+So...
+What do we do?
+We do something that we are going to do...
+Many times...
+In the first couple of weeks...
+We discretize...
+And...
+We discretize...
+And...
+We discretize...
+Essentially...
+In...
+Discrete time...
+And...
+We know a lot...
+About...
+In...
+Discrete time...
+So...
+What do we have to prove...
+Progressive measurability means...
+So...
+Now...
+We discretize...
+This...
+Country...
+Districted...
+T...
+Dismitted...
+So...
+Now...
+We discretize...
+Discrete...
+From...
+Discrete...
+From...
+Discretization...
+Back...
+To the original process...
+This is where the continuity is needed to...
+So...
+So...
+Now...
+We discretize...
+From...
+Discrete...
+From...
+Discretization...
+Back...
+To the original process...
+This is where the continuity is needed to...
+So...
+We are...
+So...
+We have a finite element over there...
+The routine...
+So...
+We divide this into...
+Sub-intervals of length...
+One over 2 to the power...
+Okay?
+So...
+We have a finite element over there...
+So...
+We divide this into...
+Sub-intervals of length one over 2 to the power...
+In...
+We have a finite parameter over there, zero t, so we divide this into sub-intervels of
+length 1 over 2 to the power. So we set this xn to be equal to xk divided by 2 to the power
+of n times d of omega if my s falls in this interval here, n times d.
+It doesn't have to be 2 to the power of n.
+So what's important is this one. There's a big inequality here. So this process here,
+so this, eh, not weak. It's less or equal. It's then continuous. So this one
+is less continuous. And the reason we do it is less continuous is because we're assuming
+the original process is right continuous. If, if we assume all paths are left continuous,
+then we put the less or equal here, then we choose the right continuous. And the reason
+we're doing this is, so if this is my process, my s will say somewhere here. So my approximation
+is this interval is this. Now, if I choose another n, I basically introduce another point here. And my discretization
+now is this. And so what happens, this trajectory here by a sum of the right continuous. So by my discretization
+procedure, this little point here moves along the trajectory here. And by right continuity, I know I'm approximating
+this point now from the right. So by introducing more time intervals, I make this point move to this point from the right. And that's continuous. That's what we assume.
+Because of this. So let's go back to this definition. This s here is less or equal than this number. So because x is adapted,
+my x and s is measurable with respect to this filtration here, which is in ft. Furthermore, any projector here on the n of t takes only finitely many different values. If something only takes finitely many different values,
+measurability is an issue. So this discretization here defines a measurable mapping.
+t and s. Thanks for connecting
+you, yes, because w x and w x. And fn ends. Equipped with
+t, here, if all the x ends are f t measurable.
+times Bt, 2, r. And now I use this argument. So if I send n to infinity, this mapping here,
+this little point here, moving along my trajectory, it can jump, no problem. But sooner or later,
+it is in some neighborhood of this point here. And that's continuous. So by the right continuity of the central path,
+this is really, this is where it comes in, you know. Limit f n, x, omega, x, g, omega, x, g, n, 2.
+And now again, we discussed this on Monday. We are not saying anything about almost all central
+class L-right continuous or almost or something, satisfy something, but all of them. So
+we don't have to worry about completeness of sigma fields here. We have just a point-wise limit
+of a measurement of a measurement. So this shows x is in measurement.
+Discretize. Measurability in time is no problem. Measurability in omega means u by adaptedness.
+So let's use right continuity. So if we have nice continuity properties, we get progressive
+measurability of 3. So maybe one last definition. Since
+this continuity properties are so important, there's a concept for this. So the stochastic process is
+easy, it's called continuous, if all sample paths are continuous.
+So typical example is Brownian motion. Constructed in probability 2. If you remember,
+when you introduce Brownian motion, you may or may not make continuity recall requirement or not.
+Typically, it is. But the way it's constructed, it starts without continuity.
+Independent station is to use increments. And then you use Komogorov-Chensor to say under
+distributional assumptions, I actually find a continuous modification. And this is what I want my
+point of view. So continuous standard example is Brownian motion. The standard example of a discontinuous
+motion is Poisson. But Poisson falls in this class. It is called Catlac.
+You had French in school. It stands for continuous word.
+Meaning right continuous with left limits. There's also, it is much less
+which is much less frequently used. You interchange the d and the g.
+So then you would have a left limit.
+Left continuity with right limits. But typically this is what one assumes. So if
+if all trajectories are continuous from the right and have left limits.
+To begin example, this Poisson falls in. So the trajectory of a catalytic process
+basically looks like this. This subcontinuity part. And then there's the drum
+taking place here. Another question is where do I put the jump in a bullet here. So this point here.
+And it continues. Then it jumps again. Let's say here.
+So if we come from the left there's a limit. Maybe this one here.
+But the left limit does not coincide with the value of the process at this time. Same here.
+I follow my trajectory. I follow my trajectory. There is a left limit. Which is this point here.
+But the value of the process is this one down here.
+If you change the d and the g then the white dot moves down. The red dot moves up. The red dot moves here. The white dot moves up.
+So that's cadillac.
+Yeah and we know if we have here. Where's our slide.
+If we have a cadillac process.
+That means we are in this situation.
+Good.
+So let's continue. I'm going to show you a little example later.
+Where it was quite funny yesterday.
+This was kind of a result. Where if you ask ChetGPT.
+Whether it's correct.
+You almost certainly get a bullshit answer from ChetGPT.
+Because ChetGPT is trained using American undergraduate textbooks.
+And they are not very precise.
+They are very holistic.
+And sometimes a holistic argument is not enough.
+And it took me about 25 minutes.
+To get the message to ChetGPT across.
+That it's answer was wrong.
+And try yourself.
+It's quite repeating.
+So we are getting it.
+Okay.
+Okay.
+What's the.
+What's the title?
+Sigma fields.
+And stopping times.
+So stopping times.
+Known from probability two.
+The stopping time.
+Basically tells me.
+If an event has occurred.
+By typing or not.
+Or which part of an event.
+And if you ever wondered.
+Why.
+In discrete time.
+Many theorems are called optional sampling.
+Optional sampling.
+This video becomes key only in continuous time.
+Because in continuous time.
+We have to distinguish stopping times.
+From so-called option times.
+And the difference is the information.
+Between that.
+And to describe this information.
+We talk a bit about.
+Sigma fields first.
+So let's say.
+We have.
+A probability space.
+Omega.
+With a filtration g.
+The issue is the null cells.
+So the null cells.
+We collect them.
+In the set capital.
+So.
+What is a null cell?
+A null cell is a set.
+That may not be measurable.
+So a priori.
+We cannot determine its measure.
+Because it may not be in here.
+But.
+We know.
+That the set is contained.
+In the set of measure zero.
+And then it makes sense.
+To just.
+Define.
+The probability of the set.
+To be zero as well.
+So that's.
+The set of all a.
+Subset of omega.
+So a not necessarily measurable.
+So.
+Not.
+Necessarily.
+In g.
+g.
+But such that.
+We find.
+A measurable set.
+G.
+Me.
+Which is.
+The set.
+Of a.
+A.
+And now.
+And now.
+We complete.
+Our sigma field.
+Or our filtration.
+By the null cells.
+We just.
+By brute force.
+Make every null cell measure.
+So.
+The completion.
+The completion.
+Of g.
+With respect to p.
+g.
+Is.
+The smallest sigma field.
+That contains.
+G.
+And every null cell.
+Is metro.
+Shouldn't we have.
+Like.
+That the measure.
+Of this is zero.
+As well.
+Did I.
+I said it.
+But.
+I did not.
+Yes.
+Good.
+So.
+Then.
+By definition.
+Every null cell.
+Is measurable.
+But.
+Now.
+We have.
+A larger sigma field.
+So.
+We need.
+To extend.
+P.
+To.
+The larger.
+Sigma field.
+Is.
+And.
+The way.
+To it.
+This should.
+Be known.
+From.
+Probably.
+Analysis.
+Three.
+P.
+Tiller.
+What's my notation.
+Of.
+B.
+Is.
+Equal.
+To.
+P.
+Of.
+A.
+If.
+The.
+Symmetric.
+Difference.
+Written.
+Like.
+This.
+Is.
+Annalysis.
+So.
+This is.
+The.
+Symmetric.
+Difference.
+Is.
+And.
+That.
+Is.
+Equal.
+To.
+A.
+Without.
+B.
+Union.
+B.
+Without.
+A.
+So.
+In plain.
+Words.
+We are.
+Just.
+Adding.
+A.
+Null.
+Set.
+Now, these A and B sets only differ by the null sets.
+And so we are getting
+And a little subtlety that we already discussed last time,
+and almost sure limits of measurable functions need not be measurable
+unless the space is complete.
+And this is the completion.
+So we call the sigma field to complete if it contains .
+This is the addition.
+We call the concentration of heat if all the null sets
+are contained in any sigma field.
+So that's major theory.
+Completion.
+That's analysis 3.
+This is continuous high probability.
+We call it complete if this holds.
+And right continuous .
+If G coincides with its right continuous limit called G T plus, and what is G T plus?
+I take all the information at a later point, T plus Epsilon,
+and take the intersection over all Epsilon.
+So that formalizes the idea that my information allows me to peek a little bit into the future.
+And it makes a big difference if your filtration is right continuous or not.
+So we'll see this later today.
+So this is what is called a right continuous .
+So if you have a stochastic process, and the stochastic process generates a filtration,
+the question is when does a stochastic process generate a right continuous filtration?
+OK.
+OK.
+OK.
+And if both conditions are satisfied, that is called a usual condition.
+If the filtration G satisfies the so-called usual condition,
+if it's complete and right continuous .
+If it's complete and right continuous .
+So in the case of browning motion, we can essentially assume, with outlaws of generality,
+that we have a filtration that satisfies the .
+So we always have completed.
+But in the case of browning motion, we get the right .
+It is not the case that any stochastic process that has continuous sample path
+generates a right continuous filtration.
+In the case of browning motion, it is.
+So that's definition 2, 1, 2, 1.
+In the lecture notes, the next definition is stopping.
+All right.
+So we have a filtration.
+We do not assume it satisfies the usual condition.
+It's just there.
+First time in combination .
+A filtration on some probability speeds.
+We have a time interval, and we set a bar either to be zero infinity,
+infinity included if i is this, or if it's a finite .
+So we want to point infinity because we are looking at stopping times.
+And the stopping time tells me if something has happened or not.
+Something never happens.
+The value of the stopping time is plus infinity.
+This is why we want the infinity included here.
+So a mapping.
+So a mapping.
+So a mapping.
+So a mapping.
+So a mapping.
+So a mapping.
+From omega to pi bar.
+This is the stopping time.
+Probability 2.
+Stopping time tells me.
+And when has occurred or not.
+I can tell based on my information whether something has occurred by time t or not.
+So we translate this.
+If.
+So.
+That is basically my event something has occurred prior to time t or at time t the latest.
+And I want to be able to say yes and yes.
+No it has not.
+So I can tell whether this happened based on information I have.
+Forward.
+So.
+That is the stopping time.
+It is called an optional time.
+Optional time.
+And this is new.
+This is a genuinely continuous time concept.
+And for optional times you replace this inequality by weak inequality.
+So.
+If.
+If.
+I can tell whether something has happened strictly before time t.
+This.
+If.
+I can tell you.
+And that is already quite intuitive.
+If my filtration is right continues.
+that I put a weak inequality here and put an epsilon here and then take the intersection of all my epsilons.
+So that if I have a right continuous filtration, maybe optional time and stopping times are the same is intuitive.
+But if I don't have this right volume, something may happen at time t which is completely unproceivable.
+And if it's completely unproceivable, these are different processes.
+So we introduce two sigma fields.
+This one's generated by these times.
+And these are really sigma field exercises.
+So F core is the sigma field generated by my stopping.
+So it is basically the set of all events of which I can tell which sub-event has occurred by the time some other event has occurred.
+So I take my event A and I look at what part of A has occurred by the time some other event has occurred, as described by Tom.
+So this is a little bit of an electron.
+You don't want to know this at time g for any g.
+This is no different from discrete time.
+In discrete time, it was n and n.
+Exactly the same.
+definition.
+And for optional times, we set it F tau plus.
+Yeah.
+Same definition can be replaced to weak inequality by a string.
+So here it's.
+And then these are really sigma fields.
+So the little exercise in the lecture notes.
+I'm not sure this is normal as an answer or not.
+I mean, stopping time is a stronger concept.
+Because this event is a subset of this event.
+So if you have stopping time, you have this.
+So in other words, if you have stopping time, that's optional time.
+That's trivial.
+And if my filtration is right continuous, I outline the idea.
+If something is right continuous, I can do this.
+For any epsilon.
+And now, by right continuity.
+So there's no epsilon here.
+There's an epsilon here taking the section.
+And we have.
+And so.
+So if my filtration is right continuous, then to our optional time.
+So this is right continuity of the sigma field is not a mere technical assumption.
+But it's very, very useful.
+And it's particularly useful if you look at so-called entrance times.
+And this is where JCPT has something to do.
+And this is where JCPT.
+Here's where JGPT gives you the workhouse.
+Okay, so.
+Let's say we are working on the hole.
+We are done.
+And X is right, continuous and adapted.
+And we are looking at the first entrance time into a set gamma.
+A or BR, BD, whatever process takes.
+And we look at the first entrance time.
+The first entrance time is this.
+Tor gamma.
+Tor gamma is the in over over T such that XT is in gamma.
+Level set of a Brownian motion.
+You have a Brownian motion and you are asked what is the first time your Brownian motion hits the level 27.
+To make an example.
+So, first hitting time.
+Or entrance time.
+Okay.
+Okay.
+First thing.
+The situation is relatively simple if your set is open.
+If this is open, then Tor gamma is an option user.
+If your set is closed.
+So, we assume right continues.
+And right continuity is enough to make first entrance time to open sets an optional time.
+Now, if your set is closed, you should think the situation is easier.
+But it's not.
+We need more assumptions.
+If your set is closed, and X is continuous, but it's going to get a stronger result.
+Then, Tor gamma is the stopping time.
+And now, ask ChatGPT.
+Not now.
+Not now, of course.
+Whether this is true if it's right continuous.
+Only right continuous.
+And it says yes.
+And then keep asking.
+And then it says, oh, yeah, yeah, yeah, yeah.
+But if you make the following additional assumption, then we this one here.
+Right continuity of the sigma of it.
+Then it is.
+But if you don't make that assumption, it's not true.
+And one thing I would really like to understand about ChatGPT.
+How often do we have to ask this question before this actually learns its wrong answer?
+So, if all of you asked that question.
+So, the question has been asked 30 times.
+And 30 times, you get ChatGPT to the point that it should realize that the initial answer
+was wrong.
+Will it eventually give a correct answer?
+You know?
+Hopefully not, right?
+Because then it would be learning off of my answers.
+And then it would be using the data.
+You're right.
+It would be just easy to manipulate.
+You could teach it all kind of bullshit.
+Yeah.
+I think it does actually learn off of user data.
+Yeah.
+Yeah.
+Yeah.
+I know at least that it learns from your past conversations with it in your personalized
+one, but I don't know if that's pushed to the bottom version.
+Yeah.
+I'm sure it learns from my past conversations.
+Yeah.
+I guess that's the way it works.
+Yeah.
+But how can it tell that I was not misleading it?
+I'm not logging in as a professor of probability team.
+Yeah.
+Yeah.
+I don't know.
+So try it.
+Try it out.
+Intuitively, what's the problem?
+So let's just prove it for open and then just write the argument and then we see if you
+if you see the sudden issues, the untold sudden issues.
+Okay.
+So let's say we have an open set.
+And X is right continuous.
+Good.
+Okay.
+So this is the event that interests us.
+This event we want to belong to Ft.
+Okay.
+So this means I hit my set gamma at some time before t.
+So at some point before t, my process is in gamma.
+So now I use right continuity.
+So I know I can take right limits and then I know Xt.
+Okay.
+Okay.
+So when I write continuity, I can do this.
+Very important.
+Xs is in gamma.
+Okay.
+So now I use that my process is adapted.
+So I know my adaptiveness that is in T because the X is adapted.
+And now I have a countable union here.
+So Fs is in Ft.
+I have a countable union.
+So all it is here is an Ft.
+So no turnity switch.
+Really, really, really, really.
+It's true.
+There's an unfolded argument.
+Where did we use that gamma is open?
+Xs is in gamma.
+Let me represent.
+You can use gamma.
+Gamma closed.
+Let me see.
+So what is that that Gpt is overlooking?
+There are not very many, but there are only basically two equalities.
+So what obviously is incorrect.
+Is this one the one that's incorrect?
+No.
+In general.
+That's a definition.
+So this one must be the one that's incorrect.
+In general.
+And why is this incorrect?
+The gamma is closed.
+Yeah.
+Do you have an idea?
+Yeah.
+Like if it's closed, you could have like isolated points.
+But I'm not sure why it's...
+Keep going.
+Keep going.
+It goes in the right direction.
+But I'm not sure why this is a problem.
+Openness and right continuity.
+Right continuity means I can only approximate from the right.
+I'm not allowed to approximate from the left.
+If I'm in an open set, it doesn't matter.
+If my process is in an open set, it stays in an open set for a small period of time.
+So openness plus either right or left continuity means I can always approximate from the left
+or right depending on what my assumption on the continuities.
+So this one, this equality here, this uses openness.
+So the untold argument is gamma open, x as a gamma means x, let's say u is a gamma for u in
+as minus x.
+And now I have a whole time interval.
+So in particular, even for slightly larger points in time, I'm still in this gamma set.
+And now I can approximate from the right.
+Plus, I'm excluding t here.
+If I want a stopping time, I have a weak inequality and I have t here.
+So if there's something, I think this is maybe what people were referring to.
+If there's something happening at time t, but my process is only defined up to time t,
+right continuities of little use.
+I cannot approximate from the right because the process is not defined beyond time t.
+So that's the thing here.
+This inequality here is a bit more subtle than it first appears that we can take as in q.
+That requires a weak inequality here.
+The openness gives me this, and then the right continuity allows me to do this.
+So that's where open and right continuous is used.
+So now we come to closed and .
+Sorry.
+Yeah.
+I have a question.
+I didn't quite understand why the interval is in both directions.
+But I imagine a process which is jumps at time t into the open set.
+I'm sure if I write it continually after that force.
+But what happened at time t is not part of the definition.
+Tau is less than t.
+Ah, less than t.
+Okay.
+So that's the point.
+If you have a stopping time, then time t matters.
+Okay.
+So if the thing jumps into the set exactly at time t, then this doesn't hold anymore if you have a weak inequality.
+That's the thing that GGBT overlooks.
+So now, suppose now this is closed.
+And by the way, we mean open or closed.
+Half open, half closed, no statement.
+The statement is not correct.
+Either the whole thing is closed or the whole thing is open.
+Not open somewhere and closed somewhere else.
+No statement about that situation.
+So, and x continues.
+So, we're basically reducing this to the situation of the open set.
+We are making our gamma set a little bit larger.
+So we introduce the usual distance function of a point x from gamma.
+So, we are in R over D here.
+So that's just a projection.
+The projection on a closed set.
+That's continuous.
+So, and y set gamma, basically that's the null set of this.
+All x such as D x gamma is equal to zero.
+So, now we do something like here.
+Tor gamma less or equal T.
+It means at some point before time T, my process is in gamma.
+My process being in gamma means I plug xs in here and the distance is zero.
+is zero.
+So, I can write this like this.
+Inf.
+And now, we can equal it.
+Very important.
+D xs gamma is zero.
+If this is zero, it means xs is in gamma.
+And now, I would like to do something like this.
+But now, I have to include the T.
+And f, for instance, my process is only defined on zero T.
+To approximate it, I need left continuity, not right continuity.
+My process is not defined there.
+The right continuity is of little use if it's not defined beyond T.
+So, this is where the continuity comes from.
+Inf.
+S, n, q.
+V, xs.
+Gamma is equal to zero.
+is equal to 0. So this needs the continuity of the x-axis.
+And in this case, in particular, that continues.
+So I can approximate also
+at time t will be asking your question.
+And now
+I make the set gamma a little bit larger, I take an epsilon neighborhood
+an open epsilon neighborhood over gamma, then I have an
+open set, then I can look there.
+So
+this is
+equal to
+is less than
+1 over n.
+At some point
+prior to time t
+for all
+This one
+Now here I have an open set.
+So here I'm looking at
+the first entrance time to an open set.
+And one over n neighborhood over gamma.
+But what we proved
+in step one
+this is an Ft.
+is an Ft.
+And so
+all this
+is an Ft.
+So this closed set
+although you should think
+it's
+you can see it, yeah?
+When you're
+you think it's simpler
+but actually more complicated.
+And more subtle.
+So then after 20 minutes
+Chair GBT said
+oh yeah, yeah, yeah.
+But
+so the axis
+is this.
+If Ft
+is right
+continuous
+then
+first entrance times
+to
+open sets
+in that case
+you don't
+have some
+of the
+times.
+In that case
+you don't have some
+of the motion.
+The right
+continuity
+allows you to
+to go with it.
+Ready?
+question about
+the limitations of
+chapter GBT.
+Mm-hmm.
+Good.
+If not,
+the next
+lemma in lecture notes
+is a long list of
+results of the form. If something is a stopping time
+something else is a stopping time. That's basically
+one big exercise. I'm not going to
+write all that down.
+That's what action notes are good for.
+So we continue
+with this
+lemma.
+Also from probability 2.
+You were basically stopping
+stochastic process all the time.
+And we'll be needing
+to stop stochastic
+processes
+even more often
+in continuous time.
+If we talk about
+stochastic integration
+later.
+So the question is
+which
+miserability properties
+are inherited
+by stochastic processes.
+So let's say
+x is
+progressive
+momentum.
+And
+to a stopping time.
+Then
+the
+stopped
+of course
+is
+the value of x
+at the stopping time.
+4
+is
+the random value
+of the process
+at the random point
+in term
+2 omegals.
+So
+this is
+f
+core measurable
+f core
+as just in base.
+So
+the set of all
+a and f
+such that a
+is an f
+t
+for a t.
+And
+the stop
+process
+x core
+one of the
+random properties
+of the previous
+lemma is that
+this is again
+stopping time.
+In people
+stopping time
+stopping time
+stopping time
+stopping time
+stopping time
+stopping time
+this is
+What we first show
+is that
+it's enough to show
+the progressive
+variability of the
+stock
+process
+that we get
+this one.
+So
+let's just show
+this
+we have
+any
+measurable
+set B
+and
+what we have
+to show
+for the first
+property
+is
+x
+tau
+in B
+intersection
+with
+tau
+t
+so
+s
+equal
+t
+is
+f
+t
+over
+t
+these
+were
+the
+events
+that are
+here
+intersect
+intersect
+with this
+one
+and
+f
+t
+so
+that's
+what
+is this
+x
+is
+x
+over
+and
+b
+the
+intersection
+of
+t
+less or
+equal t
+well
+t
+so that we can
+just as well
+what is x
+tau
+in t
+it's the value of the stop process
+at time t
+and t
+towards the stopping time
+this is clear
+this is what we want
+so what we want
+so what we want
+is this one
+also
+the ft
+and this follows from this because
+what I'm going to ask you what do we require in
+you want this
+we require the adaptiveness of the stop process
+but progressive measurability is measurability plus adaptiveness
+so if I can prove my stop process progressive it is adaptive
+and then I have this one
+and then I have this one
+so
+if my stop process
+is progressive
+we know
+progressive measurability implies measurability and adaptiveness
+for the converse implication we need to assume more
+it is adapted
+and then
+and then
+this one is actually true
+so
+we only need to show
+the stop process
+is progressive
+the stop process
+is basically a composition of two things
+the process
+and the stopping time
+the stop process
+so
+we assume x is progressive
+so
+we know
+it is measurable
+we have this one
+so
+we assume x is progressive
+so
+we know
+it is measurable
+this is measurable
+this is measurable
+there is f t here
+and the f t also appears
+in the definition of stopping times
+so
+moreover
+take this method
+as omega
+max 2
+so we want to write
+the stop process
+as a composition of two measurable processes
+so
+my second
+measurable process
+is this
+I'm back to tau omega
+in s
+oh
+so
+from
+this
+this
+to
+this
+this
+is measurable
+twice the stopping time
+towards the stopping time
+okay
+so
+now
+i take the
+i take the composition
+i take the composition
+s omega
+maps to x
+here is tau omega into s
+i put tau omega into s
+i put tau omega into s here
+and this omega in the second variable is unaffected
+so i put it
+over to here
+over to here
+from
+here
+to
+here
+to
+here
+to
+here
+so
+here
+so
+here
+here
+here
+here
+here
+we can get the
+x
+here
+x
+x
+x
+x
+x
+x
+x
+x x x x x x x x x x psychic x x x x x x x x x x x x y x x x y x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x y x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x
+So, now we have most of the things together that we can actually start talking about something a bit closer related to actually stochastic analysis.
+Good. We start talking about Martin Gates.
+Martin Gates continues.
+Martin Gates in discrete times were fair games.
+The conditional expectation of tomorrow's state, given today's state, is today's state.
+We do the same thing in continuous time.
+And we want to prove similar results.
+So, for Martin Gates, we had conversion theorems.
+If you have some nice integrability condition, Martin Gates converge to some limit.
+In which sense, depends on the integrability.
+You can represent the Martin Gates condition today, and so forth.
+All this extends to continuous time.
+So, we are given a filter probability sequence.
+And we do not assume the filtration satisfies the usual conditions.
+Not yet.
+Later, yes, but not.
+So, what is the Martin game?
+So, what is the process?
+M is the Martin game.
+With respect to my filtration, there were three properties, two of which are usually forgotten.
+But they are important.
+First of all, it has to be adapted.
+This is less often forgotten than the next one.
+The next one says, it has to make sense to talk about conditional expectations in the first place.
+So, things have to be integral.
+In, I would say, one third of board exams, that condition is completely ignored.
+People don't verify.
+They assume conditional expectations exist, they compute them.
+But what if they don't exist?
+So, what we need is that conditional expectations exist, and then we can talk about it.
+We can talk about it.
+Then we look at the conditional expectations of MT given that S is equal to an S for S.
+And then there was this notion of a sub-martingale.
+So, the convergence theorems for martingales were always, you either have a nice martingale or a non-negative sub-martingale.
+Non-negative sub-martingale, then you go to prime power.
+So, and for the sub-martingale, the equality was like this one, super-martingale, the other one.
+How do we test martingale properties?
+So, there's an interrapidity condition.
+So, this martingale property says, ms is a version of the conditional expectation of MT given Fs.
+And there was an integrability condition that we had to verify.
+Namely, integral over A, ms, dp, we use this a lot, dp, 4 over A in Fs.
+So, this was a monotone class type result that counts as what to do to test the martingale property.
+So, we have inequalities in convergence here.
+Let's start with inequalities.
+So, the big question is, when do martingales converge?
+We want to express them in terms of a single random variable, the limit, if it exists.
+So, the first theory in this section recalls a couple of things from this three time martingales.
+Let me just recall groups inequality in discrete time.
+Discrete time says we have a discrete time martingale.
+For example.
+So, if we want to shape, we want to shape
+that is a segmented quality,
+Whatever.
+Let's assume that we should have here,
+and this is where we!
+We can calibrate that tutaj.
+This is why you as a or negative sub martingale!
+we can use a cap that we can use?
+And we can use some sociales here.
+We could bound the probability of the running supremum, this one, n, n, greater or equal some value lambda.
+We do this a bit in the spirit of Ceviche. Less or equal, one over lambda to the power of p, p's moment of the terminal time.
+So here's the running supremum, inside the probability, and on this side it's just the terminal value, m, m, which is this m here.
+Now, if this is not in Lp, then this is infinite. Okay, inequality is still correct. It's a bit trivial, but still correct.
+So if m, n is in Lp for p bigger than 1, it's not true for p equal to 1.
+Then it goes like this, m, n to the power of p is less or equal to some constant, which is p minus 1 to the power of p, a, n, n.
+So I think this p is missing here in the lecture notes. It's there in the continuous time version, but it's missing there.
+Hmm. Okay, since you start 15 minutes later next Monday,
+I have almost 5 minutes of time.
+So, here is the continuous time version.
+It says exactly the right. It's the same thing, with one exception. We don't have continuous time now, so we need some continuity.
+And again, if we have some continuity, we reduce the discrete time.
+So, let m be a right continuous model.
+And again, we will see that the question of where continuity can essentially be reduced to continuity properties of expected values, which are much easier to verify, because that's a past property. And for expectations, we only have one trajectory.
+So, all non-negative sub-marketing here, we have running supremo, which is m star, sub absolute value, and s, s less or equal to t. Then, just like there, for any lambda,
+lambda and t lambda to the power of p, p times p of n star, t greater than lambda is less or equal to p's moment of m, and p bigger than m.
+So, p bigger than one.
+Let's say, maybe what it is.
+So, the proof is not very long. We reduce to discrete time. We use right continuity.
+I mean, the very first question is something I can write this down, but it is measurable. I mean, it doesn't make sense to look at this probability in the first place. So,
+it is kind of implicitly assumed, and it is measurable. So, m star t, again, I have right continuity, so I can approximate everything from the right. So, I can take, again,
+this sub-remu, and s, not quite, one thing is missing, t. If t is not in q, then it is excluded here. So,
+we need to add it.
+This is measurable, measurable, maximum is measurable, measurable. So, now,
+we discretize. We discretize, and then take limits. If we take limits, we use, again, continuity here, and we take limits here, we need
+for two. We need to make sense that we can take limits there. So, our discrete set is this one,
+s n, s n, this is s n k, basically the points, and they are equal to t, 2 to the power of n k, like this, and in particular, t is always the point of this set.
+So, this is discrete time. This is discrete time. So, now we sample our martingale along these discrete points. That gives us a discrete time martingale for which we can apply discrete time to maximum equality. So, we set
+l, m n st, r, m n st, r, m n star, m n, st, v,
+to be the running supremo,
+of the discrete Americans Martingale, .
+v in s n.
+So this green group, where do I close, here, this green group says
+p n star t greater than the lambda, there's no star here.
+You can put the star, you can put the star, but then I can remove it, I still have this inequality.
+And e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+i.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+e.
+So, what is maximal inequality is relatively straightforward.
+For martingale conversion, it's a little less straightforward.
+The idea is always the same.
+Discretize, use the result for discrete processes, and put it together and use continuity.
+Again, that's a bit more advanced, and that will be done next week.
+Any further questions or comments?
+Good.
+If not, then keep in mind, you start a little later on Monday.
+I'll see you in two weeks.
+I have one organizational question.
+Are we going to have the task session next week with Creyhardt?
+Creyhardt?
+Are we going to have the exercises in the next week?
+Yes, in the next week.
+Yes, in the next week.
+Yes, in the next week.
+Yes.
+It's on the good side too.
+Yes.
+I just wanted to take a look at Creyhardt.
+Very good.
+Okay.
+Okay.
+So.
+We'll be right back.
+We'll be right back.

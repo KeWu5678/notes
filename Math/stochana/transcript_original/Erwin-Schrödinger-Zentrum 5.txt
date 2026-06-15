@@ -1,0 +1,842 @@
+We suppose that the positive part
+can satisfy this uniformity
+continuum than the thinker witches.
+Okay, and this does not hold in L1
+unless we have .
+So here we have .
+Okay, so proof sketch here.
+I mean, the first thing to notice
+is this criterion here is the same as assuming
+the element bound zone.
+So we already discussed the last time
+and showed the mark.
+That's because this is .
+Okay, so now what's the idea?
+Well, the idea is to apply this .
+Okay, so now what's the idea?
+Well, the idea is to apply this .
+So, for all .
+So, we now choose our i, our set i, just to be the interval 0n.
+So, why?
+Because it's a .
+I mean, it's hard to get .
+So, it's a .
+So, we can use our i, our set i, just to be the interval 0n.
+So, we can .
+So, we can .
+Why?
+Because it's a .
+I mean, it's not much .
+So, it's a .
+So, it's a .
+It's always .
+Cool.
+So, this is .
+Yeah, that was .
+So, this here is .
+It's independent.
+Okay, so if the expectation, so now, of course,
+the up-crossings, it's a monoton fraction of n.
+The longer the interval is, the more up-crosses than it have.
+So, this one here .
+Okay, so actually, because the right-hand side doesn't depend on n, we can just pass to the limit and we get the equality of the goal.
+Okay.
+Okay.
+Okay.
+Okay.
+Now, this is exactly the same argument as the discrete time.
+So, .
+So, .
+So, .
+So, .
+Here I can put infinite up-crossings.
+And because the expectation of this random variable is finite, it must be finite almost surely.
+So, .
+And the same goes through the union of all these sets.
+Okay.
+So, the count of the union is to have zero probability.
+And now you see that this set here contains a set.
+That the limb in.
+Let's take this one another.
+Okay.
+So, the count of the union is to have zero probability.
+And now you see that this set here contains a set that the limb in.
+Let's take this one another.
+Okay.
+Okay.
+So, the count of the union is to have zero probability.
+And now you see that this set here contains a set that the limb in.
+Let's take this one another.
+Okay.
+Let's take this one.
+Yes.
+Because, okay.
+So.
+Otherwise, we would see an infinite number of our crossings.
+And this then shows, because this is probability zero, this shows the limb in this.
+Okay.
+Okay. And then the last thing to note is we need this to be integrable, the M infinity,
+and let's call this one infinity.
+Or is this two?
+I can just apply that two.
+And now we have proven here that this is uniformly bonded.
+Yeah, so this.
+Okay.
+Oh, this is just the same proof as a discrete time.
+Okay.
+So, now, I mean all the ideas like the optional stopping theory, actually also this one because the up-crossing them are also in the approximation by discrete time.
+So, everything needs right to the community.
+Right to the community is a very important property.
+So, what we want to talk about is when do we have right to the community.
+Okay.
+Okay.
+So, the first observation is that whenever you have a super martingale, you have right and left limits.
+And if you have the opportunity to make sure that you can't do the same thing, it's very important.
+Okay.
+On his head, we're going to measure up one.
+On his head, we're going to measure up one.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+So, with any...
+Okay.
+So, with any...
+Okay.
+Okay.
+Okay, okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+That's good.
+Okay.
+Okay.
+Set.
+And then stop.
+Start.
+Full measure.
+Start.
+Go forward.
+Two.
+Right to zero.
+The right hand limit on the left.
+So this is pretty nice, right?
+But there's one drawback here.
+Let's have somebody see why.
+This is not so nice.
+Okay?
+In the end.
+The problem is here.
+Okay?
+F infinity.
+First you have to know the whole process before you can turn this in.
+Right?
+So what you want is to be F zero.
+And that's what you will actually work on to after this F zero today.
+Okay?
+Because if it is a zero, we know it from right away.
+Then we can just assume it holds.
+Yeah?
+If it's an F infinity.
+Okay.
+Anyway, let's first prove this.
+And the proof is exactly the same.
+Okay?
+True.
+So exactly the same.
+So...
+So...
+So, 16...
+And then we can define these legs.
+Now we have to be careful because we don't there.
+We assume the light comes in, but we don't.
+So we have to take Q here.
+Okay, next.
+Are you able to apply the upcross?
+Okay, for that, you have to have the Q because you don't have right continuity.
+I mean, if you have right continuity, it's the same.
+It doesn't matter if you take this or not right there.
+Okay, and by the upcross, we know the same argument is there, right?
+The reputation is finite, so we know it has to be finite as well.
+So it can be infinity.
+Okay, same argument.
+We get that this has .
+Yeah, and now again take the union.
+Okay.
+Okay.
+Okay, yeah, and then you know that these limits exist, right, because the input to be different is again contained in this head.
+Okay, so the limits exist.
+Okay.
+So, now we need to show the finite, I think.
+So here this was obvious because we showed its integral.
+Okay, and so
+This, so this has countable number of points, so we can approximate it by finite subsets.
+Okay.
+Okay.
+We have the finite subsets.
+Approximate students.
+Okay.
+with the proximal instrument.
+And so that we have to sympathize on the set.
+And now we can apply dupes maximally according to.
+Okay, now you can apply to the limit here again.
+So, now I can send lambda to infinity.
+And see the, five, five.
+Okay, so, it's fine.
+One question, why?
+So we, I mean, as Professor Horst,
+you proved the sitting point at a continuous time, right?
+Okay.
+And why did we not right away applied?
+I applied with this green version.
+Because it's only proven for a rapid continuous one.
+Okay, and here we have a generous .
+Yeah.
+Okay.
+Okay.
+Here we go.
+Thank you.
+Okay, so now the goal of the lecture is to
+get rid of this infinity here, okay, and to put zero here.
+Okay.
+So first of all, we can now define, I mean, like the previous design, we can define this one, right?
+The right thing here.
+Yeah, so this is going to be fine as the limit.
+And with this, it's fixed on the set of measure one.
+And this is going to be fine.
+So this object is not very fine.
+And what we do now, we start with this process here.
+So we're going to do the supermarket again.
+No assumptions on the regularity here.
+Okay.
+Let's decide this.
+But this here is integral.
+Okay.
+So that sense.
+Okay.
+Okay.
+So that sense.
+Okay.
+Okay.
+So that sense.
+Okay.
+Okay.
+Okay.
+So that's where we can put it.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay, so does that sense?
+And now, the question is when is this inequality?
+Because if this is inequality,
+you can just make the filtration-wide continuous, right?
+If this is inequality,
+you can make the filtration-wide continuous,
+then we have what we want, actually.
+Then mt plus is the same as t.
+So, okay, the question is when this is inequality,
+and the other is the following.
+So the expectation of the function of t,
+if this map is right continuous,
+and this is important.
+Okay.
+And this applies, and this process is again a super martingale, so...
+mt plus is mt plus super martingale.
+Okay.
+And this applies, and this process is again a super martingale, so...
+mt plus is...
+mt plus super martingale.
+mt plus is mt plus super martingale.
+mt plus is mt plus super martingale.
+mt martingale, if m is martingale.
+Why?
+Because if m is martingale, this here is constant.
+This map is constant, so it's especially right in t, okay?
+This is always complete, you're always going to have the martingale property.
+If mt plus is a martingale, this is a martingale.
+Why?
+Because if m is martingale, this here is constant.
+This map is constant, so it's especially right in t, okay?
+So this is always complete, you're always equaling for it.
+We have the martingale property.
+Okay, so this will be the martingale property.
+Okay.
+Okay.
+So, here is the martingale property.
+Okay, so we would like to prove this, so I'll get this a little bit later.
+I mean, these questions, we are now talking about the questions which never appeared in discrete time, you know?
+This is why this continuous time theory is so much more nasty than saying that you have to check out these things, you know?
+Okay, so we want to prove it.
+To prove it, we use backwards marginals in discrete time.
+So this is something we had last semester, so let me just record it.
+Why backwards marginals? Because what you do is you approximate from the right, so you go back.
+Okay, so let's recall this result and maybe add something in here.
+Do you have some next channels by the way?
+Yes.
+Do we have updated ones from yesterday?
+No.
+Okay, so be careful because this result is very wrong in the next channels.
+Okay.
+I told you, so you will update it.
+Yeah.
+Can you go to the next level?
+So we will use this number on regular marginals.
+Okay, so now that infiltration is increasing and I will take a decrease infiltration.
+So let the engaged prince of��ci for this new number.
+I put on the negative dedicate dato dasochrome auf der pick,
+So let X be a process adapted to this sequence.
+So let X be a process adapted to this sequence.
+And what is called a backwards supermarketing.
+So that's X.
+No, X goes this every time.
+Yeah.
+So that's X and Z and backwards supermarketing.
+So that means this frame.
+Okay.
+So I know last semester we used the index minus N.
+Yeah.
+So very often we use minus N instead of N. Why?
+Because then the supermarketing there equality is somehow over the way.
+Because now you see it twists around.
+Okay.
+So backwards supermarketing there actually have increasing expectations.
+Yeah.
+If you use index minus N what I did last semester then you still have decreasing.
+So.
+But it's the same.
+Yeah.
+It's the same.
+Yeah.
+It's just notation.
+Okay.
+So then.
+Okay.
+So then.
+A.
+And this is not the same statement as electional.
+The statement is correct.
+But it's just not sufficient.
+Okay.
+Okay.
+So then.
+A.
+And this is not the same statement as electional.
+The statement is correct.
+But it's just not sufficient.
+Okay.
+So.
+It will not help us.
+So what we need is actually the following.
+X, N is really going to be integrable.
+If and only if.
+And it says L1 bound it is true but there is something much more stronger.
+If and only if.
+And it says L1 bound it is true but there is something much more stronger.
+If and only if.
+If and only if.
+And it says L1 bound it is true but there is something much more stronger.
+If and only if.
+This is true.
+Yeah.
+And in the lecture notes it says the following.
+It says this one.
+Okay.
+And obviously this is much stronger than this.
+Yeah.
+But as it turns out it's all equivalent.
+And this one is sufficient.
+This one is the one we can check later.
+So.
+Okay.
+So this.
+We will actually prove it in a matter because it is important.
+And B and C is from last semester.
+Okay.
+So.
+Okay.
+So.
+So.
+So.
+We have always convulsions in the water, right?
+overlook you X.
+So.
+And also you know Y of course Dragons is around here.
+Yeah.
+And here also this.
+Wrong for random where the nodes.
+Because.
+In the nodes.
+If eaten.
+And it's interchanged.
+Where it should be.
+And now if it's a martingale, then it's automatically, uniformly, integrable. Why? Because of this.
+If it's a martingale, then this here is constant, this row is a true. Yeah.
+Don't we need the absolute value there? No, we don't.
+What if all expectations are minus infinity?
+Being sure this will not happen.
+We will prove this statement in a minute and then you can see it.
+I mean, you're right, it's a very, very strong statement.
+Okay? But it is the way it is.
+Okay.
+That's, I mean, that's because of the stagward super martingale, you can see here, it has increasing expectations.
+Yeah, but my point was, what if all of them are minus infinity?
+If all of them, but then it cannot be because it has to be integrable.
+That's the background super martingale.
+Yeah.
+So any super martingale is integral.
+Right.
+Yeah.
+So they cannot all be infinity.
+And it's increasing, so it can only hit plus infinity but never hit minus infinity.
+That's actually the reason why it works.
+Okay?
+So we didn't have a question.
+Okay.
+Um, so if x times y plus martingale, so this was with equality, x times y plus martingale, so this was with equality, x times y plus martingale, so this was with equality.
+So then x times y plus martingale, so this was with equality.
+And here we have equality.
+And here we have equality.
+Yeah, as we hear, this is not correct.
+And then x times y plus martingale, so this is not correct.
+All right.
+All right. So I think B and C we proved last semester, so the only thing we should talk about is A.
+Okay, so we first prove A here, and then we use it to prove this factor.
+All right.
+So, A.
+So you have to integrate with the right-hand side, so it's true here, so we already have to prove the converse implication.
+So the idea is that some are supposed to prove that the negative part is going to prevent the proof of avoiding the converse.
+So, we can apply math of any quantity. We know this is more than .
+Okay, and now we use the same trick again, so this is twice the expectation.
+Okay, this is correct. And now you know this is just...
+X is super-mortical.
+X is super-mortical.
+So minus X is a sub-mortical.
+If you apply a convex function, this is still true.
+So minus X plus is also a sub-mortical, but minus X plus is the same as X minus.
+Okay, so this is a sub-mortical and...
+So this one we have assumed here to be...
+So this is a backward sub-mortical.
+So a backward super-mortical has increasing expectations, so a backward sub-mortical has...
+What's called?
+Decreasing expectations, okay?
+So this here is a backward sub-mortical.
+Yeah?
+It has decreasing expectations, so this is more than X.
+That would be great if an egg works like that one.
+Okay, so this is bonded and this is bonded by assumption.
+Okay, so the whole thing here is...
+Uniformly in N.
+Okay, so then...
+If you now send lambda to infinity, this goes to infinity, so this has to go to zero.
+Okay?
+Uniformly in N.
+.
+True.
+Okay.
+So now...
+as X minus,
+the both of the sub-mortical gets…
+in our third bone...
+You know that.
+And so now we have the definition of the conditional expectation.
+Okay, and now you see this proves the uniformity of the negative sign.
+And because uniform in n, this is bounded by 1, and this equals to 0, uniform.
+So this shows uniformity.
+Okay, we have to upgrade this to the next class as well.
+Okay, so what's the idea?
+The idea is because of the assumption of its limit converges.
+If you choose n large enough, then the difference between n and n plus k is very small.
+And therefore, having like the uniformity of minus part, the right of the integral.
+Okay, so let's see this.
+So we want to apply the sub-marathon again.
+In important again, this one here.
+Okay, so now we can do this.
+Now because n is smaller than n,
+so we place the rule of 1 here, the n, and we have minus in front of the inverse.
+Okay, so this is just again because it's a thing with sub-marathon.
+So we just apply this again.
+And now we use the sub-marathon.
+And this we can control because of our assumption that the limit is high.
+So this has to be in zeros, the pushing sequence, zeros.
+For n and large.
+Okay, what's red, what's left.
+Okay, so this here can be controlled.
+And this here, well, it's negative.
+So we're doing it just in minus part, so let's see.
+Okay, so we should speed like this.
+And then, so this is what we are interested in, right?
+To do uniform durability.
+Okay.
+Now we can do this here.
+This is a sub-marathon here.
+Yeah, x is a super-marathon here.
+So minus x is a sub-marathon here.
+And if you apply a convex function, it's again a sub-marathon here.
+This is the same as x over minus x over here.
+Okay, so this is again a backward sub-marathon.
+So that was a sub-marathon here.
+Proper tension.
+This is again.
+Okay.
+Now we can use this here.
+here, and we'll see the total negative xn minus xn.
+We get the same trick, so the absolute value is the same as the value plus twice the negative value, right?
+That's nice. Okay. And now this looks very good, right? Because what we do now is we choose m large such that for all m larger, m this is small.
+This is okay because as I said, it converges, yeah, so this becomes smaller than m large. Yeah, so that's the first thing we do.
+So this we can assume with, I mean, it's better than minus epsilon for any epsilon. Okay, if I choose m large.
+Okay, so first I choose my m. Okay, and now if I choose my m, I choose lambda no large, lambda no large.
+I choose lambda no large. Okay, so and we know already, we have proven already here, right?
+And then this one here. So it's the same. See, so here we have x minus. So x minus gets large and x becomes very negative.
+Okay, x being very negative is the same as x minus being very large. Yeah, so it's exactly the same condition we have.
+Okay, so we know that this here actually goes to zero because of that, right?
+Okay, so the whole thing is becoming smaller. Yeah, choose lambda no large, choose lambda no large, then this here is smaller than m.
+Okay, and then of course it's always for any epsilon, so it must be. Yeah, so it's the same time as we finish.
+Okay, so this proves the problem.
+Okay, so this is very useful.
+Okay, so this is very useful.
+Waterproof is here.
+It's here.
+This one.
+One, two, three.
+One, two, three.
+One, two.
+One.
+One, two.
+Okay, we can keep our level.
+Okay, so we look at MT plus.
+So the idea is to approximate this from above.
+That is right and right.
+So we have two L with T.
+And now again we have discrete market.
+Yeah, what is this?
+I mean the whole thing is a super martingale,
+but now this sequence goes backwards in time.
+It's precisely the situation of the backwards super martingale, right?
+So this is a backwards super martingale.
+And discrete time.
+Okay, and now we need this to be uniformly integral.
+That's precisely where we apply this part A, what we just proved.
+So since the expectation of NQN, so it's a super martingale, okay?
+So it must be the backward super martingale.
+Backwards super martingale.
+So this here, T is Q infinity.
+Since this is true, we can find N.
+So let's do this demo.
+So this is the previous demo.
+And now, what T is part A implies that NQN is really great.
+Now this is very important for the proof.
+And you will, you don't have L1 bonnet.
+You have it now because you know this is equivalent.
+But a priori, when you have to prove L1 bonnet.
+But this here is very important.
+Okay.
+Okay, so.
+So.
+Now we can apply our backwards martingale conversions.
+Yeah.
+And we know that the N, NQN,
+that is given to this, NQN.
+This conversion is almost 20.
+And then N1.
+And N0.
+So that NQ plus itself is over.
+And that's the statement of the backwards martingale conversions.
+Okay.
+And now.
+Because of uniform equitability, you can pass the limit.
+Oh, okay.
+Because it's, I'm not super martingale.
+And now, because of uniform attribability,
+you can pass to the limit, right?
+And.
+You have this, what you want to prove.
+All right.
+Now, in the second part.
+Yeah, so when do we have equality?
+Let's see if the mapping is right, continuous.
+So.
+If this is right, continuous.
+And then, this, this is set as this, right?
+But by doing that to the limit, I know that this is the same as this.
+Okay, and now I have, I have something that has an equality here, but one's larger than the other.
+See, this here, MT is larger than this, and I have the power properties, so this is the same as MT.
+Now, this is T, okay.
+So, I have, I have something that has an equality here, but one's larger than the other.
+So, they have to be the same.
+So, I have two random variables, MT and this one, which has the same expectation, but one is larger than the other, so they have to be the same.
+Now.
+So, I have two random variables, MT and this one, which has the same expectation, but one is larger than the other, so they have to be the same.
+And this random variable, and this random variable, and this random variable, right?
+And they have the same expectation, but I know this one is larger than the other one.
+And then they have to be the same.
+So, they have two random variables.
+So, a cosa partner will say, OK?
+I have to be the sameこちら, right?
+They have aطrees fornement.
+And this is A.
+And this is E.
+And this is E.
+Using E.
+Thank you.
+Okay, so we want to prove it's a super multimillion, we have to check the super multimillion quality, we do it again by approximation, so approximate S by sequence Qn, and Qn is more of a T.
+Okay, so then, it was replaced S by a Qn array, so first look at this one here.
+Okay, so now we can apply a greater expectation because T is larger than Qn, so we can first compare T, and then with respect to Qn.
+And now we can apply the previous part A, which tells us this here, more of a T.
+Okay, but now M itself is a super martingale, so by the super martingale property, T is larger than Qn.
+Okay, but now M itself is a super martingale, so by the super martingale property, T is larger than Qn.
+And if it's a martingale, then if you have to afford it to, right?
+Okay, and now we can just pass to the limit.
+Alright, so we send N to infinity, so this will be a super martingale.
+And here we know, this is a backward martingale, so this is also for futures, right?
+So there's a lot of futures.
+Okay, so.
+Okay, so yes.
+So, yes, yes.
+In the regionals, there's Fs plus and Ms plus.
+Yes, okay.
+Okay, and now we can do the main result of the region.
+Okay.
+So this, we have not seen that Ms plus is also a super martingale,
+and actually, we want Ms plus Ms.
+You know, so we want, actually, to be the most of the same with your icon.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+We'll take Ms you've got martingale without this human regularity.
+and we support that with reflection
+that discuss the usual assumptions.
+You have talked about it?
+No.
+Okay.
+So this is a very important assumption in, like, all the course.
+If this doesn't hold, almost nothing holds.
+So it's completely right.
+Exactly.
+The filtration has to be right until it's complete and augmented.
+And this will give you regular visions as a statement of the series.
+Okay?
+So if you have a nice filtration,
+the filtration satisfying these assumptions,
+then you have a nice recognition.
+And there are also, like, the degree theory,
+I don't know if you will prove it, but actually,
+it will also show that, like, stopping times are well-defined.
+Because also without this, this is fairly true.
+Okay?
+This return was very easy.
+Whenever you hit a set of the stopping time.
+Yeah, but in continuous time, it's not so easy.
+Okay?
+Okay.
+And for this, you also need these assumptions and that.
+That's true.
+All right.
+So, suppose this is true.
+That M has the right continuous representation.
+If, if what, the condition of the lever is fulfilled.
+So, if, and only, actually, if, and only if, the expectation that it is.
+Okay.
+So, and in this case, if this is the case, then it goes to the next one.
+So, .
+So, you will see.
+So, you see the reflections.
+That is a nice response.
+Thank you.
+And left, there, and left, so you see the .
+And then it's not, because of course it's not continuous.
+Okay, so .
+It's right continuous.
+And it's also left continuous.
+Okay, not left in case it's continuous.
+Yeah, but I'm using the left.
+Okay, now we just have to put together everything, right?
+Just put together the previous results.
+So, okay, first result today was, if you have an arbitrary supermaton A, you can find Z.
+First result today was .
+And I said, this is really stupid.
+And now, because of this assumption that you have an augmented filtration,
+you have the usual assumptions, you know that all zero cells are in F0.
+Okay, so also all one cells.
+Yeah, so this one.
+So, because of the usual conditions, you know that this is .
+Assumptions.
+Yeah, that's why it's important.
+So, we started with an issue.
+Okay, so if I have a .
+I think this is just .
+12.
+There it is.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Here we go.
+Okay.
+Okay.
+Okay.
+Okay.
+So, okay.
+Okay.
+Okay.
+Okay.
+So now this is good because now we can
+transfer this supermarking probability on this central because it's an M0, so it doesn't hurt anymore.
+Okay, so the modification, what do we do?
+We just take a B plus, right?
+So now we have to show that this isn't supermarking there as well.
+So what do we know?
+We know M2 plus is M2 plus symmetrical.
+And we just prove it's an M2 plus.
+Okay, so by definition we know this is true.
+So it's Ft plus adapted, yeah?
+But I want it to be Ft adapted, and again here I need the usual assumptions.
+But the usual assumptions, Ft plus is the same.
+So I know that M2 plus is Ft adapted.
+Okay, so now we have supposed that this function,
+so we can apply the lemma, which tells me I have an equality if I condition M2 plus to M2.
+So what does that mean?
+Okay love you.
+Okay, so be aware, yeah.
+Whatever it might be.
+Okay, and now because Ft is the same as Ft plus, I can just put Ft plus here.
+Yeah, but this is adaptive, so here we have Mt plus, but by definition this is Mt plus.
+Okay, so we are proving that Mt is Mt plus.
+Okay, so this shows that Mt is indeed the multiplication.
+So it means we can all, if you have a super martingale, or if you have a martingale, especially if you have a martingale,
+you can always assume that it's right martingale.
+Yeah, because if you have a martingale, this here is always constant, so this condition is always fulfilled.
+If you have a martingale and you have the usual conditions, then it's right continuous.
+Okay, so what's left is to show that this is actually a super martingale.
+So we don't lose the super martingale, but when we change, and then we go to the building.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Let's do the super martingale for a piece of s more than t.
+Okay, so you see the supermodel you call a p3 getting s smaller than t.
+We're going to have s.
+We're fixing it again.
+We're fixing it again.
+So, we know when the m is a supermodel.
+And so, we know that this is a supermodel property.
+Okay, so now we know this is the same as m2, right?
+Okay, and here we send n to infinity.
+And we use the unicromantic probability of this one.
+This is again our backwards matrix.
+Backwards matrix.
+So, I'm going to find it.
+And it can be just a plus.
+But by definition, that is just a plus.
+Okay, so this proves that n infinity is n infinity.
+Okay, so now we have proven.
+If the filtration satisfies the usual conditions, if this condition here is still good,
+then we have the right to the application.
+We would always do it.
+Okay, so one more, the reverse implication.
+So, this shows that actually this condition is necessary here.
+Yeah?
+It's not really sufficient.
+It's necessary.
+Okay.
+Okay, so.
+Okay.
+So.
+So.
+So.
+So.
+So.
+And right, like, unity.
+This is necessary.
+Okay, so.
+It looks like.
+Let's do this.
+Okay, so.
+Okay.
+So.
+Let's do this.
+Okay.
+So.
+So.
+So suppose we have a modification, which is my continuous, so this is end, and end in
+So it's a modification. So it's a modification, so it means the probability that mt is equal to m2 and t is 1.
+Yeah, the same is true, it will replace t by tm.
+Yeah, but these are only part of the many values. So I can take one whole set of measure one, so that all basic qualities are true.
+Okay. Of course, you cannot find a set where this is before all this. You can take here a comfortable subset of indices.
+Okay, so if this is true, then the limit of mtm is the same as the limit of mtm.
+Okay? But mtm is right, mtm. So this is mtm.
+Yeah, but this is the same as mtm.
+Okay? And again, this causes mtm, this is the limit of mtm, this is the limit of mtm, this is the limit of mtm, this is the limit of mtm4.
+So we can have the same convergence in m1.
+And again, this is the limit of mtm.
+Yes.
+Okay.
+Okay.
+So.
+Power chapter 1.
+Food need to finish chapter 1.
+That's what we did.
+Questions?
+Okay.
+So.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So.
+Okay.
+So.
+Okay.
