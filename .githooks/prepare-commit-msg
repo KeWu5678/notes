@@ -1,0 +1,131 @@
+#!/usr/bin/env bash
+#
+# prepare-commit-msg — draft a commit body that summarizes staged changes,
+# grouped by top-level folder, using the `claude` CLI.
+#
+# It PRE-FILLS the message and opens your editor as usual, so you always
+# review/edit before the commit is finalized. If `claude` is unavailable,
+# times out, or errors, it falls back to a plain per-folder file list so a
+# commit is never blocked.
+#
+# Enabled via:  git config core.hooksPath .githooks
+#
+set -u
+
+MSG_FILE="$1"
+COMMIT_SOURCE="${2:-}"
+
+# Skip for merges, squashes, amends (-c/-C/--amend) and template commits —
+# those already carry a meaningful message we shouldn't overwrite.
+case "$COMMIT_SOURCE" in
+  merge|squash|commit) exit 0 ;;
+esac
+
+# Nothing staged (e.g. `git commit` with only unstaged changes) -> do nothing.
+if git diff --cached --quiet; then
+  exit 0
+fi
+
+# --- gather staged changes -------------------------------------------------
+
+# Per-file name-status, capped in case of huge changesets.
+STAT="$(git diff --cached --stat 2>/dev/null | head -n 200)"
+
+# Top-level folder -> changed files, for the fallback scaffold and to steer
+# the model toward the grouping the user wants.
+GROUPED="$(
+  git diff --cached --name-only 2>/dev/null | awk -F/ '
+    { grp = (NF > 1 ? $1 : "(root)"); files[grp] = files[grp] "  - " $0 "\n" }
+    END { for (g in files) printf "%s:\n%s", g, files[g] }
+  ' | head -n 300
+)"
+
+# Textual patch, capped to keep the prompt small and fast (binary/PDF diffs
+# collapse to "Binary files differ", which is fine).
+PATCH="$(git diff --cached --no-color 2>/dev/null | head -c 60000)"
+
+# --- build the fallback body (used if the model call fails) ----------------
+
+fallback_body() {
+  git diff --cached --name-only 2>/dev/null | awk -F/ '
+    { grp = (NF > 1 ? $1 : "(root)"); files[grp] = files[grp] "  - " $0 "\n" }
+    END { for (g in files) printf "%s: (describe the change)\n%s\n", g, files[g] }
+  '
+}
+
+# --- ask claude to draft the body ------------------------------------------
+
+PROMPT="You are writing a git commit message BODY for a personal notes vault.
+Summarize the staged changes below, grouped by TOP-LEVEL folder.
+
+Rules:
+- Output ONLY the commit body. Start IMMEDIATELY with the first folder header.
+  Do NOT restate the task, do not add preamble, markdown fences, or backticks.
+- One section per top-level folder that changed, in this exact shape:
+    <Folder>:
+      - <concise summary of what changed and why it matters>
+- Describe the SUBSTANCE of the change (concepts added, sections rewritten),
+  not just that files were touched. For binary/PDF files, note briefly.
+- Keep each bullet under ~120 chars. No trailing blank lines.
+
+Changed files by folder:
+${GROUPED}
+
+Diffstat:
+${STAT}
+
+Patch (may be truncated):
+${PATCH}"
+
+# Prefer a timeout wrapper if available so a hung/slow call can't block you.
+TIMEOUT_BIN=""
+if command -v timeout >/dev/null 2>&1; then TIMEOUT_BIN="timeout 45"
+elif command -v gtimeout >/dev/null 2>&1; then TIMEOUT_BIN="gtimeout 45"; fi
+
+BODY=""
+if command -v claude >/dev/null 2>&1; then
+  # shellcheck disable=SC2086
+  BODY="$(printf '%s' "$PROMPT" | $TIMEOUT_BIN claude -p 2>/dev/null)"
+fi
+
+# Sanitize: strip stray code fences and leading/trailing blank lines.
+# (awk for portability — BSD/macOS sed can't do the trim loop.)
+# Drop code fences and any chatter before the first "Folder:" header, then
+# trim leading/trailing blank lines. (awk for portability — BSD sed can't.)
+BODY="$(printf '%s\n' "$BODY" | awk '
+  /^```/ { next }
+  !started && $0 ~ /^[^[:space:]-].*:[[:space:]]*$/ { started = 1 }
+  started { lines[++n] = $0 }
+  END {
+    s = 1;  while (s <= n && lines[s] ~ /^[[:space:]]*$/) s++
+    e = n;  while (e >= s && lines[e] ~ /^[[:space:]]*$/) e--
+    for (i = s; i <= e; i++) print lines[i]
+  }')"
+
+if [ -z "${BODY//[[:space:]]/}" ]; then
+  BODY="$(fallback_body)"
+  NOTE="# (auto-summary unavailable — filled a plain file list instead)"
+else
+  NOTE="# ^ auto-drafted from your staged diff — edit freely before saving."
+fi
+
+# --- assemble the final message --------------------------------------------
+
+# Preserve any subject the user already provided (e.g. via -m or a template)
+# and git's own comment block (status hints), which live in the current file.
+EXISTING_SUBJECT="$(grep -v '^#' "$MSG_FILE" 2>/dev/null | sed '/^[[:space:]]*$/d' | head -n 1)"
+COMMENTS="$(grep '^#' "$MSG_FILE" 2>/dev/null)"
+
+{
+  printf '%s\n\n' "$EXISTING_SUBJECT"
+  printf '%s\n' "$BODY"
+  # The note and status comments are `#` lines that git only strips in the
+  # editor path (cleanup=strip). With `-m` (cleanup=whitespace) they would
+  # leak into the message, so only emit them when an editor will open.
+  if [ -z "$COMMIT_SOURCE" ]; then
+    printf '\n%s\n' "$NOTE"
+    [ -n "$COMMENTS" ] && printf '%s\n' "$COMMENTS"
+  fi
+} > "$MSG_FILE"
+
+exit 0
