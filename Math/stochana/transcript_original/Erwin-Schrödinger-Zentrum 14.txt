@@ -1,0 +1,572 @@
+We want to compute iterated stochastic integrals.
+We know that we form a stochastic integral,
+then it's again an element from this N space.
+So if we take something G that we can integrate with respect to the martingale,
+in this case the stochastic integral, then this integral exists.
+And we would like to express this whole thing as a dm integral.
+Okay, so, call this stochastic integral n. We want to represent this stochastic integral
+as the product of G and H dm. Write things as a dm integral.
+Okay, what do we know?
+We know this integral, G squared, D bracket M.
+We know that is finite.
+But what's the bracket of M?
+The bracket of M is the integral of H, D bracket M.
+So, this is equal to HG square D bracket M.
+So d bracket n by kumika vatanave is h squared dn.
+So if we know this, we know that h times g is in Ln.
+In particular, h times g is integral with respect to m.
+We know how to characterize stochastic integrals.
+So take any test object and tell them in it.
+And we want to see what is H times G integrated.
+Okay.
+So what is this?
+This is integral h times g dm n tilde.
+what is Vm n tilde in terms of m and n?
+dn h squared dm.
+So we have dn n tilde, n tilde is h dot m.
+h I can take out, this is h d n n-tilt. n is h dot n, take h out. So these two combined
+And give me integral G, D, N, N, T, which is G, N, N, T.
+for all test objects.
+So again, take the interior to be Hg
+dot m minus g dot m to see that this is indeed the same.
+So, iterated stochastic integrals subject to integrability assumption of the integrators
+reduce to single stochastic integrals with integrators being the product.
+But of course we need nice interoperability conditions on G.
+So that's 2.14 in the lecture.
+So last subsection.
+integration with respect to local movements.
+So far, we took a multi-gate instead of a local multi-gate as integrator.
+But the main reason was if we have a martingale we have this L2 theory.
+But that also meant that we have to have pretty strong integrability requirements on the integrates.
+So, local martingale basically do two things.
+They weaken the assumption of the integrator, and they also weaken the assumption of the integrates.
+So we introduce the space and log of kind of locally integrable
+functions, or locally finite functions.
+So that's a little all progressive H.
+Again, my bracket programs we put here
+respect to dt, and definitely that is fine, such that the integral, same with the g, h
+square s, d and s is finite, or surely, forward. So my h is locally integral with respect to
+the bracket of M. And M, zero block, is the space of order M, continuous local martingale,
+So our question is, how can we define H dot N in this case?
+H1,
+indignable
+continual global maticule.
+Continual global maticule means we stop,
+and if we stop it, it's a maticule.
+And if we stop it, if it becomes too big,
+it stop causes this even a true maticule.
+OK, fine.
+So after stopping, we have some general theory,
+except this class is much larger than our two-space
+that we were working with previously.
+So we need the second stopping time.
+We need to stop not only when n becomes too large,
+we also need to stop when the covariation process
+becomes too large.
+So there's a lot of stopping involved.
+And then we need to show that this topic is consistent.
+So we have a localizing sequence tall n for n.
+So we also need a localizing sequence for the integral.
+We call this new n.
+That's basically a localizing sequence for H, quote unquote,
+in the sense that my new n is n in the first t, where
+the quadratic variation of my stochastic integral
+becomes too large.
+and sigma is D. So either the vertical A is large or M is large, then I stop.
+Then, for any n, n n, then sigma n is n.
+And if I'm stopping the integrant, this is h stopped according to sigma n, respectively u n.
+So then this is quadratic variation bounded. So that's a nice integrator for mn. So that is an error bar mn.
+So after stopping, we end business. So now we are inclined to set, as long as we don't stop, there is no difference between local and non-local.
+So we are inclined to define the spochastic integral like this as long as we haven't stopped.
+The question is, does it make sense?
+Because if we stop at an eta sigma, we basically have two candidates for a sto-hostic integral.
+We need to argue that yes, it does make sense.
+So, why should we do?
+Does this make sense?
+And the answer is yes it does.
+It's the 4-inch color.
+If we have two martingades, two integrates, and if they agree up to stopping time, then
+the stochastic integrates in reactance.
+If H T inf tau is equal to G T inf tau,
+and my stochastic integrates coincides as well,
+then the stochastic integrals stopped at the sigma.
+So then this means if I'm stopping at sigma n plus 1,
+I get two different stochastic integrals,
+But they agreed up to time, sigma.
+Ah, this was another.
+OK.
+exercise
+23.
+We use our test object.
+So, on any
+test object,
+We stop the bracket process.
+It's the same.
+We can take this inside.
+So this is zero.
+So now we use Konita Watanabe.
+Konita Watanabe tells me, see I don't want n minus n.
+I want stochastic integrals.
+h dot n and g dot n.
+But Konita Watanabe tells me what to do.
+h dot n comma s is h dot n comma s.
+Same for g.
+So by Gunita Vasanare, I also work with the stochoste indirect.
+So this is zero.
+So then again, set H to...
+as before.
+So this definition...
+It is consistent.
+The last result, then we do a
+Then we do two more exercises.
+It says, yes, we have Reuters theory, dysfunctional analysis theory for stochastic integration,
+but at the end of the day, again comes down to Riemann's Iltia sums.
+The question is what is the components concept.
+So there are a couple of additional remarks which I'm skipping.
+So that's 2,490.
+So let M be continuous locomotive.
+So that is I want to remaster here, so I need continuous integrals.
+So I assume my age is adapted and continuous.
+Adapted and continuous means it is progressive.
+So all these dochastic integrals, there's no idea.
+But the workspace assumes progressive integrals.
+Here we assume it more.
+We assume continuity.
+So take a sequence of partitions.
+R plus.
+Then
+K plus 1 S.
+That's a function in S, and this goes to zero in Ucp.
+Now, you have to be a bit careful, because this integral is always only defined after stopping.
+It's not visible here, in the way we write it.
+But to make sense of this, we always need to stop.
+So m is a local martin there. We take a localizing sequence.
+such that, and now we use the continuity of h, you know, pathwise continuity.
+So each path of h for fixed omega is uniformly bounded, and we adapt the sequence here a little bit,
+So we want h on any of the stop time intervals
+to be uniformly bounded.
+So that works because we've seen passwords continuity.
+So, um,
+boop boop boop boop
+Now I need to be careful with my
+indices here
+Okay, so
+I call this HNS. Note, that's not a simple process.
+Okay, adaptiveness is clear, but simple process would also mean this one is uniformly bounded.
+So this becomes a simple process only after I'm doing this one.
+I'm choosing the right localizing sequence.
+So note, Hn is not a simple process.
+What is a simple process is if I multiply Hn with this indicator.
+However, Hn times 1, 0, Tor, M is zero.
+and it's still predictable.
+I'm stopping a predictable process that gives me something predictable.
+So it says in particular,
+in L,
+now which Martin A,
+I'm stopping M according to this stopping. So I can put the M there.
+So we have two indices. One for stopping the martingale, one for the partitions.
+So, what else do we know? Hn, one, zero, toho m, minus Hn, toho m.
+So again, by continuity, I have a passwise approximation of H by my simple processes, Hn, and up to
+up to the localization.
+And here we need to that.
+Pathwise approximation of h and h.
+So I can approximate on each of these integrants, integrants, on these integrants 0 tau I know what to do, that's the definition of logomatic.
+So now the green tickets, this is back to the chromatic.
+So now...
+This should give me the result.
+Of course, this one is just this one up to Storberg.
+Same here.
+So this is really to be understood in the sense of definition of stochastic integrals
+with respect to global values.
+You need to stop.
+The HNs are strictly speaking as simple processes, they are the integrals of simple processes, right?
+This one?
+Yeah. With respect to that?
+Yeah, okay. If I do this, you're right. I guess I don't want to do that. I guess, yeah, you're right.
+Yeah, we should just take the indicator of the interval.
+So if my HN is equal to this on the corresponding time interval.
+So you're absolutely right. So my H and T is...
+This is what I meant.
+Again, the point is these guys are not necessarily bounded.
+Fair point.
+Stability of stochastic integrals.
+Thank you.
+dust and flame.
+So if I perturb the integrates, I perturb the integrates.
+We have a continuous log of martingale. We have something in that block. If the integrand
+converge UCP. We need to stop again twice. When the martingale becomes too large, when
+quadratic variation becomes too large. So first of all, we can add it. We set it in.
+We stop when n becomes too large.
+And then we stop again when the quadratic variation
+with respect to the stopped martingale comes too large.
+So we have a second index, tau mn.
+This is the inf t.
+So we compute the quadratic variation.
+h u squared d n u.
+And what does 2 large mean in this case?
+1 over m.
+So not very large actually.
+But bottom line is, I guess I'm
+I'm going to show I want an n here.
+You will see.
+I guess I want an n because I know this one goes to 0.
+That's my assumption.
+So the quadratic variation won't be very large.
+Large n.
+Of course I need an n because h is 0
+So there must be a quadratic variation of the integral h at dot mn
+So
+Okay
+What do we want?
+So, we are interested in probability of H and D M.
+We want this to go with this.
+That's the statement.
+Hn dot m converges to zero in u z.
+We need to get our stopping times in here,
+because only when we stop, we can use nm or nm.
+So there are two possibilities.
+The first possibility is tm n inf tm is less or equal to t,
+or it's bigger than t.
+If it's bigger than t, I can stop at s inf this one.
+It won't change anything here, and I'm just adding this probability.
+So plus P sub S inf Tm and inf Tm.
+m. So if the stopping time is bigger than t,
+we don't change anything, and it's less than t,
+we put this p of the probability of the m.
+so
+we start with the second term
+now because we are stopping
+we write
+h
+indicator
+of this
+There is a dm, but we stop at time tm, so the m is actually a tm.
+So the second term equals P to 0 to S H squared indicator.
+and up to m, m is equal to m.
+So this one is important.
+So, what do I know about this?
+The stop martingale, the stop thing here is a true martingale.
+and I'm stopping the integral when the quadratic variation becomes too big.
+So that's a margin gap.
+So this is a continuous margin gap.
+So this is what we need to stop into.
+But we need to smuggle the stopping times in.
+So we can apply 2.
+The probability of the running supremum of a martingalexine is so at 11 for p equal to
+2, while u this is less or equal 4 times dnn greater
+equal to that.
+OK?
+Markov, 4 over delta squared.
+The expected value of this random variable squared.
+What is the expected value of that random variable squared?
+Isometry is the expected vertical
+the sum of t blah blah blah 1 d m
+And here is blah blah blah here, here, is the stopping time.
+And this stopping time says, okay, when my quadratic variation, which is precisely the thing,
+here, when this becomes too big, I'm stopping. So by these stopping times that we have in here,
+This one is at most one overlay.
+The first stopping time gives me multi-gap property.
+The second stopping time bounds this term by this.
+So I can choose m large and this is small.
+We are still having this curve. We want that to be small as well. This is a localizing sequence for m.
+So first, we choose m so large so that p tau m less or equal t is less or equal epsilon over 3.
+And this bound here we also want to be.
+to be, let's say, .
+But for the first firm, we also have this locket.
+So we need to take care of this one as well.
+So we want this one.
+Now we have chosen n.
+So now we have the same variable, we have the n here.
+So now we choose n so that tau mn less or equal g,
+for this n, it's less or equal epsilon over three,
+forward n.
+For fixed n.
+So, we know
+So this is Hn square dm.
+Now, Hn converges to H, H is zero.
+This goes to zero,
+and probability of H in the Cp.
+And the torque at M said,
+okay, we stop when this becomes too large.
+So now choose N0.
+Yes.
+So this set, there was a 1 over something.
+Whenever we exceed that, we stop.
+That's it.
+basically have x-heases.
+Because the point-wise approximation
+is the zero function gives
+the second stopping time is also small.
+So then we have three terms.
+This one, we have this less than p, that less than t.
+We first choose n,
+we take a two, then we choose n.
+So if we have continuous integrals, we have stability property.
+Just a half step.
+Integral.
+OK.
+So, we have to theory.
+Further questions.
+What comes here?
+I think the square there is not needed in the first two lines.
+Which square?
+We'll look at the second term. Yeah, it first comes from, yeah.
+Because then we will have the fourth power in the third line.
+And that is probably true.
+We also didn't have it in the beginning.
+Yeah, if I have a bracket here I need it.
+But if I don't have it, you're right.
+So this is not there, then it's not here either.
+But it's there in the cluster.
+This square is there.
+Yeah, yeah.
+And then it's inside the...
+And this is good.
+Yeah.
+Good.
+Despite the.
+Further questions?
+As M to the power of M when we used to do the differential, it makes it.
+Yeah, it's not power, it's stopping time T.
+Yeah.
+Tm, but we're tau M, but we defined it for tau N, which is confusing down below.
+Yeah, this was for tau N, right?
+Yeah, right.
+And then I'm wondering if this is an N actually.
+Yeah, because we are using it here for fixed M. No, no, this is OK. For fixed M and this
+So this one goes to 0. There's n here, and there is...
+But there is n here, right?
+Something is not quite right.
+So that...
+Because we are writing this dm, n, and then...
+Should we have written D, M, N?
+Where are my toes?
+The Tau's view to the right.
+Immediately the law proof you define.
+To the right.
+And to the bottom.
+Yes, I just have to write.
+To the bottom right.
+Okay.
+We have Tau, M, and Tau.
+Okay.
+Well, you're right, because here the meanings of M and M are different.
+Sorry for that.
+So it should be an M then?
+So when I wrote M, M, when I should have written an M, because that's the stopped one,
+and here then, yeah, so this M is correct, but, yeah, I'm sorry.
+So the right thing to do is to be consistent, and then there's n here.
+The n here is fine.
+And then it's probably an n here.
+Or it's going to end here.
+It's going to end here, I guess.
+Fix the images.
+The definition of tower M, N, N, bigger or equal to M now, right?
+So I mean, the story is fix M and then choose N.
+So then that's suggested as real N.
+And it relates to the record process of M, N.
+I also fix it and I brought yet another update for you.
+A little outlook, what comes next.
+So, we did everything for Brownian Motion, and we said, okay, you know, it also works
+a lot, I think it is, with some adjustments.
+The question is, when is Brownian motion enough?
+And that's what we're going to do in chapter five.
+So in chapter five, basically, we're asking the question,
+if our uncertainty is generated by Brownian motion.
+Of course, I have a filtration.
+I can have a general marking here with respect to this filtration.
+Is this just a Brownian motion in carbon flush?
+And there are three aspects.
+One is we'll show that any random variable, which is measurable with respect to a Brownian
+filtration, can actually be represented as a Brownian integral.
+That only works for the Brownian filtration.
+It's a key assumption that we have a Brownian filtration.
+Second, every continuous martingale is basically a time-change Brownian motion.
+This is the bit in spirit to the result from Monday where we use the time change to change
+dA integrates to dT integrates.
+We do something similar there.
+And the third result is that, okay, let's add a drift to a Browning motion.
+So then of course the sun is no longer a Browning motion.
+And then there's a result that says we can undo the drift and hide it in a measure change.
+So a Brownian motion with drift is a Brownian motion under a different measure.
+A continuous martingale with respect to a Brownian infiltration is basically just a time-change
+Brownian motion.
+And every random variable measure with respect to a Brownian motion is a stochastic integral
+with respect to Brownian motion.
+So if your uncertainty, if your information comes entirely from a Brownian motion, it
+basically says Brownian integrals are all you need.
+Mostly speaking.
+Okay, so that's chapter 5.
+There are maybe two exercises left.
+So, Amy did the transients of three-dimensional grounding motion.
+And she also did this example that the inverse of the normal three-dimensional grounding motion is a local martingale but not a martingale.
+So it is a margin there as long as you keep it away from the auditor.
+And then the intent be a man and said there is a little gap in one estimate and he was
+absolutely right.
+So the idea of this is called the Bessel process.
+this inverse of the norm of three-dimensional Brownian motions,
+you're summing squares of standard, of non-standard normal random variables
+when you start the Brownian motion elsewhere.
+And that's a generalized chi-square distribution.
+And you need some properties of this distribution to do the estimates in that example.
+So one exercise was this.
+So this was this generalized psi squared distribution. This was essentially the sum, the distribution
+of the sum of squared n mu 1 random variables. If you do this, you get the generalized psi
+square distribution and this lambda I think was the sum of the mu's or sum of mu's squares or something.
+And this was something that appeared in the example. So n bigger than two.
+That's why it doesn't work for two-dimensional problem. This estimate that we come up here only
+needs three normal radicules. Two is not enough. It needs three. We have to go to dimension three for
+with this example to work.
+And what is extremely well understood
+in everything in closed form, if you have standard psi
+square variance.
+So I'm summing standard, the square of standard normal
+random variables.
+And the exercise sentiment gave so many hints
+is basically trivial. So in this example, an object of this form appeared. Now intuitively,
+these generalized variables, they have additional, they have a non-trivial expected variable.
+So you should think you're adding something to x compared to y, so this inequality is
+very intuitive.
+So intuitively x is bigger than y because you're summing non-standard variables.
+And the nice thing is for a y-object,
+we know exactly what the inverse is.
+So if I'm taking the expected value
+of the inverse of a standard size
+square distributed random variance
+with m degrees of freedom, so m standard normal
+standard random variance that I'm summing,
+It's 1 over n minus 2.
+So the hint there was, the fact is this,
+we represent this distribution as a fonceau mixture of these distributions.
+We have a density for this.
+So the density of this one, f lambda, is a Poisson mixture of densities of this one.
+So Poisson mixture means I have exponential negative lambda square.
+Lambda square to the power of k divided by k factorial.
+So that's what we know from Poisson random variables.
+And then we take the density of a Xi square random variable
+with this parameter.
+So where fm is the density.
+standard psi square variable. And for this we can compute.
+This one here I already said
+So that was the hint you could use both
+With all distance strip
+We use tonality or convenient whatever it is
+E1 over x is integral over x, integral over x dx.
+We interchange integration and sum.
+Now this F and M, N plus 2K.
+Does this, the expectation,
+This expectation is this one.
+So if I'm just dropping the k, I'm having this, and now the k is gone.
+So the k is only here.
+And here I'm just summing the density of the possum.
+So this estimate kills this case.
+So this is equal to 1 over 1 and minus 2.
+I take an example with this kind of estimate.
+That is what he told me.
+He said I did the example with the corrected value.
+In the example, n is the ..
+So there's a one here.
+In the example, there's Brownian motion at time t.
+But Brownian motion at time t is square root t times
+Brownian motion at time 1 in rho.
+So there was an additional t in this example,
+which if you compute the inverse, became a 1 over t.
+So in the example, with this one,
+there was some expected value bounded by one over square root of t.
+And that goes to zero.
+And if it were a martingale, it would have to be constant.
+So did he do this?
+Yeah, OK, good.
+So does what he does.
+And then the last equation, did anybody do it?
+I'm not sure I think we also did something similar in the last lecture about the equation,
+equation but i'm not sure if it's something else
+so there was a representation of the heat equation in the last lecture
+yeah that's what we did and the exercise says once you know how to solve the heat equation
+you know how to solve much more general pd's
+I have a question about this exercise
+How do we
+Why are we allowed to use
+How do we know that it's integrable
+What?
+The expectation of one way
+That's part of the hint
+So
+This
+We didn't prove this
+So the expectation of one over standard
+psi square random variable
+this has a specific representation yeah but x is not standard and the one that
+that's exactly the point so because in that example we are starting the Brownian motion
+outside the origin so the random variables we're having a non-standard moment because they're
+non-standard normally we get this additional parameter.
+And for this you have no closed form expression.
+You know the density, but you have no closed form expression
+for the inverse.
+And the thing that we needed to compute
+was the inverse of the norm of the three-dimensional
+problem in motion.
+So we have to compute the expected value of the inverse
+of this.
+And for this, without the lambda, we know what it is.
+With the lambda, we don't know.
+But since it is intuitively, the x comes with additional parameters, is bigger than y, intuitively this makes sense.
+And here we just compute.
+So maybe your question is why can we do this?
+Yeah, like, I mean, no, I just mean why can we interchange?
+Why can we interchange? Because we know that this whole thing here is bounded. So we have
+the k in the denominator. So we have a uniform bound for k, we just drop it. And then you
+you have your dominated function, dominating function.
+So it's basically in hindsight, yeah?
+So this step here also justifies that we can do that.
+Good, done.
+I'm just giving you the transformations for this heat equation.
+So heat equation, you'll see we can represent in probabilistic terms, which is not surprising,
+because if you look at how you actually solve
+analytical to the heat equation,
+you take the initial value of the initial condition,
+or terminal condition, whichever,
+and integrate with respect to the heat
+current with respect to normal distribution.
+But normal distribution, that's what
+probably motion gives you.
+So all right.
+So the thing says that you solve, and by solve you
+mean in a classical sense of 0, 2, solve the equation.
+So u t is 1 half u x x with some initial function.
+OK.
+So the first was solve an initial variable problem of this variety.
+vt is beta squared over 2 minus alpha v minus beta vx plus 0 of vx6.
+And the initial, so let's write it because this.
+The approach is already hidden here.
+with b times 0, b exp minus b to x.
+So x, yeah.
+And the answer to be made is just,
+I mean, if at the initial time this is just an exponential
+transformation of the E equation, the answers that we make
+the real real guessing is
+x dx.
+just compute
+compute for vt, vx, vx exist and you will see that it works out
+and the second one, so I use this to solve for a positive
+And this one, WtA over 2 Wxx plus Dwx plus Cw.
+So in other words, you have a homogeneous, this is important, there's no additive term here
+You have a homogeneous linear second order PD
+And this is nothing but the heat equation
+because, so now we make the following methods.
+VTY is gain whole thing in space WT squared AY.
+So assuming W solves the equation we have there,
+we look at what V solves, we realize V solves precisely this one and then we use this.
+So then vt is one half vyy, just b over square root a, vyy,
+plus Cb, and now take beta
+this and alpha beta squared over 2 minc.
+So then, Vt is 1 half Vyy, which is this one, plus Vy, which is this one,
+plus, okay, what is C?
+c is beta squared over 2 minus alpha b, which is this.
+So after another transformation,
+the C equation, so we define the solution of the obtained solution by this function.
+So the solution of this PDEs or ODEs is if you have an idea what your solution looks like.
+It's not too difficult if you don't have an idea it's impossible.
+You have to have an idea where to start.
+Alright.
+So we still have some time.

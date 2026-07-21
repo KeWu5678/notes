@@ -28,45 +28,57 @@ fi
 
 # --- gather staged changes -------------------------------------------------
 
-# Per-file name-status, capped in case of huge changesets.
-STAT="$(git diff --cached --stat 2>/dev/null | head -n 200)"
+# Only .md notes are summarized. Exclude deletions (nothing to summarize).
+MD_PATHSPEC="*.md"
+MD_FILES="$(git diff --cached --name-only --diff-filter=d -- "$MD_PATHSPEC" 2>/dev/null)"
 
-# Top-level folder -> changed files, for the fallback scaffold and to steer
-# the model toward the grouping the user wants.
+# No staged .md content -> nothing to summarize, leave the message alone.
+if [ -z "$MD_FILES" ]; then
+  exit 0
+fi
+
+# Per-file name-status, capped in case of huge changesets.
+STAT="$(git diff --cached --stat --diff-filter=d -- "$MD_PATHSPEC" 2>/dev/null | head -n 200)"
+
+# Top-level folder -> changed .md files, to steer the model's grouping.
 GROUPED="$(
-  git diff --cached --name-only 2>/dev/null | awk -F/ '
+  printf '%s\n' "$MD_FILES" | awk -F/ '
     { grp = (NF > 1 ? $1 : "(root)"); files[grp] = files[grp] "  - " $0 "\n" }
     END { for (g in files) printf "%s:\n%s", g, files[g] }
   ' | head -n 300
 )"
 
-# Textual patch, capped to keep the prompt small and fast (binary/PDF diffs
-# collapse to "Binary files differ", which is fine).
-PATCH="$(git diff --cached --no-color 2>/dev/null | head -c 60000)"
+# Textual patch of the .md files only, capped to keep the prompt small/fast.
+PATCH="$(git diff --cached --no-color --diff-filter=d -- "$MD_PATHSPEC" 2>/dev/null | head -c 60000)"
 
 # --- build the fallback body (used if the model call fails) ----------------
 
 fallback_body() {
-  git diff --cached --name-only 2>/dev/null | awk -F/ '
-    { grp = (NF > 1 ? $1 : "(root)"); files[grp] = files[grp] "  - " $0 "\n" }
-    END { for (g in files) printf "%s: (describe the change)\n%s\n", g, files[g] }
+  printf '%s\n' "$MD_FILES" | awk -F/ '
+    { grp = (NF > 1 ? $1 : "(root)"); files[grp] = files[grp] "  - " $0 ": (describe the change)\n" }
+    END { for (g in files) printf "%s:\n%s\n", g, files[g] }
   '
 }
 
 # --- ask claude to draft the body ------------------------------------------
 
 PROMPT="You are writing a git commit message BODY for a personal notes vault.
-Summarize the staged changes below, grouped by TOP-LEVEL folder.
+For each TOP-LEVEL folder that changed, summarize the CONTENT of each .md
+note that was added or edited — the actual ideas, topics, definitions, and
+results — as if writing a table of contents for the material.
 
 Rules:
 - Output ONLY the commit body. Start IMMEDIATELY with the first folder header.
   Do NOT restate the task, do not add preamble, markdown fences, or backticks.
-- One section per top-level folder that changed, in this exact shape:
+- One section per top-level folder, and one bullet per .md file, in this
+  EXACT shape (start every bullet with the file's path, then a colon):
     <Folder>:
-      - <concise summary of what changed and why it matters>
-- Describe the SUBSTANCE of the change (concepts added, sections rewritten),
-  not just that files were touched. For binary/PDF files, note briefly.
-- Keep each bullet under ~120 chars. No trailing blank lines.
+      - <path/to/file.md>: <substance of that file's content>
+- Describe WHAT THE NOTE IS ABOUT, not the git action. Write about the
+  concepts (e.g. 'Ito isometry and quadratic variation of Brownian motion'),
+  NOT the edit (do NOT write 'added', 'updated', 'modified', 'new file').
+- Base each bullet on that file's added/changed lines in the patch below.
+- Keep each bullet under ~140 chars. No trailing blank lines.
 
 Changed files by folder:
 ${GROUPED}
@@ -82,10 +94,14 @@ TIMEOUT_BIN=""
 if command -v timeout >/dev/null 2>&1; then TIMEOUT_BIN="timeout 45"
 elif command -v gtimeout >/dev/null 2>&1; then TIMEOUT_BIN="gtimeout 45"; fi
 
+# Deny every filesystem/web/exec tool so the model summarizes ONLY the patch
+# in the prompt — not by roaming the repo (which is slow and off-topic).
+NO_TOOLS="Read Bash Glob Grep Edit Write WebFetch WebSearch Task TodoWrite NotebookEdit"
+
 BODY=""
 if command -v claude >/dev/null 2>&1; then
   # shellcheck disable=SC2086
-  BODY="$(printf '%s' "$PROMPT" | $TIMEOUT_BIN claude -p 2>/dev/null)"
+  BODY="$(printf '%s' "$PROMPT" | $TIMEOUT_BIN claude -p --disallowedTools $NO_TOOLS 2>/dev/null)"
 fi
 
 # Sanitize: strip stray code fences and leading/trailing blank lines.

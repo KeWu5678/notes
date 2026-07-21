@@ -26,5 +26,6 @@ Use inline backticks for short formulas. Match the user's notation when they've 
 # Answring style
 
 **answering style**:  
-
-
+1. Keep anwssers clean and concise. Use the bold or underline text for separation or highlighting important parts.  
+2. Never stating a variable without defining. 
+3. DON'T INVENT terms. Search for established definition first. If not available, always inform the user the term is defined by me and give the precise definition. 

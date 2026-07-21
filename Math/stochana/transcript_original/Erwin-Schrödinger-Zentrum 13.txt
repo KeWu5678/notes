@@ -1,0 +1,612 @@
+I have to go to the Brandenburger Bramford, to the floor.
+I'm going to go to the front of the front.
+I'm going to go to the front of the front.
+the
+English, German, English.
+Okay, good.
+So, the plan for today, we basically merge exercises and lecture into probably one and a half lectures, and then we are done with section four.
+So, we know how to define for the continuous local martingale L2 bounded M and H in progressive
+satisfying this integrability condition,
+we can define the stochastic integral. h dot m, stochastic integral of h.
+The idea of the proof was, for simple processes, we know what to do. For simple processes,
+we have an isometry. So what can we approximate? We approximate it essentially the same way
+we did for Brownian motion up to a time change.
+So the time change allowed us to reduce it essentially
+to dt integrates.
+And the time change was also what
+required progressive measurability.
+So if my measure coming from the quadratic variation
+absolutely continuous respect to the back,
+then we can do it as in the case of probability motion.
+OK, so then h at that point square n degree minus n.
+So time change involved.
+Again, the time change required the progress.
+OK, so now we want properties of the stochastic integrals.
+And in particular, we want to characterize it.
+We know to some extent already that the bracket process
+characterizes the continuous Martin K.
+And we now want to use, understand some properties of brackets of stochastic
+.
+So some really binaries.
+Not doing everything in detail in the notes.
+We need to do integration with respect to covariance processes, and not just the covariance
+process, but also the total variation method associated with the covariance process.
+So, if we have the sine measure, one part, so we know we can uniquely decompose it.
+Positive part, negative part.
+So, the total variation measure is defined by just the difference here,
+or positive negative, but just something.
+The total variation measure is this one.
+So if we integrate, so we use this dot notation that we use for sporadic integrals from now
+also for measures of F, D, U, of course, we have this.
+And absolute continuity is preserved by total variation.
+So if my measure nu is absolutely continuous with respect
+to a positive measure mu, then
+mu is absolutely continuous with respect to mu as well, and the density is the absolute
+value of the density of mu.
+And this follows from uniqueness of our anti-composition, because this is just g plus g minus, so this density and that density.
+And we are applying this pathwise to quadratic variation processes.
+So we do this omega by omega, to the covariation process.
+And so in particular, if we integrate,
+so this is now the total variation measure,
+not the absolute value.
+We have to be a bit careful distinguishing absolute values today from total variation
+measures.
+The first little technical element to prove this in the next generation, which is not
+difficult, is this one.
+So we want to understand this total variation measure coming from the cross variation.
+We would like to have some kind of a Cauchy-Schwarz type inequality.
+So we would like to bound that in terms of the quadratic variation of m and n.
+And this lemma here tells us later essentially how to do it.
+So we are having two finite porel measures
+and a side measure.
+We want the criteria for absolute continuity.
+So if the absolute value, this is the absolute value now, nu of i, i is any half open interval.
+or in other words for any set from a generator of the Boron sigma field.
+So if I can bound this less or equal square root of the product mu1 and mu2, then
+Then the measure mu, and here we said if mu is absolutely continuous, then the total variation
+measure is absolutely continuous as well.
+So then you enhance the total variation measure.
+Again, this is absolute value.
+The argument stands inside the absolute value.
+If you're outside, it would be the value of the total variation measure, but it's inside.
+They are absolutely continuous with respect to, well, we are just averaging U1 and U2.
+And that's essentially just binomial formula.
+So this one you can link easily to this product.
+And what's the density?
+The absolute value of the density of this guy.
+In other words, the density of the total variation measure.
+I can bound this, I'm inheriting this structure here, by the square root of f1 times f2.
+And what are these densities?
+I'm having these two positive measures here.
+Here I average them.
+So each of these positive measures mu1, mu2 is absolutely continuous with respect to mu.
+So fi is the density of mui with respect to mu.
+So, the proof is a lot shorter than the statement of the lemma, so I'm just referring to the
+lecture notes here.
+And we apply this to the covariation
+for two nice marting.
+The corollary is this one.
+So, we need to verify this one. This is now our covariance process. This is the quadratic
+variation of n respectively. So, Ts, half open interval.
+is less or equal, on the right side we have square root. Square root, measure mu1 mu2.
+the new one measure, the new two measure.
+So this is for almost all together.
+Covariation exists pass-wise.
+So in particular,
+the covariation measure
+is absolutely continuous with respect to this average.
+It is absolutely continuous with respect to one half
+P almost true.
+So the quadratic and the co-variation
+and the total variation are both absolutely continuous
+with respect to the sum of the quadratic variations.
+What is the subtlety in the proof? The subtlety in the proof is there will be two null sets.
+So one null set comes from here, from almost all the way. The other null set will come
+because we are going to multiply m and n by,
+why am I writing m1 and n?
+This is m, this is n, this is m, this is m.
+So, you will see.
+So we fix some alpha.
+We don't want to work with the covariation, we want to work with the quadratic variation.
+Quadratic variation is nice.
+What links covariation and quadratic variation is polarization.
+So we are using polarization.
+Zero, less or equal, and now I'm multiplying m by square root alpha.
+And I'm adding respectively subtracting one over square root alpha n.
+And I want an inequality. So that's an increasing process. Covariation is not. Quadratic variation is increasing.
+So, if I'm subtracting the quadratic variation, this is an earlier point in time, as I get this inequality.
+So now I use linearity in both arguments. So what is left? There is left quadratic variation of n with alpha, but there are basically two alphas, so alpha square with alpha square.
+minus this, plus minus.
+Then I have cross terms.
+Plus minus.
+If I take the cross terms, I write my square root alba with one square root alba, so that's good.
+2
+And then there's N
+with the 1 over
+that becomes 1 over alpha
+N2 minus Ns.
+So that's polarization.
+Okay?
+So I have plus minus here.
+I bring this to the other side.
+I can put on this side the absolute value of this one.
+So 2 times the absolute value is less or equal alpha times this one plus 1 over alpha, the difference in the edge.
+And this holds for all items. So in particular, it holds for the minimum. So now, we are minimizing the right hand side with respect to item.
+So then I'm having this increment here minus 1 over alpha squared this increment.
+So the maximizer is, for the minimizer, the minimizer is alpha star is equal to square root, now I'm going this right,
+and S.
+And now if you plug this in here, then increment this increment, so that becomes the square root of this one.
+Here I take the inverse, same thing.
+This increment is the one that's here, so...
+Wait.
+So minimize and now plug.
+The sign that I was referring to comes here in another group.
+Okay, so cross variation, absolutely continuous with respect to the sum of the quadratic variation.
+So now comes to the key result, which is the song called Kunita Latanari.
+And Kunita Vatanava tells us two things. It tells us how to bound covariations of stochastic
+integrals. And second, it tells us that the covariation of
+stochastic integrals can be obtained by an integral with
+respect to the covariation process of the integrators.
+So, what is kumida vatananasi?
+So we are taking two continuous gray
+We take something H that we can integrate with respect to this L bar
+bar was the closure with respect to our norm involving the Doley-Roh measure
+And this letter L stood for equivalence classes.
+Or represented from equivalence classes.
+We take something that we can integrate with respect to.
+First statement, we take the product of H and G and integrate this
+with respect to the covariance.
+Let's take the square root.
+Now, the first inequality is trivial.
+I take the absolute value of the integrates and integrate with respect to the total variation.
+So that's trivial.
+And now comes some kind of
+Cauchy-Schwarz type inequality.
+Namely, less or equal
+the L2 norm of H with respect to the dually home measure coming from M times G squared
+integrated with respect to the quadratic variation
+the second result says the covariance
+of two stochastic integrates small question so yeah this is the power of two and it's only one
+the covariance of two stochastic integrals, which is a very complicated object. We're
+integrating with respect to different martingades here, so we can just take the product of H
+and G and integrate this with respect to the covariance process.
+And if you put A and B together, we get some pushy Schwarz type in the point.
+the expected value of the absolute value of the covariance
+is less or equal. So this one is less or equal than the absolute value of this.
+the absolute value of this is less or equal to this, and this is bound like this. So this is less or equal.
+And with Bozzi-Schwarz, expected value of this times
+expected value of this with some square roots.
+So this A and B .
+To prove A, B was an exercise.
+Since we're integrating exercises into the lecture today,
+you also prove B.
+But I need more space.
+So what's the challenge in A?
+It's really the different measures
+The one corresponding to n and the one corresponding to n
+but the previous one already tells us
+if we have an object like this
+we can work with one measure
+We just take quadratic variation of n plus quadratic variation of n.
+Then we have something, a measure that dominates this.
+Proof of n.
+So we have a measure.
+namely the co-variation measure.
+And we have another measure, the total variation which we could succeed inside.
+We know they are both dominated by the same measure.
+measure. So we know the xi dominated by a measure eta and so is xi hat.
+and what is the ITER measure
+so there goes the
+previous corollary
+so we have densities
+n and n
+of course are also
+dominated by this one.
+So we have a total of three,
+respectively four densities here.
+So D bracket M, D eta,
+that's my density number one.
+And these densities have two arguments,
+time and omega.
+I'm arguing pass-wise,
+when we're talking about quadratic variation
+covariation and these are measures on R. So I have two arguments, time and omega.
+My quadratic variation for N also has a density with respect to E. I call this F2.
+My covariation has a density, I call this F3, and my total variation measure also has a density, and that density is the absolute value of this one.
+So that is absolute credit of f3.
+Now, we are doing something very similar to this one.
+with two parabens.
+So I want inequalities.
+I want kind of point-wise inequalities.
+For this, I need an order.
+The order I have when working with quadratic variation.
+So 0, less or equal.
+Now I'm taking quadratic variation.
+of m plus n when I'm putting parameters in front.
+I multiply m by alpha and n by beta.
+Later we use very specific alphas and betas to get the inequality.
+In the previous corollary we choose this alpha star to get the inequality we want.
+Later we choose alpha to be something and beta to be something else to get this.
+So for any alpha, beta, n.
+So n time t minus the same thing at time x.
+beta n
+at times.
+I'm using
+polarization.
+So I get alpha
+quadratic variation of m.
+Quadratic variation of m
+is absolutely continuous with respect to eta.
+I get mixed terms,
+demixed, decovariation.
+Absolutely continuous with respect to eta.
+And I'm getting n terms,
+absolutely continuous with respect to eta.
+So this basically brings the same thing
+on the same neural rate.
+So this is S to T,
+Alpha square d bracket m. But d bracket m is f1 of time omega d eta omega.
+Cross terms plus 2 alpha beta d covariation.
+d covariation is f3 d eta.
+f3 u omega d eta.
+and plus beta squared F2.
+The fact that we have a dominating measure for all of the measures involved here
+give us this. Now comes the little solitude. This holds for all
+of all omega,
+but I'm talking quadratic variation of alpha n plus beta.
+So the set of measure zero depends now
+on alpha and beta of full measure.
+So here is a measure, B omega, and here is another measure, a measure of P.
+So this holds for all alpha beta, and once I fix alpha beta, the quadratic variation exists as a path.
+So, this set depends on alpha beta, but it does not depend on s or t. The quadratic
+variate exist as a path. And all s and t. And that's very important because now we can
+basically test if something holds for all s and t, then this inequality here actually
+holds pointwise to the function that I'm integrating on the set of full measure of this eta measure.
+So my inequality here holds point-wise, so alpha squared F T F1 plus 2 alpha beta F2 plus beta squared.
+This is greater than equal to zero for all t from
+the always measurable subset of R
+omega from this set and this is a measure which has full support.
+And eta of this measure is
+Now, if this inequality holds for all rational alpha and beta, it holds for all.
+If star holds alpha, beta, and epsilon, then 4 alpha, beta, and alpha.
+So I have two sets of measure zero, respectively one.
+So I take omega tilde to be the intersection of all this omega alpha meter.
+So that's a set of full measure.
+And for the literometer from this set, I take,
+Let me write this as 9 sets as well.
+So.
+So.
+I'm going to take this one.
+So, then this inequality
+Omega from this set and T
+not
+I guess I want the union
+T, not intercept.
+T, not intercept.
+What?
+Ah!
+Why didn't I embrace this?
+Shit!
+Okay.
+I'm pulling this inequality back to my head.
+I'm not going to do this.
+I'm not going to do this.
+I'm not going to do this.
+I'm not going to do this.
+I'm not going to do this.
+I'm not going to do this.
+I'm not going to do this.
+I am pulling this inequality back for the nerve, sorry.
+This I should not have done.
+So my inequality was this one.
+Alpha square 1 T omega 2 alpha meter f3 plus meter square f2
+Okay, this will make me equal to
+So now, if I have an omega t from here and a t which does not belong to the set, I choose
+alpha and beta in a particular way, depending on t.
+I choose the same definition for any t because later we are integrating this.
+So now we choose the following alphas and meters.
+So we take alpha to be A times ht of omega tilde.
+A we choose later, so we are reducing the alpha beta parameter to a single parameter now.
+So A to beta parameter reduced from 2 to 1 parameter.
+And beta is sine of F3. I have this F3 here. If I multiply with the sine, I get the absolute value.
+that's the reason we are using the sign, times absolute value of g.
+So now if this end t is not in the set, my inequality star holds.
+This way.
+At the same time, all other t's for given omega form a null set for the eta measure.
+So in particular, if we integrate, we can still use the same alphas and petas.
+Because when the inequality does not work pointwise, that's a set of prime points which is not seen by eta.
+So we are integrated.
+A square, alpha, square.
+So, I think this is easier.
+So we see a squared integral 0 to t f1 times absolute value of h, I want h squared.
+Ah, of course. Alpha square. A square. A square. F1 d-meter. F1 d-meter gives me this.
+plus
+2
+A
+integral
+beta
+absolute value of G
+from alpha comes this one
+H times G
+absolute value
+of F3
+d ether
+absolute value of F3 d eta is the total variation measure of the covariance process, plus the
+sine square becomes 1, G square F whatever it is, 2 d eta and F2 d eta is dns.
+And that's not there.
+Point-wise ending point-integraated.
+And now we're in the same situation as before.
+We had something with a single parameter.
+So now we have only one parameter, and we're
+going to minimize one.
+Minimizer and plug.
+Exactly the same as before.
+This plays an approach.
+minimizer is this one over this one. Plug it in. We get the boot.
+So this was one. We said exercise.
+Any questions about this proof?
+So take a linear combination, add it in, and be careful about the noise sensor.
+So we clip A. In the updated version of the lecture notes, there's one extra exercise,
+which is very helpful to actually put B. This is this one.
+And to some extent, they notice already
+maybe improved the existence of the bracket process.
+Let's say we have a sequence of marginal gills with m that converts to some limit.
+Converging to limit means m and infinity.
+So Mn converges in M, then the bracket processes converge to UCP.
+uniformly on compact time intervals in probability.
+Any idea why this is the case?
+So you need a
+So you need a
+So we know something about
+m minus n
+So that's again a continuous
+So I can look at the bracket of this process. But I want the bracket of n and mn so a covariance
+term appears. If I'm looking at this difference, for the covariance term, I need to equal
+equal to the opposite.
+So we set N, N, N, N minus N.
+Continuous square integral.
+So then we know e n infinity squared goes to zero.
+So that's good because we also know that n n converges to zero in ucp by Markov's inequality.
+I use polarization.
+Polarization tells me the bracket of nn by definition of nn.
+This is this.
+This is this.
+So, if I take the difference of the brackets, I want to learn something about the difference of the brackets,
+I have to look at this bracket and it is covariation.
+bracket m minus bracket m is bracket m plus 2 covariate.
+So what we want to prove, this goes to zero in Ucp.
+We want this to go to zero in Ucp.
+This one is up to you.
+Why is this true?
+We know this.
+This is the end norm of this marty game.
+There's an alternative representation,
+which is very useful.
+Put two and two together. Increasing. UCP. So we want essentially to know something about
+the value of this processor time infinity. So if you put infinity here and look again here,
+How do you know?
+Well, that's linked. We know the bracket
+is the unique process that if I subtract it from the square of the martingale,
+it gives me a martingale. So we know
+And n, where my, as a bracket, is a marticle.
+Continuous marticle.
+Actually, only a local marticle, but we have everything else to bound the t.
+So I know the absolute value of this one is equal to the absolute value of that one.
+And I know something about absolute values here.
+So in particular, we take expectations.
+We know one more thing, we know it's L2 bounded, so we can close it.
+So it's martingale L2 bounded.
+Why is it L2 bounded?
+Because I was just asking this question before, we have an alternative representation of the
+the m-law, the alternative representation of the m-law
+of this one, which clearly comes from the radical property of n
+square minus bracket.
+So we take expectation, and we know this one
+This one is equal to
+this one.
+We don't even have to go through the Martin here argument
+if we use this representation
+last week at some point.
+But if you go through the Martin here argument,
+we also get it.
+And this
+So now anything crazy.
+So now A is increasing.
+So SUP
+S and S equals T
+and then S,
+so we put them this.
+Now we have time marked.
+By Markov's inequality we can link
+P,
+So this greater or equal epsilon, less or equal,
+the probability of that being bigger than epsilon, less or equal,
+1 over epsilon squared, expect the value of the different variables.
+E and infinity.
+And this vanishes.
+This was the easy thing.
+So we have the sum here of two,
+the bracket process.
+Now we still need to look at the covariance.
+But if you look at this inequality, why can I not put infinity here?
+I mean I can't clearly do this.
+Sick.
+I'm sure I cannot do this.
+Or can I?
+No, I can. In this case, it's just trivial.
+So, you can just put infinity there.
+So we still need to show...
+So now we need to consider the covariance process.
+Now, for the covariance process we apply part A.
+So, A tells me, here, set h and g equal to 1, that I can estimate the covariance by the product of m and n.
+So, and N, as an absolute value or sign measure, is less or equal than this.
+So, for all T, little T, for all capital T, soup, now we put that here.
+So, here is equal mt and p.
+And some square.
+So, I forgot the answer.
+So, and.
+This one is integral of 3.5.
+This one, we have seen, converges to zero in ucd.
+So divided by something finite, it doesn't change anything.
+So therefore, this one is not vanishes.
+So convergence of margin gates in this M norm implies UCP convergence of the covariance process.
+And for this, we have now proved p. So exercise for one. Proof. And it says where, first prove this for elementary processes and then
+to approximation.
+For elementary process, we don't prove it.
+It's all possible.
+So, we take simple processes that approximate.
+So, H and H, G and G to G.
+But the norms are different. The HN converges with respect to the Doreau measure associated with M, the GN with respect to M.
+So, Xn is the stochastic integral of Hn, Yn is the stochastic integral of G with respect to N,
+So easy.
+I have what I want.
+respectively g. So easy, I have what I want,
+for similar processes
+they're just a bunch of styles
+also now we use the previous exercise
+So we know xn converges to x, that's the definition of the domestic integral, and yn into y.
+So XN goes to X with respect to this N-norm.
+We know YN goes to Y.
+So the previous exercise tells me the covariation process converges in UCP
+to the covariation
+of x
+and y.
+So I know
+I have this equality
+from simple processes.
+I know where the left hand side converges.
+So the left side converges
+in UCP by the previous exercise
+to this.
+So what I want to show
+and what is B telling me?
+B is telling me the covariance is equal to
+product of integrator with respect to the covariance.
+So what I want to show is that this guy
+Okay, HNGN, a deep record, goes to HGN.
+Let's work on the show.
+Now we need to leave this anymore.
+So, we know h into h, g into g, but we never have any differences here at this point.
+So we need differences of H or G's, otherwise we cannot apply it. So we need to rewrite things.
+So we want to show HNGN dot XN minus HG.
+and now we are dividing
+this a little bit
+we need to bring in differences
+so we rewrite this as
+HN minus H
+GN
+in the way that we respect to
+MN
+minus
+and then H
+G
+minus G
+and then
+so I hope that's correct
+that's H and G
+and H G N
+H G N here comes with a plus
+and here's H G so that looks just fine
+okay so we want to show
+So this goes to zero.
+We again need part A.
+Namely, this one we can again decompose as h n minus h d bracket m times g n d bracket m
+by power A
+H
+N
+N
+S less or equal
+X square root
+So I take expectations.
+expectations.
+But with obtaining expectations, I can use
+Kousy Schwarz.
+So I have the product here.
+So now, h and approximates h.
+So this part goes to 0.
+That's the definition of the n-norm.
+Good question.
+And why is it g n squared?
+Because there's a square missing here.
+Ah, OK.
+When you compute the quadratic variation,
+it's always integral squared.
+Yes, thank you.
+So the approximation in n-norm tells me this expectation here is finite.
+And now I'm using that my g n goes to g in this n-norm.
+So the slope E of this one is finite.
+So that vanishes.
+Same for the second one.
+So now I can again apply Markov's
+in the committee.
+This square is important here,
+because we need increasing processes.
+So we want to deduce UCP.
+We need to again do Markov,
+and we can bound it by the value of the integral as time
+divided to t.
+So for the using p, this is extremely important.
+Otherwise, it would not be an increasing process.
+OK.
+Any further questions about ?
+these exercises.
+We have 10 more minutes for the break.
+We want to characterize the stochastic integral.
+one, and second, we want to understand how stochastic integrates behave with stopping.
+So intuitively, if you stop the integral, it should be the same as stopping the integrator
+or the integrator.
+There's a relatively shown proof of it.
+So the first statement of this proposition is a characterization.
+We have a stochastic integral h dot m.
+h dot n and we know it's a martingale. It's a unique in parentheses square integral of
+a martingale such that the inner product n
+Now what is Kunita Batal-Nabe telling me?
+Kunita Batal-Nabe is just proof, tells me the bracket of two stochastic integrals is the product of the integrants, D bracket.
+So I can take the H out.
+That's what Kunita Batal-Nabe tells me.
+So, n, n, and this holds for all n from n.
+And this stochastic integral is indeed the only square integral of martingale for which this holds.
+and B tells me we use this characterization to prove B. B tells me for any moment stopping time
+Tor, we can either stop the instrument, or stop the integral process, or
+Stop the Antiglote.
+The martingale, the rest of the equal cells, is the only one.
+You need to be with this one.
+So assume we have another nice barring here.
+Such that xn is equal to this one.
+Then what?
+We put something else here.
+Now what?
+One is inclined to take the difference, but what bothers me if I take the difference,
+And this h is in front.
+But for me to put it inside.
+So this is this.
+And now I can take the difference.
+x minus hm.
+And
+now you do what you would do in Rn.
+You just take for n the same vector.
+So then x minus m.
+This is zero. But this means the m norm is zero. Because what is the m norm? The m norm is either the expected value of the process square at the turbulent time or the expected value of the bracket at the turbulent time.
+So the heat bracket is gone. So X is HN in M. So PN. Almost true.
+Okay, let's quickly do the B. So the thing is now part B. We want something about schochastic
+integrals, but the stochastic integral is kind of characterized by the bracket. This
+is what A says. The covariance characterizes the stochastic integral, and the covariance,
+the bracket integral, is just a very nice integral. It's a human type sum integral. So, part
+first inequality. So bracket HM. We are testing. This is a stochastic integral. We are testing.
+But these are nice integrates. So for instance, I can just stop the bracket process. This
+is very nice. H of N stop the bracket process. Okay? So I can use this one. This is equal
+equal to H and N. Stop this. But again, this is a Riemann sum. So I'm free to put the
+Tor as an outside parenthesis or here or here. So that's H stopped MN. And now I'm just putting it back in.
+This is H.
+So this is the only...
+Now I have again this is equal to this, so I'm doing the same argument as here.
+Similar for the second integral.
+So the reason we need to do it this way, so far we're doing this integral, but so far we have no Riemann type sum interpretation of the Storovtic integral.
+It was a pure function analytic argument.
+Define something for simple processes, extend.
+But we don't know yet whether this looks like
+an integral for real analysis.
+But we do know that these objects
+are just limits of sums.
+So there we can play.
+Okay, so then let's have a 15 minute break and then continue.

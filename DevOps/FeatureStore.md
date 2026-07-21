@@ -27,8 +27,5 @@ The feature pipeline runs once per event (e.g., when a self-eval is submitted) a
 ### 5. Point-in-Time Correctness for Training
 The offline store keeps history, so you can train on *"what did we know about this car at the moment of evaluation"* — avoiding leakage from later updates.
 
----
-
-## Old vs. New Data-Getter Path
 
 

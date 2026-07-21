@@ -1,0 +1,657 @@
+We are back in the deterministic world. Continuous quadratic variation. And I remind you that
+in general, we are working with quadratic variation, we have a choice of partition. So
+it doesn't have to be the same along every sequence. So we fix this. So then, the first exercise,
+or the first question was that the covariation process, so by summing up the product of increments,
+this exists if and only if the quadratic variation of the sum exists. And always along the sequence
+of partitions along which the quadratic variation of x and y exists. Okay, well, it's easy
+because we just write down what it means. So the covariation of x and y is this. We are summing
+over t's and with our slightly shrugging notation. We can write it like this. Well, that's
+a finite sum. So this we rewrite as one-half sum of our sample points.
+this square. And this is, of course, nothing but the difference of the sum. Okay.
+we only have to mix terms. So we need to subtract the square terms to make that equality. By assumption,
+this converges and this converges. So we see if this converges, this converges and vice versa.
+this converges.
+this converges.
+this converges.
+this converges.
+this converges.
+this converges.
+this converges.
+this converges.
+and part three says we have a polarization identity. But this follows immediately from here. So, if
+immediately from here. So if the co-barian exists, if this converges, then this must
+be equal to one half. One half is probably over to here. I hope I'm getting the constant right.
+No, I've done it. One half the square terms. One half the square terms. So if one half is
+in front of everything, minus this. And this was the point from which we concluded that
+this guy is a bounded variation. Increasing function, another increasing function. That's a bounded variation. Yes?
+Why is there one half in front of the delta i x squared as well? Because...
+Because... This one? Wait a second. So I get two times the square terms here, so I need to go one half to get this.
+So this was basically question three here. Question two was, okay, it's a bi-linear form. I suppose that's obvious. And the last one was, we have the
+Cosi-Schwarzen equality. So the absolute value of the covariance is less or equal to square root.
+And this again follows from approximation and Cosi-Schwarzen equality. So the variation process...
+is this. So that's an inner product. There's a vector here. There's a vector here. So I'm just taking the inner product of two vectors. So I do Cosi-Schwarzen
+in R and R whatever. So I'm now doing Cosi-Schwarzen in Rn.
+an inner product of two vectors in Rn. Then...
+...square one half. So to be precise, I'm going to put absolute values.
+So everything follows by a crucifix.
+Can't we say actually that one follows directly from three?
+If we have the voltage polarization identity.
+From this, the last equation, the polarization identity.
+From this one?
+Yeah.
+Well, but we need to know that this makes sense.
+But this is basically just reformulation of the same thing.
+Yes.
+We need to know that what is on the left side and the right side makes sense.
+But what is on the right side makes sense then and only then when that one on the left side makes sense.
+Yes, but only once you go through the approximation, only once you go through the definition.
+So you can say, assume you have this, then define this through this.
+Mm-hmm.
+You can do this.
+But then is this what it's supposed to be?
+Yeah.
+My problem.
+You can see the covariation process as we define as the limit of the partition.
+Okay.
+Any other questions about this one?
+Any other questions about this one?
+Any other questions about this one?
+Any other questions about this one?
+Any other questions about this one?
+Okay.
+Any other questions?
+Any other questions about this one?
+Any other questions?
+Okay.
+Then the next exercise is, I'm relatively sure we did this analysis.
+So it says a function f is of bounded variation if and only if it can be represented as the
+difference of two non-decreasing functions, from which we then conclude we can do standard integration with respect to f.
+But basically, there's one step to write down the argument which you would immediately believe.
+But if you look a little bit closer into this step, you encounter a subtlety in integration, real analysis integration.
+And now I'm getting back to my own analysis 2 course. You can define the Riemann integral essentially in two ways.
+You can either say I take a sequence of partitions with mesh size that goes to zero, or I take a sequence of increasing partitions.
+The letter being more special. I take partitions, increasing partitions, or just partitions with mesh size going to zero.
+If I'm taking partitions which are finer and finer and finer, I have a natural order on the set of partitions.
+So I can, in a natural way, define a net. And I can talk about net convergence.
+But usually you don't do this in the analysis 2-bit end.
+It's kind of clear that it's the same, but in principle you have to take a slightly closer look.
+By the way, if you want a reference, the book of Heuser, part 1, has a really nice section around page 470 on this bounded variation function.
+Now, if it's the difference of two non-decreasing functions, if the function is increasing, it's a bounded variation.
+Terminal value minus the initial value. So it's the difference of the two, it's clear.
+So, that's obvious.
+So now, we need to decompose the function f. So let f be about the variation.
+The candidate for the decomposition. And the candidate is the variation function.
+So, g of t we define as the variation up to time t of my function f. That's a very defined object.
+And to make it a bit more transparent that we actually talk about the interval zero d, you'll see where I do this.
+Let's write the interval.
+And so, my candidate for the other function is the difference, g minus f.
+So, the variation is clearly an increasing function. So, this one is increasing. This one is increasing.
+So, what we need to show the difference between the variation and f is also.
+So, we need to show h of t variation minus f is also not decreasing.
+So, the question is, is h of s, s equal to s.
+So, let's see, f of t.
+Minus f of s.
+We just rearrange that inequality.
+We want f of t minus f of f to be less or equal variation up to t minus variation up to s.
+This is a strip.
+So, this is certainly less or equal than the variation of the f function between times s and time t.
+Now, you'll see why I'm only giving them to c.
+Okay.
+Okay.
+And now, the standard will immediately give.
+Oh, this is a additive.
+Okay.
+So, if I want the variation between time s and time t, what I'm doing is I take the variation from the big interval and then subtracting the variation from the small interval.
+Okay.
+So, I'll state that as a lemma and you'll see where the potential subtlety with this line.
+Okay.
+Okay.
+So, if this is indeed correct, then this inequality holds.
+So, what is behind this argument here is the following little result.
+So, let's say we have some inequality and we have some point c in the same.
+And then the variation of a function g of the whole interval is finite if I know the f I split my interval from a to c and from c to b and compute the variations separately.
+So, c of g plus c of g plus c of g is finite.
+So, each of them is finite.
+And in this case, we would just add the variation.
+That's what we are doing.
+And that's what we are doing.
+The variation of the whole interval is the sum of the variations over the smaller intervals.
+Now, if this variation is finite, then these two must be finite.
+The partition that we have here and here, they participate.
+Then we compute the variation of the big one.
+So, let's say we have partition, pi and height.
+Pi is a partition.
+C, we work always a bit sloppy with the terminal times of our partition.
+We always say, let's assume they are in there to save notation.
+If we are really precise, we are not allowed to do this.
+Let me rephrase that again.
+My C does not have to be part of my partition.
+So I'm adding it.
+I'm taking a partition of the small interval.
+I call this pi prime one.
+And partition the second, pi prime two.
+C, c, c, c, c, b, this section.
+And this, this one.
+Now, if I fix a partition, things are easy.
+So, the variation of G along the partition, pi.
+The pi prime, pi prime partition is finite.
+So we have this.
+And these are clearly just finite sums.
+So, if I'm taking G1 as a restriction of G to AC and G2 as the restriction of G to CB,
+then I have this is A, G1, pi prime one plus G2, pi prime two.
+Here, everything is finite.
+So, if I take the soup over all partitions, it's finite here, finite here, becomes finite here.
+Thank you.
+Right here, this one I can continue, I can continue with V and V of G.
+Whenever I compute this, I can make these, the group and combined, part of my partition.
+So now come to the point, I'm now taking sequences, so I want equality, eventually I want equality,
+I want to sum this, I want this inequality, this inequality, and this inequality.
+So I'm taking the sequence of partitions.
+Now our definition of bounded variation was take any sequence of partitions.
+But this is the same as the definition of what we must use.
+So I'm taking the sequence of partitions.
+I'm taking the sequence of partitions.
+I'm taking the sequence of partitions.
+And at least theoretically it's a priori not clear that taking any sequence of partitions
+with manishing mesh soils is the same as taking a sequence, an increasing sequence of partitions.
+Increasing sequence of partitions in principle are fewer.
+But the thing that one can show, to check this other book, you can restrict yourselves to this situation.
+And this for sure, I know we did an analysis.
+Analysis too.
+We're going to find a human integral.
+Because here, we have a notion of a net.
+And this is an increasing sequence.
+Whereas if we define this in general, we just take the sequence.
+And the reason we need to be allowed to take this increasing sequence of partitions is because of this one.
+We need to add the point to our partition.
+So from here to here, we have an increasing sequence of partitions.
+And this property we want to preserve.
+So again, had I said, you know, this equality holds, no one would have complained.
+But there is indeed a small subtlety.
+So here, it's something like the theorem, 90-something, page 430.
+Wrong about.
+If you want to know more.
+So the argument is not entirely precise here.
+But I just want to give you a hint of a possible subtlety.
+So, the questions are from here.
+One o'clock, one o'clock.
+One, two, one.
+All right.
+Well okay.
+Thank you.
+We're working with Bishop the Education of the Education of the Education of the Education of the Education of the Education ACOulus Academy.
+X is size 29, 27 and 28 would be estimated for the volatility.
+29 says a non-negative local martingale is a super martingale.
+Why is that?
+One word is enough.
+We need an external to the indignable as a super martingale.
+There is something to do with indignability and things are not negative.
+Therefore?
+Fatulema.
+Fatulema.
+So, local martingale means we have a localizing sequence.
+We know when we stop the process, this is a martingale.
+So, we know because the localizing sequence goes to infinity, we have almost no conversions
+at the level of the process, but we do not know if we have conversions in L1, L2, whatever.
+Okay?
+So, but we have fun too.
+We have something on negative.
+So, first of all, we have this.
+M of T given S.
+So, that we have.
+And, by far too, this one, if we take ... So, how do we have to do it?
+We take, we take, we take, we take, we take ... So, how do we have to do it?
+We take, we take, we take, we take ... So, how do we have to do it?
+We take, we take, we take ... So, how do we have to do it?
+We take, we take, we take ... So, equal ... I think we have to do it inferior outside.
+We take, we take, we take, we take, we take this one.
+And now we have to get the, the inequality right, and I think that's greater or equal,
+right?
+Greater or equal?
+Yeah.
+X T.
+Okay.
+F S.
+So, I want a super marting area.
+I think the equality is correct.
+So, these were.
+They're relatively straightforward ones.
+Okay.
+The next one says, there are two parts, let's, with this one, the right continuous non-negative
+sub-martingales of class DL.
+The non-negative sub-martingale is of class DL.
+If it was class DL, it said, considering bounded stopping times,
+that this family of random buried is uniform here.
+The right continuity.
+Now, this is in general not true.
+The right continuity is important.
+So, for instance, for discontinuous non-negative sub-martingales, this is not true.
+So, this need not be true without right continuity.
+So, what is right continuity giving me?
+If you look at class DL and combine it with white continuity.
+So, what does that mean?
+Take a shot.
+I can't see my eyes that I fully understood.
+So, thank you.
+Let me ask, ladies and gentlemen what?
+I'm very
+viewersvez.
+How, sir?
+Well, the thing we need to remember is exercise 9, to improve the optional sampling theory.
+The optional sampling theory says, Martin-Guergen-T property carries over to stopping.
+And then there are assumptions.
+And the assumption under which the theorem was phrased was for uniformly integral particles.
+And then there were some generalizations, some slight generalizations that says, well,
+we can substitute uniformity variability for something else.
+And exercise 9 said, option assembly holds for right continuous sub-mounting it, which is what we have here.
+If we restrict to bounded stopping times, then class DL looks at bounded stopping times.
+Class D doesn't.
+But class DL looks at bounded stopping times.
+While I found that when we have uniformity variability, we have a limit.
+So we don't need bounded stopping times.
+But we don't have a limit.
+We don't know what x at an infinity is.
+Okay.
+Okay.
+So.
+Class DL says, take a stopping time bounded by T.
+It's cutting, roughing, T, T was our limit.
+So.
+So we have a sub-mounting here.
+By option sampling.
+We have this.
+So in particular, if I take the sub.
+This is finite.
+So.
+What do we want to prove?
+We want to prove uniform integrability.
+So we want to say, the expectation of x-tor, if x-tor is large, is uniformly small in all tor.
+So.
+We take about k by sub-marting here.
+Then, first of all, this set is in f-tor.
+This is how f-tor is the function.
+So now we use the sub-marting here.
+So this is our test set.
+The indicator of this is our test set.
+So sub-arting here property tells us, e x-tor, indicator x-tor, greater k.
+That's precisely the object or the quantity that we want to make small.
+So, this we want small, uniformly in all.
+That's what uniform integrability requires.
+Family of random values are indexed by torque.
+If k is large, then that's small.
+So, the good thing about the sub-marting here property is that we can replace this tor by a t.
+e less or equal, e x-t, one x-tor greater k.
+So, one less tor.
+Good.
+Eventually, I want to put a sum of torque in front of this one.
+So, I'd like to get a bound here which does not require torque.
+How do I get rid of this one?
+So, one torque we got rid of by sub-marting here property and the other one.
+So, look at the assumption and ask yourself which assumption hasn't been used.
+No, I'm negatively.
+A bit.
+Well, the other one that we haven't used.
+We still have this.
+And continuous in sub-marting here we can apply torque.
+So, we get rid of the second torque by looking at the running supremo.
+So, this set here which we take the indicator x-tor greater than k.
+Well, it means it has to be greater than k at some point before time t.
+x-tor greater than k.
+I have no negativity.
+I don't need absolute values.
+x-tor greater than k.
+And we call this mt.
+So, now I take loop.
+Loop tells me the probability that the running supremo is big is less or equal than the expected
+value at the terminal time.
+x-tor greater than k.
+x-tor greater than k.
+x-tor greater than k.
+x-tor greater than k.
+x-tor greater than k.
+So, now I take loop.
+Loop tells me the probability that the running supremo is big is less or equal than the expected
+value at the terminal time.
+x-tor greater than k.
+x-tor greater than k.
+x-tor greater than k.
+So, now I take the probability that mt is greater than k.
+x-tor greater than k.
+x-tor greater than k.
+x-tor greater than k.
+x-tor greater than k.
+x-tor greater than k.
+So, now I do not have a maximum inequality.
+It implies to right continuous of martingades.
+In the case we have here to be equal to one.
+We have the probability that mt is greater than k.
+x-tor greater than k is less or equal to the expected value of x at the terminal time, which
+is t, over k, which goes to z.
+So, this one here, let's put everything together.
+We have this and we go to super front.
+less or equal, and each one here, there's t, and this set is contained in this set.
+So, I get rid of this tor by putting n here.
+This is less or equal.
+Yeah, there's no tor anymore.
+e, xd, one, mt, bigger than k.
+And now I have only one random variable here.
+One random variable is uniformly integrable.
+And I might have tried my indicator function with a vanishing probability.
+So, that vanishes one.
+So, sub-martingale property to eliminate the first tor,
+dupe's inequality to eliminate the second tor.
+So, I have a question.
+Questions?
+Yes, sir.
+And where do we use the non-negativity?
+Where do we?
+Where do we use the non-negativity of this thing?
+And where do we use the non-negativity?
+For instance, here, because it would be the running soup of the absolute value.
+That's one thing where we use it.
+The other one where we use it is here, for the optional set.
+So, all these dupe results are always of the form of something most for a martingale,
+or a non-negative sub-martingale.
+You need the non-negativity to make integrals very hard.
+So, there's no questions?
+Other questions?
+Yes?
+Have a good one.
+Yes.
+Okay, good.
+Bye, good.
+Okay.
+Bye, good!
+Bye, good.
+Bye, good.
+Thanks for your time.
+Bye, good.
+Bye!
+Bye!
+Bye, bye.
+Bye, bye.
+So that exercise at the second part, except my non-negative sub-martingale is also of
+class DL if we have this dupe-Yeti competition. So our two set, which is of class DL, same
+solutions. If we have a dupe-Yeti competition, we can write x as m plus L.
+Where this decomposition is in terms of a martingale, m, and a non-decreasing process a.
+But m is a martingale, and then a is non-decreasing. And without loss of generality, we get no one price.
+My x is a sub-martingale, it's a martingale, plus something increasing. That's decoupling.
+So if you took finals one with me, that's what we do for American options. In discrete time.
+Okay, so, class DL.
+Ah, I forgot what I think. What did I forget?
+Okay, so we use this now.
+X tau is what? So this is a martingale.
+Tau is bounded by T.
+So this is a martingale.
+So this is a martingale.
+So this is a martingale.
+Plus a martingale.
+So now by adapting this, I can put that in.
+That is equal to T.
+That is equal to T.
+X T minus A T plus A tau.
+So X T minus A T is empty.
+The A tau with adaptiveness goes into the conditional expectation.
+And now I use the fact that my A is not decreasing.
+Okay, this is less or equal to A.
+And this A is not decreasing.
+And tau is less or equal to T.
+So, now I compare X with a martingale.
+Maybe the more than I get here.
+Here, on the right hand side.
+I basically have a martingale.
+So 0.1.
+With the non-damage of martingale.
+Y T is E X T given F T.
+So this inequality says X T is less or equal to Y T.
+So this is uniformly integral.
+I take consecutive expectations of the same random value.
+So this is Ui.
+And the proposition says that martingale is uniformly integral if and only if it is of class D.
+Any stopping time.
+Not sure the number of the propositions.
+So why is this important that this is uniformly integral?
+From this uniformly integral?
+From this uniformly integral?
+It follows what?
+What?
+What?
+It follows what?
+What?
+We have a right continuous non-negative sub martingale.
+Is of class Dm.
+That's what part one said.
+Okay?
+So why is this important that this is uniformly integral?
+From this uniformly integral, it follows what?
+We have a right continuous non-negative sub martingale is of class Dm.
+That's what part one said.
+So here we have something, non-negative martingale of class D.
+So in particular, we know two, or one stopping times.
+So here we have something, non-negative martingale of class Dm.
+That's why you tore a...
+...to-nah...
+...to-nah...
+...to-nah...
+...k...
+...goes to zero.
+...goes to zero.
+That's what class D says.
+class D says more.
+Class D, all these variables here are uniformly,
+but this family is uniformly intergroup.
+So this goes to 0.
+Class D says.
+So what do we want?
+We want to bound the corresponding expression
+for the x's by this one.
+So how do we see this?
+So if x0 is large, so this is where we have to look,
+then so my y0 equal to x0, equation up there,
+the y is large as well.
+So therefore, we have this set equivalent.
+So therefore, x total indicator x0 greater or equal to k
+is less or equal to y0, here.
+And in this indicator, I will place x by y as well.
+1 y to y.
+So the right-hand side.
+I'm sure you have questions, because you approached me
+about that one earlier.
+No, it's actually a different question.
+I think, shouldn't it be class DL there?
+Well, DL is, D is stronger.
+Yeah.
+So I think the uniform, was it DL in the proposition?
+It was DL.
+I think it was DL.
+OK.
+Maybe that's DL.
+You may be less.
+Yes, I think that's DL.
+So the DL is working.
+You're working with the bowels.
+But I think we are.
+So the trick is, this one.
+This kills.
+Again, we want to compare.
+We want to bring in the terminal value.
+Just like in the other situation.
+There, we replaced everything by the running supremo.
+And we could control this.
+And here, we're bringing this one, and then compare with the margin.
+Yes, ma'am.
+Can it happen that we have a problem there if A is not in L1?
+Well, it's always integral.
+It starts in zero, and then increases.
+But if it's infinity, this could convert in its rotation.
+So, I mean, this expression makes sense, right?
+Does it always have to?
+I have to, but you get it.
+So, this is in L1 and this is in L1.
+Is it?
+Does it have to be anything?
+You have sub-marting and marting as to my definitions there in L1.
+So, fair observation.
+That was my initial question.
+Anything further?
+Then, let's move one more.
+This is a bit closer to what we are currently doing.
+Number 33.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+So, we take a continuous lower martingale square integral starting in zero, and we'll see
+that as a bracket, the bracket is always an increasing process.
+So, bracket and infinity exists, and we assume it's integral.
+Okay.
+Okay.
+Okay.
+Okay.
+Awesome.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+All right.
+It says m is a martingale in that case.
+In fact, m and m squared are uniformly integrated.
+And the second one says, OK, if we have a uniformly
+integral of a martingale, we know the limit at infinity exists.
+And now, then not only does the bracket exist at infinity,
+but it's actually equal to infinity.
+If there was a hint or a comment that you could use,
+there's another proof for any stopping point.
+If we have a second moment,
+we have a second moment.
+The bracket links quadratic variations and martingale properties.
+And the bracket was the unique process
+that makes m squared minus something a martingale.
+So in principle, if it says it's a martingale,
+so as soon as the stopping time is finite,
+we can put an equality here.
+That's the definition of the bracket.
+But we can always just extend it.
+So we can put an inequality if we set this.
+And this, I think, does work tonight.
+Does this make sense if I have to remove it?
+And maybe this is quite this one.
+We will see where we need it.
+We'll...
+We have this limit if we have uniformity probability,
+but uniformity probability we want to show.
+So we would like to show our martingale is of class dm.
+Show m is of class dm.
+And the continuous local martingale of class dm is a uniform.
+It's a uniform integral of martingale.
+So this was to position 3, 3, 4.
+So class dm.
+Take a stopping time.
+Round it by t.
+This is where we use the hint.
+Hint says e m square tall is less or equal this one.
+Which is...
+Bracket is increasing.
+Tau is bounded by t.
+Which by this one is finite.
+So...
+So...
+We have random variables indexed by tau with a uniformly bounded second moment.
+This means...
+These random variables...
+Are...
+Uniformly...
+Uniformly...
+Uniformly...
+Uniformly bounded.
+Uniformly bounded.
+So...
+We know we have to limit...
+Tweets.
+You need to limit...
+That's we can slow down.
+So...
+We know we have to limit...
+It was out of square, uniformly bounded, second moment.
+So we know we have to limit.
+And my martingale is closed.
+We need to show this to get our hands on the second part.
+Thank you.
+Okay. So mt squared is a non-negative subparticle. So we want to learn something about m squared.
+Non-negative subparticle means I get a driver too.
+You have this.
+m is a martingale, a uniformly integrable local martingale. So it's a martingale.
+The bracket makes mt squared minus the bracket a martingale. So by the property of the bracket
+of this, this is equal to limit b mt. So here we use m squared minus bracket
+is a martingale. And the limit here is 40 to infinity. So this is e n infinity.
+Okay. So this is finite. That's the point. And now we want to bound second moment in terms
+mt squared is e n infinity given ft squared.
+mt squared.
+mt squared.
+mt squared.
+mt squared.
+mt squared.
+mt squared.
+mt squared.
+mt squared.
+mt squared.
+mt squared.
+is a non-negative sub-martingale and what I want
+to do. I want it again to be uniformly integrable. Where do I get this from?
+It's all goodbye.
+Can someone check this exercise, please?
+I think it's exercise 12. It says that a non-negative right continuous sub-marting
+scale is uniformly integrable if and only if it converges to some infinity.
+So I'm back to uniform integrability. We are back to uniform integrability.
+I'd very much like to have my class DL here.
+So the philosophy should be of class DL hence uniform
+integrable hence what you said. This.
+It wasn't the goal to show that M square is uniformly integrable.
+What we really want is this. Because in that case this is actually inequality.
+So what we want is this convergence in L1. So as soon as we have that
+we can put inequality here. And this would be exactly this inequality here.
+I guess I see immediately once I'm out of this move.
+And it must be this. Somehow. It must follow from here.
+If it were a martingale we had this, we had uniform integrability.
+So this uniform integrability must come from here.
+Okay. I have a question. I guess this inequality here.
+Uniform integrability.
