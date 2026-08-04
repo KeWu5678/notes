@@ -1,0 +1,27 @@
+{
+  "statement_id": "s/1.2.1",
+  "concludes": [
+    {
+      "predicate": "prop/complete",
+      "given": [
+        "prop/usual-conditions"
+      ]
+    },
+    {
+      "predicate": "prop/right-continuous-filtration",
+      "given": [
+        "prop/usual-conditions"
+      ]
+    }
+  ],
+  "defines": [
+    "prop/usual-conditions",
+    "prop/complete",
+    "prop/right-continuous-filtration"
+  ],
+  "about": [
+    "obj/filtration"
+  ],
+  "note": "The usual conditions are exactly the conjunction, so each conjunct follows from them unconditionally.",
+  "provenance": "agent"
+}

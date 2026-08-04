@@ -1,0 +1,10 @@
+{
+  "statement_id": "s/1.1.2",
+  "defines": [
+    "rel/same-fdd"
+  ],
+  "about": [
+    "obj/stochastic-process"
+  ],
+  "provenance": "agent"
+}

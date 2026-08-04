@@ -1,0 +1,15 @@
+{
+  "statement_id": "s/1.1.8",
+  "requires": [
+    "prop/progressively-measurable"
+  ],
+  "concludes": [
+    {
+      "predicate": "prop/measurable"
+    },
+    {
+      "predicate": "prop/adapted"
+    }
+  ],
+  "provenance": "agent"
+}

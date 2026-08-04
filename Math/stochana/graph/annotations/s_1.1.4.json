@@ -1,0 +1,20 @@
+{
+  "statement_id": "s/1.1.4",
+  "concludes": [
+    {
+      "predicate": "rel/indistinguishable",
+      "given": [
+        "rel/modification",
+        "prop/left-continuous-paths"
+      ]
+    },
+    {
+      "predicate": "rel/indistinguishable",
+      "given": [
+        "rel/modification",
+        "prop/right-continuous-paths"
+      ]
+    }
+  ],
+  "provenance": "agent"
+}

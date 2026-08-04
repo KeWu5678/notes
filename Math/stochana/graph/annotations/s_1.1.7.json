@@ -1,0 +1,13 @@
+{
+  "statement_id": "s/1.1.7",
+  "defines": [
+    "prop/progressively-measurable",
+    "prop/adapted",
+    "obj/progressive-sigma-field",
+    "obj/predictable-sigma-field"
+  ],
+  "about": [
+    "obj/filtered-probability-space"
+  ],
+  "provenance": "agent"
+}

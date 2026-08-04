@@ -1,0 +1,20 @@
+{
+  "statement_id": "ex/7",
+  "concludes": [
+    {
+      "predicate": "prop/optional-time",
+      "given": [
+        "prop/stopping-time"
+      ]
+    },
+    {
+      "predicate": "prop/stopping-time",
+      "given": [
+        "prop/optional-time",
+        "prop/right-continuous-filtration"
+      ]
+    }
+  ],
+  "note": "i) every stopping time is optional, and the converse holds when the filtration is right-continuous.",
+  "provenance": "agent"
+}

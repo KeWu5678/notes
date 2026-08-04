@@ -1,0 +1,17 @@
+{
+  "statement_id": "ex/6",
+  "concludes": [
+    {
+      "predicate": "prop/right-continuous-filtration",
+      "args": [
+        "obj/generated-filtration"
+      ],
+      "negated": true
+    }
+  ],
+  "about": [
+    "obj/generated-filtration"
+  ],
+  "note": "The generated filtration is not right-continuous in general.",
+  "provenance": "agent"
+}

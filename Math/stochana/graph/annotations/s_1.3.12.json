@@ -1,0 +1,60 @@
+{
+  "statement_id": "s/1.3.12",
+  "requires": [
+    "prop/super-martingale",
+    "prop/usual-conditions"
+  ],
+  "concludes": [
+    {
+      "predicate": "prop/super-martingale",
+      "args": [
+        "obj/right-continuous-modification"
+      ]
+    },
+    {
+      "predicate": "prop/left-limits",
+      "args": [
+        "obj/right-continuous-modification"
+      ]
+    }
+  ],
+  "defines": [
+    "obj/right-continuous-modification",
+    "obj/mean-function"
+  ],
+  "about": [
+    "obj/stochastic-process",
+    "obj/mean-function"
+  ],
+  "facts": [
+    {
+      "local": "a",
+      "predicate": "rel/has",
+      "args": [
+        "obj/stochastic-process",
+        "obj/right-continuous-modification"
+      ],
+      "gloss": "M has a right-continuous modification"
+    },
+    {
+      "local": "b",
+      "predicate": "prop/right-continuous-function",
+      "args": [
+        "obj/mean-function"
+      ],
+      "gloss": "t ↦ E M_t is right-continuous"
+    }
+  ],
+  "equivalences": [
+    {
+      "left": "a",
+      "right": "b",
+      "under": [
+        "prop/super-martingale",
+        "prop/usual-conditions"
+      ]
+    }
+  ],
+  "note": "The modification, when it exists, is itself a super-martingale and may be chosen with left limits.",
+  "provenance": "agent"
+}

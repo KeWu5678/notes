@@ -1,0 +1,27 @@
+{
+  "statement_id": "s/1.2.6",
+  "requires": [
+    "prop/progressively-measurable",
+    "prop/stopping-time"
+  ],
+  "concludes": [
+    {
+      "predicate": "prop/progressively-measurable",
+      "args": [
+        "obj/stopped-process"
+      ],
+      "under": [
+        "prop/progressively-measurable",
+        "prop/stopping-time"
+      ]
+    }
+  ],
+  "defines": [
+    "obj/stopped-process"
+  ],
+  "about": [
+    "obj/stopped-process",
+    "obj/stopped-sigma-field"
+  ],
+  "provenance": "agent"
+}

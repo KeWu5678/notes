@@ -1,0 +1,7 @@
+# Neo4j is a derived index rebuilt from Math/stochana/graph/ — never committed.
+.neo4j/
+__pycache__/
+*.pyc
+
+# generated-file guard stamps
+.CONCEPTS.md.generated

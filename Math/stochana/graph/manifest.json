@@ -1,0 +1,166 @@
+{
+  "stage": 0,
+  "source": "StochAna.pdf",
+  "pages": [
+    5,
+    86
+  ],
+  "provenance": "verbatim",
+  "counts": {
+    "statements": 155,
+    "definitions": 23,
+    "exercises": 34,
+    "proved_here": 54,
+    "cites": 27,
+    "cites_equations": 16
+  },
+  "dangling_refs": [],
+  "rejected_anchors": [
+    {
+      "page": "10",
+      "anchor": "y1"
+    },
+    {
+      "page": "19",
+      "anchor": "sub-martingale2"
+    },
+    {
+      "page": "44",
+      "anchor": "v.1"
+    },
+    {
+      "page": "45",
+      "anchor": "w,"
+    },
+    {
+      "page": "47",
+      "anchor": "0."
+    },
+    {
+      "page": "47",
+      "anchor": "lemma,4"
+    },
+    {
+      "page": "47",
+      "anchor": ".5"
+    },
+    {
+      "page": "52",
+      "anchor": "theorem6"
+    },
+    {
+      "page": "56",
+      "anchor": "ergence.7"
+    },
+    {
+      "page": "63",
+      "anchor": ".1"
+    },
+    {
+      "page": "69",
+      "anchor": "measures."
+    },
+    {
+      "page": "70",
+      "anchor": "al.3"
+    },
+    {
+      "page": "71",
+      "anchor": ")"
+    },
+    {
+      "page": "75",
+      "anchor": "by"
+    },
+    {
+      "page": "76",
+      "anchor": "martingale.6"
+    },
+    {
+      "page": "85",
+      "anchor": "that"
+    },
+    {
+      "page": "87",
+      "anchor": "put1"
+    },
+    {
+      "page": "90",
+      "anchor": "let2"
+    },
+    {
+      "page": "91",
+      "anchor": "norm.3"
+    },
+    {
+      "page": "99",
+      "anchor": ".4"
+    },
+    {
+      "page": "103",
+      "anchor": "."
+    },
+    {
+      "page": "103",
+      "anchor": "satisfies6"
+    },
+    {
+      "page": "104",
+      "anchor": ".7"
+    },
+    {
+      "page": "117",
+      "anchor": "ectation.8"
+    },
+    {
+      "page": "122",
+      "anchor": "131"
+    },
+    {
+      "page": "123",
+      "anchor": "martingale.2"
+    },
+    {
+      "page": "128",
+      "anchor": "ectation"
+    },
+    {
+      "page": "130",
+      "anchor": "w."
+    },
+    {
+      "page": "131",
+      "anchor": ".5"
+    },
+    {
+      "page": "140",
+      "anchor": "function1"
+    },
+    {
+      "page": "150",
+      "anchor": ".2"
+    },
+    {
+      "page": "152",
+      "anchor": "smaller3"
+    },
+    {
+      "page": "157",
+      "anchor": ".4"
+    },
+    {
+      "page": "159",
+      "anchor": "result.5"
+    }
+  ],
+  "by_kind": {
+    "Exercise": 34,
+    "Theorem": 24,
+    "Definition": 23,
+    "Proposition": 23,
+    "Lemma": 18,
+    "Corollary": 15,
+    "Remark": 11,
+    "Example": 7
+  }
+}

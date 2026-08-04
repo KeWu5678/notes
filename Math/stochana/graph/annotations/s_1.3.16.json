@@ -1,0 +1,8 @@
+{
+  "statement_id": "s/1.3.16",
+  "requires": [
+    "prop/super-martingale"
+  ],
+  "note": "Monotonicity of t ↦ E[M_t^-]; a claim about a quantity.",
+  "provenance": "agent"
+}

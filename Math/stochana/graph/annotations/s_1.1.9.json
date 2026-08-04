@@ -1,0 +1,40 @@
+{
+  "statement_id": "s/1.1.9",
+  "requires": [
+    "prop/adapted",
+    "prop/measurable"
+  ],
+  "concludes": [
+    {
+      "predicate": "rel/has",
+      "args": [
+        "obj/stochastic-process",
+        "obj/progressive-modification"
+      ],
+      "under": [
+        "prop/adapted",
+        "prop/measurable"
+      ]
+    },
+    {
+      "predicate": "rel/modification",
+      "args": [
+        "obj/progressive-modification",
+        "obj/stochastic-process"
+      ]
+    },
+    {
+      "predicate": "prop/progressively-measurable",
+      "args": [
+        "obj/progressive-modification"
+      ]
+    }
+  ],
+  "defines": [
+    "obj/progressive-modification"
+  ],
+  "about": [
+    "obj/stochastic-process"
+  ],
+  "provenance": "agent"
+}

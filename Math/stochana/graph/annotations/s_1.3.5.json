@@ -1,0 +1,27 @@
+{
+  "statement_id": "s/1.3.5",
+  "requires": [
+    "prop/martingale",
+    "prop/right-continuous-paths",
+    "prop/uniformly-integrable",
+    "prop/stopping-time"
+  ],
+  "concludes": [
+    {
+      "predicate": "prop/martingale",
+      "args": [
+        "obj/stopped-process"
+      ],
+      "under": [
+        "prop/martingale",
+        "prop/right-continuous-paths",
+        "prop/uniformly-integrable"
+      ]
+    }
+  ],
+  "about": [
+    "obj/stopped-process"
+  ],
+  "note": "Doob's optional sampling. The conditional-expectation identity itself is an equation between quantities and has no encoding; the stopped-process claim does.",
+  "provenance": "agent"
+}

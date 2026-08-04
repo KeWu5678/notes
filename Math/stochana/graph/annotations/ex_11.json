@@ -1,0 +1,8 @@
+{
+  "statement_id": "ex/11",
+  "requires": [
+    "prop/sub-martingale"
+  ],
+  "note": "Proof of 1.3.11.",
+  "provenance": "agent"
+}

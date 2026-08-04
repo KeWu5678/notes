@@ -1,0 +1,28 @@
+{
+  "statement_id": "s/1.3.7",
+  "requires": [
+    "prop/martingale",
+    "prop/right-continuous-paths"
+  ],
+  "concludes": [
+    {
+      "predicate": "rel/martingale-wrt",
+      "args": [
+        "obj/stochastic-process",
+        "obj/right-limit-filtration"
+      ],
+      "under": [
+        "prop/martingale",
+        "prop/right-continuous-paths"
+      ]
+    }
+  ],
+  "defines": [
+    "obj/right-limit-filtration"
+  ],
+  "about": [
+    "obj/filtration",
+    "obj/right-limit-filtration"
+  ],
+  "provenance": "agent"
+}

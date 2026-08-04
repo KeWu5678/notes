@@ -1,0 +1,17 @@
+{
+  "statement_id": "ex/8",
+  "concludes": [
+    {
+      "predicate": "prop/stopping-time",
+      "given": [
+        "prop/adapted",
+        "prop/usual-conditions"
+      ]
+    }
+  ],
+  "about": [
+    "obj/first-entrance-time"
+  ],
+  "note": "Entrance time to an open set; the counterexample half shows the usual conditions cannot be dropped.",
+  "provenance": "agent"
+}

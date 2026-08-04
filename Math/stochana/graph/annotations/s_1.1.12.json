@@ -1,0 +1,38 @@
+{
+  "statement_id": "s/1.1.12",
+  "concludes": [
+    {
+      "predicate": "prop/starts-at-zero",
+      "args": [
+        "obj/brownian-motion"
+      ]
+    },
+    {
+      "predicate": "prop/independent-increments",
+      "args": [
+        "obj/brownian-motion"
+      ]
+    },
+    {
+      "predicate": "prop/stationary-increments",
+      "args": [
+        "obj/brownian-motion"
+      ]
+    },
+    {
+      "predicate": "prop/almost-surely-continuous-paths",
+      "args": [
+        "obj/brownian-motion"
+      ]
+    }
+  ],
+  "defines": [
+    "obj/brownian-motion",
+    "prop/independent-increments",
+    "prop/stationary-increments"
+  ],
+  "about": [
+    "obj/brownian-motion"
+  ],
+  "provenance": "agent"
+}

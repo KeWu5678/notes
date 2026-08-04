@@ -1,0 +1,11 @@
+{
+  "statement_id": "s/1.2.2",
+  "defines": [
+    "obj/generated-filtration"
+  ],
+  "about": [
+    "obj/generated-filtration",
+    "obj/stochastic-process"
+  ],
+  "provenance": "agent"
+}

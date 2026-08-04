@@ -1,0 +1,21 @@
+{
+  "statement_id": "ex/4",
+  "concludes": [
+    {
+      "predicate": "prop/progressively-measurable",
+      "given": [
+        "prop/measurable"
+      ],
+      "negated": true
+    },
+    {
+      "predicate": "prop/measurable",
+      "given": [
+        "prop/adapted"
+      ],
+      "negated": true
+    }
+  ],
+  "note": "Converse of 1.1.8, both parts.",
+  "provenance": "agent"
+}

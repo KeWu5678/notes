@@ -18,12 +18,16 @@
 # Estimation approch
 ## A. Double Machine Learning
 ### modelling: Partial linear model
-$$  Y = D \cdot \theta_0 + g_0(X) + \epsilon$$
-$$  D = m_0(X) + V$$ 
+$$
+Y = D \cdot \theta_0 + g_0(X) + \epsilon
+$$
+$$
+D = m_0(X) + V
+$$
 
 Estimator: 
-- $ g_0(X)$: baseline outcome
-- $ m_0(X), V$: the treatment assignment
+- $g_0(X)$: baseline outcome
+- $m_0(X), V$: the treatment assignment
 - $\theta_0$: treatment effect
  
 We need learners for two nuisance functions:
@@ -49,12 +53,10 @@ This is the "bad control" / near-instrument depletion problem.
 
 Rule: include features that are confounders (affect both D and Y). Avoid features that strongly predict D without affecting Y — they only erode identification.
 
-┌────────────────────┬──────────────────────────┬──────────────────────────┐
-│      Concern       │     ml_l (predicts Y)    │     ml_m (predicts D)    │
-├────────────────────┼──────────────────────────┼──────────────────────────┤
-│ Better predictions │ Lower bias in theta_hat  │ Lower bias in theta_hat  │
-│ Too many features  │ Only overfitting risk    │ Shrinks Var(V) -> wide CI│
-└────────────────────┴──────────────────────────┴──────────────────────────┘
+| Concern | ml_l (predicts Y) | ml_m (predicts D) |
+| --- | --- | --- |
+| Better predictions | Lower bias in theta_hat | Lower bias in theta_hat |
+| Too many features | Only overfitting risk | Shrinks Var(V) -> wide CI |
 
 ### model selection & cross fitting
 

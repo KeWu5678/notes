@@ -1,0 +1,31 @@
+{
+  "statement_id": "ex/13",
+  "concludes": [
+    {
+      "predicate": "prop/converges-in-l1",
+      "given": [
+        "prop/uniformly-integrable",
+        "prop/martingale",
+        "prop/right-continuous-paths"
+      ]
+    },
+    {
+      "predicate": "prop/uniformly-integrable",
+      "given": [
+        "prop/converges-in-l1",
+        "prop/martingale",
+        "prop/right-continuous-paths"
+      ]
+    },
+    {
+      "predicate": "prop/closed",
+      "given": [
+        "prop/uniformly-integrable",
+        "prop/martingale",
+        "prop/right-continuous-paths"
+      ]
+    }
+  ],
+  "note": "Four equivalent conditions for a right-continuous martingale; the fourth is closedness by a terminal variable.",
+  "provenance": "agent"
+}

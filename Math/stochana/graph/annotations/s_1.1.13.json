@@ -1,0 +1,70 @@
+{
+  "statement_id": "s/1.1.13",
+  "concludes": [
+    {
+      "predicate": "prop/starts-at-zero",
+      "args": [
+        "obj/poisson-process"
+      ]
+    },
+    {
+      "predicate": "prop/cadlag",
+      "args": [
+        "obj/poisson-process"
+      ]
+    },
+    {
+      "predicate": "prop/independent-increments",
+      "args": [
+        "obj/poisson-process"
+      ]
+    },
+    {
+      "predicate": "prop/poisson-increments",
+      "args": [
+        "obj/poisson-process"
+      ]
+    },
+    {
+      "predicate": "prop/starts-at-zero",
+      "args": [
+        "obj/levy-process"
+      ]
+    },
+    {
+      "predicate": "prop/cadlag",
+      "args": [
+        "obj/levy-process"
+      ]
+    },
+    {
+      "predicate": "prop/independent-increments",
+      "args": [
+        "obj/levy-process"
+      ]
+    },
+    {
+      "predicate": "prop/stationary-increments",
+      "args": [
+        "obj/levy-process"
+      ]
+    },
+    {
+      "predicate": "prop/stochastically-continuous",
+      "args": [
+        "obj/levy-process"
+      ]
+    }
+  ],
+  "defines": [
+    "obj/poisson-process",
+    "obj/levy-process",
+    "prop/poisson-increments",
+    "prop/stochastically-continuous"
+  ],
+  "about": [
+    "obj/poisson-process",
+    "obj/levy-process"
+  ],
+  "provenance": "agent"
+}

@@ -1,0 +1,13 @@
+{
+  "statement_id": "ex/3",
+  "requires": [
+    "prop/progressively-measurable"
+  ],
+  "concludes": [
+    {
+      "predicate": "prop/progressively-measurable"
+    }
+  ],
+  "note": "The running integral of a progressive process is progressive; the hypothesis and conclusion share a predicate, so no edge is projected.",
+  "provenance": "agent"
+}

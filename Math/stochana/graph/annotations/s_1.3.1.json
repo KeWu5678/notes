@@ -1,0 +1,28 @@
+{
+  "statement_id": "s/1.3.1",
+  "concludes": [
+    {
+      "predicate": "prop/adapted",
+      "given": [
+        "prop/martingale"
+      ]
+    },
+    {
+      "predicate": "prop/integrable",
+      "given": [
+        "prop/martingale"
+      ]
+    }
+  ],
+  "defines": [
+    "prop/martingale",
+    "prop/sub-martingale",
+    "prop/super-martingale"
+  ],
+  "about": [
+    "obj/stochastic-process",
+    "obj/filtration"
+  ],
+  "note": "Adaptedness and integrability are part of the definition, so they follow from being a martingale unconditionally.",
+  "provenance": "agent"
+}

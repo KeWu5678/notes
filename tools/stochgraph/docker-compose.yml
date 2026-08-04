@@ -1,0 +1,26 @@
+# Neo4j as a derived index over Math/stochana/graph/.
+#
+# Nothing here is a source of truth: the database is dropped and rebuilt from the
+# vault files by `make load`. Its data directory is gitignored on purpose — if it
+# is lost, rebuild it.
+services:
+  neo4j:
+    image: neo4j:5-community
+    container_name: stochgraph-neo4j
+    ports:
+      - "7474:7474"   # Browser
+      - "7687:7687"   # Bolt
+    environment:
+      NEO4J_AUTH: neo4j/stochgraph
+      # The graph is a few hundred nodes; these are small on purpose.
+      NEO4J_server_memory_heap_max__size: 512M
+      NEO4J_server_memory_pagecache_size: 256M
+    volumes:
+      - ./.neo4j/data:/data
+      - ./.neo4j/import:/var/lib/neo4j/import
+      - ../../Math/stochana/graph:/graph:ro
+    healthcheck:
+      test: ["CMD-SHELL", "cypher-shell -u neo4j -p stochgraph 'RETURN 1' || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 20

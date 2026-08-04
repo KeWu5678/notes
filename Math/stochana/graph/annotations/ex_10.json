@@ -1,0 +1,17 @@
+{
+  "statement_id": "ex/10",
+  "requires": [
+    "prop/super-martingale",
+    "prop/right-continuous-paths"
+  ],
+  "concludes": [
+    {
+      "predicate": "prop/left-limits",
+      "given": [
+        "prop/super-martingale",
+        "prop/right-continuous-paths"
+      ]
+    }
+  ],
+  "provenance": "agent"
+}

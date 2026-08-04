@@ -1,0 +1,13 @@
+[project]
+name = "stochgraph"
+version = "0.1.0"
+description = "Knowledge graph over the Stochastic Analysis lecture notes"
+requires-python = ">=3.10"
+dependencies = []          # stage 0 is stdlib + poppler (pdftotext, pdftohtml)
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["stochgraph"]

@@ -1,0 +1,8 @@
+{
+  "statement_id": "s/1.3.10",
+  "requires": [
+    "prop/super-martingale"
+  ],
+  "note": "Continuous-time up-crossing lemma; same shape as 1.3.9.",
+  "provenance": "agent"
+}

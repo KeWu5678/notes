@@ -1,0 +1,17 @@
+{
+  "statement_id": "s/1.3.17",
+  "requires": [
+    "prop/super-martingale"
+  ],
+  "concludes": [
+    {
+      "predicate": "prop/uniformly-integrable",
+      "given": [
+        "prop/super-martingale",
+        "prop/backwards-super-martingale"
+      ]
+    }
+  ],
+  "note": "The backwards super-martingale along a decreasing sequence is uniformly integrable.",
+  "provenance": "agent"
+}

@@ -1,0 +1,8 @@
+{
+  "statement_id": "s/1.1.6",
+  "defines": [
+    "obj/filtration",
+    "obj/filtered-probability-space"
+  ],
+  "provenance": "agent"
+}

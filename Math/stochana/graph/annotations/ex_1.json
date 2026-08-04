@@ -1,0 +1,21 @@
+{
+  "statement_id": "ex/1",
+  "concludes": [
+    {
+      "predicate": "rel/indistinguishable",
+      "given": [
+        "rel/modification"
+      ],
+      "negated": true
+    },
+    {
+      "predicate": "rel/modification",
+      "given": [
+        "rel/same-fdd"
+      ],
+      "negated": true
+    }
+  ],
+  "note": "Converse of 1.1.3, both parts.",
+  "provenance": "agent"
+}

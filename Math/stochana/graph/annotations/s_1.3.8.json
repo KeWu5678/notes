@@ -1,0 +1,31 @@
+{
+  "statement_id": "s/1.3.8",
+  "concludes": [
+    {
+      "predicate": "prop/converges-almost-surely",
+      "given": [
+        "prop/martingale",
+        "prop/right-continuous-paths",
+        "prop/lp-bounded"
+      ]
+    },
+    {
+      "predicate": "prop/converges-in-lp",
+      "given": [
+        "prop/martingale",
+        "prop/right-continuous-paths",
+        "prop/lp-bounded"
+      ]
+    },
+    {
+      "predicate": "prop/converges-almost-surely",
+      "given": [
+        "prop/martingale",
+        "prop/continuous",
+        "prop/l1-bounded"
+      ]
+    }
+  ],
+  "note": "Martingale convergence. For p = 1 only a.s. convergence holds, and only under continuity — recorded as the third, separate implication.",
+  "provenance": "agent"
+}

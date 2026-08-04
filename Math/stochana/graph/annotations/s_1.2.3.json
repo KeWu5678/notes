@@ -1,0 +1,13 @@
+{
+  "statement_id": "s/1.2.3",
+  "defines": [
+    "prop/stopping-time",
+    "prop/optional-time",
+    "obj/stopped-sigma-field"
+  ],
+  "about": [
+    "obj/filtration",
+    "obj/stopped-sigma-field"
+  ],
+  "provenance": "agent"
+}

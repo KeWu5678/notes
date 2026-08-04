@@ -1,0 +1,17 @@
+{
+  "statement_id": "s/1.2.5",
+  "requires": [
+    "prop/stopping-time",
+    "prop/optional-time"
+  ],
+  "concludes": [
+    {
+      "predicate": "prop/optional-time",
+      "given": [
+        "prop/stopping-time"
+      ]
+    }
+  ],
+  "note": "Closure properties of stopping and optional times under sum, min, max, inf, sup, limsup, liminf. Closure under an operation is a statement about a constructed object and is not projected.",
+  "provenance": "agent"
+}

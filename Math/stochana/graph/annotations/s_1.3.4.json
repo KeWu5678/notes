@@ -1,0 +1,20 @@
+{
+  "statement_id": "s/1.3.4",
+  "concludes": [
+    {
+      "predicate": "prop/locally-bounded-paths",
+      "given": [
+        "prop/martingale",
+        "prop/right-continuous-paths"
+      ]
+    },
+    {
+      "predicate": "prop/locally-bounded-paths",
+      "given": [
+        "prop/sub-martingale",
+        "prop/right-continuous-paths"
+      ]
+    }
+  ],
+  "provenance": "agent"
+}

@@ -1,0 +1,11 @@
+{
+  "statement_id": "s/1.1.5",
+  "defines": [
+    "prop/measurable"
+  ],
+  "about": [
+    "obj/stochastic-process",
+    "obj/probability-space"
+  ],
+  "provenance": "agent"
+}

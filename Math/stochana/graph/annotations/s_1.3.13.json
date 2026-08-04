@@ -1,0 +1,19 @@
+{
+  "statement_id": "s/1.3.13",
+  "concludes": [
+    {
+      "predicate": "prop/one-sided-limits-as",
+      "given": [
+        "prop/super-martingale"
+      ]
+    }
+  ],
+  "defines": [
+    "prop/one-sided-limits-as"
+  ],
+  "about": [
+    "obj/stochastic-process"
+  ],
+  "note": "Stated as 'there is a set of measure one on which, for all t, both one-sided limits along the rationals exist and are finite' — the standard almost-sure idiom.",
+  "provenance": "agent"
+}

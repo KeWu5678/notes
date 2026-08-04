@@ -1,0 +1,19 @@
+{
+  "statement_id": "ex/9",
+  "requires": [
+    "prop/sub-martingale",
+    "prop/right-continuous-paths",
+    "prop/stopping-time"
+  ],
+  "concludes": [
+    {
+      "predicate": "prop/integrable",
+      "given": [
+        "prop/sub-martingale",
+        "prop/right-continuous-paths",
+        "prop/stopping-time"
+      ]
+    }
+  ],
+  "provenance": "agent"
+}

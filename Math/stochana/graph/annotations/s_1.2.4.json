@@ -1,0 +1,27 @@
+{
+  "statement_id": "s/1.2.4",
+  "concludes": [
+    {
+      "predicate": "prop/optional-time",
+      "given": [
+        "prop/adapted",
+        "prop/right-continuous-paths"
+      ]
+    },
+    {
+      "predicate": "prop/stopping-time",
+      "given": [
+        "prop/adapted",
+        "prop/continuous"
+      ]
+    }
+  ],
+  "defines": [
+    "obj/first-entrance-time"
+  ],
+  "about": [
+    "obj/first-entrance-time"
+  ],
+  "note": "Hypotheses on Γ (open / closed) are conditions on a set, not on the process, and have no encoding.",
+  "provenance": "agent"
+}

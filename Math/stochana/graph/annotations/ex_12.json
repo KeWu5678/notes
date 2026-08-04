@@ -1,0 +1,23 @@
+{
+  "statement_id": "ex/12",
+  "concludes": [
+    {
+      "predicate": "prop/converges-in-l1",
+      "given": [
+        "prop/uniformly-integrable",
+        "prop/sub-martingale",
+        "prop/right-continuous-paths"
+      ]
+    },
+    {
+      "predicate": "prop/uniformly-integrable",
+      "given": [
+        "prop/converges-in-l1",
+        "prop/sub-martingale",
+        "prop/right-continuous-paths"
+      ]
+    }
+  ],
+  "note": "Three equivalent conditions for a non-negative right-continuous sub-martingale.",
+  "provenance": "agent"
+}

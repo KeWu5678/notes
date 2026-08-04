@@ -1,0 +1,14 @@
+{
+  "statement_id": "s/1.3.11",
+  "concludes": [
+    {
+      "predicate": "prop/converges-almost-surely",
+      "given": [
+        "prop/sub-martingale",
+        "prop/right-continuous-paths"
+      ]
+    }
+  ],
+  "note": "Requires sup E(M_t^+) < ∞, a moment condition with no encoding.",
+  "provenance": "agent"
+}

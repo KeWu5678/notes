@@ -1,0 +1,20 @@
+{
+  "statement_id": "s/1.1.10",
+  "concludes": [
+    {
+      "predicate": "prop/progressively-measurable",
+      "given": [
+        "prop/adapted",
+        "prop/right-continuous-paths"
+      ]
+    },
+    {
+      "predicate": "prop/progressively-measurable",
+      "given": [
+        "prop/adapted",
+        "prop/left-continuous-paths"
+      ]
+    }
+  ],
+  "provenance": "agent"
+}

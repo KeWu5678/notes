@@ -1,0 +1,12 @@
+{
+  "statement_id": "s/1.1.11",
+  "defines": [
+    "prop/continuous",
+    "prop/cadlag",
+    "prop/caglad"
+  ],
+  "about": [
+    "obj/stochastic-process"
+  ],
+  "provenance": "agent"
+}

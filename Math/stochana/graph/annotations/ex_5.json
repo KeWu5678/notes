@@ -1,0 +1,12 @@
+{
+  "statement_id": "ex/5",
+  "concludes": [
+    {
+      "predicate": "prop/countably-many-jumps",
+      "given": [
+        "prop/cadlag"
+      ]
+    }
+  ],
+  "provenance": "agent"
+}
