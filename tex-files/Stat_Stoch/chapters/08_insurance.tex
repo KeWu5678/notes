@@ -1,0 +1,132 @@
+\chapter[Insurance]{Insurance Mathematics}
+\section{Life Insurance}
+We start by defining the following notations
+\begin{enumerate}
+	\item $l_x$: probability of living person at the age of $x$.
+	\item ${}_t q_x$: probability of dying of a $x$-years old within $t$ years.
+	\item ${}_t p_x$: probability of living of a $x$-years old with $t$ years. 
+	\item $v$: technical interest rate
+\end{enumerate}
+
+$q^{aa}_x$: died as active
+
+\begin{definition}[life expectancy]
+	$\mathbb{E}[T(x)]$ the expected remaining life a $x$-years old person. $T$ is the random variable denoting the remaining life. 
+\end{definition}
+
+\begin{definition}[the hazard rate]
+	The hazard rate $\mu_{x + t}$ describe the mortality of a given $x$-years old person died at $x + t$:
+	\begin{align*}
+		\mu_{x + t}:= \lim_{\Delta t \rightarrow 0} \frac{P(t \le T \le T + \Delta t|T \ge t) }{P(T \ge t) }
+	\end{align*}
+\end{definition}
+
+\begin{lemma}[Chapman-Kolmogorov in mortality]
+It holds
+\begin{align*}
+	{}_tp_x^r = \frac{l_{x + t}}{l_x}
+\end{align*}
+\end{lemma}
+\begin{proof}
+\end{proof}
+
+\begin{definition}[commutation value]
+The commutation value helps to calculate the present value of the future pension liability. It can be seen as weighted probability of survival.
+\begin{align*}
+	D_x^s := v^x l_x^s.
+\end{align*}
+Accordingly we defined the \textbf{discounted remaining life expectancy}
+\end{definition}
+
+
+\subsubsection{PV of the delayed pension and the  }
+Notation von Barwert berechnen: 
+
+\begin{enumerate}
+	\item $a_x^r$: x-years old, old-age pension, life long
+	\item ${}_{z - x} a_x^{a A}$ : x-years old, active to old-age pension at age $z$.   
+	\item $ a_{x, z - x\neg}^i$: x-years old, invalid to z. 
+	\item 
+\end{enumerate}
+
+
+
+\begin{lemma}[ewig annuity]
+	The present value of the lifelong old-age pension of the age $x$ can be calculated as 
+	\begin{align*}
+		a_x^r=  \frac{N_x^r}{D_x^r}
+	\end{align*}
+\end{lemma}
+\begin{proof}
+It holds
+\begin{align*}
+	a_x^r &= \sum_{t \ge 0} {}_tp_{x + t}^r \cdot v^t \\
+	& = \sum_{t \ge 0} \frac{l_{x + t}}{l_x} \cdot v^t \\
+	& = \sum_{ t \ge 0} \frac{l_{x + t} v^{x + t}}{l_x v_x} \\
+	& = \frac{N_x^r}{D_x^r}
+\end{align*}
+\end{proof}
+
+\begin{lemma}[aufgeschobene annuity]
+	The invalid pension follows the same formula. However, it is the finite sum since the invalid annuity stops at the age of retirement, i.e., 
+	\begin{align*}
+		a_x^i = \sum_{t = 0}^{Z - t - 1}
+	\end{align*}	
+\end{lemma}
+
+\begin{lemma}
+	Other calculations
+	\begin{enumerate}
+		\item ${}_{z - x} a_x^{iA} = ( 1- q_x^a - i_x)(1 - q_{x + 1}^a - i_{x + 1}) \dots (1 - q_{z - 1}^a - i_{z - 1}) \cdot v^{z - x} \cdot a_z^r$
+	\end{enumerate}
+\end{lemma}
+
+
+By pricing we established the PV of the insurance contracts at the moment. However, we need to assure the solvency is not jeopardised as the times marches. 
+
+
+
+\begin{lemma}[projected Unit Credit Method]
+	Denote 
+	\begin{enumerate}
+		\item $x_0$: age at the beginning of valuation
+		\item $k$: Entering data of the benefit
+		\item 
+	\end{enumerate}
+\end{lemma}
+
+\subsection{Valuation Methods}
+\subsubsection{Projected Unit Credit Method}
+\begin{definition}[Defined (Projected) Benefit Obligation by IFRS (GAAP)]
+Present Value of the pension plan at the reference data.
+\end{definition}
+
+
+\begin{proposition}[m/n degressiv method]
+	It is calculated as following 
+	\begin{enumerate}
+		\item Calculate the 
+	\end{enumerate}
+\end{proposition}
+
+
+
+\begin{definition}[covering capital]
+\end{definition}
+
+
+\begin{definition}[embedded value]
+\begin{align*}
+	EV = PVFP + ADNV
+\end{align*}
+the adjusted net asset value includes capital gains, tex deduction. 
+\end{definition}
+
+
+
+
+
+
+
+
+

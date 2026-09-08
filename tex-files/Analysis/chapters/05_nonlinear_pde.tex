@@ -1,0 +1,828 @@
+\chapter{Non-linear PDE}
+\section{Selected Examples}
+
+
+\section{The Fixed Point Theorem}
+\begin{theorem}
+Given $X$ a Banach space and $M \subset X$ \textbf{closed} and \textbf{convex}. If $T : M \rightarrow M$ is continuous, then $T$ admits at least one fixed point. 	
+\end{theorem}
+
+
+\subsection{Calculus of Variations}
+\begin{definition}[Null Lagrangian]
+	The Lagrangian is called \textbf{null-Lagrangian} if the corresponding \textbf{Euler-Lagrange function} is satisfied by all $C^2$-functions.
+\end{definition}
+
+
+\subsection{The Brouwer fixed point theorem}
+The first tool in the toolbox of fixed point theorem is the Brouwer fixed point theorem. It states that in the finite dimensional space, continuous map on a closed ball admits at least 1 fixed point. Although we aren't able to apply it directly in most of cases since the functional space is usually infinite dimensional, it provides a off-hand tool in constructing finite dimensional existence. 
+
+\begin{theorem}[Brouwer fixed point theorem(finite dimensional)]
+	Given a continuous function defined on a closed ball in the finite dimensional real space, the function admits \textbf{at least} one fixed point. \par 
+	Given $T: \bar{B_R(0)} \rightarrow \bar{B_R(0)}$ continuous with $B_R(0) \subset \mathbb{R}^m$, $T$ has at least one fixed point. 
+\end{theorem}
+\begin{remark}
+The result is wrong in the infinite dimensional case. 	
+\end{remark}
+
+\begin{lemma}[no-retraction principle]
+	There exists no continuous map $ w: B \rightarrow \partial B$, such that $w(x) = x$ for all $x \in \partial B$. 
+\end{lemma}
+
+
+
+\subsection{The Schrauder Fixed Point Theorem}
+When we prove existence with fixed point theorem in the infinite dimensional case, Brouwer is no longer applicable. 
+
+\subsubsection{Nonlinear compact operator }
+\begin{proposition}[Approximation of compact operator by finite dimensional operator]
+Given $M$ bounded $T: M \rightarrow Y$, then the followings are equivalent
+\begin{enumerate}
+	\item T is compact
+	\item $\forall n \in \mathbb{N} \exists T_n : M \rightarrow Y: T_n(M) \subset Y_n$ with $\dim (Y_n) < \infty$, $T_n \overset{uniform}{\rightarrow} T$. 
+\end{enumerate}
+\end{proposition}
+\begin{proof}\quad\\
+\textbf{2)$\Rightarrow$ 1)}: \\
+\textbf{i).} $T$ is compact. By uniform convergence of the operator we have
+\begin{align*}
+	\forall \epsilon > 0: \sup_{x \in M} \|Tx - T_{n_0}x \| \le \frac{\epsilon}{3} \quad \texttt{for $n_0$ sufficiently large}
+\end{align*}
+By the compactness of $T_{n_0}$ we have
+\begin{align*}
+	\forall \epsilon  \exists N \in \mathbb{N}: T_{n_0}(M) \subset \bigcup_{i = 1}^N B_{\frac{\epsilon}{3}} (x_i)
+\end{align*}
+therefore $\forall y \in M$
+\begin{align*}
+	\|T( y) - T(x_i)\|_Y \le \|T(y) - T_{n_0} (y)\|_Y + \|T_{n_0}(y) - T_{n_0}(x_i)\|_Y + \|T_{n_0}(x_i) - T(x_i)\|_Y
+\end{align*}
+on the RHS the first and the third are $\le \frac{\epsilon}{3}$ by uniform convergence and the second by the compactness of $T_{n_0}$. \\
+\textbf{2)$ \Rightarrow$ 1)} 
+\end{proof}
+
+
+
+\begin{theorem}[Schrauder Version I]
+	Given $X$ a Banach space, $M \subset X$ convex and compact, $T: M \rightarrow M$ continuous. Then $T$ admits a fixed point. 
+\end{theorem}
+
+\begin{lemma}[Mazur's lemma]
+	Convex hull of precompact set is compact. 
+\end{lemma}
+
+\begin{theorem}[Schrauder Version II]
+	Given $X$ a Banach space, $M \subset X$ convex, closed and bounded. The map $T: M \rightarrow M$ is compact. Then $T$ admits a fixed point. 
+\end{theorem}
+
+\subsection{An application to ODEs}
+\begin{theorem}[Peano]
+Given $(t_0, y_0) \in \mathbb{R} \times \mathbb{R}^n$, $Q:= \{(t, y): |t - t_0| \le a, |y - y_0| \le b\}$, let $f: Q \rightarrow \mathbb{R}^n$ be continuous and uniformly bounded, i.e., $|f(t, y)| \le K$ for some $K \in \mathbb{R}$. Then the integral equation
+\begin{align*}
+	y(t):= y_0 + \int_{t_0}^t f(s, y(s)) ds 
+\end{align*}
+admit a local solution.	
+\end{theorem}
+
+\begin{corollary}[Peano existence theorem in ODE]
+	
+\end{corollary}
+
+
+\subsection{Application of Schrauder}
+
+
+
+\section{Nonlinear Poisson Problems}
+\begin{lemma}[Estimate of the inverse Dirichlet Laplacian]
+Consider the bounded linear map on $\Omega$ with $\partial\Omega \in C^{1, 1}$
+\begin{align*}
+	\Delta_D: H^1_0(\Omega) \cap H^2(\Omega) &\rightarrow L^2\\
+	u &\mapsto -\Delta u
+\end{align*}
+The operator is an isomorphism therefore we may define the inverse
+\begin{align*}
+	A_D: L^2 &\rightarrow H^1_0 \cap H^2\\
+	g &\mapsto (-\Delta_D)^{-1}(g)
+\end{align*}
+and we have the estimate
+\begin{align*}
+	\|A_D\|_{H^2} \le \|g\|_{L^2}\\
+	\|A_D\|_{H^1_0} \le \|g\|_{L^2}
+\end{align*}
+\end{lemma}
+
+
+\subsection{Solvability with Schauder}
+The PDE under consideration is the \textbf{nonlinear Poisson equation}.       
+\begin{align*} 
+\textbf{(NP)}\qquad
+		- \Delta u = f(u) &\texttt{ on } \Omega\\
+		u  = 0 &\texttt{ on } \partial \Omega 
+\end{align*}           
+\begin{theorem}[Well-posedness of the nonlinear Poisson Problem]
+	Observe the non-linear elliptic system:
+	\begin{align*}
+		- \Delta u = f(u) &\texttt{ on } \Omega\\
+		u  = 0 &\texttt{ on } \partial \Omega 
+	\end{align*}
+	If $f \in L^\infty(\Omega) \cap C^0(\Omega)$, then the system admits a weak solution $u \in H^1(\Omega)$. Moreover, if $\partial\Omega \in C^{1, 1}$, $u \in H^2(\Omega)$.
+\end{theorem}
+\begin{proof}
+Define the map:
+\begin{align*}
+	T: L^2(\Omega) \rightarrow L^2(\Omega), u \mapsto A_D(f(u))
+\end{align*}
+we would like to apply the Schrauder to see that it admits a fixed point. 
+	\quad\\
+	\textbf{Step1:  $T$ is well-defined}: By the continuity of $f$ we know
+	\begin{align*}
+		\forall u \in L^2: f(u) \in L^\infty \in L^2
+	\end{align*}
+	Moreover we know the inverse Laplace operator satisfies
+	\begin{align*}
+		 \|A_D(f(u))\|_{L^2} \le \|A_D(f(u))\|_{H^1_0} \le \|f(u)\|_{L^2} < \infty
+	\end{align*}
+	since $f \in L^\infty$. Therefore $T$ is well-defined.\\
+	\textbf{Step2: $\exists R > 0: T(B_R(0)) \subset \overline{B_R(0)}$, moreover, $B_R(0)$ is precaompact in $H^1_0(\Omega)$. } Observe $\forall u \in L^2(\Omega):$
+	\begin{align*}
+		\|T(f(u))\|_{L^2} \le \|A_D(\|f\|_\infty)\|_{L^2} 
+		\le \|f\|_\infty \|A_D(1)\|_{L^2} \le \|f\|_\infty C_p |\Omega|^{\frac{1}{2}}: = R
+	\end{align*}
+	Therefore we have 
+	\begin{align*}
+		T(B_R(0)) \subset B_R(0)
+	\end{align*}
+	By Rellich we know $B_R(0)$ relative compact in $H^1_0(\Omega)$. 
+	therefore we know $T(B_R(0))$ is precompact.
+	\\
+	\textbf{Step3: $T$ is continuous.} Given $u_n \rightarrow u$ in $L^2$, we know up to a subsequence 
+	\begin{align*}
+		u_k  \overset{a.s.}{\rightarrow} u
+	\end{align*}
+	observe
+	\begin{align*}
+		\|T(u_k) - T(u)\|_{L^2} 
+		\overset{\texttt{linearity of $A_D$}}{=} \|A_D(f(u) - f(u_k))\|_{L^2} 
+		\overset{lemma}{\le} \|f(u_k) - f(u)\|_{L^2} 
+		\overset{\texttt{DCT and $f \in C^0$}}{\rightarrow} 0
+	\end{align*}
+	\\
+	In conclusion, $T$ is compact on a convex and compact ball $B_R(0)$ in $H^1_0$, therefore $T$ admits a fixed point and the elliptic system admits a solution.
+\end{proof}
+
+
+\subsection{A priori estimate with weak maximum principle}
+\begin{definition}
+	for $u \in W^{1, p}(\Omega)$, we say $u \ge 0$ on $\partial\Omega$ if $u_ \in W^{1, p}_0(\Omega)$.
+\end{definition}
+
+\begin{proposition}
+	Let $u \in H^1(\Omega)$ and assume
+	\begin{enumerate}
+		\item $u \ge 0$ on $\partial\Omega$
+		\item $-\Delta u \ge 0$ in the weak sense, i.e., 
+		\begin{align*}
+			\int_\Omega \nabla u \cdot \nabla v dx \ge 0 \qquad \forall v \in H^1_0(\Omega)
+		\end{align*}
+		Then we have $u \ge 0$ a.e.
+	\end{enumerate}
+\end{proposition}
+
+\begin{example}[Exponential diffusion]
+Observe the system
+\begin{align*}
+	-\Delta u = e^{-u} &\texttt{ in } \Omega\\
+	u = 0 &\texttt{ on } \partial \Omega
+\end{align*}
+Notice we have on $\partial\Omega$ $u \ge 0$ and the weak form 
+\begin{align*}
+	 \int_\Omega \nabla u \nabla \varphi = - \int_\Omega \Delta u \varphi  \ge 0 \quad \forall \varphi \in H^1_0(\Omega) \ge 0 
+\end{align*}
+By the weak maximum principle we have
+\begin{align*}
+	u \ge 0 \texttt{ a.e. in  } \Omega 
+\end{align*}
+we may truncate the diffusion term $f$ by
+\begin{align*}
+	\tilde{f} &= f \quad u \ge 0\\
+	&= 1 \quad u \le 0 
+\end{align*}
+we have $f \in L^\infty \cap C^0(\mathbb{R})$. By the theorem in the last chapter we get a solution
+\begin{align*}
+	u \in H^1_0(\Omega)
+\end{align*}
+Moreover, the solution is unique since $f$ is non-increasing. Assuming $u_1, u_2 \in H^1_0(\Omega)$ are 2 solution of the diffusion equation, by linearity $u_1 - u_2$ is also a solution, we have
+\begin{align*}
+	\int_\Omega |\nabla(u_1 - u_2)|^2 dx = \int_\Omega (f(u_1) - f(u_2))(u_1 - u_2) \le 0 
+\end{align*}
+\end{example}
+
+
+
+
+
+\section{Variational Inequalities \& Monotone Operators}
+Differentiation in Banach space. 
+\subsection{Variational Inequality}
+\textbf{Motivation}:
+\begin{align*}
+	M:= \{v \in H^1_0(0, 1), v(0) = a, v(1) = b \}
+\end{align*}
+define the functional 
+\begin{align*}
+	I(v) = \int_I \sqrt{1 + v'} dx 
+\end{align*}
+want to find
+\begin{align*}
+	\min_{ v \in M} I(v) 
+\end{align*}
+Let $\varphi \in H^1_0(0, 1)$, we know $u$ is a minimiser of $I(v)$ if 
+\begin{align*}
+	\frac{d}{d\epsilon} I(u + \epsilon \varphi)|_{ \epsilon = 0}   = \int_I \bigg(\sqrt{1 + |u'|^2} \bigg)^{-1} u' \varphi' dx := \langle F(u), \varphi \rangle  
+\end{align*}
+
+\begin{remark}
+If $u \in H^2(0, 1)$, then we have
+\begin{align*}
+	-\int_I (\frac{u'}{\sqrt{1 + |u'|^2}})' \varphi = 0 \quad \varphi \varphi \in H_0^1(\Omega)
+\end{align*}
+therefore we know $u'$ is constant and the minimal curve is a straight line. 	
+\end{remark}
+The \textbf{Ellipticity} is clear in this case.  
+
+\quad\\
+\textbf{The obstacle problem:} Let $h \in C^1(I, \mathbb{R})$ we define
+\begin{align*}
+	M:= \{v \in H^1_0(0, 1), v(0) = a, v(1) = b, v \ge h \}
+\end{align*}
+The Gateaux derivative cannot be expected anymore, on the other hand we observe the variational inequality:
+\begin{align*}
+	\langle F(u), u - v \rangle  \le 0 \qquad \forall v \in M 
+\end{align*}
+on a closed and convex set $M$. 
+
+
+
+\quad\\
+\textbf{General setting}
+\begin{enumerate}
+	\item $X$ is reflexive, separable Banach space with the dual space $X^*$. 
+	\item $M \subset X$ closed, non-empty, convex. 
+\end{enumerate}
+
+consider the variational problem:
+\begin{align*}
+	I(v) = \int_a^b L( \nabla u, u, x) dt 
+\end{align*}
+
+The most simple example would be the shortest curve between 2 points
+\begin{align*}
+	I(v) := \int_a^b \sqrt{1 + u'(x)} dx  
+\end{align*}
+and consider the minimisation problem:
+\begin{align*}
+	\min_{v \in M} I(v) \qquad M := \{ v \in H^1([0, 1]) | v(0) = a, v(1) = b \}
+\end{align*}
+$M$ is well-defined by the classical embedding result.
+
+\quad\\
+\textbf{Assumptions on $F$:}\\
+\textbf{F1:} $F$ maps bounded set of in $X$ to bounded set in $X^*$.\\
+\textbf{F2:} Coercivity: There exists $u_0 \in M: \langle F(u), u - u_0 \rangle / \|u - u_0\| \rightarrow \infty$ as $\|u \| \rightarrow \infty$. \\
+\textbf{F3:} Given $u_n \rightharpoonup u, F(u_n) \rightharpoonup u^*$, we have
+\begin{align*}
+	\langle u^*, u \rangle \le \liminf_{n \rightarrow } \langle F(u_n), u_n \rangle 
+\end{align*}
+Furthermore, if $\langle u^*, u \rangle = \liminf \langle F(u_n), u_n \rangle$, it holds
+\begin{align*}
+	\langle F(u) - u^*, u - v \rangle \le 0  \quad \forall v \in M
+\end{align*}
+\begin{remark}
+\quad\\
+\textbf{1).} The coercivity condition endowed $u$ with boundary growth condition.\\
+\textbf{2).} \textbf{F3}) gives an upper bound for the variational inequality. \\
+\textbf{3).} For \textbf{F2} it is essential to have $u_0 \in M$.
+\end{remark}
+
+\begin{example}[Counterexample for the coercivity condition]
+\end{example}
+
+
+
+\begin{theorem}
+	If the operator $F$ satisfies \textbf{(F1) - (F3)}, then $F$ satisfies the variational inequality
+	\begin{align*}
+		\langle F(u), u - v \rangle \le 0
+	\end{align*} 
+\end{theorem}
+\begin{proof}
+	By Galerkin method. 
+\end{proof}
+
+
+\subsection{the Monotone Operators}
+\begin{definition}[The monotone operator]
+	An operator $A: M \rightarrow X^*$ is a \textbf{monotone operator} if 
+	\begin{enumerate}
+		\item $\langle A(x) - A(y), x - y \rangle \ge 0 \quad \forall x, y \in M$
+		\item \textbf{hemi-continuous:} $\forall w \in X \forall v, u \in M$:
+		\begin{align*}
+			t \mapsto \langle A(u + t(v - u)), w \rangle 
+		\end{align*}
+		is continuous on $[0, 1]$.
+		\item 
+	Moreover, the operator is \textbf{strictly monotone} if 
+	\begin{align*}
+		\langle A(u) - A(v), u - v \rangle > 0 \qquad \forall u, v \in M
+	\end{align*}
+	\textbf{strongly monotone} if 
+	\begin{align*}
+		\exists c_0 \forall u, v \in M : \langle A(u) - A(v), u - v \rangle \ge c_0 \|u - v \|^2 
+	\end{align*}
+	\end{enumerate}
+\end{definition}
+hemi-continuity can be seen as one-sided continuity. It ensure the cone property of the monotone operator. As we have seen in the case of the operator $F$, by taking the convex combination of $u$ and $v$ the non-positivity of the operator can be extended from the cone corner $u$ to the direction of $v$. The hemi-continuity has the same function to preserve the cone property w.r.t. the nonlinearity $A$. 
+
+\begin{lemma}[Minty]
+	Given a monotone operator $F$, for $u \in M$ and $u^* \in X^*$, the following conditions are equivalent
+	\begin{enumerate}
+		\item $ \langle F(u) - u^*, u - v \rangle \le 0 \quad \forall v \in M$
+		\item $\langle F(v) - u^*, u - v \rangle \le 0 \quad \forall v \in  M$.  
+	\end{enumerate}
+\end{lemma}
+\begin{proof}
+	\quad\\
+	$\Rightarrow$: 
+	\begin{align*}
+		\langle F(v) - u^*, u - v \rangle = 
+		\langle F(u) - u^*, u - v \rangle - \langle F(u) - F(v), u - v \rangle \le 0
+	\end{align*}
+	$\Leftarrow$: Define $v_\epsilon:= u + \epsilon( v - u)$ for $\epsilon \in [0, 1]$,  we know by assumption
+	\begin{align*}
+	 	0 \ge \langle F(v_\epsilon) - u^*, u - v_\epsilon \rangle = \langle F(v_\epsilon) - u^*, \epsilon (u - v) \rangle 
+	 	\Rightarrow \langle F(v_\epsilon) -  u^*, u - v\rangle \le 0
+	\end{align*}
+	Letting $\epsilon \rightarrow 0$ we have by the hemi-continuity:
+	\begin{align*}
+		\langle F(u) - u^*, u - v \rangle \le 0
+	\end{align*}
+\end{proof}
+
+\begin{lemma}
+	Given a monotone operator $A$ we have
+	\begin{enumerate}
+		\item $A$ satisfies the lower semi-continuous condition \textbf{(F3)}.  
+		\item If the operator is strictly monotone, then the variational inequality
+				\begin{align*}
+			\langle F(u), u - v \rangle \le 0 \quad \forall v \in M
+		\end{align*}
+		exists at most one solution. 
+		\item If the operator is strongly monotone, then the coercivity condition holds w.r.t. all $u_0 \in C$
+	\end{enumerate}
+\end{lemma}
+\begin{proof}
+\quad\\
+\textbf{1)}: Observe
+\begin{align*}
+	&0 \le \langle F(u) - F(u_n), u - u_n \rangle = \langle F(u), u - u_n \rangle + \langle F(u_n), u_n \rangle - \langle F(u_n), u \rangle \\
+	&\Rightarrow \langle F(u_n) , u \rangle \le \langle F(u_n), u_n \rangle \\
+	&\Rightarrow \langle u^*, u \rangle \le \liminf_{n \rightarrow \infty} \langle F(u_n), u_n \rangle \rightharpoonup \langle u^*, u_n \rangle \rightharpoonup \langle u^*, u \rangle 
+\end{align*}
+therefore
+\begin{align*}
+	\langle u^*, u \rangle = \liminf \langle F(u_n), u_n \rangle 
+\end{align*}
+Furthermore, by monotonicity
+\begin{align*}
+	&0 \le \langle F(u_n) - F(v), u_n - v \rangle = \langle F(u_n), u_n \rangle - \langle F(u_n), v \rangle  - \langle F(v), u_n - v \rangle\\
+	&\Rightarrow
+	\langle F(v), u_n - v \rangle - \langle F(u_n), u_n - v\rangle \le \langle F(u_n), u_n \rangle - \langle F(u_n), u_n \rangle\\
+	&\Rightarrow 
+	\langle F(v) - u^*,  u - v \rangle \le \liminf \langle F(u_n), u_n \rangle - \langle u^*, u \rangle  = 0
+\end{align*}
+By the Minty's trick we have
+\begin{align*}
+	\langle F(u) - u^*, u - v \rangle \le 0 \qquad \forall v \in M
+\end{align*}
+\textbf{2):} Suppose $u_1, u_2$ satisfies $\langle F(u), u - v \rangle \le 0 \quad \forall v \in M$, then  we have
+\begin{align*}
+	\langle F(u_1) - F(u_2), u_1 - u_2 \rangle \le 0
+\end{align*}
+which contradicts the strict monotonicity. \\
+\textbf{3)}
+\begin{align*}
+	\langle F(u_0), u_0 - u \rangle \slash \|u_0 - u\|
+	&= \langle F(u_0) - F(u), u_0 - u \rangle  \slash \|u - u_0 \| + \langle F(u), u_0 - u \rangle \slash \|u - u_0\|\\
+	&\ge c_0 \|u - u_0\| + C
+\end{align*}
+where $c_0$ is the strong monotone constant of $F$ and $C$ depends on the operator norm of $F(u)$. We can conclude that
+\begin{align*}
+	\frac{\langle F(u_0), u_0 - u \rangle }{\|u_0 - u\|} \overset{\|u_0 -u\| \rightarrow \infty}{\longrightarrow} \infty
+\end{align*}
+\end{proof}
+
+
+\subsection{Proof of the existence theorem}
+\begin{proposition}
+Given $X$ a Hilbert space, if $\dim X < \infty$, $F$ satisfies \textbf{(F1)} - \textbf{(F3)}, then there exists $u \in M$ with
+	\begin{align*}
+		\langle F(u), u - v \rangle \le 0 \quad \forall v \in M
+	\end{align*} 
+\end{proposition}
+\begin{proof}
+\quad\\
+\textbf{Step 1: In a neighbourhood $B_\epsilon M$ of $M$:}\\
+\textbf{Step 2: On bounded $M$:}\\
+\textbf{Step 3: Unbounded $M$:}\\
+\textbf{Step 1:}\\
+Since $X$ a Hilbert space and $M$ a bounded convex closed set, we define
+\begin{align*}
+	\tilde{F}: M \rightarrow X^*,\quad u \mapsto \langle R^{-1} F(u), \cdot \rangle 
+\end{align*}
+where $R$ the Riesz map. By the approximation theorem in the Hilbert space we have for $w \in X$
+\begin{align*}
+	\langle w - P_M w,  v - P_M w \rangle \le 0 \quad \forall v \in M
+\end{align*}
+Note if we have $P_M w = u \in M$ and $w = u - \tilde{F}(u) $, we would be able to conclude the variational inequality. To prove that, observe the 2 equation above defines a fixed point map:
+\begin{align*}
+	G: M \rightarrow M, \quad G =  P_M(I - \tilde{F}) 
+\end{align*} 
+If $G$ admits a fixed point, then we have
+\begin{align*}
+	&G(u) = u\\
+	&\Leftrightarrow
+	u = P_M u - P_M\tilde{F}(u)\\
+	& \Rightarrow P_M w = u, \quad w - P_M w = - \tilde{F}(u)
+\end{align*}
+Now we prove the fixed point exists by Brouwer, we need to prove $F$ therefore $G$ is continuous: By the boundedness of $M$ $u_n$ is bounded, by \textbf{(F1)} $F(u_n)$ is bounded in $X$.\\
+$\Rightarrow$: $F(u_n)$ admits a convergent subsequence $u_k$ since $\dim X < \infty$, $F(u_k) \rightarrow u^*$. $u^*$ is a limit therefore also a weak lower limit. \\
+$\Rightarrow$: $\langle F(u) - u^*, u - v \rangle \le 0 \quad \forall v \in B_\epsilon M$ by \textbf{(F3)}. \\
+$\Rightarrow$: Choose $v = u \pm \epsilon v$ we have $F(u) = u^*$
+$\Rightarrow$: $F$ is continuous hence $G$. \\
+\textbf{Step 2:} Define $M_\delta := M \backslash B_\delta(\partial M)$, since $\dim X < \infty$, by the boundedness of $M$, there exists a convergent subsequence for $u_{\delta_k}$ in $X$, $F(u_{\delta_k})$ in $X^*$:
+\begin{align*}
+	\texttt{as }\delta_k \downarrow 0, \quad u_{\delta_k} \rightarrow u \texttt{ in } X, \quad
+	F(u_{\delta_k}) \rightarrow u^* \texttt{ in } X^* 
+\end{align*}
+Furthermore, by step 1 we have
+\begin{align*}
+	\langle F(u_{\delta_k}), u_{\delta_k} - v \rangle \le 0 \quad \forall v \in M
+\end{align*}
+hence
+\begin{align*}
+	\langle u^*, u - v \rangle \leftarrow \langle F(u_{\delta_k}), u_{\delta_k} - v \rangle \le 0
+\end{align*}
+By the assumption \textbf{F3} we have
+\begin{align*}
+	\langle F(u), u - v\rangle \le \langle u^*, u - v \rangle \le 0
+\end{align*}
+\textbf{Step 3: }
+$\forall R \in \mathbb{N}$, define $M_R:= \{ v \in X: \|v\|_X \le R\}$, by step 2 we have
+\begin{align*}
+	\forall R  \exists u_R \in M_R: \langle F(u_R), u_R - v \rangle \le 0 \qquad \forall v \in M_R
+\end{align*}
+and by the coercivity we know for all $u_0$ there exists some $C_0$, such that
+\begin{align*}
+	\langle F(u), u - u_0 \rangle > 0  \quad \forall \|u \| \ge C_0
+\end{align*}
+choose any large $R \ge \max\{C_0, \|u_0\|\}$, in particular $u_0 \in M_R$, we know by the coercivity the $u_R$ we get by step 2 must satisfies
+\begin{align*}
+	\|u_R\| \le C_0
+\end{align*}
+$\forall v \in M$: by Minty's trick contracting $v \in M$ and make  $v_\epsilon = (1 - \epsilon) u + \epsilon v \in M \cap B_\epsilon(u_R) $, in particular $v_\epsilon \in M_R$ for $\epsilon$ small enough, we have
+\begin{align*}
+	0 \ge \langle F(u_R), u_R - v_\epsilon \rangle = \epsilon \langle F(u_R), u_R - v \rangle \quad \forall v \in M
+\end{align*} 
+\end{proof}
+
+\begin{theorem}
+	Given $X$ a Hilbert space and $F: M \rightarrow X^*$ satisfies \textbf{F1-F3}. The variational inequality admits a solution. 
+\end{theorem}
+\begin{proof}
+	By Galerkin approximation. The setup: a nested sequence of subspace $X_n \subset X_{n + 1} \subset X$. $u_0 \in X_1$, $\bigcup_n X_n = X, M_n = M \cap X_n$. The construction is possible since $X$ is separable. \\
+	Define:
+	\begin{align*}
+		F_n: M_n \rightarrow X_n^*, \quad \langle F_n(u), v \rangle = \langle F(u), v \rangle \qquad \forall v \in X_n
+	\end{align*}
+	\textbf{1):}Verify that $F_n$ satisfies the assumption \textbf{F1-3}.
+	\begin{enumerate}
+		\item $\|F_n\|_{X^*} \le \|F\|_{X^*}$, hence $F_n$ must also map the bounded set to bounded set. 
+		\item $u_0 \in X_1 \Rightarrow u_0 \in M_n$.
+		\item Suppose $u_n \rightharpoonup u, F_n(u_n) \rightharpoonup u^*$, since $\dim X < \infty$ the weak convergence implies strong convergence, we have
+		\begin{align*}
+			\langle F_n(u_n), u_n \rangle \rightarrow \langle u^*, u \rangle  
+		\end{align*}
+		For $\langle F_n(u) - u^*, u - v \rangle \forall v \in M_n$: Since $u_n \in M_n$ weakly(and strong) convergent in $X_n$  therefore  
+		\begin{align*}
+			\langle F_n(u_m), u_m) \rangle = \langle F(u_m), u_m) \rangle \rightarrow \langle \tilde{u}^*, u\rangle
+		\end{align*}
+		Since $\langle F_n(u_m), v \rangle = \langle F(u_m), v \rangle \le \langle u^*, v \rangle$
+	\end{enumerate}
+	\textbf{2): The weak compactness}
+	By the coercivity condition \textbf{F2} we have
+	\begin{align*}
+		\|u_n\| \le C_0 \quad \forall n \in \mathbb{N}
+	\end{align*}
+	By \textbf{F1} we know $F$ maps bounded set to bounded set, therefore
+	\begin{align*}
+		F(u_n) \le \infty \quad \textbf{ in } X
+	\end{align*}  
+	by reflexivity of $X$ we have (without relabeling)
+	\begin{align*}
+		F(u_n) \rightharpoonup u^*
+	\end{align*}
+	\textbf{3): Passage to the limit}
+	we have
+	\begin{align*}
+		\langle F(u_n) , u_n - v \rangle \le 0  \qquad \forall v \in M_n
+	\end{align*}
+	It follows
+	\begin{align*}
+		&\langle F(u_n), u_n \rangle \le \langle F(u_n), v \rangle \rightarrow \langle u^*, v \rangle \texttt{ in } M_\infty\\
+		(\textbf{F3})
+		& \Rightarrow \langle u^*, u \rangle \le   \liminf_n \langle F(u_n), u_n \rangle \le \langle u^*, v \rangle\\
+		&\Rightarrow \langle u^*, u - v \rangle \le 0
+	\end{align*}
+	Choose $v = u$ we have
+	\begin{align*}
+		\langle u^*, u \rangle \le  \liminf \langle F(u_n), u_n \le \langle u^*, u \rangle 
+	\end{align*}
+	We have
+	\begin{align*}
+		\liminf_n \langle F(u_n), u_n \rangle = \langle u^*, u \rangle
+	\end{align*}
+	therefore by \textbf{F3}
+	\begin{align*}
+		\langle F(u) - u^*, u - v \rangle \le 0 \quad \forall v \in M
+	\end{align*}
+	therefore
+	\begin{align*}
+		\langle F(u), u - v \rangle \le \langle u^*, u - v \rangle \le 0
+	\end{align*}
+\end{proof}
+
+\begin{example}[Elastic Beam]
+	Observe
+	\begin{align*}
+		I(v) := \int_I \frac{a_0}{2} |v''| + f \cdot \nu  dx 
+	\end{align*}
+	with 
+	\begin{align*}
+		M:= \{ v \in H^2(I) \cap H^1_0(I) | \quad v \ge g \quad a.e. \quad g(0), g(l) \le 0 \}
+	\end{align*}
+\end{example}
+
+
+\subsection{The p-Laplacian}
+Consider for $\Omega \subset \mathbb{R}^d$
+\begin{align*}
+	\inf_{v \in W^{1, p}_0}I(v):= \int_\Omega \frac{1}{p}|\nabla v |^p + \frac{\mu v }{2} + fv dx 
+\end{align*}
+we arrive at the ELE:
+\begin{align*}
+	-\div (|\nabla u |^p \nabla u | + \mu u = f &\texttt{ in } \Omega\\
+	u = 0 &\texttt{ on } \partial\Omega
+\end{align*}
+
+
+
+\subsection{Perturbed monotone operators}
+In the perturbed case we have the operator consisting of 2 parts, usually one described by the non-linearity and one by linearity(or continuity). We consider the non-linear part the principle term and the linear part the perturbed term, and extend our previous result regarding the non-linear elliptic variational inequality. 
+\begin{theorem}
+	Given $A: M \times M \rightarrow X^*$ with the general setting. (M closed, convex, X reflexive). Define $F(u):= A(u, u)$, if $A$ satisfies
+	\begin{enumerate}
+		\item $A$ is monotone in the second argument.
+		\item $\forall v \in M$:  $u_n \rightharpoonup u \Rightarrow A(u_n, v)$ in M $\overset{*}{\rightharpoonup} A(u, v)$ in $X^*$.
+		\item $\forall v \in M$: $u_n \rightharpoonup u$ $\Rightarrow \langle A(u, v), u \rangle \le \liminf_{n \rightarrow \infty} \langle A(u_n, v), u_n  \rangle$.   
+	\end{enumerate}
+\end{theorem}
+\begin{proof}
+\end{proof}
+
+
+\subsection{Quasi-linear Elliptic systems}
+Consider
+\begin{align*}
+	- \div (a(u, \nabla u) ) + f(u) = 0 & \texttt{ in } \Omega\\
+	u = 0 & \texttt{ on } \partial \Omega 
+\end{align*}
+
+We assume:
+\textbf{The Growth condition}
+\begin{enumerate}
+	\item $\forall \delta > 0 \exists C_\delta$:
+	\begin{align*}
+		a(z, q) \le C_\delta (|q|^{p -1} + 1) + \delta |z|^{p -1}
+	\end{align*}
+	\item There exists $C > 0$ s.t.
+	\begin{align*}
+		f(z) \le C |z|^{p - 1}
+	\end{align*}
+\end{enumerate}
+
+
+
+
+\section{Classical Maximum Principle}
+\subsection{Weak Maximum Principle}
+
+\subsection{Harnack's Inequality}
+\begin{theorem}
+	Given $u$ a solution( i.e., $\partial_t u + Lu = 0$) with $u \ge 0$ in $\Omega_T$ and $u \in C^\infty(\Omega_T)$. Assuming $a_{ij} = a_{ji} \in C^\infty(\Omega_T), b_i = 0, c_i = 0$, $\Omega' \subset \subset \Omega$ subdomain,  then there exists $\forall t_1, t_2$ with  $0 < t_1 < t_2 \le T$ a constant $C$ such that
+	\begin{align*}
+		\sup_{\Omega'} u(t_1, \cdot) \le C \inf_{\Omega'} u(t_2, \cdot)
+	\end{align*}
+\end{theorem}
+
+\subsection{Strong Maximum Principle}
+\begin{theorem}[Strong maximum principle]
+The coefficients of $L$ defined as before. 
+Given $u$ a sub-solution(i.e., $\partial_t u + L u \le 0$) and $u \in C^\infty(\Omega_T) \cap C(\overline{\Omega_T})$. If $u$ admits its maximum at $(t_0, x_0) \in \Omega_T$, then 
+\begin{align*}
+	u \equiv const \texttt{ in } \Omega_{t_0}:= (0, t_0] \times \Omega
+\end{align*}
+\end{theorem}
+\begin{proof}
+Define $\Omega' \subset\subset$ with $(t_0, x_0) \in \Omega''$.
+	Define $w$: 
+	\begin{align*}
+		&\partial_t w + Lw = -(\partial_t u + L u) \ge 0 \quad (t, x) \in \Omega_T'\\
+		& w = 0 \quad \{0\} \times \Omega'
+	\end{align*}
+	The parabolic regularity asserts $w$ admits the same regularity. Then $v = w + u$ satisfies
+	\begin{align*}
+		& \partial_t v + Lv = 0 \quad (t, x) \in \Omega_T'\\
+		& v = 0 \quad \{0\} \times \Omega'
+	\end{align*}
+	by the weak maximum principle we have
+	\begin{align*}
+		u \le v \le u \le u(t_0, x_0) := M
+	\end{align*}
+	Further define
+	\begin{align*}
+		\tilde{v}: = M - v
+	\end{align*}
+	we have
+	\begin{align*}
+		&\partial_t \tilde{v} + L\tilde{v} = 0 \quad \Omega' \\
+		&\tilde{v} \ge 0 \quad \Omega'
+	\end{align*}
+	Apply Harnack's inequality we have
+	\begin{align*}
+		&\sup_{t \le t_0} \tilde{v} \le \tilde{v}(t_0, \cdot) = 0\\
+		&\Rightarrow \tilde{v} \equiv 0 \quad \forall t \in (0, t_0)\\
+		&\Rightarrow v \equiv const
+	\end{align*}
+	approximate $\Omega$ by $\Omega'$ we get the result. 
+\end{proof}
+ 
+ 
+
+\section{Reaction-Diffusion System}
+\subsection{Global Existence of Lipschitz nonlinearity}
+\begin{theorem}
+Given the PDE
+\begin{align*}
+	\partial_t u - \Delta u = f(u) \quad &\texttt{ in } (0, T] \times \Omega\\
+	u(0, ) = u_0 \quad &\texttt{ in } \{0\} \times \Omega\\
+	u \equiv 0 \quad &\texttt{ 0n } (0, T] \times \partial\Omega
+\end{align*}
+where $f$ Lipschitz continuous with
+\begin{align*}
+	|f(u) - f(v)| \le C |u - v|
+\end{align*}
+Then there exists a unique solution 
+\begin{align*}
+	u \in C([0, T], L^2(\Omega))
+\end{align*}
+\end{theorem}
+\begin{proof}
+	proof with the contracting map. \\
+	\textbf{Step 1:} Transform to a linear problem: define $h = f(u)$ and observe the system:
+	\begin{align*}
+		\partial_t w - \Delta w &= h\\
+		w(0, ) &= u_0
+	\end{align*}
+	by the linear theorem there exists a \textbf{unique} solution 
+	\begin{align*}
+		w \in W(0, T; V, H) \hookrightarrow C([0, T], L^2)
+	\end{align*}
+	we can therefore define the map
+	\begin{align*}
+		\mathcal{A}: X_t \rightarrow X_t , \mathcal{A}(u) = w
+	\end{align*}
+	\textbf{Step2:} Show $\mathcal{A}$ is a contraction map
+	observe the weak form:
+	\begin{align*}
+		\int_\Omega w_t \varphi + \mathbb{A} \nabla w \cdot \nabla \varphi dx = \int_\Omega f(u) \varphi dx \qquad \forall_{a.a.} t \in [0, T]
+	\end{align*}
+	Given $w, \tilde{w} \in \ran(\mathcal{A})$ and test with we have
+	\begin{align*}
+		\langle \partial_t(w - \tilde{w}), w - \tilde{w} \rangle 
+		+ \|\nabla (w - \tilde{w})\|_{L^2} 
+		&= \langle f(u) - f(\tilde{u}), w - \tilde{w} \rangle\\
+		\frac{d}{dt}\|w - \tilde{w}\|_{L^2}^2 + C_p \|w - \tilde{w}\|_{L^2}^2 
+		&\le C \|u - \tilde{u}\|_{L^\infty} \|w - \tilde{w}\|_V\\
+	\end{align*}
+	where the bracket indicates the linear mapping $\langle , \rangle_{V^*, V}$. By the Young's inequality the righthand side is bounded by 
+	$C_\delta( \|u - \tilde{u}\|_{L^\infty}^2 + \delta \|w - \tilde{w}\|^2_{V}$, and again by Poincare the $V$ norm could be written as $L^2$ norm up to a constant. In summary we have after integration over $t$
+	\begin{align*}
+		\|(w - \tilde{w})(t)\|_H^2 \le t C \|u - \tilde{u}\|_{L^\infty}^2
+	\end{align*}
+\end{proof}
+
+
+
+
+
+\subsection{The Heat kernel}
+
+
+
+\subsection{Local well-posedness for locally Lipschitz nonlinearity}
+
+
+\subsection{Maximum Life Span}
+
+
+\subsection{Blow-up}
+
+
+
+\section{Hyperbolic Equation}
+We observe the problem:
+\begin{equation}
+	\partial_t u + \sum_{i = 1}^d A_j \partial_j u = B u + f
+\end{equation}
+where $u:[0, T) \times \mathbb{R}^d \rightarrow \mathbb{R}^n$ for $T \in (0, \infty]$ with $A_j(t, x), B(t, x) \in C_b^\infty$. We introduce the notation:
+\begin{align*}
+	&L = L(t) = \sum_{j = 1}^d A_j(t) \partial_j x - B(t)\\
+	&Pu = \partial_t u + Lu
+\end{align*}
+
+
+\subsection{fractional Sobolev spaces}
+Recall the definition of the Schwartz space:
+\begin{definition}[Schwartz space]
+\begin{equation}
+	\mathcal{S}(\mathbb{R}^d):= \{ f \in C^\infty(\mathbb{R}^d, \mathbb{C}): |x^\alpha \partial^\beta u(x) \le C_{\alpha, \beta}, \texttt{for all } x \in \mathbb{R}^d\}	
+\end{equation}
+\end{definition}
+
+In the Fourier transform we know the differentiation becomes multiplication of the monoid, i.e.
+
+
+\subsection{Constant coefficient system}
+Observe the problem
+\begin{align*}
+	& \partial_t u + \sum_{ j = 1}^d A_j \partial_j u = 0 \texttt{ in } (0, T) \times \mathbb{R}^d\\
+	& u(0, \cdot) = u_0 \texttt{ in } \mathbb{R}^d
+\end{align*}
+
+
+\subsection{Linear symmetric hyperbolic system}
+Observe the system
+\begin{align*}
+	& \partial_t u + \sum_{j = 1}^d A_j \partial_j u = Bu + f(t, x) \texttt{ in } (0, T)\\
+	& u(0, \cdot) = u_0 \texttt{ in } \mathbb{R}^d
+\end{align*}
+The coefficients are assumed to be bounded and smooth with bounded derivatives. We now define 
+\begin{align*}
+	& L(t) = \sum_{j = 1}^d A_j \partial_j u - B\\
+	& P(u) = Lu + \partial_t u
+\end{align*}
+
+\begin{definition}[The hyperbolic system]
+\end{definition}
+
+\begin{definition}[The symmetric hyperbolic system]
+\end{definition}
+
+
+
+\subsection{The energy estimate}
+\begin{definition}[The distributional solution]
+\end{definition}
+why do we need the concept of distributional solution. 
+
+\begin{proposition}[The energy estimate($L^2$ energy estimate)]
+	Given $T > 0$ and $S_0(x) \in C_b^\infty(\mathbb{R}^d, \mathbb{R}^{n \times n})$. with $0 < \lambda \le \Lambda$ s.t. 
+	\begin{align*}
+		\lambda \le S_0(x) \le \Lambda \quad \forall x \in \mathbb{R}^d,
+	\end{align*}
+	then we have the  
+\end{proposition}
+and the equation may be rewritten as 
+\begin{equation}
+	Pu = f
+\end{equation}
+
+\begin{proposition}[The general energy estimate]
+\end{proposition}
+
+
+
+
+
+
+

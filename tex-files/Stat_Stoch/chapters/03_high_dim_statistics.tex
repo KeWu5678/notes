@@ -1,0 +1,839 @@
+\chapter{High-dimensional statistics}
+
+\section{Sparse Recovery}
+\subsubsection*{Notation}
+\textbf{$l_0$ norm:} $	\|\beta\|_0 = |\{j: \beta_j \neq 0\}|$\\
+\textbf{support of} $\beta^*:= \{j: \beta_j \neq 0\}$. \\
+Suppose $S \subset \{1, \dots, p \}$. the support of $\beta^*$, we define $X_S \in \mathbb{R}^{n \times |S|}$ the matrix consisting the columns of $S$ is the matrix $X$.
+\subsection{The linear model in higher dimensions}
+The problem under investigation is the linear system in high dimension:
+\begin{align*}
+X \in \mathbb{R}^{n \times p}, Y \in \mathbb{R}^n, \beta^* \in \mathbb{R}^p: 
+ Y = X \beta^* = 
+ \begin{bmatrix}
+ 	X_1^T\\
+ 	X_2^T\\
+ 	\vdots\\
+ 	X_n^T
+ \end{bmatrix}	\beta^*
+\end{align*}
+We observe the case where $p \gg n$, 
+
+
+\begin{example}[Shannon's sampling theorem]
+\end{example}
+
+
+
+\begin{definition}[Euclidean Norm on a net]
+Given a $\epsilon \in (0, 1)$, we define
+	\begin{align*}
+		\mathcal{N} \subset S^{p-1} := \{u \in \mathbb{R}^p: \|u\|_2 = 1\}
+	\end{align*}
+	as a subset of the unit ball in $\mathbb{R}^p$, such that
+	\begin{align*}
+		\forall u \in S^p \exists u_0 \in \mathcal{N}: \|u- u_0\|_2 \leq \epsilon
+	\end{align*}
+\end{definition}
+
+
+
+
+
+\begin{method}[naive convex minimization]
+\end{method}
+
+\subsubsection*{The basis pursuit linear program}
+
+Given the computational difficulties of the $\|\|_{l_0}$ norm(it's NP-hard and the cost function is non-differentiable and non-convex), it's natural to consider the \textbf{convex relaxation} by approximating $\|\cdot\|_0$ with the nearest $l_p$ norm, namely the $l_1$ norm. We refer to \ref{bpp} as the \textbf{Basis Pursuit Program}
+
+\begin{method}[convex sparse linear regression(Basis Pursuit Programm)]
+\begin{align}\label{bpp}
+	\text{minimize} \|\theta\|_1 \quad \textbf{under the constraint}\quad \mathbf{X} \theta = y
+\end{align}
+\end{method}
+
+
+\begin{definition}[Null space propertiy]
+	A matrix $\mathbf{X}$ admits null space property regarding $S$ if:
+	\begin{align*}
+		\{ \Delta \in \mathbb{R}^p: \|\Delta_{S^c}\|_1 \geq \|\Delta_S\|_1 \} \cap Ker(X) = \{0\}
+	\end{align*}
+	i.e the only dominated vector in the kernel with the dominated $l_1$ S-sparse norm is 0
+\end{definition} 
+
+\begin{theorem}
+	The following arguments are equivalent:
+	\begin{enumerate}
+		\item The matrix $\mathbf{X}$ satisfies the null space property with respect to $S$ $(S \subset\{1, \dots, d\})$.
+		\item For any vector $\theta^* \in \mathbb{R}^d$ with support $S$, the basis pursuit linear program admits an unique solution
+	\end{enumerate}
+\end{theorem}
+\begin{remark}
+Notice it only gives condition for the optimal $S$-sparse solution	 given a specific subset $S$. 
+\end{remark}
+
+\begin{proof}
+\quad\\
+1)$\rightarrow$2): Assume $\tilde{\theta}$, $\theta^*$ satisfies the BPP, $\tilde{\theta}$ is the optimal choice, and $\delta = \tilde{\theta} - \theta^*$, then we have:
+\begin{align*}
+	\|\theta^*\|_1 = \|\theta^*_S\|_1 &\geq  \|\theta^* + \delta\|_1\\
+	&= \|\theta^*_S + \delta_S \|_1 + \|\delta_{S^C}\|_1\\
+	&\geq \|\delta_{S^c}\|_1 - \|\delta_S\|_1
+\end{align*}
+which violate the null space property\\
+2)$\rightarrow$1):w.l.o.g. assuming $\theta^* \in Ker(X)$. We have:
+\begin{align*}
+	X [\theta^*_S, \theta^*_{S^c}]^T &= 0\\
+	\Rightarrow X \theta^*_S &= X(-\theta^*_{S^C}) = 0
+\end{align*}  
+$\theta^*_{S^C}$ is also feasible for our BPP. Since $\theta^*$ is the unique solution of the BPP, we have:
+\begin{align*}
+	\|\theta^*_S\|_1 \leq \|\theta^*_{S^c}\|_1
+\end{align*}
+\end{proof}
+
+\begin{definition}[Restricted Isometry Property]
+	For a given integer $s \in \{1, \dots, d\}$, we say $X \in \mathbb{R}^{n \times d}$ satisfies the restricted isometry property of order $s$ with constant $\delta_s(X)$ if:
+	\begin{align*}
+		\|\frac{X_S^T X_S}{n} - I_s\|_2 \leq \delta_s(X) \quad \textbf{for all subset $S$ of size at most $s$}
+	\end{align*}
+	where $\delta_{PW}(X) = \max_{j, k = 1, \dots, d} |\frac{X_j, X_k}{n} - \mathbbm{1}_{j = k}|$ is called the incoherence parameter. Equivalently as above:
+	\begin{align*}
+		\forall \beta \in \mathbb{R}^p, \|\beta\|_0 \leq s:(1-\delta)\|\beta\|^2_2 \leq \frac{1}{n} \|X\beta\|^2_2 \leq (1+\delta)\| \beta\|^2_2
+	\end{align*}
+\end{definition}
+
+\begin{proposition}
+	If the RIP constraint is bounded of order $2s$ with $\delta_{2s}(X) < \frac{1}{3}$, then the nullspace property hold for any $S$ with $|S| \leq s$.
+\end{proposition}
+\begin{proof}
+	w.l.o.g. assuming $\theta_s\in Ker(X)$ is a feasible solution of basis pursuit program, and $S$ the index set of the $s$-largest entries, we want to show:
+	\begin{align*}
+		\|\theta_{S}\|_1 \leq  \|\theta_{S^C}\|_1 
+	\end{align*} 
+	Decompose $S^c$ by subset of the size of $|s|$ and $\forall a \in S_j \forall b \in S_{j+1}: |\theta_a| \geq |\theta_b|$, $j \geq 1$ therefore:
+	\begin{align*}
+		\|\theta_s\|_2 ^2 &\leq \frac{1}{(1-\delta)n} |\langle X\theta_s, X\theta_s\rangle|\\
+		&= \frac{1}{(1-\delta)n} |\langle X \theta_s , X \sum_{j \geq 1} \theta_{s_j} \rangle\\
+	(1)	&=  \frac{1}{(1-\delta)n} \sum_{j \geq1} \langle X \theta_s, X \theta_{s_j}\rangle\\
+		&\leq \frac{1}{1 - \delta} \delta \sum_{j \geq 1} \|\theta_s\|_2 \| \theta_{s_j}\|_2 
+	\end{align*}
+	We have:
+	\begin{align*}
+		\|\theta_s\|_2 \leq \frac{\delta}{1 - \delta}\sum_{j \geq 1} \|\theta_{s_j}\|_2
+	\end{align*}
+	Now we have to transform the $l^2$ norm to $l^1$ norm. By $\|\theta_s\|_1 \slash n \geq \|\theta_j\|_\infty$ for all $j \geq 1$ we get:
+	\begin{align*}
+		weiter
+	\end{align*}
+\end{proof}
+The idea now is to construct the design matrix that satisfies the RIP. To do so we first need the concentration's inequality.
+
+\subsection{Concentration Inequality}
+\subsubsection*{From Markov to Chernoff}
+The purpose of this section is to control the probability of the tail event. 
+\begin{definition}[sub-Gaussian random variables]
+	A centred random variable $X$ is sub-Gaussian with respect to $\sigma^2 > 0$, if:
+	\begin{align*}
+		\mathbb{E} e^{\mu X} \le e^{\frac{\mu^2 \sigma^2}{2} } \qquad \forall u \in \mathbb{R}
+	\end{align*}
+	Notation: $X \in SG(\sigma^2)$.
+\end{definition}
+\begin{remark}
+	
+\end{remark}
+
+\begin{example}[Rademacher random variables]
+Given $\epsilon$ the Rademacher random variable( i.e. $\mathbb{P}(\epsilon = 1) = =\mathbb{P}(\epsilon = -1) = \frac{1}{2}$). Then $\epsilon \in SG(1)$
+\begin{proof}
+	\begin{align*}
+		\mathbb{E} e^{u \epsilon} &= \frac{1}{2} (e^u + e^{-u})\\
+		&= \sum_{k = 0}^\infty \frac{u^{2k}}{(2k)!}\\
+((2k)! \geq 2^k k!)
+ 		&\leq \sum_{k =0} \frac{u^{2k}}{k!2^k}\\
+ 		&\leq \frac{(u^2\slash 2)^k}{k!}\\
+ 		& = e^{\frac{u^2}{2}}
+	\end{align*}
+\end{proof}
+Therefore $\epsilon \in SG(1)$.
+\end{example}
+\begin{remark}
+For a zero-mean random variable $X$, $\epsilon$ random variable. $\epsilon X$ admits the same distribution as $X$.	
+\end{remark}
+
+\begin{example}[Bounded random variables]
+	Let $X$ be a zero-mean random variable on the support $[a, b]$, we show $X \in SG()$\\\
+	Let $X'$ be a independent copy of $X$, then by symmetry argument we know 
+	\begin{align*}
+		\epsilon(X' - X) \sim X - X'
+	\end{align*} 
+	Observe:
+	\begin{align*}
+		\mathbb{E}e^{u(X'- X)} &= \mathbb{E}[ \mathbb{E}_\epsilon e^{u\epsilon(X'-X)}]\\
+		&\leq \mathbb{E} e^{\frac{u^2(b-a)^2}{2}}\\
+		&= e^{\frac{u^2(b-a)^2}{2}}x
+	\end{align*}
+\end{example}
+
+
+\subsubsection{Net}
+\begin{definition}
+	A $\epsilon$-net on a $p-$sphere is defined as ($\epsilon \in(0, 1)$):
+	\begin{align*}
+		\forall x \in S^{p-1} \exists u \in \mathcal{N}: \|x - u\|_2 \leq \epsilon
+	\end{align*}
+\end{definition}
+
+\begin{lemma}
+	$\|x\|_2$ could be discretely approximated by
+	\begin{align*}
+		\|x\|_2 \leq \frac{1}{1 - \epsilon} \max_{ \nu \in \mathcal{N}} \langle x, \nu \rangle
+	\end{align*}
+\end{lemma}
+
+\begin{theorem}[Characterisation of sub-Gaussian random variables]
+$X$ is a zero-mean, real-valued random variable. The followings are equivalent:
+\begin{enumerate}
+	\item $X \in SG(\sigma^2)$
+	\item $\mathbb{P}(|X| \geq t) \leq 2e^{\frac{-t^2}{2\sigma^2}}$
+	\item $\mathbb{E} |X|^p \leq $
+\end{enumerate}	
+\end{theorem}
+\begin{proof}
+$\quad$
+\begin{itemize}
+	\item $1)\Rightarrow 2)$
+	\begin{align*}
+		\mathbb{P}(|X| \geq t) &= \mathbb{P}(e^{ux} \geq e^{ut})\\
+		&\leq \mathbb{E}e^{ux} e^{-ut}\\
+		&\leq e^{u^2 \sigma^2} e^{-ut}
+	\end{align*}
+	select $u = \frac{t}{\sigma^2}$ and get the result
+	\item $2) \rightarrow 3)$ Apply Fubini:
+	\begin{align*}
+		\mathbb{E}|X|^p = \int \mathbb{P}(|X| \geq x) dxd\omega
+	\end{align*}
+\end{itemize}
+\end{proof}
+
+\begin{lemma}[Sum of sub-Gaussian random variables]
+	Given $X_1, \dots, X_n$ i.i.d sub-gaussian random variables with $X_i \in SG(\sigma_i^2)$, we have:
+	\begin{align*}
+		\mathbb{E}S_n \in SG(\sum_{i = 1}^n \sigma_i^2)
+	\end{align*}
+\end{lemma}
+\begin{proof}
+\begin{align*}
+	\mathbb{E}e^{u S_n} = \mathbb{E}\prod^n e^{uX_i} = \prod^n \mathbb{E}e^{uX_i} \leq \prod^n e^{\frac{u^2 \sigma_i^2}{2}} = e^{\frac{u^2(\sum \sigma_i^2)}{2}}
+\end{align*}
+\end{proof}
+
+\begin{theorem}[Hoeffding's inequality]
+	Given $X_i$ i.i.d with $X_i \in SG(\sigma_i^2)$, we have:
+	\begin{align*}
+		\mathbb{P}(|S_n| \geq t) \leq 2e^{-\frac{t^2}{\sum\sigma_i^2}} 
+	\end{align*}
+	Moreover, if $\mathbb{E}X_i = 0$ and $X_i \in [a_i, b_i]$, we have:
+	\begin{align*}
+		\mathbb{P}(|S_n| \geq t) \leq 2e^{-\frac{t^2}{\sum(b_i - a_i)^2}}
+	\end{align*}
+\end{theorem}
+\begin{proof}
+	Combine the last lemma and the characterization of sub-gaussian random variables.
+\end{proof}
+
+\begin{definition}[sub-exponential random variables]
+	A centred random variable $X$ is called sub-exponential with respect to $\alpha > 0, \sigma^2 > 0$ if
+\begin{align*}
+	\mathbb{E} e^{ux} \leq e^{\frac{u^2 \sigma^2}{2}} \quad \forall u \le \frac{1}{\alpha}
+\end{align*}
+We write: $X \in SE(\sigma^2, \alpha$).
+\end{definition}
+
+\begin{example}[$\chi^2$ distributed variable]
+	Given $X = Z^2, Z\sim N(0, 1)$, we have $Z^2 - 1 \in SE(4, 4)$, $ZZ' \in SE(2, \sqrt{2})$:
+	\begin{align*}
+		\mathbb{E}e^{Z^2 - 1} = \frac{1}{\sqrt{2\pi}} \int_\mathbb{R} e^{u(z^2 - 1)}e^{-z^2}dz
+	\end{align*}
+\end{example}
+
+\begin{proposition}[The sub-exponential tail bound]
+\end{proposition}
+
+\begin{proposition}[Sum of the sub-exponential random variables]
+\end{proposition}
+
+\begin{theorem}[The Bernstein inequality]
+Let $X_1, X_2, \dots, X_n$ be independent random variable, with $X_i \in SE(\sigma_i^2, \alpha_i)$, then
+\begin{align*}
+	\mathbb{P}(|S_n| \ge t ) \le 2 \exp \bigg( {-\min(\frac{t^2}{2\sum_{i = 1}^n \sigma_i^2}, \frac{t}{2\max_{1 \le i \le n} \alpha_i})}\bigg)
+\end{align*}
+in particular, for $\sigma_i^2 \le \sigma^2, \alpha_i \le \alpha$ for all $i$:
+\begin{align*}
+	\mathbb{P}(|S_n| \ge t) \le 2 \exp\bigg(-\frac{n}{2} \min(\frac{t^2}{\sigma^2}, \frac{t}{\alpha}) \bigg)
+\end{align*}
+\end{theorem}
+
+\begin{example}[The $\chi^2$ distributed random variables]
+	Let $Z_1, \dots, Z_n, Z_1', \dots, Z_n'$ be standard normal distributed, then we have:
+	\begin{align*}
+		\mathbb{P}(|\frac{1}{n}\sum_{i = 1}^n Z_i^2 - 1|> t ) &\le 2\exp \bigg(-\frac{n}{8}\min(t^2, t) \bigg) \quad \forall t \ge 0\\
+		\mathbb{P}(\frac{1}{n}\sum_{i = 1}^n Z_i^2 > t) &\le 2\exp\bigg(-\frac{n}{8}\min(t^2,t)\bigg) \quad \forall t \ge 0
+	\end{align*}
+\end{example}
+
+\begin{example}[Empirical covariance estimation]
+	In particular
+\end{example}
+
+
+
+\subsection{Restricted Isometry Property for random matrices}
+The central result of this subsection is the sufficient condition of $n$ to satisfies the RIP.
+\begin{lemma}[The packing argument]
+	Define the ball:
+	\begin{align*}
+		B_2^m:= \{ x \in \mathbb{R}^m: \|x\|_2 = 1\}
+	\end{align*}
+	$\epsilon \in (0, 1)$, then we can find $\mathcal{N}$ with 
+	\begin{align*}
+		|\mathcal{N}| \leq (1 + \frac{2}{\epsilon})^m
+	\end{align*}
+	such that
+	\begin{align*}
+		\forall y \in B_2^m \exists x \in \mathcal{N}: \|x - y\| \leq \epsilon
+	\end{align*}
+	In particular, this holds for $S^{m-1}$ instead of $B^m$.
+\end{lemma}
+\begin{proof}
+	by construction we find $M$ $\frac{\epsilon}{2}$-ball such that:
+	\begin{align*}
+		\bigcup_{i = 1}^M B(x_i, \frac{\epsilon}{2}) \subset B(0, 1 + \frac{\epsilon}{2})
+	\end{align*}
+	Therefore:
+	\begin{align*}
+		M (\frac{\epsilon}{2})^m vol(B_1^m) &\le (1 + \frac{\epsilon}{2})^m vol(B_1^m)\\
+		M &\le (\frac{\epsilon + 2}{\epsilon} )^m
+	\end{align*}
+	For the sufficiency: (TBC)
+\end{proof}
+
+\begin{lemma}[operator norm by packing]
+	Given $A \in Sym^{m \times m}$, and $\mathcal{N}$ a $\epsilon$-Net of $S^{m-1}$ with $\epsilon < \frac{1}{2}$, then we have:
+\begin{align*}
+	\|A\|_{op} \leq \frac{1}{1 - 2 \epsilon}  \max_{ x \in \mathcal{N}} |\langle Ax, x \rangle|
+\end{align*}
+\end{lemma}
+\begin{proof}
+\begin{align*}
+	\|A\|_2 &= \sup_{x \in S^{m-1}}|\langle Ax , x \rangle|\\
+	&= \sup |\langle Ax, x - u\rangle + \langle Ax, u \rangle|\\
+	&= \sup \langle Ax, x - u\rangle + \langle A (x - u), u \rangle + \langle Au, u \rangle |\\
+	&\le \|A\|_{op} \epsilon + \|A\|_2 \epsilon + \max_{ u \in \mathcal{N}} \langle Au, u\rangle
+\end{align*}
+Therefore
+\begin{align*}
+	\|A\|_2 \le \frac{1}{1- 2 \epsilon} \max_{x \in \mathcal{N}} |\langle Ax, x \rangle|
+\end{align*}
+\end{proof}
+
+The main result of the subsection is to give a sufficient condition for the RIP of a random matrix. 
+
+\begin{theorem}
+	Given the matrix $\mathbf{X} = (X_{ij}) \in \mathbb{R}^{n \times p}$ with $X_{ij} \sim N(0, 1)$, $s \le p$, $\delta \in (0, 1)$. There exists $c(\delta), C(\delta)$, such that
+	\begin{align*}
+		n \ge \log(\frac{ep}{s}) \Rightarrow \text{$\mathbf{X}$ satisfies the RIP of order $s$}
+	\end{align*}
+	with the probability at least $1 - e^{-cn}$.
+\end{theorem}
+\begin{proof}
+	1. \textbf{Approximation:} Constructing $\frac{1}{4}$ net on $S^{s -1}$, by the packing argument we get $|\mathcal{N}| \le 9^s $. Estimating the operator norm by packing:   
+	\begin{align*}
+		\|\frac{X_S^T X_S}{n} - I_S\|_2 &\le 2 \max_{u \in \mathcal{N}} |\langle (\frac{X_S^T X_s}{n} - I_S)u, u \rangle|\\
+		&\le 2\max_{u \in \mathcal{N}} |\frac{1}{n} \|X_Su\|^2_2 - 1|
+	\end{align*}
+	2. \textbf{Concentration Inequality:}
+	\begin{align*}
+		\delta_s(X) = \max_{|S| = s}  \|\frac{X^T_S X_S}{n} - I_S\|_2^2
+		 &\le \max_{|S| = s} \max_{u \in \mathcal{N}} 2| \frac{1}{n} \|X_Su \|^2_2 - 1|\\
+	\end{align*}
+	Since
+	\begin{align*}
+		\|X_S u\|_2^2 = \langle X_S u, X_Su\rangle \sim \chi^2(n)\quad (\chi^2(s)???)
+	\end{align*}
+	we apply Bernstein inequality and get:
+	\begin{align*}
+		\mathbb{P}(\frac{1}{n} \|X_Su \|_2^2 - 1 \ge \frac{\delta}{2}) &\le 2\exp\bigg(-\frac{n}{32} \delta^2\bigg) \quad \forall \delta \in (0, 2)
+	\end{align*}
+	3.\textbf{Union bound}
+	\begin{align*}
+		\mathbb{P}(\delta_s(X) \ge \delta) &= \mathbb{P}(\max_{|S| = s}  \|\frac{X^T_S X_S}{n} - I_S\|_2^2 \ge \delta)  \\
+		&\le \mathbb{P}(\max_{|S| = s} \max_{u \in \mathcal{N}} |\frac{1}{n} \|X_Su \|^2_2 - 1| \ge \frac{\delta}{2})   \\
+		&\le \sum_{|S| = s} \sum_{u \in \mathcal{N}}\mathbb{P}(|\frac{1}{n}\|X_S^T X_S\|^2_2 - 1| \geq \frac{\delta}{2})
+	\end{align*}
+\end{proof}
+
+
+
+\newpage
+\section{Covariance estimation and sparse PCA}
+\subsection*{Matrix analysis}
+\begin{itemize}
+	\item \textbf{The trace scalar product:} $\langle A, B \rangle := tr(A^T B) = \sum_{i = 1}^p \sum_{j = 1}^p a_{ij} b_{ij}$
+\end{itemize}
+
+\begin{definition}[The $l^p$ norm of matrix]
+	As the $l^p$ norm of the vector, we may define the $l^p$ norm of the matrix:
+	\begin{align*}
+		\|A\|_p = (\sum_{i, j = 1}^n |a_{ij}|^p)^{\frac{1}{p}}
+	\end{align*}
+\end{definition}
+\begin{example}\quad
+\begin{itemize}
+	\item $l^1$: $\|A\|_1$
+	\item \textbf{$l^2$: The Frobenius norm:} $\|A\|_2 = \|A\|_F = \sqrt{\langle A, A \rangle}$
+\end{itemize}	
+\end{example}
+
+\begin{proposition}[estimation between $l^p$ norms]
+\end{proposition}
+
+
+\begin{definition}[The Schatten p-norm]
+	For $A \in \mathbb{R}^{m \times n}$ we define:
+	\begin{align*}
+		\||A\||_p := \max_{\|x\| \neq 0} \frac{\|Ax\|_p}{\|x\|_p}
+	\end{align*}
+	For $A \in Sym^{n \times n}$:
+ 
+\end{definition}
+\begin{example}\quad
+\begin{itemize}
+	\item \textbf{The maximum column norm}: $\||A\||_1 = \max_{1 \le j \le n } \sum_{i = 1}^m  |a_{ij}|$
+	\item \textbf{The maximum row norm}: $\||A\||_\infty = \max_{1 \le i \le m} \sum_{j =1}^n |a_{ij}|$
+	\item \textbf{the operator norm:} $\|A\|_{op}: = \max_{x \in S^{p-1}} \|Ax\|= \max_{\|x\|\in S^{p-1} }\langle A x, x\rangle$
+\end{itemize}	
+\end{example}
+
+
+
+
+
+\subsection{Covariance matrices in higher dimension}
+The Gaussian mixing model:
+If we assume  $X = \theta z + \epsilon$, $\epsilon \sim N(0, \sigma^2 I_p)$, and $z$ Radamacher random variable. Then the covariance matrix of $XX^T$ is :
+\begin{align*}
+	\mathbb{E}[XX^T] = \theta \theta^T + I_p \sigma^2
+\end{align*}
+That motivates the following definition. Notice that using the Radamacher random variable is another way to normalise the vector to reduce the parameter(?).
+\begin{definition}[spiked covariance model]
+	A covariance matrix $\Sigma \in \mathbb{R}^{d \times d}$ is said to satisfied the \textbf{spiked covariance model} if it satisfies:
+	\begin{align*}
+		\Sigma = \lambda v v^T + I_d
+	\end{align*}
+	In a word, $X_i$ is generated with a 1-dimensional deterministic part and a p-dimensional random noise.
+\end{definition}
+\quad\\
+Beyond the scope of the classical PCA, we would like to ask the following questions:
+\begin{itemize}
+	\item 
+	\item What if $p \gg n, \|u\|_0 = s \ll n$
+	\item the convex relaxation
+\end{itemize}
+
+
+\subsection{Estimation of the Covariance matrix}
+\begin{definition}[Sub-Gaussian random vector]
+$X\in \mathbb{R}^p$ random vector.
+\begin{align*}
+	X \in SG(\sigma^2) \Leftrightarrow \forall u \in \mathbb{R} \forall x \in \mathbb{R}^p:  e^{u\langle x, X \rangle} \leq e^{u^2 \sigma^2 \slash 2}
+\end{align*}
+\end{definition}
+\begin{remark}
+$x$ in the scalar product is introduced as a weight to normalise the random vector to a constant.	
+\end{remark}
+
+\begin{example}
+	Give $Y \in \mathbb{R}^p $ a random vector with $\mathbb{E} Y Y^T = I_p$. $\Sigma$ a SPD matrix, then $X = \Sigma^{\frac{1}{2}} Y$ is a sub-gaussian random vector with $X \in SG_p(C\|\Sigma\|_{op})$
+\end{example}
+
+\begin{theorem}
+Let $X_1, \dots, X_n \in SG_p(\sigma^2)$
+\begin{align*}
+	\mathbb{P}\bigg( \frac{\|\hat{\Sigma} - \Sigma\|_{op}}{\sigma^2} \geq 
+	C(\sqrt{\frac{p+\delta}{n}} + \frac{p+ \delta}{n}) \bigg) \le2e^{-\delta}, \quad \forall \delta > 0
+\end{align*}
+\end{theorem}
+\begin{proof}
+	\quad\\
+	\textbf{1. Approximation}:choose a net $\mathcal{N}$ with $\epsilon = \frac{1}{4}$, 
+	\begin{align*}
+		\|\Sigma - \hat{\Sigma}\|_{op} &\le 2\max_{u \in \mathcal{N}}|\langle (\Sigma - \hat{\Sigma})u, u \rangle|\\
+		&= 2\max_{u \in \mathcal{N}}|\frac{1}{n}\sum_{i = 1}^n \langle X_i, u \rangle^2 - \mathbb{E}\langle X, u\rangle^2|
+	\end{align*}
+	2. \textbf{Concentration inequality:}By the exercise we know $\langle X, u\rangle^2 - \mathbb{E}\langle X, u\rangle^2 \in SE(C\sigma^4, C\sigma^2)$, therefore:
+	\begin{align*}
+		\mathbb{P}(\frac{1}{n}\sum_{i = 1}^n \langle X_i, u\rangle^2 - \mathbb{E}\langle X, u\rangle^2 \ge t) &\le 2\exp\bigg(-cn \min(\frac{t^2}{\sigma^4}, \frac{t}{\sigma^2})\bigg)\\
+	\end{align*}
+	3.\textbf{Union bound:}
+	\begin{align*}
+		\mathbb{P}(\frac{\|\hat{\Sigma} - \Sigma\|_{op}}{\sigma^2} \ge t) &= \mathbb{P}(\|\hat{\Sigma} - \Sigma\|_{op} \ge \sigma^2 t ) \\
+		(1)&\le\mathbb{P}\bigg( \max_{u \in \mathcal{N}}(\frac{1}{n}\sum_{i = 1}^n \langle X_i, u\rangle^2- \mathbb{E}\langle X, u\rangle^2) \ge \frac{\sigma^2 t}{2} \bigg)\\
+		(2)&\le\sum_{u \in \mathcal{N}}\mathbb{P}\bigg( \frac{1}{n} \sum_{i = 1}^n \langle X_i, u\rangle^2 - \mathbb{E} \langle X, u\rangle^2 \geq \frac{\sigma^2 t}{2}\bigg)\\
+		&\le 9^p \exp\bigg(-cn \min(t^2, t)\bigg)
+	\end{align*}
+	choose the suitable $t$ to get the assumption.
+\end{proof}
+
+
+
+
+
+
+
+\subsection{Inequality of eigenvalue and eigenvectors}
+\begin{theorem}[The spectral theorem]
+	Give $A \in Sym^{p \times p}$, then there exists $\lambda_1 \geq \lambda_2 \dots \lambda_p$, and $u_1, u_2, \dots, u_p$ in $\mathbb{R}^p$ with:
+	\begin{align*}
+		A = \sum_{i = 1}^p \lambda_i u_i u_i^T
+	\end{align*}
+\end{theorem}
+
+\subsubsection*{Perturbation result of eigenvalues}
+Given matrix $B$ the observation, and $A$ the real parametric matrix. We are interested in the behavior of $A$ with small perturbation $B - A$.
+\begin{theorem}[Courant Fischer]
+	Given a space $X \subset \mathbb{R}^n$ and $S \subset X$ a k-dimensional subset of $X$, then we have:
+	\begin{align*}
+		\lambda_k = \max_{dim S = k} \min_{x \in S^{p-1}, x \in S} \langle Ax, x\rangle
+	\end{align*}
+\end{theorem}
+\begin{proof}
+	First convince yourself in finite dimension:
+	\begin{align*}
+		\lambda_{\max} = \max_{\|x\| \in S^{p-1}}\langle Ax, x \rangle, \quad \lambda_{\min} = \min_{\|x\|\in S^{p-1}} \langle Ax, x\rangle \quad (Rayleigh)
+	\end{align*}
+	"$\le$":
+	\begin{align*}
+		\max_{S}\min_x \langle Ax, x \rangle &\overset{(1)S = \hat{S}}{\ge} \min_{x\in \hat{S}} \langle Ax, x \rangle \\
+		&= \lambda_k 
+	\end{align*}
+	where in (1) we choose $\hat{S} = \{u_1, \dots, u_k\}$.\\
+	"$\geq$": choose arbitrary $V$ with $dimV = k$, and $W= \{ u_k , \dots, u_p\}$, observe $V \bigcap W \neq \{0\}$.
+	\begin{align*}
+		\min_{x \in V}\langle Ax, x \rangle &\le \min_{x \in V\cap W, \|x\| = 1} \langle Ax, x \rangle \\
+		& = \min_{i \in \{k, \dots, p\}} \lambda_i  \\
+		&= \lambda_k
+	\end{align*}
+\end{proof}
+
+\begin{theorem}[Hoffman-Wielandt]
+Given $A$, $B \in Sym^{p\times p}$, we have:
+\begin{itemize}
+	\item (Wyel)
+	\begin{align*}
+		|\lambda_j(B) - \lambda_j(A)| \leq \|A - B\|_{op}
+	\end{align*}
+	\item(Hoffman-Wielandt)
+	\begin{align*}
+		\sum_{j = 1}^p (\lambda_j(B) - \lambda_j(A))^2 \le \|B - A\|_F^2
+	\end{align*}
+\end{itemize}
+\end{theorem}
+\begin{proof}
+	Wyel will be proved in the exercise. For the Hoffmann Wielandt:
+\end{proof}
+
+
+
+\subsubsection*{Perturbation result of eigenvectors}
+\begin{definition}[Eigenprojection]
+	Given $A \in Sym^{p\times p}$, we define the linear map
+	\begin{align*}
+		P_j(A) = u_j(A)u_j(A)^T, \quad 1 \le j \le p
+	\end{align*}
+	Notice that $P_j(A)$ satisfies:
+	\begin{align*}
+		&P_j(A)^2 = P_j(A)\\
+		&P_i(A)P_j(A) = 0 \quad \forall i \neq j, \\
+		&\sum_{j = 1}^pP_j(A) = I_p \\
+		&\|P_i(A)\|_F = 1 \\
+		&P_i(A)^T = P_i(A)\\
+	\end{align*}
+\end{definition}
+
+\begin{theorem}[Davis-Kahn]
+Let $A, B \in Sys^{p \times p}$, $1 \le j \le p$, define
+\begin{align*}
+	g_j(A):= \min(\lambda_{j-1}(A) - \lambda_j(A), \lambda_j(A) - \lambda_{j+1}(A))
+\end{align*}
+we have
+\begin{align*}
+	\frac{1}{\sqrt{2}}\|P_j(B) - P_j(A)\|^2_F \le \frac{2\|B - A\|_{op}}{g_j(A)}
+\end{align*}
+\end{theorem}
+\begin{proof}
+If $g_j(A) \le 2\|B-A\|_2$, the righthand side is greater than $1$, by $\|P_i\|_F^2 = 1$ we know:
+\begin{align*}
+	\|P_j(B) - P_j(A)\|_F^2 \le 1
+\end{align*}
+The assumption follows. \\
+If $g_j(A) \ge 2\|B-A\|_2$, then we have
+\begin{align*}
+	\lambda_j(B) - \lambda_k(A) &= \lambda_j(B) + \lambda_j(A) - \lambda_j(A) - \lambda_k(A)\\
+	&=\lambda_j(A) - \lambda_k(A)  -(\lambda_j(A) - \lambda_j(B))\\
+	&\ge \lambda_j(A) -\lambda_k(A) - \|B - A\|_2\\
+	&\ge g_j(A) - g_j(A) \slash 2 \\
+	&= \frac{g_j(A)}{2}
+\end{align*}
+
+\begin{align*}
+	\|P_j(A) - P_j(B)\|_F^2 &= \sum_{k \neq j} \|P_k(A)P_j(B)\|_F^2\\
+	(1)&= \sum_{k \neq j}\frac{\|P_k(A)(B - A)P_j(B)\|_F^2}{(\lambda_j(B) - \lambda_k(A))^2}\\
+	&\le \frac{4}{g_j(A)^2}\sum_{k \neq j}\|P_k(A)(B - A)P_j(B)\|_F^2\\
+	&= \frac{4}{g_j(A)^2}\|(I_p - P_j(A) (B - A)P_j(B) \|_F^2\\
+	(2)&\le \frac{4}{g_j(A)^2}\|(I_p - P_j(A)\|_{op}^2 \|B - A\|_2^2\|P_j(B)\|_F^2\\
+	&\le \frac{2\|B - A\|_2}{g_j(A)} 
+\end{align*}
+	where in 1) we use the spectral decomposition of $(B - A)$ and 2) the induced operator norm of the Frobenius norm.
+\end{proof}
+
+For the next theorem we define:
+\begin{align*}
+	\mathcal{F}_1:= \{P \in Sys^{p \times p}: P^T = P, tr(P) = 1\}
+\end{align*}
+and we consider the bound over a set of projection instead of 1.
+\begin{theorem}[Davis-Kahn for $j = 1$]
+\begin{align*}
+	\|P_1(A) - P\|_F^2 \le \frac{2\langle A, P_1(A) - P \rangle}{\lambda_1(A) - \lambda_2(A)}
+	\quad \forall P \in \mathcal{F}_1
+\end{align*}
+\end{theorem}
+\begin{proof}
+	\begin{align*}
+		\langle A, P_1(A) - P\rangle &= \langle A, P_1(A)(I_p - P) \rangle - \langle A, (I_p - P_1(A))P \rangle\\
+	(1)	&= \lambda_1(A)\langle P_1(A), I_p- P\rangle - \langle A, (I_p - P_1(A))P \rangle \\
+	(2)	&\le \lambda_1(A)\langle P_1(A), I_p- P\rangle - \lambda_2\langle I_p - P_1(A), P\rangle\\
+	&= \lambda_1 (tr[P_1(A)I_p] - \langle P_1(A), P\rangle) - \lambda_2(tr[PI_p]- \langle P_1(A), P\rangle)\\
+	&= (\lambda_1 - \lambda_2 )(1- \langle P_1(A) , P\rangle)
+	\end{align*}
+	in(1) we used the spectral decomposition of symmetric matrix,  in (2) we used:
+	\begin{align*}
+		\langle A, (I_p - P_1(A))P \rangle &= \sum_{k >1}\langle \sum_{j = 1}^p \lambda_j(A)P_j(A), P_k(A) P\rangle\\ 
+		&= \sum_{k >1}\lambda_k(A)\langle P_k(A), P\rangle\\
+		&\le \lambda_2(A) \langle\sum_{k >1}P_k(A), P\rangle\\
+		&= \lambda_2(A)\langle I_p - P_1(A), P\rangle
+	\end{align*}
+	Finally, 
+	\begin{align*}
+		2 - 2\langle P_1(A), P\rangle &= \|P_1\|_F^2 + \|P\|_F^2 - 2\langle P_1, P \rangle\\
+		&= \|P_1 - P\|_F^2
+	\end{align*}
+\end{proof}
+
+
+
+
+\subsection{Sparse PCA and sparse clustering}
+\subsubsection*{sparse PCA}
+
+\begin{method}[sparce PCA]
+\begin{align*}
+	\hat{u}_1 \in  \arg\max_{x \in S^{p-1}, \|x\|_0 = s} \langle \hat{\Sigma}x, x\rangle
+\end{align*}
+\end{method}
+
+\begin{theorem}
+	Given the setting above, $X \in SG_p(\|\Sigma\|_2)$, and $\|u_1(\Sigma)\|_0 = s \le \frac{p}{2}$, then the s-sparse maximal eigenprojection satisfies:
+	\begin{align*}
+		\|P_1(\Sigma) - \hat{P}_1\|_F \le \frac{\|\Sigma\|_{op}}{\lambda_1 - \lambda_2} C\bigg\{\sqrt{\frac{s\log(\frac{ep}{2s})+ \delta}{n}} + \frac{s\log(\frac{ep}{2s})+\delta}{n}\bigg\}
+	\end{align*}
+	with the probability at least $1 - 2e^\delta$.
+\end{theorem}
+\begin{proof}
+	By Rayleigh:
+	\begin{align*}
+		\lambda_{max}(\hat{\Sigma}) =  \langle \hat{\Sigma}\hat{u}_1, \hat{u}_1\rangle = \|\hat{\Sigma}\|_2^2 \ge \|\hat{\Sigma}u_1(\Sigma)\|_2^2 &= \langle \hat{\Sigma}u_1(\Sigma), u_1(\Sigma)\rangle \\
+		\Rightarrow \langle\hat{\Sigma}, \hat{P_1}- P_1\rangle &\ge 0 \\
+		\Rightarrow - \langle\hat{\Sigma}, P_1 - \hat{P}_1\rangle &\ge 0
+	\end{align*}
+	therefore by Davis-Kahan:
+	\begin{align*}
+		\|P_1 - \hat{P_1}\|_F^2 \le \frac{2\langle \Sigma - \hat{\Sigma}, P_1 - \hat{P_1}\rangle}{\lambda_1 - \lambda_2}
+	\end{align*}
+	Observe:
+	\begin{align*}
+		\langle \Sigma - \hat{\Sigma}, P_1 -\hat{P_1}\rangle &\le \|\Sigma - \hat{\Sigma}\|_{op} \|P_1 - \hat{P_1}\|_1\\
+		(1)&= \|\Sigma_S - \hat{\Sigma}_S\|\|P_1 - \hat{P_1}\|_1\\
+		(2)&\le  \max_{|S| = 2s}\|\Sigma_S - \hat{\Sigma}_S\|\|P_1 - \hat{P_1}\|_1\\
+		(3)?&\le \max_{|S| = 2s}\|\Sigma_S - \hat{\Sigma}_S\|\sqrt{2}\|P_1 - \hat{P_1}\|_2
+	\end{align*}
+	In 1) we used Holder, 2) Jensen(sup-out) 3)Cauchy-Schwartz. In the end we have:
+	\begin{align*}
+		\|P_1 - \hat{P_1}\|_F^2 \le \frac{8\max_{|S| = 2s}\|\Sigma - \hat{\Sigma}\|_{op} }{\lambda_1 - \lambda_2} (8??)
+	\end{align*}
+	The problem now becomes the estimation of the covariance matrix:
+	\begin{align*}
+		\mathbb{P}(\max_{|S| = 2s}\|\Sigma - \hat{\Sigma}\|_{op} \ge t\|\Sigma\|_{op}) &\le \sum_{|S| = 2s}\mathbb{P}(\|\Sigma_S - \hat{\Sigma}_S\|_{op} \ge t \|\Sigma\|_{op})\\
+		&\le \binom{p}{2s} 9^{2s} \cdot 2\exp(-cn\min(t^2,t))\\
+		&\le \bigg(\frac{ep}{2s})^{2s} \cdot  9^{2s} \cdot 2\exp(-cn\min(t^2,t))
+	\end{align*}
+\end{proof}
+
+
+
+\subsubsection*{The convex relaxation of sparse PCA}
+For the convex case, instead of searching for the maximum eigenprojection of the covariance matrix, we search for the orthogonal symmetric matrix that maximise $\langle \hat{\Sigma}, P \rangle$ under the Lasso condition.
+\begin{method}
+Find
+\begin{align*}
+	\text{maximize } \langle \hat{\Sigma}, P\rangle\qquad \text{ over }
+	P \in \mathcal{F}_1, \|P\|_F= \sum_{ij}|P_{ij}| \le R^2
+\end{align*}
+Alternatively Lasso:
+\begin{align*}
+		\arg\max_{P \in \mathcal{F}^1}\langle \hat{\Sigma}, P\rangle - \lambda\sum_{i, j = 1}^p|P_{ij}|
+	\end{align*}
+\end{method}
+
+\begin{theorem}
+	Consider the method the above, given $u_1$ s-sparse, $R = \|u_1\|_1$.
+	\begin{align*}
+		\|P_1 - \hat{P}\|_F \le C \frac{\sigma^2}{\lambda_1 - \lambda_2}\bigg\{s \sqrt{{\frac{\log(p) + \delta}{n}}} + s \frac{\log(p) + \delta}{n} \bigg\} 
+	\end{align*}
+	with the probability at least $1 - 2e^\delta$.
+\end{theorem}
+\begin{proof}\quad\\
+	1.\textbf{The basic inequality:}
+	\begin{align*}
+		\|P_1 - \hat{P}\|_F \le \frac{2\langle \Sigma - \hat{\Sigma}, P_1 - \hat{P}\rangle}{\lambda_1 - \lambda_2}
+	\end{align*} 
+	2. \textbf{Estimating by maximum norm}
+	\begin{align*}
+		\|(P_1)_S\|_1 &= \|P_1\|_1 \\
+		&\ge \|\hat{P}\|_1\\
+		&= \|\hat{P} - P_1 + P_1\|\\
+		&= \| (P_1 - \hat{P})_S + (P_1 - \hat{P})_S + (P_1)_S + (\hat{P} - P_1)\|\\
+		&\ge \|(P_1)_S\|_1 - 2\|(P_1 - \hat{P})_S\|_1 + \|P_1 - \hat{P}\|_1  \\
+		\Rightarrow
+		\|P_1 - \hat{P}_1\|_1 &\le 2 \|(P_1 - \hat{P}_1)_S\|_1
+	\end{align*}
+	Therefore:
+	\begin{align*}
+		\|P_1 - \hat{P}\|_F &\le \frac{2\langle \Sigma - \hat{\Sigma}, P_1 - \hat{P}\rangle}{\lambda_1 - \lambda_2}\\
+		&\le \frac{1}{\lambda_1 - \lambda_2} 4\langle \Sigma- \hat{\Sigma}, (P_1 - \hat{P}_1)_S\rangle\\
+		&\le \frac{1}{\lambda_1 - \lambda_2} 4 \|\Sigma - \hat{\Sigma}\|_\infty \|(P_1 - \hat{P})_S\|_1  \\
+		&\le \frac{1}{\lambda_1 - \lambda_2} 4s \|\Sigma - \hat{\Sigma}\|_\infty \|(P_1 - \hat{P_1})_S\|_2\\
+		&\le \frac{1}{\lambda_1 - \lambda_2} 4s \|\Sigma - \hat{\Sigma}\|_\infty		
+	\end{align*}
+	3. \textbf{Concentration inequality }
+\end{proof}
+
+
+
+
+\newpage
+\section{The minimax lower bound}
+\begin{definition}[The maximum q-riks]
+Given a statistical model $(Y, \mathcal{F}, (\mathbb{P}_\theta)_{\theta\in \Theta})$ with $\Theta$ a subset of a metric space $(S, d)$. Let $\hat{\theta}$ be an estimator, we define the \textbf{maximum q-risk}
+\begin{align*}
+	\sup_{\theta \in \Theta} \mathbb{E}_\theta[ d^q(\hat{\theta}(Y), \theta)]
+\end{align*}
+And the Minimax-risk is defined as:
+\begin{align*}
+	\inf_{\hat{\theta}} \sup_\theta \mathbb{E}[d(\theta, \hat{\theta})^q]
+\end{align*}
+\end{definition}
+
+\begin{theorem}[The generalised Fano method]
+	Let $\Theta$ be a subset of the pseudometric space $(S, d)$. Observe the statistical model $(Y, \mathcal{F}, (\mathbb{P}_\theta)_{\theta \in \Theta})$. Given $\delta, \kappa > 0, \theta_1, \dots, \theta_M \in \Theta$ with
+	\begin{align*}
+		d(\theta_j, \theta_k) &\ge \delta \quad \forall j\neq k\\
+		KL(\mathbb{P}_{\theta_j}, \mathbb{P}_{\theta_k}) &\le \kappa \quad \forall j\neq k
+	\end{align*}
+	Then for every estimator $\hat{\theta}: Y \rightarrow S$ we have:
+	\begin{align*}
+		\max_{1 \le j \le M} \mathbb{E}_{\theta_j}[d^q(\hat{\theta}, \theta_j)] \ge (\frac{\delta}{2})^q \bigg(1 - \frac{\kappa + \log 2}{\log M}\bigg)
+	\end{align*}
+\end{theorem}
+
+\begin{example}[Kullback-Leibler divergence of Gaussian variable]
+For $\mathbb{P}_1 = N(\mu_1, \Sigma_1), \mathbb{P}_2 = N(\mu_1, \Sigma_2)$
+\begin{itemize}
+	\item For $\Sigma_1 = \Sigma_2 = \Sigma$, $\mu_1 \neq \mu_2$ :
+\begin{align*}
+	KL(\mathbb{P}_1, \mathbb{P}_2) = \frac{1}{2}\langle \mu_1 - \mu_2, \Sigma^{-1} (\mu_1 - \mu_2)\rangle
+\end{align*}
+\item For $\mu_1 = \mu_2 = 0$, $\Sigma_1 = \Sigma_2$:
+\begin{align*}
+	KL( \mathbb{P}_1, \mathbb{P}_2) = \frac{1}{2}\bigg(\log(\det(\Sigma_1) \slash \det( \Sigma_2)) + tr(\Sigma_2^{-1} \Sigma_1) - p \bigg)
+\end{align*}
+\end{itemize}
+	
+\end{example}
+
+
+\begin{lemma}[Packing number of the sphere]
+Given $0 \le \delta \le R$ and $S^{p-1} := \{ x \in \mathbb{R}^p: \|x\|_2 = R\}$ we can find $\nu_1, \dots, \nu_M$ with
+\begin{itemize}
+	\item $\|\nu_j - \nu_k\| > \delta$ for all $1 \le j \neq \le M$
+	\item $M \geq (\frac{R}{\delta})^{p-1}$
+\end{itemize}
+\end{lemma}
+\begin{remark}
+Recall in the previous subsection we proved another packing argument. When having $d(x_j, x_k) \le \delta$, there exists packing number satisfies $M \le (\frac{\delta}{1+ \delta})^p$.	
+\end{remark}
+
+
+\begin{example}[The linear model]
+	The linear model has the statistical model:
+	\begin{align*}
+		\mathbb{P}_{\beta \in \mathbb{R}^p} \sim N(X\beta, I_p \sigma^2)
+	\end{align*}
+	we define the metric $d$ on $\mathbb{R}^p$:
+	\begin{align*}
+		d(\beta, \beta'):= \|X(\beta - \beta')\|_2
+	\end{align*}
+	apply the last lemma on the sphere:
+	\begin{align*}
+		\{\gamma \in Im(X): \|\gamma\|_2 = 2 \sqrt{n} \delta\}
+	\end{align*}
+	we find $\gamma_1 \dots, \gamma_M$:
+	\begin{align*}
+		d(\beta, \beta') = \frac{1}{\sqrt{n}}\|X(\beta - \beta')\|_2 = 2 \delta \ge \delta
+	\end{align*}
+	On the other hand, the KL-divergence of $\mathbb{P}_{\beta_j}, \mathbb{P}_{\beta_k}$ is:
+	\begin{align*}
+		KL(\mathbb{P}_{\beta_j}, \mathbb{P}_{\beta_k}) = \frac{1}{\sigma^2}\|X(\beta_j - \beta_k\|^2_2 \le \frac{8n\delta^2}{\sigma^2} \\
+	\end{align*}
+	Choose subtable $n$ Apply Fano, for any estimator $\hat{\beta}$ :
+	\begin{align*}
+		\sup_\beta\mathbb{E}[d(\beta , \hat{\beta})^2 ] \ge \max_{1 \le j \le M} \mathbb{E}_{\beta_j} \frac{1}{n}\|X(\beta - \beta')\|_2^2 \ge C 
+	\end{align*}
+\end{example}
+
+\begin{example}[Classical PCA]
+	The classical PCA admits the statistical model:
+	\begin{align*}
+		\mathbb{P}_{v \in S^{p-1}} \sim N(0, \lambda v v^T I_p \sigma^2)
+	\end{align*}
+	The KL-divergence:
+	\begin{align*}
+		KL(\mathbb{P}_1, \mathbb{P}_2) &= \frac{n\lambda^2}{4(\lambda + 1)}\|uu^T - vv^T\|_F^2\quad (Proof?)\\
+		&\
+	\end{align*}
+\end{example}
+
+
+\begin{example}[Sparse linear model]
+\end{example}
+
+\begin{example}[sparse PCA]	
+\end{example}
+
+
+
+
+
+
+

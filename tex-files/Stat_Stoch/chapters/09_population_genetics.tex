@@ -1,0 +1,218 @@
+\chapter[Population Genetics]{Population Genetics and Markov Process}
+\section{Introduction}
+\subsection{The Wright-Fisher random graph}
+\begin{definition}[Wright-Fischer random graph]
+	Define
+	\begin{enumerate}
+		\item $V:= \mathbb{Z} \times N$ and $v(g, i)$ with $g \in \mathbb{Z}$, $i \in \{1, \dots, N)$
+		\item $\{U_v\}_{v \in V} \overset{d}{\sim} \textbf{U}\{1, \dots, N \}$ are i.i.d random variables
+		\item $(g - 1, U_v)$ is the parent of $v$.
+		\item The unoriented edge are denoted by $\langle U_v, v \rangle$. The set of the edges is  
+			\begin{equation*}
+				E:= \{\langle (g_v - 1, U_v), v \rangle | v \in V \}
+			\end{equation*}
+		\item \textbf{The Wright-Fisher random graph} is represented by 
+		 \begin{equation*}
+		 	 G := \{V, E\}
+		 \end{equation*}
+	\end{enumerate}
+\end{definition}
+
+\begin{definition}[The natural two-type Wright-Fisher process].
+\begin{itemize}
+	\item type space of cardinality 2, such as $\{+, - \}$.
+	\item $\mu$ a distribution on $\{+ , -\}^N$
+	\item The random map $t: V \rightarrow \{+, -\}$ with 
+	\begin{enumerate}
+		\item The initial distribution $(t(v) | g_{v} = g_0 ) \sim \mu$
+		\item $\forall g(v) > g_0: t(v) = t((g(v) - 1, u_v))$
+	\end{enumerate}
+	\item The \textbf{natural 2-type Wright-Fisher process}
+	\begin{equation*}
+		X^N(g_0, n) := \frac{1}{N}\sum_{i = 1}^N \textbf{1}\{t(g_0 + n, i) = "-"\}
+	\end{equation*}
+\end{itemize}
+\end{definition}
+
+\begin{remark}.
+\begin{itemize}
+	\item $X^N(g_0, n)$ is a Markov process because $(U_{v(g, i))})_{g \in \mathbb{Z}}$ are i.i.d. random vector
+	\item For the same reason the Markov chain is time-homogeneous and we can write $X^N(g_0, n)$ as
+	\begin{equation*}
+		X^N(n)
+	\end{equation*}
+\end{itemize}
+\end{remark}
+
+\begin{definition}[Ancester and Common Ancester].\\
+	$\tilde{v} \in V$ is an ancester of $v \in V$ if : 
+	\begin{itemize}
+		\item $g(\tilde{v}) < g(v)$
+		\item there exists a genelogical path from $\tilde{v}$ to $v$.
+	\end{itemize}
+	Define $V_g:= \{v \in V| g(v) > g\}$. We define $\tilde{v} \overset{g}{\sim} v $ if 
+	\begin{itemize}
+		\item $\tilde{v}, v \in V_g$
+		\item $\tilde{v}$, and $v$ have common ancester in generation $g$.
+	\end{itemize}
+\end{definition}
+
+\begin{theorem}
+	$\sim_g$ is an equivalence relation
+\end{theorem}
+\begin{remark}
+$\sim_g$ defines a partition on the set $[N]$.	
+\end{remark}
+
+\begin{definition}[The genealogy process]
+	Given a WFRG $(V, E)$, we set
+	\begin{itemize}
+		\item $\mu$ a distribution on $([N], 2^{[N]})$, which is independent from $U_v$. (the sampling)
+		\item $S \sim \mu$, $\Pi_0^N := \{\{S\}\}$, $k = | \Pi_0^N|$, $S = [k]$
+	\end{itemize}
+	The process $(\Pi^N(g_0, n))_{n \in \mathbb{N}_0}$ is the genealogy process of $\Pi^N_0$ given by a partition of $[k]$ induced by $\sim_{g_0 -n}$.
+\end{definition}
+\begin{remark}
+\end{remark}
+
+\begin{definition}[The block-counting process of geneology]
+\begin{equation*}
+	\forall n \in \mathbb{N}_0: \quad A^N(g_0, n) = |\Pi^N(g_0, n)|
+\end{equation*}
+\end{definition}
+
+\begin{definition}[Duality]
+	The process $(X_i)_{i \in I}$ and $(A_i)_{i \in I}$ is called $H$-dual, if:
+	\begin{equation*}
+		\forall i \in I, x \in E, a \in F: 
+		\mathbb{E}[H(X_i, a) |X_0 = x] = \mathbb{E}[H(x, A_i) | A_0 = a]
+	\end{equation*}
+	$H$ is called the duality function.
+\end{definition}
+
+\begin{theorem}
+	\begin{equation*}
+		\mathbb{E}[X^N(g_0, n)^a|X^N(g_0, 0) = x] = \mathbb{E}[x^{A^N(g_0, n)}  |A^N(g_0, 0) = a]
+	\end{equation*}
+	induced by notation in Bayes we write:
+	\begin{equation*}
+		\mathbb{E}_x[X_n^a] = \mathbb{E}_a[x^{A_n}]
+	\end{equation*}
+\end{theorem}
+
+
+\subsection{The scaling limit}
+\begin{definition}[the semi-group operator]
+Given a state space $E$ and a continuous-time Markov process $X_t$, we define:
+\begin{equation*}
+	P_t: C^0(E) \rightarrow C^0(E), f \rightarrowtail \mathbb{E}_x[f(X_t)] 
+\end{equation*}
+as the semi-operator.
+\end{definition}
+
+\begin{theorem}[Properties of the semi-group]
+	the semi-operator admits the properties of
+\begin{itemize}
+	\item \textbf{associativity}: $P_t \circ P_s = P_{t + s}$.
+	\item \textbf{monoid:} $P_0 = Id_{C_0(E)}$.
+\end{itemize}
+\end{theorem}
+\begin{proof}
+	By Chapman-Kolmogrov we have:
+	\begin{align*}
+		\mathbb{E}_x [\theta_s \circ \theta_t \circ f(X)] 
+	   =\mathbb{E}_x[\theta_{s + t} \circ f(X) ]
+	\end{align*}
+	and 
+	\begin{align*}
+		\mathbb{E}_x[\theta_s \circ \theta_{-s} \circ f(X)] = \mathbb{E}_x f
+	\end{align*}
+\end{proof}
+
+\begin{definition}[Generator of the semigroup]
+The generator of a semigroup $P_t$ on the state $x$ is defined as
+\begin{equation*}
+	A(f): D(A) \subset C^0(E) \rightarrow \mathbb{R},\quad f \rightarrowtail \lim_{t \rightarrow 0} \frac{P_t(f)|_x - P_0(f)|_x}{t}
+\end{equation*}
+or we write
+\begin{equation*}
+	A(f)|_x = \lim_{t \rightarrow 0} \frac{\mathbb{E}_x[f(X_t) - f(x)]}{t}
+\end{equation*}
+The domain where $A(f)$ is well-defined is denoted by $D(A)$, it includes the continuous function whose induced semi-group admits a generator.
+\end{definition}
+
+\begin{example}[Jump process in finite state space]
+Consider $Y_t$ a jump process in finite state space $E$. If the process jumps at exponential time, We have
+\begin{align*}
+	A(f) &= \lim_{t \rightarrow 0} \frac{\mathbb{E}_y[f(Y_t) - f(y)]}{t}\\
+	&= \lim_{t \rightarrow 0} \frac{\sum_{w \in E} \mathbb{P}(N_t = 1)(f(w) - f(y)) r_{yw} }{t}\\
+	(1)&= \sum_{w \in E}(f(w) - f(y))r_{wy} \\
+	(2)&= \int_E f(w) - f(y) \nu(w)
+\end{align*}
+
+(1) follows from that $N_t \sim Poisson(\lambda t)$. Therefore $\frac{\mathbb{P}(N_t = 1)}{t} = \frac{\lambda t }{t} e^{-\lambda t} \overset{ t \rightarrow 0}{\rightarrow}  1 $.\par
+(2) we define the measure $\nu(w):= \sum_{w \in E} r_{wy} \delta(y)$
+\end{example}
+
+\begin{example}[Deterministic ODE]
+Consider $R$ a deterministic process. Furthermore we have the ODE:
+\begin{equation*}
+	\frac{dR}{dt} = \mu(R)
+\end{equation*}
+Calculate the generator:
+\begin{align*}
+	A(f) &= \lim_{t \rightarrow 0} \frac{\mathbb{E}[f(R_t) - f(R_0)]}{t}\\
+	&= \lim_{t \rightarrow 0} \frac{f(R_t) - f(R_0)}{t}\\
+	&= f'(R_0) \mu(R_0)
+\end{align*}
+\end{example}
+
+\begin{example}[Random Walk]
+Given a Poisson process $N_t$, we can write the generator:
+\begin{equation*}
+	A(f)|_N = N (f(n+1) - f(n)) 
+\end{equation*}
+A random walk admits the generator:
+\begin{equation*}
+	A(f)|_x = r(x)(f(x+1) - f(x)) + q(x)(f(x-1) - f(x))
+\end{equation*}
+If the random walk is \textbf{symmetric} indexed by the Poisson process, then the jumping time of the random walk is controlled by the Poisson process. The generator of the process $(S_{N_t})_t$ could be written as
+\begin{align*}
+	A(f)|_{S_{N_t}} = \frac{N}{2} (f(x+1) - f(x)) + \frac{N}{2} (f(x-1) - f(x))
+\end{align*} 
+By rescaling the step size and applying the Taylor theorem, given $f \in C^3(\Omega)$, the process $\frac{S_{N_t}}{\sqrt{N}}$ admits the generator:
+\begin{align*}
+	A(f) &= \frac{N}{2}(\frac{f''(x)}{N} + o(N^{-\frac{3}{2}}))\\
+	&= \frac{f''(x)}{2} + o(N^{-\frac{1}{2}})
+\end{align*}
+Furthermore, the speed of the up-down movement could be controlled by the position of $x$, therefore we have:
+\begin{align*}
+	A(f) = \frac{f''(x) \sigma^2(x)}{2} + o(N^{\frac{1}{2}}) \quad
+	 \overset{N \rightarrow \infty}{\longrightarrow} \quad
+	 \frac{f''(x) \sigma^2(x)}{2}
+\end{align*} 
+The greater the $\sigma^2(x)$, the faster the Brownian motion moves.
+\end{example}
+
+\begin{definition}[Convergence of Operator]
+	A sequence of stochastic process $(S_t^N)_{t \in T}$ converges in operator if 
+	\begin{equation*}
+		\forall f \in D(A): A(f)_{S_N} \overset{L^1}{\rightarrow} A(f)_S
+	\end{equation*}
+\end{definition}
+\begin{remark}
+	
+\end{remark}
+
+
+\begin{theorem}
+\end{theorem}
+
+
+\subsection{Wright-Fisher diffusion}
+\begin{definition}[Diffusion]
+\end{definition}
+
+\begin{theorem}[Ito Formula]
+\end{theorem}
+

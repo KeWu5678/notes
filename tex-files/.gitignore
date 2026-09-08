@@ -1,0 +1,13 @@
+# Keep only LaTeX source files in Git.
+*
+.*
+!*/
+!.gitignore
+!*.tex
+!*.md
+!thesis/Mthesis.pdf
+!thesis/ref.bib
+!thesis/plot/*.png
+
+# Ignore the separate Thesis working tree.
+/Thesis/

@@ -1,0 +1,732 @@
+\chapter{Interest Rate Modelling}
+\section{Introduction}
+\section{Stochastic basics}
+
+\begin{theorem}[Bayes's rule for conditional expectation]
+Let 
+\[
+R = \frac{d\mathbb{\hat{P}}}{d\mathbb{P}}
+\]
+be the Radon–Nikodym derivative associated with 
+\((\Omega, \mathcal{F}, \mathbb{P})\) and \((\Omega, \mathcal{F}, \mathbb{\hat{P}})\),
+and \(X\) a random variable. Then
+\[
+\mathbb{E}^{\mathbb{\hat{P}}}[X \mid \mathcal{F}_t] = 
+\frac{\mathbb{E}^{\mathbb{P}}[R X \mid \mathcal{F}_t]}{\mathbb{E}^{\mathbb{P}}[R \mid \mathcal{F}_t]}.
+\]
+\end{theorem}
+
+\begin{theorem}[It\^o's Isometry]
+\label{thm:ito-isometry}
+Let $\{W_t\}_{t \ge 0}$ be a standard Brownian motion on a probability space 
+$(\Omega, \mathcal{F}, \{\mathcal{F}_t\}, \mathbb{P})$. 
+Suppose $X = \{X_s\}_{s \in [0,T]}$ is an \emph{adapted}, 
+square-integrable process (predictable in the strict sense) such that
+\[
+   \mathbb{E}\!\Bigl[\int_0^T X_s^2 \, ds\Bigr] < \infty.
+\]
+Then the It\^o integral
+\[
+   I_T(X) \;=\; \int_0^T X_s \, dW_s
+\]
+satisfies
+\[
+   \mathbb{E}\Bigl[\bigl(I_T(X)\bigr)^2\Bigr]
+   \;=\;
+   \mathbb{E}\Bigl[\int_0^T X_s^2 \, ds\Bigr].
+\]
+\end{theorem}
+
+\begin{proof}[Sketch of Proof]
+We prove the result in two main steps:
+
+\paragraph{Step 1: The case of simple (step) processes.}
+Let $X_t$ be a simple, predictable process of the form
+\[
+  X_t(\omega) \;=\; \sum_{k=0}^{n-1} \xi_k(\omega)\,\mathbf{1}_{[t_k, t_{k+1})}(t),
+\]
+where $0 = t_0 < t_1 < \cdots < t_n = T$ and each $\xi_k$ is 
+$\mathcal{F}_{t_k}$-measurable. Then the It\^o integral is
+\[
+  \int_0^T X_s \, dW_s 
+  \;=\; \sum_{k=0}^{n-1} \xi_k \bigl(W_{t_{k+1}} - W_{t_k}\bigr).
+\]
+
+Since $W_{t_{k+1}} - W_{t_k}$ are independent increments with mean zero 
+and variance $t_{k+1}-t_k$, we have
+\[
+  \mathbb{E}\Bigl[\Bigl(\sum_{k=0}^{n-1} 
+    \xi_k \bigl(W_{t_{k+1}} - W_{t_k}\bigr)\Bigr)^2\Bigr]
+  \;=\;
+  \sum_{k=0}^{n-1} 
+    \mathbb{E}\bigl[\xi_k^2\bigr]\;\mathbb{E}\bigl[(W_{t_{k+1}} - W_{t_k})^2\bigr].
+\]
+The cross terms vanish because of independence and zero mean of each increment. 
+Using $\mathbb{E}[(W_{t_{k+1}} - W_{t_k})^2] = t_{k+1} - t_k$,
+\[
+  \sum_{k=0}^{n-1} \mathbb{E}[\xi_k^2]\,(t_{k+1} - t_k)
+  \;=\;
+  \mathbb{E}\Bigl[ \sum_{k=0}^{n-1} \xi_k^2\,(t_{k+1} - t_k) \Bigr]
+  \;=\;
+  \mathbb{E}\Bigl[\int_0^T X_s^2 \, ds\Bigr].
+\]
+Hence, for simple processes $X_t$,
+\[
+  \mathbb{E}\Bigl[\Bigl(\int_0^T X_s \, dW_s\Bigr)^2\Bigr]
+  \;=\;
+  \mathbb{E}\Bigl[\int_0^T X_s^2 \, ds\Bigr].
+\]
+
+\paragraph{Step 2: Approximation by simple processes.}
+For a general (predictable) process $X_t$ satisfying 
+$\mathbb{E}[\int_0^T X_s^2\,ds] < \infty$, we can approximate $X$ in $L^2$ 
+by a sequence of simple processes $\{X^{(n)}\}$ such that
+\[
+   \int_0^T \mathbb{E}\bigl[(X_s - X_s^{(n)})^2\bigr]\,ds 
+   \;\xrightarrow[n\to\infty]{}\; 0.
+\]
+Define 
+\[
+   I_T(X^{(n)}) \;=\; \int_0^T X_s^{(n)} \, dW_s.
+\]
+By the result for simple processes (Step~1),
+\[
+   \mathbb{E}\Bigl[\bigl(I_T(X^{(n)})\bigr)^2\Bigr]
+   \;=\;
+   \mathbb{E}\Bigl[\int_0^T \bigl(X_s^{(n)}\bigr)^2 \, ds\Bigr].
+\]
+One shows, using It\^o isometry itself on the difference and 
+dominated convergence arguments, that
+\[
+   \int_0^T X_s^{(n)} \, dW_s 
+   \;\xrightarrow{L^2}\;
+   \int_0^T X_s \, dW_s
+\]
+and
+\[
+   \int_0^T \bigl(X_s^{(n)}\bigr)^2 \, ds
+   \;\xrightarrow{L^1}\;
+   \int_0^T X_s^2 \, ds.
+\]
+Thus, taking limits yields
+\[
+   \mathbb{E}\Bigl[\Bigl(\int_0^T X_s \, dW_s\Bigr)^2\Bigr]
+   \;=\;
+   \mathbb{E}\Bigl[\int_0^T X_s^2 \, ds\Bigr],
+\]
+as required.
+\end{proof}
+
+\begin{theorem}[Ito's Lemma in One Dimension]
+\label{thm:Ito}
+Let $X_t$ be a one-dimensional Ito process satisfying the stochastic differential equation
+\[
+   dX_t = \mu(t, X_t)\,dt \;+\; \sigma(t, X_t)\, dW_t,
+\]
+where $W_t$ is a standard Brownian motion. Suppose $f(t, x)$ is a function such that
+\[
+   f \in C^{1,2}([0,T] \times \mathbb{R}) 
+   \quad(\text{once in } t, \text{twice in } x).
+\]
+Then $Y_t = f(t, X_t)$ satisfies
+\[
+   df(t, X_t)
+   \;=\;
+   \left(
+     \frac{\partial f}{\partial t} 
+     + \mu \,\frac{\partial f}{\partial x} 
+     + \tfrac{1}{2}\,\sigma^2 \,\frac{\partial^2 f}{\partial x^2}
+   \right)\!dt
+   \;+\;
+   \sigma \,\frac{\partial f}{\partial x}\,dW_t.
+\]
+\end{theorem}
+
+\begin{proof}
+\textbf{Step 1: Setup and Taylor expansion.}
+
+Fix a small time increment $\Delta t > 0$. Let
+\[
+   \Delta X_t \;=\; X_{t+\Delta t} - X_t 
+   \;\approx\; \mu(t, X_t)\,\Delta t \;+\; \sigma(t, X_t)\,\Delta W_t,
+\]
+where $\Delta W_t = W_{t+\Delta t} - W_t \sim \mathcal{N}(0,\Delta t)$.
+
+Consider 
+\[
+   \Delta f \;=\; f(t + \Delta t, X_t + \Delta X_t) \;-\; f(t, X_t).
+\]
+By a second-order Taylor expansion around $(t, X_t)$,
+\[
+   \Delta f 
+   \;\approx\;
+   \frac{\partial f}{\partial t}(t,X_t)\,\Delta t
+   \;+\;
+   \frac{\partial f}{\partial x}(t,X_t)\,\Delta X_t
+   \;+\;
+   \tfrac{1}{2}\,\frac{\partial^2 f}{\partial x^2}(t,X_t)\,(\Delta X_t)^2.
+\]
+Higher-order (small) terms are omitted as $\Delta t \to 0$.
+
+\medskip
+\textbf{Step 2: Substitute the SDE and use $(dW_t)^2 \approx dt$.}
+
+Since
+\[
+   \Delta X_t 
+   \;\approx\;
+   \mu\,\Delta t + \sigma\,\Delta W_t,
+\]
+we have
+\[
+   (\Delta X_t)^2
+   \;=\;
+   (\mu\,\Delta t + \sigma\,\Delta W_t)^2
+   \;\approx\;
+   \mu^2 (\Delta t)^2 + 2\,\mu\,\sigma\,\Delta t\,\Delta W_t + \sigma^2\,(\Delta W_t)^2.
+\]
+As $\Delta t \to 0$:
+\[
+   (\Delta t)^2 \;\to\; 0 
+   \quad\text{(faster than } \Delta t\text{)},
+   \quad
+   \Delta t \,\Delta W_t \;\text{is } O((\Delta t)^{3/2}),
+   \quad
+   (\Delta W_t)^2 \;\approx\; \Delta t.
+\]
+Hence the dominant term in $(\Delta X_t)^2$ is $\sigma^2 \Delta t$.
+
+Substitute back:
+\[
+   (\Delta X_t)^2 \;\approx\; \sigma^2 (\Delta W_t)^2 \;\approx\; \sigma^2 \,\Delta t.
+\]
+
+\medskip
+\textbf{Step 3: Collect terms in $\Delta t$ and $\Delta W_t$.}
+
+Therefore,
+\[
+   \Delta f 
+   \;\approx\;
+   \frac{\partial f}{\partial t}\,\Delta t
+   \;+\;
+   \frac{\partial f}{\partial x}\,\bigl(\mu\,\Delta t + \sigma\,\Delta W_t\bigr)
+   \;+\;
+   \tfrac{1}{2}\,\frac{\partial^2 f}{\partial x^2}\,\sigma^2 \Delta t.
+\]
+Combine the terms:
+\[
+   \Delta f
+   \;=\;
+   \Bigl(\frac{\partial f}{\partial t} 
+         + \mu\,\frac{\partial f}{\partial x} 
+         + \tfrac{1}{2}\,\sigma^2\,\frac{\partial^2 f}{\partial x^2}\Bigr)\,\Delta t
+   \;+\;
+   \sigma\,\frac{\partial f}{\partial x}\,\Delta W_t.
+\]
+
+\medskip
+\textbf{Step 4: Pass to the limit as $\Delta t \to 0$.}
+
+In the limit $\Delta t \to 0$, we write in differential form:
+\[
+   df(t,X_t)
+   \;=\;
+   \Bigl(\frac{\partial f}{\partial t} 
+         + \mu\,\frac{\partial f}{\partial x} 
+         + \tfrac{1}{2}\,\sigma^2\,\frac{\partial^2 f}{\partial x^2}\Bigr)\,dt
+   \;+\;
+   \sigma\,\frac{\partial f}{\partial x}\,dW_t.
+\]
+
+This is precisely the claimed \emph{Ito's Lemma}, which generalizes the usual chain rule to the stochastic setting, accounting for the quadratic variation of Brownian motion.
+\end{proof}
+
+\begin{remark}
+The extra term $\tfrac{1}{2}\,\sigma^2\,\frac{\partial^2 f}{\partial x^2}$ in the $dt$ component
+appears because $(dW_t)^2 \approx dt$. This sets Ito's Lemma apart from the standard
+deterministic chain rule.
+\end{remark}
+
+
+\subsection{Financial Market Basics}
+\begin{definition}[Financial Market]
+We assume \( p \) (dividend-free\(^1\)) assets \( X(t) = [X_1(t), \dots, X_p(t)]^\top \), which are driven by Ito processes:
+\[
+dX(t) = \mu(t, \omega)\,dt + \sigma(t, \omega)\,dW(t).
+\]
+\end{definition}
+
+\begin{definition}[Trading Strategy]
+A trading strategy represents a \textcolor{orange}{predictable} adapted process (of asset weights)
+\[
+\phi(t, \omega) = [\phi_1(t, \omega), \dots, \phi_p(t, \omega)]^\top.
+\]
+The value of the trading strategy (or corresponding portfolio) is
+\[
+\pi(t) = \phi(t)^\top X(t).
+\]
+\end{definition}
+
+
+\begin{definition}[Numeraire]
+	A Numeraire is a positive asset $N(t)$ of our market. An equivalent martingale measure(w.r.t. numeraire $N(t)$) is a measure $\mathbb{Q}$ such that the normalised asset price $\frac{X_i(t)}{N(t)}$ is a $\mathbb{Q}$ martingale.
+	The Radon-Nikodym density from $\mathbb{Q}^N$ to $\mathbb{Q}^M$ is
+\[
+\zeta(t) = \frac{M(t)}{N(t)} \cdot \frac{N(0)}{M(0)}.
+\]
+	
+\end{definition}
+
+\begin{theorem}[The Fundamental Theorem of Asset Pricing]
+	
+\end{theorem}
+
+
+
+\section{Basic Fixed Income Modelling}
+In the next we introduce a central concept in the financial market. 
+\begin{definition}[Short rate and (abstract)bank account]
+	An asset with price $B(t)$ given by $B(0) = 1$ and 
+	\begin{equation*}
+		dB(t) = r(t)B(t)dt
+	\end{equation*}
+	therefore
+	\begin{equation*}
+		B(t) = \exp\left(\int_0^t r(s) ds\right)
+	\end{equation*}
+\end{definition}
+
+The short rate is normally considered as \textbf{risk-free rate}, set by the central bank. It is crucial to determine the equivalent Martingale measure. Accordingly, the most relevant assets are Zero Coupon Bonds, the short rate determine the most basis asset in financial market: money asset account, which serves as numeraire of financial assets).
+
+
+\begin{definition}[(ZCB)zero coupon bond]
+Define 
+\begin{equation}
+	P(t, T) 
+\end{equation}
+the price of a zero coupon bond at time $t$ of maturity $T$ with the payout at terminal time $1$($P(T, T) = 1$). It is a martingale with respect to w.r.t. $B(t)$ as Numeraire. 
+	\begin{equation*}
+		\mathbb{E}^{\mathbb{Q}}[ \frac{P(t, T)}{B(t)}] = \mathbb{E}^\mathbb{Q}\left[\frac{P(T, T)}{B(T)}\right] = \mathbb{E}^\mathbb{Q} \left[\exp(-\int_0^T r(s)ds)\right].
+	\end{equation*} 
+	Multiplying both sides by $B(t)$, it holds:
+	\begin{equation*}
+		\mathbb{E}^\mathbb{Q} [P(t, T)] = \mathbb{E}^\mathbb{Q}\left[\exp(-\int_t^T r(s) ds)\right]
+	\end{equation*}
+\end{definition}
+ 
+
+\begin{definition}[Discounted Cashflow Methodology]
+Given $V$ the cash flow stream, we have by FTAP
+	\begin{equation*}
+		\frac{V(t)}{B(t)} = \sum_{i = 1}^N \mathbb{E}^{\mathbb{Q}}\left[\frac{V_i}{B(T_i)}|\mathcal{F}_t\right] 
+	\end{equation*}
+	We denote 
+	\[
+	\mathbb{E}^{T_i}[ \cdot ]
+	\]
+	the expectation in $T_i$ forward measure with zero coupon bond numeraire $P(t, T_i)$. Do the measure change
+	\[
+\frac{V(t)}{B(t)} = \sum_{i=1}^{N} \mathbb{E}^{T_i} \left[ \frac{P(t, T_i)}{B(t)} \cdot \frac{V_i}{P(T_i, T_i)} \;\middle|\; \mathcal{F}_t \right].
+\]
+We have therefore
+	\begin{equation*}
+		V(t) = \sum^N_{i = 1}P(t, T_i) \mathbb{E}^{T_i}[V_i|\mathcal{F}_t]
+	\end{equation*}
+	If the future cash flow is known, then
+	\begin{equation*}
+		V(t) = \sum^N_{i = 1}P(t, T_i) V_i
+	\end{equation*}
+	In general, the challenge lies in predicting the future cash flow.
+\end{definition}
+
+
+
+\section{Yield Curve and Linear Product}
+\subsection{Static Yield Curve and Market Convention}
+
+\begin{definition}[Yield Curve]	
+A yield curve at an observation time $t$ is the function of the \textbf{zero coupon bonds} $P(t, \cdot): [t, \infty) \rightarrow \mathbb{R}^+$ for maturities $T \geq t$ to the IRR. The x-axis is the maturity, the y-axis is the calculated interest rate $z$. There are different methods to calculate $z$:  \\
+\textbf{discrete compounded zero rate curve}
+\begin{equation*}
+	P(t, T) = ( 1 + \frac{z_p(t, T)}{p})^{-p(T-t)}
+\end{equation*}
+\textbf{simple compounded zero rate curve}
+\begin{equation*}
+	P(t, T) = \frac{1}{1 + z_0(t, T)\cdot(T - t)}
+\end{equation*}
+\textbf{continuously compounded zero rate curve}
+\begin{equation*}
+	P(t, T) = \exp\{ - z(t, T) \cdot (T - t) \}
+\end{equation*}
+\end{definition}
+\begin{remark}
+Typically, we have $t = 0$. 	
+\end{remark}
+
+
+\begin{definition}[Continuous Forward Rate]
+\begin{equation*}
+	f(t, T) = -\frac{\partial ln(P(t, T))}{\partial T}
+\end{equation*}
+\end{definition}
+\begin{remark}
+\quad
+\begin{enumerate}
+	\item The continuous rate is the spot rate at the maturity. 
+	\item Holiday Calendar. Business day Convention.
+\end{enumerate}
+\end{remark}
+
+\begin{definition}[Day Count Convention]
+A day count convention is a function 
+\[
+\tau : \mathcal{D} \times \mathcal{D} \to \mathbb{R}
+\]
+which measures a time period between dates in terms of years.
+\end{definition}
+
+
+\subsection{Multi-Curve Discounted Cash Flow Pricing}
+By simple calculation we determine the fair rate of the interbank lending rate:
+\begin{definition}[Spot Libor Rate]
+Fair rate for interbank lending deal with trade date $T$.
+\begin{equation*}
+	L(T;T_0, T_1) = \bigg[\frac{P(T, T_0)}{P(T, T_1)} - 1\bigg] \frac{1}{\tau}
+\end{equation*}
+\end{definition}
+\begin{remark}
+\quad
+\begin{enumerate}
+	\item The Libor rate is daily updated.
+	\item The interval $[T_0, T_1]$ is typically 1m, 3m, 6m, 12m. 
+\end{enumerate}	
+\end{remark}
+
+We observe the plain vanilla legs with DCF methodology: 
+\[
+V(t) = \sum_{i=1}^{N} P(t, T_i) \cdot \mathbb{E}^{T_i} \left[ L(T_{i-1}^F, T_{i-1}, T_i) \cdot \tau_i \mid \mathcal{F}_t \right]
+\]
+
+
+
+The next theorem shows: Libor is a martingale in the terminal measure with the Numeraire of zero coupon bond of maturity $T_1$.
+
+\begin{theorem}[Martingale Property of Libor rate]
+	The Libor rate $L(T, T_0, T_1)$ is a martingale with respect in the $T_1$-forward measure. And we have:
+	\begin{equation*}
+		\mathbb{E}^{T_1} [L(T;T_0, T_1)|\mathcal{F}_t] = \left[\frac{P(t, T_0)}{P(t, T_1)} - 1\right] \frac{1}{\tau} = L(t; T_0, T_1)
+	\end{equation*}
+	Which allows us to price the Libor leg based on $t$:
+	\begin{equation*}
+		V(t) = \sum^N_{i = 1} P(t, T_i) 
+	\end{equation*}
+\end{theorem}
+\begin{proof}
+Fair Libor rate at fixing time $T$ is
+\[
+L(T; T_0, T_1) = \frac{P(T, T_0)}{P(T, T_1)} - \frac{1}{\tau}
+\]
+The zero coupon bond $P(T, T_0)$ is an asset, and $P(T, T_1)$ is the numeraire in the $T_1$-forward measure. Thus, FTAP yields that the discounted asset price is a martingale, i.e.,
+\[
+\mathbb{E}^{T_1} \left[\frac{P(T, T_0)}{P(T, T_1)} \middle| \mathcal{F}_t \right] = \frac{P(t, T_0)}{P(t, T_1)}.
+\]
+
+Linearity of the expectation operator yields:
+\[
+\mathbb{E}^{T_1} \left[L(T; T_0, T_1) \middle| \mathcal{F}_t \right] = \mathbb{E}^{T_1} \left[\frac{P(T, T_0)}{P(T, T_1)} - 1 \middle| \mathcal{F}_t \right] \frac{1}{\tau}.
+\]
+
+\[
+= \left[\frac{P(t, T_0)}{P(t, T_1)} - 1\right] \frac{1}{\tau}.
+\]
+
+\[
+= L(t; T_0, T_1).
+\]
+\end{proof}
+
+
+
+
+\subsection{The Tenor-basis Modelling}
+
+
+\[
+\frac{V(T)}{B(T)} = \mathbb{E}^{\mathbb{Q}} \left[
+-\mathbbm{1}_{\{\xi_B > T_0\}} \cdot \frac{1}{B(T_0)} 
++ \mathbbm{1}_{\{\xi_B > T_1\}} \cdot \frac{1 + K \cdot \tau}{B(T_1)}
+\;\middle|\; \mathcal{F}_T \right].
+\]
+\[
+\text{(all expectations conditional on } \mathcal{F}_T \text{)}
+\]
+
+\[
+V(T) = -P(T, T_0) Q(T, T_0) \mathbb{E}^{T_0}[1] 
++ P(T, T_1) Q(T, T_1) \mathbb{E}^{T_1}[1 + K \cdot \tau].
+\]
+
+\subsubsection{the hazard rate model}
+\begin{itemize}
+    \item \textbf{Survival Probability:}
+    \[
+    S(t) = \mathbb{P}(\tau > t)
+    \]
+    The probability that the default event has not occurred by time \(t\).
+
+    \item \textbf{Hazard Rate (\(\lambda(t)\)):}
+    \[
+    \lambda(t) = \lim_{\Delta t \to 0} \frac{\mathbb{P}(t \leq \tau < t + \Delta t \mid \tau > t)}{\Delta t}
+    \]
+    The instantaneous rate of default at time \(t\), conditional on survival up to \(t\).
+
+    \item \textbf{Relationship Between Hazard Rate and Survival Probability:}
+    \[
+    S(t) = \exp\left(-\int_0^t \lambda(u) \, du\right)
+    \]
+    Survival probability decreases exponentially with the cumulative hazard.
+
+    \item \textbf{Applications:}
+    \begin{itemize}
+        \item \textbf{Credit Default Swap (CDS) Pricing:} Hazard rates are used to model expected cash flows from default protection.
+        \item \textbf{Bond Pricing with Default Risk:}
+        \[
+        P(t) = \int_t^T \exp\left(-\int_t^u (r(s) + \lambda(s)) \, ds\right) c(u) \, du
+        \]
+        where \(r(t)\) is the risk-free rate, \(\lambda(t)\) is the hazard rate, and \(c(u)\) is the cash flow.
+        \item \textbf{Portfolio Credit Risk:} Used to model correlated defaults in portfolios.
+    \end{itemize}
+
+    \item \textbf{Advantages:}
+    \begin{itemize}
+        \item Flexibility to model time-varying hazard rates \(\lambda(t)\).
+        \item Simplifies calculations using the exponential relationship with survival probabilities.
+        \item Intuitive interpretation of default intensity at any point in time.
+    \end{itemize}
+
+    \item \textbf{Challenges and Limitations:}
+    \begin{itemize}
+        \item Calibration of hazard rates from market or historical data can be difficult.
+        \item Assumes independent defaults, which may not hold during crises.
+        \item Correlations between multiple entities add complexity.
+    \end{itemize}
+    
+    \item \textbf{Extensions:}
+    \begin{itemize}
+        \item \textbf{Stochastic Hazard Rates:} Models where \(\lambda(t)\) is itself a stochastic process.
+        \item \textbf{Multi-State Hazard Models:} Allows transitions between different credit states (e.g., downgrade, default).
+        \item \textbf{Reduced-Form Credit Risk Models:} Focus on the likelihood of credit events rather than explicit asset dynamics.
+    \end{itemize}
+\end{itemize}
+
+
+\begin{theorem}
+	Deterministic hazard rate assumption preserves the martingale property of the forward Libor rate.
+\end{theorem}
+
+
+\subsection{Vanilla Interest Models}
+\subsubsection{Vanilla Interest Rate Option}
+
+\begin{theorem}[Martingale representation theorem]
+\end{theorem}
+
+\begin{theorem}[Bachelier Formula]	
+\end{theorem}
+
+\begin{theorem}[Black Formula]
+\end{theorem}
+
+
+
+\section{Introduction To Risk Measures}
+\begin{definition}[some properties]\
+Given $\mathcal{X}$ the class of financial position, the function $\rho: \mathcal{X} \rightarrow \mathbb{R}$ is a risk measure if it satisfies
+\begin{enumerate}
+	\item monotonicity: if $X \le Y$, it holds $\rho(Y) \le \rho(X)$. 
+	\item translation invariant: $\rho(X + m) = \rho(X) - m$. 
+	\item normalisation: $\rho(0) = 0$. 
+\end{enumerate}
+\end{definition}
+\begin{remark}
+The cash invariance implies in particular
+\begin{align*}
+	& \rho(X + \rho(X)) = \rho(X) - \rho(X) = 0.
+\end{align*}	
+\end{remark}
+
+A risk measure can enjoy many properties, such as convexity (decentralised risk management), positive homogeneous. 
+
+\begin{definition}[acceptance set]
+	The acceptance set for the risk  is defined as 
+	\begin{align*}
+		\mathcal{A}_\rho (X):= \{ X \in \mathcal{X}: \quad \rho(X) \le 0)
+	\end{align*}
+\end{definition}
+
+\begin{proposition}
+	positive homogeneity and convexity imply subadditivity. 
+\end{proposition}
+Positive homogeneity is strict. In the case where the risk grows nonlinearly w.r.t. position, we only focus on the convexity. In fact, subadditive functions are usually concave, which motivates the following definition:
+
+\begin{definition}[coherent monetary utility functional and coherent risk measure]
+A functional $\phi: \mathcal{X} \rightarrow \mathbb{R}$ is called a coherent monetary utility functional if it is monotone, concave, positive homogeneous and cash invariant. The functional 
+\begin{align*}
+	\rho(X) = - \phi(X),
+\end{align*}
+is called a coherent risk measure. 
+\end{definition}
+
+The following theorem gives a robust representation of the risk measure $\rho$: 
+\begin{align*}
+	\rho(X) = \sup_{Q \in \mathcal{M}_{1, f}} \bigg( \mathbb{E}^Q(X) - \alpha (Q) \bigg)
+\end{align*}
+
+\begin{theorem}
+	A convex risk measure $\rho$ on $\mathcal{X}$ is of the form
+	\begin{equation}
+		\rho(X) = \max_{Q \in \mathcal{M}_{1, f}}  \bigg(\mathbb{E}_Q[-X] - \alpha^{\min}(Q) \bigg),
+	\end{equation}
+	where
+	\begin{equation}
+		\alpha^{\min}(Q):= \sup_{X \in \mathcal{A}_p}  \mathbb{E}_Q [-X]  \qquad Q \in \mathcal{M}_{1, f}.
+	\end{equation} 
+	$\alpha^{\min}$ dominate all the penalty term that admits the representation of $\rho$. 
+\end{theorem}
+\begin{proof}
+\quad\\
+\textbf{I.} 
+\begin{align*}
+	\rho(X) \ge \sup_{Q \in \mathcal{M}_{1, f}} \bigg( \mathbb{E}_Q[-X] - \alpha^{\min} (Q) \bigg)\quad \forall X \in \mathcal{X}
+\end{align*}
+It holds in particular by the cash invariance
+\begin{align*}
+	X':= X + \rho(X) \in \mathcal{A}_\rho.
+\end{align*}
+Taking $X'$ for the $\alpha^{\min}$ function, it holds
+\begin{align*}
+	\forall Q \in \mathcal{M}_{1, f}: \quad RHS \le  \mathbb{E}_Q[-X] - \mathbb{E}_Q[X] - \rho(X) = \rho(X).
+\end{align*}
+Hence the statement holds.
+\quad\\
+\textbf{II.} Next we show the inverse direction, i.e., 
+\begin{align*}
+	\rho(X) \le \mathbb{E}_{Q_X}[-X] - \alpha^{\min}(Q_X),
+\end{align*}
+for some $Q_X$ depends on $X$.
+
+\quad\\
+\textbf{II.1, simplification} w.o.l.g we prove for $X \in \mathcal{X}$ with $\rho(X) = 0$ and also we assume since $\rho$ is cash invariant. (Why???) And we assume $\rho(0) = 0$. \par 
+\quad\par 
+Next, define 
+\begin{align*}
+	\mathcal{B}:= \{ Y \in \mathcal{X}: \rho(Y) < 0\}
+\end{align*}
+Noted $\mathcal{B}$ is convex and open (why???). Since $\rho(0) = 0$, by Hahn-Banach separation theorem (of open convex subspace) there exist a functional $l$ on $\mathcal{X}$ such that
+\begin{align*}
+	l(X) \le \inf_{Y \in \mathcal{M}} l(Y):= b. 
+\end{align*}
+Show the following claim:
+\begin{align*}
+	& 1). l(Y) \ge 0 \quad \forall Y \in \mathcal{B},\\
+	& 2). l(1) > 0. 
+\end{align*}
+1). By the cash invariance and convexity and $\rho(0) = 0$, it holds
+\begin{align*}
+	\rho(\lambda Y + (1 - \lambda) \epsilon) & \le \lambda \rho (Y) + ( 1 - \lambda ) \rho(\epsilon) 
+\end{align*}
+Taking $\epsilon \rightarrow 0$, by continuity it holds for $\lambda > 0$. 
+\begin{align*}
+	\rho (\lambda Y) \le \lambda \rho(Y) < 0. \Rightarrow \lambda Y \in \mathcal{B}
+\end{align*}
+By the cash invariance $ 1 + \lambda Y \in \mathcal{B}$, it holds
+\begin{align*}
+	l( 1 + \lambda Y) = l(1) + \lambda l(Y)
+\end{align*}
+
+
+\quad\\
+2) Since $l$ it not trivial on $\mathcal{B}$, there exists $Y \in \mathcal{B}$ with $l(Y) > 0$, normalised $Y$ such that $\|Y\|_{L^\infty} \le 1$(???) and write $l(Y) = l(Y^+) + l(Y^-) \le l(1) $. It holds
+\begin{align*}
+	& l(1 - Y^+) \ge l(Y^-) > 0, \\
+	& l(Y^+) > 0,	
+\end{align*}
+hence $l(1) = l(1 - Y^+) + l(Y^+) > 0$. By the representation theorem, there exists a content that represent the linear functional $l$, i.e., there exists a $Q \in \mathcal{M}_{1, f}$, such that
+\begin{align*}
+	l(X) = \mathbb{E}_Q[X] \cdot l(1) \quad \forall X \in \mathcal{X}, 
+\end{align*} 
+hence
+\begin{align*}
+	\mathbb{E}_Q  [Y] = \frac{l(Y)}{l(1)} \quad \forall Y \in \mathcal{B}. 
+\end{align*}
+\end{proof}
+
+
+
+
+\begin{example}[entropic risk measure]
+Consider the penalty function defined on the space of measure
+\begin{align*}
+	\alpha: \mathcal{M} \rightarrow (0, \infty]
+\end{align*}
+\begin{align*}
+	\rho(X):= \sup_{Q \in \mathcal{M}_1} \bigg\{ \mathbb{E}_{\mathbb{Q}} [-X] - \frac{1}{\beta} KL(\mathbb{Q}|\mathbb{P}) \bigg\}.
+\end{align*}
+\end{example}
+
+\begin{example}[shortfall risk]
+	
+\end{example}
+
+\subsection{\texorpdfstring{Convex risk measure on $L^\infty$}{Convex risk measure on L-infinity}}
+
+\subsection{\texorpdfstring{V$@$R, AV$@$R and shortfall risk.}{VaR, AVaR and shortfall risk.}}
+The Var Model is one of the most widely used model. It was invented by JP.Morgen, it indicated the quantile of loss, i.e., the loss of the position is at least $X$ with probability at most $\lambda$. It improves the traditional variance-based risk measure in that it calculates the not only the volatility, but also the expected loss under the worst case. On the other hand, it is also criticised as pro-cycle since it's calibrated on the recent data. 
+\begin{definition}[value at risk]
+	Given the probability space $(\Omega, \mathcal{F}, \mathbb{P})$ and $X$ a random variable on it, we observe the $\lambda$-quantile function
+	\begin{align*}
+		q_X(\lambda):= \{q \in \Omega:\quad \mathbb{P}[X \le q] \ge \lambda \texttt{ and } \mathbb{P}(X < q) \le \lambda \}. 
+	\end{align*}
+	By the right-continuity of the cdf we define the value at risk as
+	\begin{equation}
+		V@R_\lambda(X):= -q^+_X(\lambda). 
+	\end{equation}
+\end{definition}
+
+\begin{proposition}
+	For any $X \in L^\infty$ and each $\lambda \in (0, 1)$, it holds
+	\begin{align*}
+		V@R_\lambda(X) = \min_\rho \{ \rho(x): \quad \rho \text{ convex,  continuous from above, dominates V@R} \}.  
+	\end{align*}
+\end{proposition}
+
+\begin{definition}[AV@R]
+The average value at risk is defined as
+\begin{align*}
+	AV@R (X):= \frac{1}{\lambda} \int_0^\lambda V@R_\gamma (X) d\gamma
+\end{align*}
+\end{definition}
+
+
+\subsubsection{The Shortfall Risk}
+Given $u: \mathbb{R} \rightarrow \mathbb{R}$ the utility function, define the lost function
+\begin{align*}
+	l(x): \mathbb{R} \rightarrow \mathbb{R}, \quad x \mapsto - u(-x). 
+\end{align*}
+Define the acceptance set:
+\begin{align*}
+	\mathcal{A} := \{ X \in \mathcal{X}:  \mathbb{E}[u(x)] \ge y_0 \}.
+\end{align*}
+We are able to define the convex monetary risk measure $\rho$ (Why??? define as such)
+\begin{equation}
+	\rho(X):= \inf_{ m \in \mathbb{R}} \{ m |\rho(X + m) \ge y_0 \}
+\end{equation}
+The following 
+
+\begin{definition}[shortfall risk]
+\begin{align*}
+	\alpha^{\min}(Q)
+\end{align*}
+\end{definition}
+

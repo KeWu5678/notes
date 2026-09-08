@@ -26,12 +26,10 @@ Observing the profile, it decompose into the interior part and the boundary part
 
 The ridge activation evaluates along the ridge line as a -> infinity. It intersect the boundary on a nontrivial surface measure only if the boundary is also a flat line. 
 ```
----
 
 
 ## The Measure Theory: 
 
----
 - what measure admits a Hahn decomposition?
 ```text 
 The Hahn decomposition require almost nothing for the underlying topology of the measure. It only needs to be a measurable space. 
@@ -44,7 +42,7 @@ It assumes property of the measure function: it need to be signed, real-valued, 
 Basically all the Radon measure. If the measure is not finite, we need to be more careful
 ```
 
---
+---
 - what it the Urysohn'lemma, when do we need the tool of Urysohn function?
 ```text 
 The Urysohn's lemma has different version. In the version we used: 
@@ -52,3 +50,40 @@ Given a locally compact Hausdorff space, K a compact with an open cover U. We ca
 
 The Urysohn functions are useful since we can construct the partition of unity (the norm) with that. 
 ```
+
+--- 
+- Radon measure and continuity from above. 
+
+- The power of separability
+1. For the Banach-Alaugnu.
+2. For the Bochner measurability. 
+
+
+# Analysis
+
+- supreme of continuos function is not continuous in general. 
+- suprem perserve instead the lower semicontinuity. 
+
+- for the finite subadditivity to hold for the infinite sum, a sufficient condition is that limits on both sides exist. 
+
+- finite subadditivity does not imply the countable one. Splitting $A=A_N+t_N$ (partial sum + tail) gives $\phi(A)\le\sum_{j\le N}\phi(a_j)+\phi(t_N)$, so the exact criterion is $\liminf_{r\downarrow0}\phi(r)=0$. It can only fail when $\phi(0+)$ does not exist: if $\phi(0+)=c>0$ then $\sum_j\phi(a_j)=\infty$ anyway.
+
+  Counterexample: $\phi=0$ on $\mathbb Q$, $\phi=1$ on $\mathbb R\setminus\mathbb Q$ is finitely subadditive. Take $a_j>0$ rational with $A=\sum_j a_j$ irrational; then $\sum_j\phi(a_j)=0<1=\phi(A)$, since every tail $t_N$ is irrational.
+
+  Under the paper's hypotheses $\phi$ is nondecreasing with $\phi(r)\le L_\phi r$, so $\phi(0+)=0$ and the countable extension is automatic.
+
+
+
+# Optimization
+
+  - why does the proximal algorithm solves the nonsmooth optimization problems. 
+
+  - what is the step size the proximal algorithm
+
+
+
+# The dynamic System
+In the pendulum example: 
+1. we don't have fixed time horizon. 
+
+

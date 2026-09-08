@@ -1,4 +1,30 @@
-### iterator and iterable:
+## DATA STRUCTURE. 
+Static analysis cannot rely on the runtime value
+### Dataclass
+- why the dataclass?
+A class already fullfills the purpose of the object-oriented programming. Methods and attributes are assigned to the calss. The dataclass is motivated by the "value" nature
+
+- ```__init__```
+- ```__eq___```: compare the value
+- ```_repr___```: print the value 
+
+### Pydantic (BaseModel)
+
+| Aspect             | Pydantic `BaseModel`                                  | Python `dataclass`                          |
+| ------------------ | ----------------------------------------------------- | ------------------------------------------- |
+| Main purpose       | Validate and store structured data                    | Store structured data with less boilerplate |
+| Runtime validation | Yes                                                   | No; type hints are not enforced             |
+| Invalid input      | Raises `ValidationError`                              | Usually accepts it unchanged                |
+| Type conversion    | Can convert compatible values, such as `"42"` to `42` | Does not convert values automatically       |
+| Serialization      | `model_dump()` and `model_dump_json()`                | `asdict()` or custom code                   |
+| Dependency         | Third-party `pydantic` package                        | Python standard library                     |
+| Overhead           | Higher because it validates data                      | Lower                                       |
+| Best for           | APIs, forms, configuration, and external input        | Trusted internal data                       |
+
+**Rule of thumb:** use a `dataclass` for trusted input and `BaseModel` when input must be checked or converted.
+
+
+## iterator and iterable: 
 
 iterable: object capable of returning its member one at a time. 
 iterator: 
@@ -46,3 +72,17 @@ How to run a coroutine function:
 @njit(parallel = True)
 inline="always" means "don't compile this as a standalone function — paste my body into whoever calls me." The function ceases to exist as an independent callable.
 parallel=True means "compile this as a standalone function with multi-threaded loop execution."
+
+# SYSTEM CONTROL
+## command line
+```bash 
+- phython -m: execute the module as a programm (the main is executed)
+```
+
+## packages
+```python
+1. sys
+- sys.exit()
+- sys.argv: List(str)   # return the list of the argument. 
+```
+

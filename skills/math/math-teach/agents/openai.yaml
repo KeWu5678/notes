@@ -1,4 +1,4 @@
 interface:
-  display_name: "p-math"
-  short_description: "Format math explanations for terminal readability."
-  default_prompt: "Use $p-math to explain this with Unicode math in aligned code blocks."
+  display_name: "Math Teach"
+  short_description: "Explain mathematics with terminal-safe notation."
+  default_prompt: "Use $math-teach to explain this mathematical question clearly with terminal-safe notation."

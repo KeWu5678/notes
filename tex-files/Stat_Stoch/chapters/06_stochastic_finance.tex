@@ -1,0 +1,540 @@
+\chapter{Stochastic Finanzmathe}
+\section{Discrete Financial Modelling}
+\subsection{1-period Financial Modelling}
+\subsubsection{Arbitrage and martingale measure}
+\begin{definition}[Arbitrage opportunity]
+\begin{equation*}
+	\exists \bar{\xi} \in \mathbb{R}^{d+1}: \bar{\xi} \bar{\pi} \leq 0, \quad \bar{\xi} \bar{S} \geq 0, a.s., \mathbb{P}(\bar{\xi} \bar{S} > 0) > 0
+\end{equation*}
+\end{definition}
+
+
+The next lemma shows we may w.l.o.g. observe arbitrage as portfolio of the risky assets. 
+\begin{lemma}
+	The following arguments are equivalent 
+	\begin{itemize}
+		\item there exists an arbitrage $\bar{\xi} \in \mathbb{R}^{d+1}$. 
+		\item there exists $\xi \in \mathbb{R}^d: \xi \cdot Y \ge 0$ $\mathbb{P}$ a.s. $\mathbb{P}( \xi \cdot Y > 0) >0$. 
+	\end{itemize}
+\end{lemma}
+
+\begin{definition}[Martingale measure and equivalent Martingale measure]
+A probability measure $\mathbb{P}*$ is martingale if:
+\begin{equation*}
+	\pi^i = \mathbb{E}^*\left[\frac{S^i}{1 + r}\right] \quad \forall i = 1, \dots, d
+\end{equation*}
+We denote the set of equivalent martingale measure by:
+\begin{equation*}
+	\mathcal{P}:= \left\{\mathbb{P}^* \approx \mathbb{P}| \mathbb{E}^*\left[\frac{S^i}{1 + r}\right] \quad \forall i = 1, \dots, d \right\}
+\end{equation*}
+\end{definition}
+
+\begin{theorem}[The 1st Fundament Theorem of Asset Pricing]
+	The market model is free of arbitrage if and only if $\mathcal{P} \neq \emptyset$. In this case there exists a $\mathbb{P}^*$ with $\frac{d\mathbb{P}^*}{d\mathbb{P}} \in L^\infty(\mathbb{P})$
+\end{theorem}
+
+We define all the possible payout the the market:
+\begin{align*}
+	\mathcal{V}:= \{ \bar{\xi}\cdot \bar{S}: \bar{\xi} \in \mathbb{R}^{d +1}\}
+\end{align*}
+the following theorem suggest if a payout is replicable and the market is free of arbitrage, then it admits only one price.
+
+\begin{theorem}[Law of 1 Price]
+	Any replicable payout in a arbitrage-free market has only one price, i.e. given $v \in \mathcal{V}$ with $v = \xi_1 \cdot \bar{S} = \xi_2 \cdot \bar{S}$, $\xi_1, \xi_2 \in \mathbb{R}^{d +1}$, then we have
+	\begin{align*}
+		\xi_1 \cdot \bar{\pi}  = \xi_2  \cdot \bar{\pi}
+	\end{align*}
+\end{theorem}
+\begin{proof}
+	
+\end{proof}
+
+
+\subsubsection{Contingent Claim}
+\begin{definition}[Contingent Claim]
+A \textbf{claim} is a non-negative RV on the probability space. A \textbf{contingent claim} is a $\sigma(S_1, \dots)$ measurable claim.
+\end{definition}
+
+\begin{example}[Put-Call parity]
+	C - P = S - K
+\end{example}
+
+\begin{theorem}[Arbitrage-free price of a contingent claim]
+	Given $\Pi(C)$ the set of all non-negative arbitrage-free price for the contingent claim $C$. If $\mathcal{P} \neq \emptyset$, then:
+	\begin{equation*}
+		\Pi(C) = \left\{ \mathbb{E}^*\left[\frac{C}{1+r}\right] :  \mathbb{P}^* \in \mathcal{P} \text{ with } \mathbb{E}^*C < \infty \right\}
+	\end{equation*}
+\end{theorem}
+\begin{remark}
+The non-negativity of the price of contingent claim is crucial for the non-arbitrage given a martingale measure.
+\end{remark}
+
+\begin{theorem}[Range of a contingent claim]
+	If $\mathcal{P} \neq \emptyset$, and $C$ a contingent claim, then:
+	\begin{equation*}
+		\pi_{\inf}(C):= \inf \Pi(C) = \inf_{\tilde{P}}\tilde{\mathbb{E}}(\frac{C}{1+r}) = \max \left\{ m \in [0, \infty): \exists \xi \in \mathbb{R}^n:  m +   \xi Y \leq \frac{C}{1 + r} \mathbb{P} f.s. \right\}
+	\end{equation*}
+	\begin{equation*}
+		\pi_{\sup}(C) := \sup \Pi(C) = \sup_{\tilde{P}}\tilde{\mathbb{E}}(\frac{C}{1+r}) = \min \left\{ m \in [0, \infty) : \exists \xi \in \mathbb{R}^n: m + \xi Y \geq \frac{C}{1 + r} \mathbb{P} f.s. \right\} 
+	\end{equation*}
+\end{theorem}
+\begin{remark}\quad\\
+\textbf{1.} The fact that the price is a interval doesn't violate the law of 1 price since the contingent claim is in general not replicable. \\
+\textbf{2. }The supremum is usually called the minimum super-hedging price. 	
+\end{remark}
+\begin{proof}
+	The proof has the following steps:
+	\begin{enumerate}
+		\item $\sup_{P^*}\Pi(C) = \inf M$:
+		\item $\sup_{P^*}\Pi(C) = \sup_{\tilde{P}}\Pi(C)$: Convex combination of absolute continuous measure and equivalent measure belongs to equivalent measure. We break an absolute continuous measure into these 2 parts therefore it is bounded by the equivalent measure. Then take the $\epsilon$ to 0.  
+		\item $\inf M = \min M$:
+	\end{enumerate}
+\end{proof}
+
+\begin{definition}[Replicable contingent claim]
+A contingent claim is replicable, if there is a $\bar{\xi} \in \mathbb{R}^{d+1}$, such that $C = \bar{\xi} \bar{S}$ $\mathbb{P}-a.s.$
+\end{definition}
+\begin{remark}
+By law of one price, we know if that the price is uniquely determined by $\bar{\xi} \bar{S}$	
+\end{remark}
+
+\begin{corollary}
+	Given $C$ a contingent claim and $\mathcal{P} \neq \emptyset$.
+	\begin{enumerate}
+		\item $C$ is replicable iff $|\Pi(C)| = 1$
+		\item $C$ is not replicable, then $\Pi(C) = (\pi_{\inf}(C), \pi_{\sup}(C))$ is an open interval
+	\end{enumerate}
+\end{corollary}
+
+
+
+
+\subsubsection{Complete market model.}
+
+\begin{definition}[complete financial market]
+A market is complete if every contingent is claim replicable. 
+\end{definition}
+
+\begin{theorem}[The 2nd fundamental theorem of Asset pricing]
+	A market is complete iff $|\mathcal{P}| = 1$
+\end{theorem}
+\begin{remark}
+If the market is complete, we have:
+\begin{equation*}
+	V = \{\bar{\xi}\bar{S}|\bar{\xi} \in \mathbb{R}^{d+1}\} = L^0(\Omega, \mathcal{F}, \mathbb{P})\}
+\end{equation*}	
+\end{remark}
+
+\begin{theorem}
+	Every complete market model admits a partition of $\Omega$ in mostly $d+1$ atoms.
+\end{theorem}
+
+
+\subsubsection{1-Period market model with randomised initial price}
+\begin{theorem}[The 2nd Fundamental theorem of Asset Pricing, Version II]
+The following statements are equivalent
+\begin{enumerate}
+	\item $K \cap L^0_+ = \{0\}$
+	\item $(K \cap L^0_+) \cap L_+^0 = \{0\}$
+	\item $\exists \mathbb{P}^* \in \mathcal{P}: \frac{d\mathbb{P}^*}{d\mathbb{P}} \in L^\infty$. 
+	\item $\mathcal{P} \neq \emptyset$
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+\quad\\
+\textbf{2) $\Rightarrow$ 3)}.
+\end{proof}
+
+
+\subsection{Multi-Period Arbitrage theory}
+\subsubsection{Arbitrage opportunity and Martingale measures}
+\begin{theorem}[The Radon-Nikodym Theorem]
+	Given $\mathbb{Q} \ll \mathbb{P}$ and $Z := \frac{d\mathbb{Q}}{d\mathbb{P}}$. Then for all non-negative random variable $X$ and sub-$\sigma$-Algebra $\mathcal{F}_0 \subset \mathcal{F}$:
+	\begin{equation*}
+		\mathbb{E}^{\mathbb{Q}}(X|\mathcal{F}_0) =\frac{\mathbb{E}^{\mathbb{P}}(XZ|\mathcal{F}_0)}{\mathbb{E}^{\mathbb{P}}(X|\mathcal{F}_0)}  
+	\end{equation*}
+\end{theorem}
+
+\begin{theorem}[Separating theorem of Hahn-Banach]
+\end{theorem}
+
+\begin{definition}[self-financed strategies]
+	A trading strategy is called self-financed, if
+	\begin{equation*}
+		\bar{\xi}_t \bar{S}_t = \bar{\xi}_{t+1} \bar{S}_t \quad \forall t = 1, \dots, T-1
+	\end{equation*}
+\end{definition}
+\begin{remark}
+For a trading strategy $\bar{\xi} = (\xi, \xi_0)$, having $\xi$ fixed, we may select $\xi_0$ such that the trading strategy becomes self-financed, in that we choose the $\xi_0$ that satisfies the equation above.  
+\end{remark}
+
+\subsubsection*{The Value Process}
+
+
+\begin{lemma}[Decomposition of the value process]
+	The following arguments are equivalent
+	\begin{enumerate}
+		\item $\bar{\xi}$ is a self-financed strategy
+		\item $\bar{\xi}_t \cdot \bar{X_t} = \bar{\xi}_{t + 1} \cdot \bar{X_t}, \forall t$
+		\item $V_t = V_0 + \sum_{k = 1}^t \xi_k \cdot (X_k - X_{k - 1})$
+	\end{enumerate}
+\end{lemma}
+
+\begin{definition}[Martingale measure]
+	A martingale measure on $(\Omega, \mathcal{F})$ is a martingale measure, if the discounted price process $X$ is a $\mathbb{Q}$-Martingale.  
+\end{definition}
+
+How do we find the equivalent market Martingale measure?
+
+\begin{theorem}
+	In a probability space the following arguments are equivalent
+	\begin{enumerate}
+		\item $\mathbb{P}$ is a martingale measure
+		\item For every self-financed strategy $\bar{\xi}$ with $\xi \in L^\infty(\mathbb{P})$, the induced value process is also a martingale
+		\item For a self-financed strategy, if the value process $V^-_T$ is integrable(which mean we have bounded capital), then the value process is a martingale
+		\item For a self-financed strategy, if the value process is non-negative a.s., then $\mathbb{E}V_T = \mathbb{E}V_0$
+	\end{enumerate}
+\end{theorem}
+
+\begin{theorem}[The first fundamental theorem of asset pricing]
+The multi-period model is arbitrage-free iff $\mathcal{P} \neq \emptyset$.
+\end{theorem}
+ 
+\begin{definition}[replicable contingent claim]
+\end{definition}
+
+\begin{theorem}
+The market is free of arbitrage and $H$ is a discounted contingent claim, then:
+\begin{enumerate}
+	\item $\Pi(H) = \{ \mathbb{E}^*(H): \mathbb{P}^* \in \mathcal{P} and \mathbb{E}^* < \infty \} \neq \emptyset$
+	\item $\pi_{\inf}(H) = \inf_{\mathbb{P}^* \in \mathcal{P}} \mathbb{E}^*(H)$ and $\pi_{\sup}(H) = \sup_{\mathbb{P} \in \mathcal{P}} \mathbb{E}^*(H)$.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+\end{proof}
+
+\begin{definition}[Arbitrage price]
+\end{definition}
+\begin{remark}
+\end{remark}
+
+
+\subsubsection{Cox-Ross-Rubinstein Modell(Binominal Model)}
+\begin{theorem}
+	\quad \newline
+	The CRR model is arbitrage-free $\Leftrightarrow$ $a < r < b$.
+	In this case $\mathcal{P} = \{ \mathbb{P}^*\}$ with
+	\begin{equation*}
+		p^* := \mathbb{P}^*(R_t = b) = \frac{r - a}{b - a}
+	\end{equation*} 
+	And under $\mathbb{P}^*$, the returns in each period are independent.
+\end{theorem}
+\begin{proof}
+\end{proof}
+
+\begin{theorem}[Hedging Strategy]
+	\begin{align*}
+		\xi_t := \Delta_t(S_0, \dots, S_{t - 1}) = \frac{v_t(x_0, x_{t - 1}, x_{t-1}(1 + b)) - v_t(x_0, x_{t - 1}, x_{t-1}(1 + a))}{(1 + r)^{-t} x_{t - 1}(b -a)}
+	\end{align*}
+	Choose $\xi^0_t$ such that the strategy $\bar{\xi}$ is self-financed with the initial capital $V_0 = \mathbb{E}^*(H)$
+\end{theorem}
+\begin{proof}
+\end{proof}
+
+
+\subsubsection*{Exotic Derivative}
+\begin{definition} \quad
+	\begin{enumerate}
+		\item running maximum: $M_t : = \max_{0 \leq s \leq t} Z_s$
+	\end{enumerate}
+\end{definition}
+
+\begin{theorem}[Reflexion Principle]
+	$Z_t$ standard random walk. $\mathbb{P}$ uniform distribution.
+	$\forall k \in \mathbb{N}, l \in \mathbb{N}_0$,
+	\begin{equation*}
+		\mathbb{P}(M_T \geq k, Z_T = k - l) = \mathbb{P}(Z_t = k + l)
+	\end{equation*}
+\end{theorem}
+\begin{proof}
+	By using the obvious fact
+	\begin{equation*}
+		k+l > k, \quad l \geq 0
+	\end{equation*}
+	to get rid of $M_T \geq k$. 
+\end{proof}
+
+\begin{theorem}[Reflexion Principle under $\mathbb{P}^*$]
+\begin{equation*}
+	\mathbb{P}^*[M_T \geq k, Z_T = k - l] = \left( \frac{1-p^*}{p^*} \right)^l \mathbb{P}^*[Z_T = k + l]
+\end{equation*}
+\end{theorem}
+\begin{proof}
+	Calculate the bounded density: $\frac{d\mathbb{P}^*}{d\mathbb{P}}$
+	\begin{equation*}
+		\mathbb{P}^*(\omega) = (p^*)^{[T + Z_T(\omega)]/2}(1-p^*)^{[T - Z_T(\omega)]/2} = \frac{d\mathbb{P}^*}{d\mathbb{P}} d\mathbb{P}(\omega) = \frac{d\mathbb{P}^*}{d\mathbb{P}} 2^{-T} 
+	\end{equation*}
+\end{proof}
+
+\begin{theorem}[Up-and-in call option]
+\end{theorem}
+\begin{proof} \quad
+	\begin{enumerate}
+		\item Split the expectation
+		\item reflection principle
+		\item measure change
+	\end{enumerate}
+\end{proof}
+
+\subsubsection*{Black-Schole Convergence}
+\begin{lemma}[Central limit theory for sum]
+\end{lemma}
+
+\begin{lemma}[Slusky lemma]
+\end{lemma}
+
+\begin{theorem}[Black-Schole Convergence theorem]
+Assuming
+\begin{enumerate}
+	\item the returns are i.i.d., (clear from 2.2.1)
+	\item $\sum_{k = 1}^N Var^*(R_N^k) \rightarrow T\sigma^2$
+	\item $-1 \leq \alpha_N \leq R^N_t \leq \beta_N$ with $\lim \alpha_N = \lim \beta_N = 0$
+\end{enumerate}
+We have:
+\begin{equation*}
+	S^{(N)}_{N} \overset{d}{\longrightarrow} S_T:= S_0\exp\left((rT - \frac{1}{2}\sigma T) + \sigma W_T \right) \quad W_t \sim N(0, T) 
+\end{equation*}
+\end{theorem}
+
+\begin{exercise}
+	down-and-in put option
+\end{exercise}
+
+\begin{exercise}
+	\begin{equation*}
+		C_{BS}^{(N)}
+	\end{equation*}
+	Determine the price in the $N^{th}$ CRR-Model at $t = 0$. Calculate the limit as $N \rightarrow \infty$. 
+\end{exercise}
+
+
+\subsubsection{American option}
+
+
+
+
+\newpage
+\section{Time-continuous finance modelling}
+\subsection{Ito-calculus}
+\begin{definition}[Brownian motion]
+	A stochastic process $(W_t)_{t \\geq 0}$, 
+	\begin{enumerate}
+		\item $W_0 = 0$ $\mathbb{P}$-$a.s.$
+		\item independent increment:
+		\item normal distributed increment:
+		\item $\mathbb{P}$-a.s. continuous path
+	\end{enumerate}
+\end{definition}
+\begin{remark}
+\begin{equation*}
+	\cov(W_s, W_t) =  
+\end{equation*}	
+\end{remark}
+
+\begin{theorem}
+	 The following are martingales:
+	 \begin{enumerate}
+	 	\item $(W_t)$
+	 	\item $(W_t^2 - t)$
+	 	\item $\left(\exp(\sigma W_t - \frac{\sigma^2}{2}t)\right)$
+	 \end{enumerate}
+\end{theorem}
+\begin{proof}\quad
+	\begin{itemize}
+		\item The second
+		\begin{align*}
+			\mathbb{E}[W_t^2 - t|\mathcal{F}_s] &= \mathbb{E}[(W_t - W_s)^2 - W_s^2 - 2W_sW_t|\mathcal{F}_s] - t\\
+			&= \mathbb{E}(W_t-W_s)^2 + W_s^2 - t\\
+			&= W_s^2 - s
+		\end{align*}
+		 
+		\item The third
+		\begin{align*}
+			\mathbb{E}[e^{\sigma W_t - \frac{\sigma^2}{2}t} |\mathcal{F}_s] &= e^{\sigma W_s - \frac{\sigma^2}{2}t}\mathbb{E}[e^{\sigma(W_t - W_s)}]\\
+			&= e^{\sigma W_s - \frac{\sigma^2}{2}t}\mathbb{E}[e^{x\sigma \sqrt{t-s}}] \quad \text{($x \sim N(0, 1)$)}\\
+			&= e^{\sigma W_s - \frac{\sigma^2}{2}s}
+		\end{align*}
+	\end{itemize}
+\end{proof}
+
+
+\begin{definition}[total variation]
+	\begin{equation*}
+		TV_t(X) := \sup_{\prod}\sum_{t_i \leq t}|X_{t_{i+1} \wedge t} - X_{t_1}]
+	\end{equation*}
+	a continuous and deterministic path $X: [0, \infty) \rightarrow \mathbb{R}$ is of 
+	\begin{enumerate}
+		\item  finite variation: $\forall t \in [0, \infty): TV_t < \infty$.
+		\item bounded variation for $T \in [0, \infty)$: $TV_T < \infty$. 
+	\end{enumerate}
+\end{definition}
+
+\begin{lemma}
+	$X$ is of finite variation $\Leftrightarrow$ $\exists A^+, A^- \text{ monoton}: X = A^+ - A^-$
+\end{lemma}
+\begin{remark}
+Lebeague theory and define a integral $\int_0^t f(s) dX_s $	
+\end{remark}
+
+\begin{definition}[Quadratic variation]
+	$X_t: [0, \infty) \rightarrow \mathbb{R}$ continuous. For $\Pi_n \rightarrow 0, t \rightarrow \langle X \rangle_t$ continuous, we define the quadric variation of $(X_t)$ as:
+	\begin{equation*}
+		\langle X \rangle_t := \lim_n \sum_{t_i < t, t_i \in \Pi_n} (X_{t_{i+1} - t_i} - X_{t_1})^2 
+	\end{equation*}
+\end{definition}
+\begin{remark}
+$\langle X \rangle_t$ depends on $\Pi_n$.	
+\end{remark}
+
+\begin{lemma}
+	$X$ is of bounded variation for $T$ $\Rightarrow$ $\langle X \rangle_T = 0$ 
+\end{lemma}
+
+\begin{corollary}
+	$A$ is of bounded variation $\Rightarrow$ $\langle X + A \rangle_T = \langle X \rangle_T$
+\end{corollary}
+
+\begin{lemma}
+$\langle X \rangle_t(\Pi_n)$	 is well defined, then $\forall g \in C(\mathbb{R}_+, \mathbb{R})$
+\begin{equation*}
+	\sum_{t_i \in \Pi_n t_i < t} g(t_i) (X_{t_{i+1}} - X_{t_i})^2 \rightarrow \int_0^t g(s)d\langle X \rangle_s
+\end{equation*}
+\end{lemma}
+\begin{proof}
+	$\langle X \rangle_t$ monotone and of finite variation($\sigma$-finite measure)\\
+	$\Rightarrow$ $\mu^n(0, t) := \sum_{t_i \leq t, t_i \in \Pi_n} (X_{t_{i+1}\wedge t} - X_{t_i})^2$  defines a measure. And since the quadratic variation is well-defined it converges pointwise to the measure induced by $\langle X \rangle$.\\
+	$\Rightarrow$ It implies the weak convergence and by the definition of weak convergence we have the result.
+\end{proof}
+
+\begin{lemma}[Excersice]
+	$X$ of finite quadratic variation, then
+	\begin{equation*}
+		\forall g \in C^1 \forall t \in [0, T]: \langle g(X) \rangle_t := \sum_{t_i \leq t, t_i \in \Pi_n} (g(X_{t_{i+1}\wedge t}) - g(X_{t_i}))^2 < \infty
+	\end{equation*} 
+	and 
+	\begin{equation*}
+		\langle g(X) \rangle_t = \int_0^t g'(X_s)^2d\langle X \rangle_s
+	\end{equation*}
+\end{lemma}
+\begin{proof}
+By mean value theorem, for $\forall 0< s < t < T \exists o \in (s, t):$
+	\begin{align*}
+		g(X_t) - g(X_s) &= g'(X_s)(X_t - X_s) + (g'(X_o) - g'(X_s))(X_t - X_s)\\
+		(g(X_t) - g(X_s))^2
+		&= g'(X_s)^2(X_t - X_s)^2\\
+		&\quad + [2g'(X_s) (g'(X_o) - g'(X_s)) + (g'(X_o) - g'(X_s))^2](X_t - X_s)^2\\
+		&= g'(X_s)^2(X_t - X_s)^2\\
+		&\quad + [(g'(X_s) - g'(X_o))(g'(X_o) - g'(X_s))^2](X_t - X_s)^2\\
+		&\Rightarrow g'(X_s)^2(X_t - X_s)^2
+		\quad \text{by the uniform continuity of } g' \text{ on } [s, t]
+	\end{align*}
+\end{proof}
+
+\begin{theorem}
+	$(W_t)_{0, T}$ Brownian motion, $\Pi_n \rightarrow 0$ partition of $[0, T]$ and $\sum |\Pi_n| < \ infty$, then
+	\begin{equation*}
+		\lim_n \sum (W_{t_{i+1}} - W_{t_i})^2 \rightarrow t \quad \forall t \in [0, T] \quad \mathbb{P}\text{-a.s.} 
+	\end{equation*}
+\end{theorem}
+\begin{proof}
+	
+\end{proof}
+
+\begin{theorem}[Ito-Formal]
+$X: [0, T] \rightarrow \mathbb{R}$ continuous and admits continuous quadratic variation. $A:[0, T] \rightarrow \mathbb{R}$ continuous and admits bounded total variation. Then $\forall F\in C^{1, 2}(\mathbb{R}\times \mathbb{R}, \mathbb{R})$
+\begin{equation*}
+	\int_0^t F_x(A_s, X_d) dX_s := \lim \sum F(A_{t_i}, X_{t_i})(X_{t_{i+1} \wedge t_i} - X_{t_i})
+\end{equation*}
+is well defined and
+\begin{equation*}
+	F(A_t, X_t) = F(X_0, A_0) + \int_0^t F_a(A_s, X_s) dA + \int_0^t F_x (A_s, X_s) dX_s + \int_0^t F_{xx} (A_s, X_s) d\langle X \rangle_s
+\end{equation*}
+\end{theorem}
+
+\begin{corollary}
+\end{corollary}
+
+\begin{lemma}[Associativity of Ito-formel]
+	$X: \mathbb{R} \rightarrow \mathbb{R} \in C(\mathbb{R})$ and $\forall t: \langle X \rangle_t < \infty $, $f \in C^2(\mathbb{R}), Y: \mathbb{R}_+ \rightarrow \mathbb{R}$ continuous, Assuming the integral exists:
+	\begin{equation*}
+		\int_0^t Y_s f'(X_s)dX_s = \lim_n \sum_{t_i < t, t_i \in \Pi_n} Y_{t_i}f'(X_{t_i}) (X_{t_{i+1} - t_i} - X_{t_1})
+	\end{equation*}
+	and 
+\end{lemma}
+
+
+\begin{example}
+\end{example}
+
+\begin{example}	
+\end{example}
+
+\begin{example}[The geometric Brownian motion]
+\begin{equation*}
+	S_t = s_0 e^{\sigma W_t + (\mu - \frac{\sigma^2}{2})t}
+\end{equation*}
+\end{example}
+
+
+\subsection{Perfect dynamic hedge with out interest}
+\begin{example}[Black-Schole Model]	
+\end{example}
+
+\begin{example}[Bachelier Model] \quad
+\begin{enumerate}
+	\item $X_t = X_0 + \mu t + \sigma W_t$
+	\item $\sigma(s, x) = \sigma$ constant
+\end{enumerate}
+\end{example}
+
+\subsubsection*{Assumption(Volatility profile):}
+\begin{itemize}
+	\item The quadratic variation of the price $X_t$ could be expressed as
+\begin{equation*}
+	\langle X \rangle_t := \int_0^t \sigma(s, X_s) ds
+\end{equation*}
+	\item 
+\end{itemize}
+
+
+\subsubsection*{The Heat equation}
+\begin{lemma}
+	The boundary value problem:
+	\begin{align}
+		F_t(t, x) + \frac{1}{2} \sigma^2(x, t) F_{xx}(t, x) &= 0\\
+		F(T, x) &= f(x)
+	\end{align}
+	If $F \in C^{1, 2}((0, T) \times \mathbb{R}) \cap C([0, T] \times \mathbb{R})$ and the BVP admits a solution then the value process
+	\begin{equation*}
+		H(\omega) := f(X_T(\omega)) = F(0, X_0) + \int_0^T F_x (s, X_s(\omega)) dX_s(\omega)
+	\end{equation*}
+	exist $\mathbb{P}$-a.s.
+\end{lemma}
+
+\begin{theorem}
+	$f$ continuous and satisfies
+	\begin{equation*}
+		|f(x)| \leq \alpha ( 1 + e^{k|x|^\beta}) \quad \alpha , \beta < 0, k \in (0, 2)
+	\end{equation*}
+	The the BVP 
+	\begin{align}
+		F_t(t, x) + \frac{1}{2} \sigma^ F_{xx}(t, x) &= 0, x \in [0, T)\\
+		F(T, x) &= \lim_{t \rightarrow T}f(x)
+	\end{align}
+	has the solution
+	\begin{equation*}
+		F(t,x) := \int_\mathbb{R} f(y) P(\sigma^2(T - t), x-y)dy
+	\end{equation*}
+\end{theorem}
+
+

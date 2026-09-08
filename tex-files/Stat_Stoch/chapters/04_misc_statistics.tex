@@ -1,0 +1,55 @@
+\chapter{Not important}
+\section{regression models}
+\begin{definition}[Mean Regression model]
+	The mean regression model describes the dependance of Y on X.
+	\begin{equation}
+		Y = f(X) + \epsilon
+	\end{equation}
+	The equation is called the regression equation. In the mean regression the expected value of error is 0.
+\end{definition}
+
+\subsubsection*{Ingredients}
+\begin{enumerate}
+	\item \textbf{Observations}: $Y = (Y_1, \dots, Y_n)$. Data is a collection of pairs of $(Y_i, X_i)$. $Y_i$s are called dependant or explained variables. $X_i$s are called yvb or independent variable or features. 
+		\begin{itemize}
+			\item Example 1: $X$ collection of measurements and $Y_i \in \{0, 1\}$ for patients. 
+			\item Example 2: $Y_i$ is a value of process of time $t_i$. Like stock price.
+		\end{itemize}  $X$ is called \textbf{design}, it could be either random or deterministic. We focus on deterministic design but the random design is more typical, for example in machine learning. 
+	\item \textbf{Errors}: $\epsilon_i = Y_i - f(X_i)$. Usually(mean regression) $\mathbb{E} \epsilon_i = 0$. Denote $\sigma_i^2 = Var[\epsilon_i]$. We focus on the homogeneous case(the variance does not dependant on i). Most strict case: homogenous Gaussian noise.
+	\item \textbf{Regression function}: f(x). Examples: 
+		\begin{itemize}
+			\item linear
+			\item polynomial
+			\item linear basis expansion for a collection of functions $\{\psi_i \}_i$
+			\item parametric regression
+				\begin{equation*}
+					f(x) \in \{ f(x, \theta), \theta \in \Theta \subset \mathbb{R}^p \}
+				\end{equation*}
+				$\exists \theta^*$ s.t.
+				\begin{equation}
+					f(x) = f(x, \theta^*), \quad Y_i = f(X_i, \theta^*) + \epsilon_i
+				\end{equation} 
+			\end{itemize}
+\end{enumerate}
+
+
+
+
+In the regression model, our goal is to retract information in $x$ about $y$. In the mean regressions we have centralised error($\mathbb{E} Y_i = f(x_i)$), $f$ is the regression function(systematic), allows to predict and forecast. So our aim is to recover $f$.\par 
+But in reality, we always have to deal with the difference between real distribution and regression model. We have 2 main concerns.1)Distribution error; 2)Form of the regression function.\par 
+We have the model: $Y_i = f(x_i) + \epsilon_i$, where $f$ is the systematic part and $\epsilon$ the individual error. Usually we assume(mean regression): $\mathbb{E} \epsilon_i = 0$ to be true. Later we make our study under the assumption $\epsilon_i$ is Gaussian. In the analysis we try to account for the real data distribution. Model is used to derive the methods but the analysis is under true distribution.\par 
+As for the regression function $\mathbb{E} Y_i = f(X_i)$. The typical assumptions including:
+\begin{itemize}
+	\item $f(x) = f(x, \theta^*)$
+	\item $f(x) = \sum_{i = 1}^p \theta_j \psi_j(x), \quad p \leq \infty$
+\end{itemize}
+
+Our approach:
+\begin{itemize}
+	\item design some methods for the parametric model $Y_i = f(x_i) + \epsilon_i$;
+	\item Study and analysis under $\mathbb{P}$.
+\end{itemize} 
+
+
+
+

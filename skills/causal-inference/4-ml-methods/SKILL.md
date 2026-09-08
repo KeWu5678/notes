@@ -1,6 +1,6 @@
 ---
 name: causal-4-ml-methods
-description: Choose or audit the nuisance learners — ml_l, ml_g, ml_m — for a DoubleML model: regressor vs classifier, pipelines and stacking, and whether predictive quality is good enough for the rate requirement. Use when initializing learners for a DML fit, when deciding between random forest / boosting / stacked pipelines for a propensity or outcome model, or when learner performance is in question.
+description: "Choose or audit the nuisance learners — ml_l, ml_g, ml_m — for a DoubleML model: regressor vs classifier, pipelines and stacking, and whether predictive quality is good enough for the rate requirement. Use when initializing learners for a DML fit, when deciding between random forest / boosting / stacked pipelines for a propensity or outcome model, or when learner performance is in question."
 ---
 
 # 4. ML methods
