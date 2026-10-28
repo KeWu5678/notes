@@ -31,26 +31,35 @@ The ridge activation evaluates along the ridge line as a -> infinity. It interse
 ## The Measure Theory: 
 - why is the atom set at most countable?
 
+
+### Lemma 3.8
+The lemma shows for the small-mass part (small atoms and continuous part). For all we know, the support is unbounded. But since the we have the Radon measure, with Hahn we can have the compact support. Choosing the open cover with small radius, the compactness gives finite subcover, and the onion ring argument gives a disjoint partition of the support (of small enough measure). 
+
 - what measure admits a Hahn decomposition?
 ```text 
 The Hahn decomposition require almost nothing for the underlying topology of the measure. It only needs to be a measurable space. 
 It assumes property of the measure function: it need to be signed, real-valued, and scalar-valued.
 ```
 
-- which measure admits the property: contiuity from above?
+- **which measure admits the property: contiuity from above?**
 ```text
 Every finite positive measure. Non-finite measure may not have this property.
 ```
 
-- what measure admits inner regularity?
+- **what is inner regularity, which measure admits inner regularity?**
 ```text
-Inner regularity means a set's measure can be approximated by compact sets from inside. 
-Basically all the Radon measure. If the measure is not finite, we need to be more careful
+Inner regularity means a measurable set's measure can be approximated by compact sets from inside. 
+Basically all the Radon measure. If the measure is not finite, we need to be more careful.
 ```
 
+- **what is outer regularity, which measure admits outer regularity?**
+```text 
+Outer regulartity means a measurable set's measure can be approximated by open set from the outside. 
+Basically all the Radon measure. If the measure is not finite, we need to be more careful.
+```
+
+
 ---
-
-
 
 ---
 - what it the Urysohn'lemma, when do we need the tool of Urysohn function?
@@ -62,15 +71,13 @@ The Urysohn functions are useful since we can construct the partition of unity (
 ```
 
 --- 
-- Radon measure and continuity from above. 
 
 - The power of separability
 1. For the Banach-Alaugnu.
 2. For the Bochner measurability. 
 
 
-# (Functional) Analysis
-## Convexity
+# Analysis
 - Does supreme perserve continuity, i.e., is sup fn continuous for fn continuous 
 ```text
 Supreme of continuous function is not continuous in general; 
@@ -101,14 +108,19 @@ Counterexample: $\phi=0$ on $\mathbb Q$, $\phi=1$ on $\mathbb R\setminus\mathbb 
 Under the paper's hypotheses $\phi$ is nondecreasing with $\phi(r)\le L_\phi r$, so $\phi(0+)=0$ and the countable extension is automatic.
 ```
 
-
+# Functional Analysis
 ## Strong measurablity
 1. definition: strong measurablity assume the strong norm convergence in the Banach space. 
 It means a Banach-space-valued function can be approximated by function with finitely many values (simple functions)
-2. sufficient condition: Petti
+2. sufficient condition: Pettis
+The Pettis states, strongly measurability is equivalent to the weak measurability if the image space is separable. 
 
 
-## Compactness
+## Calculus of Variation
+- what is weak-* lower continuity, why do we need it. 
+
+- how do we get the the weak-* convergence. 
+
 - For continuous function vanishing at infinity, is every superlevel set compact?
 
 
@@ -120,7 +132,6 @@ It means a Banach-space-valued function can be approximated by function with fin
 ## Measure-theoritical optimization
 - The conditional gradient: how can we decide, which node (functional) to insert?
 
-
 - why does the proximal algorithm solves the nonsmooth optimization problems. 
 
 - what is the step size the proximal algorithm
@@ -128,6 +139,19 @@ It means a Banach-space-valued function can be approximated by function with fin
 
 
 # The dynamic System
+
+```
+
+
+
+# Numerical PDE (ODE)
+- what numerical method do we use for the Allen-Cahn equation. 
+The author (Kunish) uses the Chebyshev nodes to control the Runge phenomenon. In the low dimensional PDE, we use the polynomial interpolation. 
+
+- what is the zero-order-hold (ZOH) control.
+Like the bang-bang control, keep the control constant untill the next time step. 
+
+
 - In the pendulum example， we don't have fixed time horizon, how do we solve the open-loop problem. 
 ```text
 Generate the characteristic curve:
@@ -140,7 +164,10 @@ Generate the characteristic curve:
 1. set the level of V; calculate the Contour. 
 2. shift the contour by 2pi (it produces the value contour with target at 2pi). The intersection suggest the optimal value is the same from the intersect to the target 0 and pi, which suggest the costate (the gradient of V) is different. 
 (Remark: the smoothness is only established numerically by the author) 
-```
+
+- how do we determine the switching set?
+
+
 
 
 ## NOTES
