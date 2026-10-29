@@ -13,6 +13,9 @@ The derivative may not be continuous, but nevertheless they may admit explicit f
 the linear constraints defines a simplex. The simplex method moves around the extremal points and find the optimal one. 
 
 
+### Nonsmooth optimization
+
+
 
 
 ### MILP
